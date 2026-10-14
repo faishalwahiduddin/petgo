@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tablet Screenshots · faishal.id</title>
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+<script src="art.js"></script>
+</head>
+<body>
+  <div class="toolbar">
+    <h1 id="tb-title">Tablet Screenshots</h1>
+    <span class="muted" id="tb-spec">7-inch · 1200×1920</span>
+    <div class="spacer"></div>
+    <div class="group" id="size-group"></div>
+    <div class="group" id="lang-group"></div>
+    <button id="btn-full" title="Toggle real-size capture mode">Full size</button>
+  </div>
+
+  <div class="hint">
+    <strong>Tablet screenshots.</strong> Play 7″ prefers
+    <code>raw-android-tablet7/&lt;locale&gt;/</code>, Play 10″ prefers
+    <code>raw-android-tablet10/</code>, iPad uses <code>raw-tablet/</code>
+    (fallback: <code>raw-tablet</code> → phone <code>raw</code>).
+    Choose a size and language, click <code>Full size</code>, then capture each
+    <code>.tablet-slide</code> (or run <code>capture-slides.mjs</code>).
+  </div>
+
+  <div class="stage" id="stage"></div>
+
+<script>
+(function () {
+  const C = window.STORE_CONFIG;
+  const root = document.documentElement;
+  root.style.setProperty('--primary', C.palette.primary);
+  root.style.setProperty('--dark', C.palette.dark);
+  root.style.setProperty('--accent', C.palette.accent);
+  root.style.setProperty('--on-primary', C.palette.onPrimary);
+  root.style.setProperty('--preview-scale', '0.3');
+
+  const SIZES = {
+    '7': { w: 1200, h: 1920, label: '7-inch' },
+    '10': { w: 1600, h: 2560, label: '10-inch' },
+    'ipad13': { w: 2064, h: 2752, label: 'iPad 13"' },
+  };
+  const params = new URLSearchParams(location.search);
+  let size = params.get('size') || '7'; if (!SIZES[size]) size = '7';
+  let lang = params.get('lang') || C.defaultLocale || 'id';
+  if (!C.slides[lang]) lang = Object.keys(C.slides)[0];
+
+  const S = SIZES[size];
+  document.getElementById('tb-title').textContent = C.name + ' — Tablet';
+  document.getElementById('tb-spec').textContent = S.label + ' · ' + S.w + '×' + S.h;
+
+  // size buttons
+  const sg = document.getElementById('size-group');
+  Object.keys(SIZES).forEach(function (code) {
+    const b = document.createElement('button');
+    b.textContent = SIZES[code].label;
+    b.className = code === size ? 'active' : '';
+    b.onclick = function () { const p = new URLSearchParams(location.search); p.set('size', code); location.search = p.toString(); };
+    sg.appendChild(b);
+  });
+  // language buttons
+  const lg = document.getElementById('lang-group');
+  Object.keys(C.slides).forEach(function (code) {
+    const b = document.createElement('button');
+    b.textContent = C.localeLabels[code] || code;
+    b.className = code === lang ? 'active' : '';
+    b.onclick = function () { const p = new URLSearchParams(location.search); p.set('lang', code); location.search = p.toString(); };
+    lg.appendChild(b);
+  });
+
+  const isRTL = lang === 'ar';
+  const stage = document.getElementById('stage');
+  const slides = C.slides[lang] || [];
+  const previewScale = 0.3;
+
+  // Native Android tablet raws for Play sizes; iPad keeps raw-tablet/.
+  const primaryRaw = size === '7' ? 'raw-android-tablet7'
+    : size === '10' ? 'raw-android-tablet10'
+    : 'raw-tablet';
+
+  // Optional per-app art module (window.STORE_ART) — same contract as index.html.
+  const A = window.STORE_ART || null;
+  const hasPano = !!(A && A.panoramaSvg);
+  const segs = slides.length || 4;
+  const langClass = lang === 'ja-JP' ? ' cjk-ja' : lang === 'zh-CN' ? ' cjk-zh' : '';
+
+  slides.forEach(function (s, i) {
+    const seg = (isRTL && hasPano && A.rtlReverse !== false) ? (segs - 1 - i) : i;
+    const cell = document.createElement('div');
+    cell.className = 'cell';
+    cell.style.width = (S.w * previewScale) + 'px';
+    cell.style.height = (S.h * previewScale) + 'px';
+    cell.innerHTML =
+      '<span class="label">' + (i + 1) + '.png · ' + S.label + '</span>' +
+      '<div class="tablet-slide' + (isRTL ? ' rtl' : '') + langClass + (hasPano ? ' has-art' : '') + '" id="tslide-' + (i + 1) + '" style="width:' + S.w + 'px;height:' + S.h + 'px">' +
+        (hasPano ? '<div class="pano" style="--seg:' + seg + ';--segs:' + segs + '">' + panoSvg(A) + '</div>' : '') +
+        '<div class="copy">' +
+          '<div class="headline">' + esc(s.headline) + '</div>' +
+          '<div class="subtext">' + esc(s.subtext) + '</div>' +
+        '</div>' +
+        '<div class="tablet-device">' +
+          '<div class="cam"></div>' +
+          '<div class="screen">' +
+            '<img src="' + primaryRaw + '/' + lang + '/' + (i + 1) + '.png" alt="" ' +
+                 'data-primary="' + primaryRaw + '" ' +
+                 'onerror="rawFallback(this, \'' + lang + '\', ' + (i + 1) + ');">' +
+            '<div class="placeholder" style="display:none">' +
+              '<div class="ph-icon"><img src="' + C.iconUrl + '" alt="" onerror="this.parentNode.textContent=\'🖥️\'"></div>' +
+              '<div>' + esc(C.name) + '</div>' +
+              '<div style="font-size:1.8cqw;opacity:.7">' + primaryRaw + '/' + lang + '/' + (i + 1) + '.png</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+        mascotHtml(A, i) +
+        '<div class="brand">' +
+          '<img src="' + C.iconUrl + '" alt="" onerror="this.style.display=\'none\'">' +
+          '<div class="wm"><div class="n">' + esc(C.name) + '</div><div class="u">' + esc(C.subdomain) + '</div></div>' +
+        '</div>' +
+      '</div>';
+    const slideEl = cell.querySelector('.tablet-slide');
+    if (A && A.theme) {
+      if (A.theme.bg) slideEl.style.background = A.theme.bg;
+      if (A.theme.ink) slideEl.style.color = A.theme.ink;
+    }
+    stage.appendChild(cell);
+  });
+
+  // Fallback: primary/<n> → raw-tablet/<locale>/<n> → raw-tablet/<n>
+  // → raw/<locale>/<n> → raw/<n> → placeholder.
+  window.rawFallback = function (img, locale, n) {
+    const primary = img.dataset.primary || 'raw-tablet';
+    const step = Number(img.dataset.fb || 0);
+    if (step === 0) {
+      img.dataset.fb = '1';
+      img.src = primary + '/' + n + '.png';
+      return;
+    }
+    if (step === 1) {
+      img.dataset.fb = '2';
+      img.src = 'raw-tablet/' + locale + '/' + n + '.png';
+      return;
+    }
+    if (step === 2) {
+      img.dataset.fb = '3';
+      img.src = 'raw-tablet/' + n + '.png';
+      return;
+    }
+    if (step === 3) {
+      img.dataset.fb = '4';
+      img.src = 'raw/' + locale + '/' + n + '.png';
+      return;
+    }
+    if (step === 4) {
+      img.dataset.fb = '5';
+      img.src = 'raw/' + n + '.png';
+      return;
+    }
+    img.style.display = 'none';
+    img.nextElementSibling.style.display = 'flex';
+  };
+
+  // Optional vertical anchor for crops on non-native aspect ratios
+  // (STORE_ART.panoAnchor: 'top' | 'center' | 'bottom').
+  function panoSvg(art) {
+    if (art.panoAnchor === 'top') return art.panoramaSvg.replace('xMidYMid slice', 'xMidYMin slice');
+    if (art.panoAnchor === 'bottom') return art.panoramaSvg.replace('xMidYMid slice', 'xMidYMax slice');
+    return art.panoramaSvg;
+  }
+
+  function mascotHtml(art, i) {
+    if (!art || !art.mascot) return '';
+    const slot = (art.mascot.slots || [])[i];
+    if (!slot) return '';
+    const svg = (art.mascot.variants && art.mascot.variants[i + 1]) || art.mascot.svg;
+    if (!svg) return '';
+    const tf = [];
+    if (slot.rotate) tf.push('rotate(' + slot.rotate + 'deg)');
+    if (slot.flip) tf.push('scaleX(-1)');
+    return '<div class="mascot" style="left:' + slot.x + '%;top:' + slot.y + '%;width:' + slot.size + '%;' +
+           (tf.length ? 'transform:' + tf.join(' ') + ';' : '') +
+           (slot.opacity != null ? 'opacity:' + slot.opacity + ';' : '') + '">' + svg + '</div>';
+  }
+
+  document.getElementById('btn-full').onclick = function () {
+    document.body.classList.toggle('full');
+    this.classList.toggle('active');
+    const full = document.body.classList.contains('full');
+    document.querySelectorAll('.cell').forEach(function (cell) {
+      cell.style.width = (full ? S.w : S.w * previewScale) + 'px';
+      cell.style.height = (full ? S.h : S.h * previewScale) + 'px';
+    });
+  };
+
+  function esc(t) { return String(t == null ? '' : t).replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
+})();
+</script>
+</body>
+</html>

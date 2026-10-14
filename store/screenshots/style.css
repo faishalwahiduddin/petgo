@@ -1,0 +1,256 @@
+/* ============================================================
+   faishal.id — Play Store screenshot framer
+   Shared design system. Driven entirely by config.js (window.STORE_CONFIG).
+   Slides render at EXACT Play spec: phone 1080×1920, feature graphic 1024×500.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap');
+
+/* Local fonts (app-relative: <app>/store/screenshots/ → <app>/assets/fonts/).
+   Missing files fail silently and the stack falls through to the CDN/system face,
+   so headless capture stays deterministic for ar/ja/zh wherever fonts ship locally. */
+@font-face { font-family: 'AmiriLocal'; src: url('../../assets/fonts/Amiri-Regular.ttf'); font-weight: 400; }
+@font-face { font-family: 'AmiriLocal'; src: url('../../assets/fonts/Amiri-Bold.ttf'); font-weight: 700; }
+@font-face { font-family: 'NotoJPLocal'; src: url('../../assets/fonts/NotoSansJP-VF.ttf'); }
+@font-face { font-family: 'NotoSCLocal'; src: url('../../assets/fonts/NotoSansSC-VF.ttf'); }
+
+:root {
+  --primary: #2E7D32;
+  --dark: #1B5E20;
+  --accent: #F9A825;
+  --on-primary: #FFFFFF;
+  --preview-scale: 0.4;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', system-ui, sans-serif;
+  background: #0e1013;
+  color: #e8eaed;
+  padding: 40px 20px 120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Toolbar ---------- */
+.toolbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 12px 20px;
+  background: rgba(18,20,24,.92); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.toolbar h1 { font-size: 15px; font-weight: 600; letter-spacing: .2px; }
+.toolbar .muted { color: #8b8f97; font-size: 12px; font-weight: 400; }
+.toolbar .spacer { flex: 1; }
+.toolbar button {
+  font-family: inherit; font-size: 13px; font-weight: 500;
+  padding: 7px 14px; border-radius: 8px; cursor: pointer;
+  border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.04); color: #e8eaed;
+  transition: all .15s;
+}
+.toolbar button:hover { background: rgba(255,255,255,.1); }
+.toolbar button.active { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+.toolbar .group { display: inline-flex; gap: 6px; }
+
+.hint {
+  max-width: 1100px; margin: 64px auto 28px; padding: 14px 18px;
+  background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px; font-size: 13px; color: #b9bdc6; line-height: 1.6;
+}
+.hint code { background: rgba(255,255,255,.08); padding: 1px 6px; border-radius: 4px; font-size: 12px; }
+
+/* ---------- Slide grid (preview) ---------- */
+.stage {
+  display: flex; flex-wrap: wrap; gap: 28px; justify-content: center;
+  align-items: flex-start;
+}
+
+/* A capture cell scales the 1080×1920 slide down for on-screen preview.
+   Capture tools should target the inner .slide element at its real size. */
+.cell {
+  width: calc(1080px * var(--preview-scale));
+  height: calc(1920px * var(--preview-scale));
+  overflow: hidden; border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.5);
+  position: relative;
+}
+.cell .label {
+  position: absolute; top: 8px; left: 8px; z-index: 5;
+  font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 6px;
+  background: rgba(0,0,0,.45); color: #fff; letter-spacing: .3px;
+}
+.cell .slide { transform: scale(var(--preview-scale)); transform-origin: top left; }
+
+body.full { padding-top: 80px; }
+body.full .cell { width: 1080px; height: 1920px; border-radius: 0; box-shadow: none; }
+body.full .cell .slide { transform: none; }
+body.full .cell .label { display: none; }
+body.full .stage { gap: 2px; }
+
+/* ---------- The slide (phone/iPhone portrait) ----------
+   Sized in container-query units off a 1080×1920 base (1cqw = 10.8px,
+   1cqh = 19.2px) so the same layout renders at the Play spec (1080×1920,
+   default) AND the App Store iPhone 6.9" spec (1290×2796) — index.html sets
+   the actual dimensions inline from its SIZES map. */
+.slide {
+  width: 1080px; height: 1920px; position: relative; overflow: hidden;
+  container-type: size;
+  background: linear-gradient(160deg, var(--primary) 0%, var(--dark) 100%);
+  color: var(--on-primary);
+  display: flex; flex-direction: column; align-items: center;
+  padding: 6.25cqh 8.33cqw 0;
+}
+/* decorative soft blobs (hidden when a bespoke panorama is present) */
+.slide::before, .slide::after {
+  content: ''; position: absolute; border-radius: 50%; filter: blur(10px); opacity: .18;
+  background: var(--accent);
+}
+.slide::before { width: 57.4cqw; height: 57.4cqw; top: -11.4cqh; right: -16.6cqw; }
+.slide::after  { width: 48.1cqw; height: 48.1cqw; bottom: -8.3cqh; left: -14.8cqw; opacity: .12; }
+.slide.has-art::before, .slide.has-art::after { display: none; }
+.tablet-slide.has-art::before, .tablet-slide.has-art::after { display: none; }
+
+/* ---------- Continuous panorama layer ----------
+   The SAME strip (--segs slides wide) renders inside every slide, shifted left
+   by --seg slide-widths, so adjacent captures line up seam-perfectly.
+   Percent-based → identical code serves phone (1080×1920) and both tablets. */
+.pano {
+  position: absolute; top: 0; bottom: 0; left: 0;
+  width: calc(var(--segs, 4) * 100%);
+  transform: translateX(calc(var(--seg, 0) * (-100% / var(--segs, 4))));
+  z-index: 0; pointer-events: none;
+}
+.pano svg { width: 100%; height: 100%; display: block; }
+
+/* ---------- Mascot slot (per-slide placement of the app character) ---------- */
+.mascot {
+  position: absolute; z-index: 3; pointer-events: none;
+  filter: drop-shadow(0 14px 30px rgba(0,0,0,.28));
+}
+.mascot svg { width: 100%; height: auto; display: block; overflow: visible; }
+
+/* ---------- CJK / Arabic font stacks (template adds per-locale class) ---------- */
+.slide.cjk-ja .headline, .slide.cjk-ja .subtext,
+.tablet-slide.cjk-ja .headline, .tablet-slide.cjk-ja .subtext { font-family: 'NotoJPLocal', 'Noto Sans JP', 'Poppins', system-ui, sans-serif; }
+.slide.cjk-zh .headline, .slide.cjk-zh .subtext,
+.tablet-slide.cjk-zh .headline, .tablet-slide.cjk-zh .subtext { font-family: 'NotoSCLocal', 'Noto Sans SC', 'Poppins', system-ui, sans-serif; }
+
+.slide .copy { position: relative; z-index: 2; text-align: center; max-width: 83.3cqw; }
+.slide .headline {
+  font-size: 7.04cqw; font-weight: 800; line-height: 1.08; letter-spacing: -0.09cqw;
+  text-shadow: 0 2px 14px rgba(0,0,0,.18);
+}
+.slide .subtext {
+  margin-top: 1.15cqh; font-size: 3.33cqw; font-weight: 400; line-height: 1.4;
+  opacity: .92;
+}
+.slide.rtl .copy { direction: rtl; }
+.slide.rtl .headline, .slide.rtl .subtext { font-family: 'AmiriLocal', 'Amiri', 'Poppins', serif; }
+
+/* ---------- CSS phone device frame ---------- */
+.device {
+  position: relative; z-index: 2; margin-top: 4.7cqh;
+  /* aspect-locked so the frame stays phone-shaped on the taller 6.9" canvas
+     (620×1300 at the 1080×1920 base; a cqh height would distort it) */
+  width: 57.4cqw; aspect-ratio: 620 / 1300;
+  background: #0c0c0e; border-radius: 6.3cqw;
+  padding: 1.85cqw; box-shadow: 0 40px 90px rgba(0,0,0,.35), inset 0 0 0 3px rgba(255,255,255,.08);
+}
+.device .notch {
+  position: absolute; top: 1.56cqh; left: 50%; transform: translateX(-50%);
+  width: 16.7cqw; height: 1.56cqh; background: #0c0c0e; border-radius: 0 0 2cqw 2cqw; z-index: 3;
+}
+.device .screen {
+  width: 100%; height: 100%; border-radius: 4.63cqw; overflow: hidden;
+  background: #f2f2f2 center/cover no-repeat; position: relative;
+  display: flex; align-items: center; justify-content: center;
+}
+.device .screen img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.device .placeholder {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 1.48cqw;
+  color: rgba(255,255,255,.85); font-size: 2.78cqw; font-weight: 500; text-align: center; padding: 3.7cqw;
+  background: linear-gradient(165deg, color-mix(in srgb, var(--primary) 82%, #000) 0%, color-mix(in srgb, var(--dark) 88%, #000) 100%);
+}
+.device .placeholder .ph-icon { font-size: 5.9cqw; opacity: .8; }
+.device .placeholder .ph-icon img { width: 11.1cqw; height: 11.1cqw; border-radius: 2.6cqw; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+
+/* ---------- Brand footer chip ---------- */
+.slide .brand {
+  position: absolute; bottom: 3.1cqh; left: 50%; transform: translateX(-50%); z-index: 2;
+  display: flex; align-items: center; gap: 1.67cqw;
+}
+.slide .brand img { width: 5.9cqw; height: 5.9cqw; border-radius: 1.48cqw; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+.slide .brand .wm { text-align: left; }
+.slide .brand .wm .n { font-size: 2.78cqw; font-weight: 700; line-height: 1.1; }
+.slide .brand .wm .u { font-size: 2.04cqw; font-weight: 400; opacity: .8; }
+
+/* ---------- Feature graphic (1024×500) ---------- */
+.feature {
+  width: 1024px; height: 500px; position: relative; overflow: hidden;
+  background: linear-gradient(120deg, var(--primary) 0%, var(--dark) 100%);
+  color: var(--on-primary); display: flex; align-items: center; gap: 48px; padding: 0 80px;
+}
+.feature::after {
+  content: ''; position: absolute; width: 520px; height: 520px; border-radius: 50%;
+  background: var(--accent); opacity: .16; top: -120px; right: -80px; filter: blur(6px);
+}
+.feature .fg-icon { width: 200px; height: 200px; border-radius: 44px; box-shadow: 0 18px 50px rgba(0,0,0,.35); z-index: 2; }
+.feature .fg-text { z-index: 2; }
+.feature .fg-text .n { font-size: 72px; font-weight: 800; letter-spacing: -1px; }
+.feature .fg-text .t { font-size: 34px; font-weight: 400; opacity: .92; margin-top: 10px; max-width: 560px; line-height: 1.35; }
+.feature.rtl { direction: rtl; }
+.feature.rtl .fg-text .n, .feature.rtl .fg-text .t { font-family: 'Amiri','Poppins',serif; }
+
+/* ---------- Tablet slides (7-inch 1200×1920 · 10-inch 1600×2560) ----------
+   One layout, sized in container-query units (cqw) so both resolutions render
+   true-to-pixel. tablet.html sets the container width/height per size. */
+.tablet-slide {
+  container-type: size; position: relative; overflow: hidden;
+  background: linear-gradient(160deg, var(--primary) 0%, var(--dark) 100%);
+  color: var(--on-primary);
+  display: flex; flex-direction: column; align-items: center;
+  padding: 9cqh 9cqw 0;
+}
+.tablet-slide::before, .tablet-slide::after {
+  content: ''; position: absolute; border-radius: 50%; filter: blur(12px); opacity: .18; background: var(--accent);
+}
+.tablet-slide::before { width: 55cqw; height: 55cqw; top: -18cqw; right: -14cqw; }
+.tablet-slide::after  { width: 46cqw; height: 46cqw; bottom: -14cqw; left: -14cqw; opacity: .12; }
+
+.tablet-slide .copy { position: relative; z-index: 2; text-align: center; max-width: 82cqw; }
+.tablet-slide .headline { font-size: 6.2cqw; font-weight: 800; line-height: 1.08; letter-spacing: -0.05cqw; text-shadow: 0 0.2cqw 1.2cqw rgba(0,0,0,.18); }
+.tablet-slide .subtext { margin-top: 2cqw; font-size: 3cqw; font-weight: 400; line-height: 1.4; opacity: .92; }
+.tablet-slide.rtl .copy { direction: rtl; }
+.tablet-slide.rtl .headline, .tablet-slide.rtl .subtext { font-family: 'AmiriLocal','Amiri','Poppins',serif; }
+
+.tablet-device {
+  position: relative; z-index: 2; margin-top: 6cqh;
+  /* height-capped so the squarer iPad 13" canvas (3:4) doesn't overflow —
+     unchanged on Android 7"/10" where 66cqw < 42cqh. Height is explicit
+     (not aspect-ratio) because the inner screen content can stretch it. */
+  width: min(66cqw, 42cqh); height: min(88cqw, 56cqh); background: #0c0c0e;
+  border-radius: 4cqw; padding: 1.6cqw;
+  box-shadow: 0 3cqw 7cqw rgba(0,0,0,.35), inset 0 0 0 0.25cqw rgba(255,255,255,.08);
+}
+.tablet-device .cam { position: absolute; top: 2.4cqw; left: 50%; transform: translateX(-50%); width: 1cqw; height: 1cqw; border-radius: 50%; background: #26262a; z-index: 3; }
+.tablet-device .screen { width: 100%; height: 100%; border-radius: 2.6cqw; overflow: hidden; background: #f2f2f2; position: relative; display: flex; align-items: center; justify-content: center; }
+.tablet-device .screen img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.tablet-device .placeholder {
+  position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 1.4cqw; color: rgba(255,255,255,.85); font-size: 2.4cqw; font-weight: 500; text-align: center; padding: 4cqw;
+  background: linear-gradient(165deg, color-mix(in srgb, var(--primary) 82%, #000) 0%, color-mix(in srgb, var(--dark) 88%, #000) 100%);
+}
+.tablet-device .placeholder .ph-icon { font-size: 5.5cqw; opacity: .8; }
+.tablet-device .placeholder .ph-icon img { width: 9cqw; height: 9cqw; border-radius: 2cqw; box-shadow: 0 1cqw 3cqw rgba(0,0,0,.35); }
+
+.tablet-slide .brand { position: absolute; bottom: 5cqh; left: 50%; transform: translateX(-50%); z-index: 2; display: flex; align-items: center; gap: 1.6cqw; }
+.tablet-slide .brand img { width: 5.4cqw; height: 5.4cqw; border-radius: 1.4cqw; box-shadow: 0 0.6cqw 1.8cqw rgba(0,0,0,.25); }
+.tablet-slide .brand .wm { text-align: left; }
+.tablet-slide .brand .wm .n { font-size: 2.6cqw; font-weight: 700; line-height: 1.1; }
+.tablet-slide .brand .wm .u { font-size: 2cqw; font-weight: 400; opacity: .8; }
+
+/* tablet preview scaling (cell dims set inline by tablet.html) */
+.cell .tablet-slide { transform: scale(var(--preview-scale)); transform-origin: top left; }
+body.full .cell .tablet-slide { transform: none; }

@@ -1,0 +1,20 @@
+# petgo
+
+> Jadwal, tugas rumah, belanja bersama & logistik keluarga.
+
+petgo is a free app in the faishal.id fleet. Offline-first product; this marketing site may use optional consent-gated analytics.
+
+## Links
+
+- Home: https://petgo.faishal.id/id/
+- Blog: https://petgo.faishal.id/id/blog/
+- Privacy: https://petgo.faishal.id/id/privacy.html
+- Terms: https://petgo.faishal.id/id/terms.html
+- Pricing: https://petgo.faishal.id/pricing.md
+- Publisher: https://faishal.id
+
+## Blog posts
+
+- https://petgo.faishal.id/id/blog/belanja-bersama-satu-daftar/
+- https://petgo.faishal.id/id/blog/jadwal-keluarga-tugas-rumah/
+- https://petgo.faishal.id/id/blog/kalender-pengingat-keluarga/

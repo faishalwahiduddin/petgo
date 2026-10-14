@@ -1,0 +1,3 @@
+PetGo manages your pets: profiles, vaccine/deworm/flea/grooming schedules, vet visits, feed/walk/litter logs, weight history, and local documents. 100% offline.
+
+Part of the faishal.id suite.

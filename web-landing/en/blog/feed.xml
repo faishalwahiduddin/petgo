@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Blog — petgo</title>
+    <link>https://petgo.faishal.id/en/blog/</link>
+    <description>petgo blog: family schedule guides, chore sharing, shared grocery lists, and reminder calendars. Keep the whole household organized in one app. Start now.</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Family Schedule and Home Chores — petgo</title>
+      <link>https://petgo.faishal.id/en/blog/jadwal-keluarga-tugas-rumah/</link>
+      <guid isPermaLink="true">https://petgo.faishal.id/en/blog/jadwal-keluarga-tugas-rumah/</guid>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <description>The petgo family schedule assigns home chores fairly to each member with automatic reminders. Learn to build schedules, rotate chores, and track completion.</description>
+    </item>
+    <item>
+      <title>Shared Groceries in One List — petgo</title>
+      <link>https://petgo.faishal.id/en/blog/belanja-bersama-satu-daftar/</link>
+      <guid isPermaLink="true">https://petgo.faishal.id/en/blog/belanja-bersama-satu-daftar/</guid>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <description>The petgo shared grocery list holds every member&#x27;s needs so nothing is forgotten. Learn to record items, split shopping duties, and save every week.</description>
+    </item>
+    <item>
+      <title>Family Reminder Calendar — petgo</title>
+      <link>https://petgo.faishal.id/en/blog/kalender-pengingat-keluarga/</link>
+      <guid isPermaLink="true">https://petgo.faishal.id/en/blog/kalender-pengingat-keluarga/</guid>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <description>The petgo reminder calendar gathers events, bills, and appointments for every member. Learn to record agendas, set alarms, and align family plans. Start now.</description>
+    </item>
+  </channel>
+</rss>

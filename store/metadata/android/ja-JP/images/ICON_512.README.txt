@@ -1,0 +1,2 @@
+Place the 512x512 store icon here as icon.png (32-bit PNG w/ alpha).
+Source: petgo/assets/icon/icon.png (1024x1024) — resize to 512.

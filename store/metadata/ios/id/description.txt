@@ -1,0 +1,3 @@
+PetGo mengelola hewan peliharaan Anda: profil, jadwal vaksin/cacing/flea/grooming, kunjungan vet, log makan/jalan/litter, riwayat berat, dan dokumen lokal. 100% offline.
+
+Bagian dari armada faishal.id.

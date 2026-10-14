@@ -1,0 +1,4 @@
+/                 /id/                 302
+/privacy.html     /id/privacy.html     301
+/terms.html       /id/terms.html       301
+/blog/*           /id/blog/:splat      301

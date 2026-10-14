@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feature Graphic · faishal.id</title>
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+  <div class="toolbar">
+    <h1 id="tb-title">Feature Graphic</h1>
+    <span class="muted">1024×500 · required for Play featuring</span>
+    <div class="spacer"></div>
+    <div class="group" id="lang-group"></div>
+    <button id="btn-full" title="Toggle real-size capture mode">Full size</button>
+  </div>
+
+  <div class="hint">
+    Capture the <code>.feature</code> element at exactly <strong>1024×500</strong> and save as
+    <code>featureGraphic.png</code> into <code>../metadata/android/&lt;locale&gt;/images/</code>.
+  </div>
+
+  <div class="stage" id="stage"></div>
+
+<script>
+(function () {
+  const C = window.STORE_CONFIG;
+  const root = document.documentElement;
+  root.style.setProperty('--primary', C.palette.primary);
+  root.style.setProperty('--dark', C.palette.dark);
+  root.style.setProperty('--accent', C.palette.accent);
+  root.style.setProperty('--on-primary', C.palette.onPrimary);
+  root.style.setProperty('--preview-scale', '0.7');
+
+  const params = new URLSearchParams(location.search);
+  let lang = params.get('lang') || C.defaultLocale || 'id';
+  if (!C.tagline[lang]) lang = Object.keys(C.tagline)[0];
+  document.getElementById('tb-title').textContent = C.name + ' — Feature Graphic';
+
+  const lg = document.getElementById('lang-group');
+  Object.keys(C.tagline).forEach(function (code) {
+    const b = document.createElement('button');
+    b.textContent = C.localeLabels[code] || code;
+    b.className = code === lang ? 'active' : '';
+    b.onclick = function () { const p = new URLSearchParams(location.search); p.set('lang', code); location.search = p.toString(); };
+    lg.appendChild(b);
+  });
+
+  const isRTL = lang === 'ar';
+  const cell = document.createElement('div');
+  cell.className = 'cell';
+  cell.style.width = 'calc(1024px * var(--preview-scale))';
+  cell.style.height = 'calc(500px * var(--preview-scale))';
+  cell.innerHTML =
+    '<div class="feature' + (isRTL ? ' rtl' : '') + '" id="feature" style="transform:scale(var(--preview-scale));transform-origin:top left">' +
+      '<img class="fg-icon" src="' + C.iconUrl + '" alt="" onerror="this.style.visibility=\'hidden\'">' +
+      '<div class="fg-text">' +
+        '<div class="n">' + esc(C.name) + '</div>' +
+        '<div class="t">' + esc(C.tagline[lang]) + '</div>' +
+      '</div>' +
+    '</div>';
+  document.getElementById('stage').appendChild(cell);
+
+  document.getElementById('btn-full').onclick = function () {
+    document.body.classList.toggle('full');
+    this.classList.toggle('active');
+    const f = document.getElementById('feature');
+    if (document.body.classList.contains('full')) { f.style.transform = 'none'; cell.style.width = '1024px'; cell.style.height = '500px'; }
+    else { f.style.transform = 'scale(var(--preview-scale))'; cell.style.width = 'calc(1024px * var(--preview-scale))'; cell.style.height = 'calc(500px * var(--preview-scale))'; }
+  };
+
+  function esc(t) { return String(t == null ? '' : t).replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
+})();
+</script>
+</body>
+</html>

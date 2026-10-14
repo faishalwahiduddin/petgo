@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>博客 — petgo</title>
+    <link>https://petgo.faishal.id/zh/blog/</link>
+    <description>petgo 博客：家庭日程管理、家务分担、共享购物清单与提醒日历完整指南。将繁琐家务理得井井有条。免费离线使用。</description>
+    <language>zh</language>
+    <lastBuildDate>Sun, 04 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>家庭日程与家务分工：全家协作指南 — petgo</title>
+      <link>https://petgo.faishal.id/zh/blog/jadwal-keluarga-tugas-rumah/</link>
+      <guid isPermaLink="true">https://petgo.faishal.id/zh/blog/jadwal-keluarga-tugas-rumah/</guid>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <description>petgo 家庭日程表通过自动提醒将家务公平分配给每位家庭成员。学习如何排布日程、轮换家务及追踪完成状态。支持离线使用。</description>
+    </item>
+    <item>
+      <title>共同购物一张单：告别漏买与重复采购 — petgo</title>
+      <link>https://petgo.faishal.id/zh/blog/belanja-bersama-satu-daftar/</link>
+      <guid isPermaLink="true">https://petgo.faishal.id/zh/blog/belanja-bersama-satu-daftar/</guid>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <description>petgo 共享购物单汇总全家需求，避免遗忘。学习如何快速记录需求、分摊采购任务并在每周采购中省钱。支持离线使用。</description>
+    </item>
+    <item>
+      <title>家庭提醒日历：让重要事务不再遗忘 — petgo</title>
+      <link>https://petgo.faishal.id/zh/blog/kalender-pengingat-keluarga/</link>
+      <guid isPermaLink="true">https://petgo.faishal.id/zh/blog/kalender-pengingat-keluarga/</guid>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <description>petgo 提醒日历整合全家活动、缴费账单与重要约会。学习如何记录事项、设置闹钟并使全家计划步调一致。支持离线使用。</description>
+    </item>
+  </channel>
+</rss>
