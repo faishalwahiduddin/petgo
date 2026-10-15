@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-48-audit-bulanan-catatan-profil-hewan-pelih",
+  "app": "petgo",
+  "publish_date": "2026-12-02",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "quality",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "audit-bulanan-catatan-profil-hewan-peliharaan-2026",
+    "en": "monthly-audit-of-profil-hewan-peliharaan-logs",
+    "ar": "profil-hewan-peliharaan-12",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo-12",
+    "su": "pituduh-profil-hewan-peliharaan-petgo-12",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南-12",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド-12"
+  },
+  "titles": {
+    "id": "Audit Bulanan Catatan profil hewan peliharaan",
+    "en": "Monthly Audit of profil hewan peliharaan Logs",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: Audit Bulanan Catatan profil hewan peliharaan",
+    "su": "Pituduh: Audit Bulanan Catatan profil hewan peliharaan",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

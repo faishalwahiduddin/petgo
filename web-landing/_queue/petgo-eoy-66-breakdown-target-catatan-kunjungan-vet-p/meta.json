@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-66-breakdown-target-catatan-kunjungan-vet-p",
+  "app": "petgo",
+  "publish_date": "2026-12-20",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "plan",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "breakdown-target-catatan-kunjungan-vet-per-minggu-2026",
+    "en": "weekly-breakdown-of-catatan-kunjungan-vet-targets",
+    "ar": "catatan-kunjungan-vet-17",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-17",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-17",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-17",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-17"
+  },
+  "titles": {
+    "id": "Breakdown Target catatan kunjungan vet per Minggu",
+    "en": "Weekly Breakdown of catatan kunjungan vet Targets",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: Breakdown Target catatan kunjungan vet per Minggu",
+    "su": "Pituduh: Breakdown Target catatan kunjungan vet per Minggu",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

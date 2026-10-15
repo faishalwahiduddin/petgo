@@ -231,4 +231,52 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get errorBackupNotPetGo => 'Berkas bukan cadangan PetGo';
+
+  @override
+  String get actionEditPet => 'Edit hewan';
+
+  @override
+  String get actionMarkDone => 'Tandai selesai';
+
+  @override
+  String get actionEditSchedule => 'Edit jadwal';
+
+  @override
+  String get actionEditVet => 'Edit kunjungan vet';
+
+  @override
+  String get actionEditDoc => 'Edit dokumen';
+
+  @override
+  String get actionAttachFile => 'Lampirkan berkas';
+
+  @override
+  String get fieldOptional => 'Opsional';
+
+  @override
+  String get fieldDateOfBirth => 'Tanggal lahir';
+
+  @override
+  String get fieldLastDone => 'Terakhir dikerjakan';
+
+  @override
+  String get fieldCost => 'Biaya';
+
+  @override
+  String get fieldNotes => 'Catatan';
+
+  @override
+  String get fieldDate => 'Tanggal';
+
+  @override
+  String get fieldExpires => 'Kedaluwarsa';
+
+  @override
+  String get docHasFile => 'Berkas terlampir';
+
+  @override
+  String get settingsReminders => 'Pengingat perawatan';
+
+  @override
+  String get settingsRemindersSubtitle => 'Beritahu sebelum jadwal jatuh tempo';
 }

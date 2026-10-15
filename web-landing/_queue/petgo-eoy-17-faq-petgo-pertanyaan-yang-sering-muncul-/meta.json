@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-17-faq-petgo-pertanyaan-yang-sering-muncul-",
+  "app": "petgo",
+  "publish_date": "2026-11-01",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "faq",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "faq-petgo-pertanyaan-yang-sering-muncul-offline",
+    "en": "petgo-faq-frequent-questions",
+    "ar": "petgo-5",
+    "jv": "pandhuan-petgo-petgo-5",
+    "su": "pituduh-petgo-petgo-5",
+    "zh": "petgo-petgo-实用指南-5",
+    "ja": "petgopetgo-ガイド-5"
+  },
+  "titles": {
+    "id": "FAQ PetGo: Pertanyaan yang Sering Muncul",
+    "en": "PetGo FAQ: Frequent Questions",
+    "ar": "PetGo — دليل PetGo",
+    "jv": "Pandhuan: FAQ PetGo: Pertanyaan yang Sering Muncul",
+    "su": "Pituduh: FAQ PetGo: Pertanyaan yang Sering Muncul",
+    "zh": "PetGo · PetGo 实用指南",
+    "ja": "PetGo｜PetGo ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

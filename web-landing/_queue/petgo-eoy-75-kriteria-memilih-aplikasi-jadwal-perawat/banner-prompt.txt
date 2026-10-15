@@ -1,0 +1,16 @@
+Editorial blog hero image, exactly 1200x675, 16:9, ultra-clean product marketing still.
+
+Brand: PetGo (petgo.faishal.id).
+Color script: background #022C22, primary #059669, secondary #34D399, accent #F59E0B. Soft radial glows and a faint technical grid. Glassmorphism card on the right with accent border.
+
+Mood: warm household organization, soft daylight, intimate but not cutesy.
+Motifs: shared calendars, bottles/feeding timers, pet tags, two-person checklists.
+Style lock: dark premium editorial, offline-first privacy apps by faishal.id, no stock-photo people faces, no real phone UI screenshot, no watermark, no busy typography, no purple SaaS gradient cliché.
+
+Composition: left negative space for title overlay OR minimal elegant title; right a single frosted glass info card suggesting the article topic with progress bars / checklist / compass / journal fields as abstract UI (illustrated).
+
+ARTICLE TOPIC: Kriteria Memilih Aplikasi jadwal perawatan harian harian
+ARTICLE ANGLE: intent-buy — keyword jadwal perawatan harian
+ONE-LINE SCENE: intent-buy visual for Kriteria Memilih Aplikasi jadwal perawatan harian harian
+
+Output: single image, sharp, high contrast, ready as og:image / blog banner.

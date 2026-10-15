@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-03-checklist-jadwal-perawatan-harian-harian",
+  "app": "petgo",
+  "publish_date": "2026-10-18",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "checklist",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "checklist-jadwal-perawatan-harian-harian-yang-bisa-ditiru-harian",
+    "en": "daily-jadwal-perawatan-harian-checklist-you-can-copy",
+    "ar": "jadwal-perawatan-harian",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo",
+    "su": "pituduh-jadwal-perawatan-harian-petgo",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南",
+    "ja": "petgojadwal-perawatan-harian-ガイド"
+  },
+  "titles": {
+    "id": "Checklist jadwal perawatan harian Harian yang Bisa Ditiru",
+    "en": "Daily jadwal perawatan harian Checklist You Can Copy",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: Checklist jadwal perawatan harian Harian yang Bisa Ditiru",
+    "su": "Pituduh: Checklist jadwal perawatan harian Harian yang Bisa Ditiru",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

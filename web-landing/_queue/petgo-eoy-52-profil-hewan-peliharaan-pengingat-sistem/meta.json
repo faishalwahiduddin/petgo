@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-52-profil-hewan-peliharaan-pengingat-sistem",
+  "app": "petgo",
+  "publish_date": "2026-12-06",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "integration",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "profil-hewan-peliharaan-pengingat-sistem-mingguan",
+    "en": "profil-hewan-peliharaan-system-reminders",
+    "ar": "profil-hewan-peliharaan-13",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo-13",
+    "su": "pituduh-profil-hewan-peliharaan-petgo-13",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南-13",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド-13"
+  },
+  "titles": {
+    "id": "profil hewan peliharaan: panduan praktis di PetGo",
+    "en": "profil hewan peliharaan + System Reminders — Offline First",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: profil hewan peliharaan: panduan praktis di PetGo",
+    "su": "Pituduh: profil hewan peliharaan: panduan praktis di PetGo",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

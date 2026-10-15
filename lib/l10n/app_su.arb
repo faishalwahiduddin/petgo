@@ -86,5 +86,21 @@
   "errorMinOnePet": "Keep at least one pet profile",
   "errorTitleRequired": "Title is required",
   "errorIntervalRequired": "Interval must be at least 1 month",
-  "errorBackupNotPetGo": "File is not a PetGo backup"
+  "errorBackupNotPetGo": "File is not a PetGo backup",
+  "actionEditPet": "Edit pet",
+  "actionMarkDone": "Mark done",
+  "actionEditSchedule": "Edit schedule",
+  "actionEditVet": "Edit vet visit",
+  "actionEditDoc": "Edit document",
+  "actionAttachFile": "Attach file",
+  "fieldOptional": "Optional",
+  "fieldDateOfBirth": "Date of birth",
+  "fieldLastDone": "Last done",
+  "fieldCost": "Cost",
+  "fieldNotes": "Notes",
+  "fieldDate": "Date",
+  "fieldExpires": "Expires",
+  "docHasFile": "File attached",
+  "settingsReminders": "Care reminders",
+  "settingsRemindersSubtitle": "Notify before schedules are due"
 }

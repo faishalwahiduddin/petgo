@@ -105,11 +105,16 @@ class DailyScreen extends ConsumerWidget {
                   ?.copyWith(fontWeight: FontWeight.w700),
             ),
             const SizedBox(height: 8),
-            ...weights.take(10).map(
+            ...weights.map(
                   (w) => ListTile(
                     title: Text('${w.weightKg.toStringAsFixed(1)} kg'),
                     subtitle: Text(
                       w.date.toLocal().toString().split('.').first,
+                    ),
+                    trailing: IconButton(
+                      icon: const Icon(Icons.delete_outline),
+                      onPressed: () =>
+                          ref.read(weightLogsProvider.notifier).remove(w.id),
                     ),
                   ),
                 ),

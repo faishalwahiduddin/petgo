@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-44-komunikasi-soal-progres-profil-hewan-pel",
+  "app": "petgo",
+  "publish_date": "2026-11-28",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "family",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "komunikasi-soal-progres-profil-hewan-peliharaan-praktis",
+    "en": "talking-about-profil-hewan-peliharaan-progress-practical",
+    "ar": "profil-hewan-peliharaan-11",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo-11",
+    "su": "pituduh-profil-hewan-peliharaan-petgo-11",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南-11",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド-11"
+  },
+  "titles": {
+    "id": "Komunikasi soal Progres profil hewan peliharaan",
+    "en": "Talking About profil hewan peliharaan Progress (Practical)",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: Komunikasi soal Progres profil hewan peliharaan",
+    "su": "Pituduh: Komunikasi soal Progres profil hewan peliharaan",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

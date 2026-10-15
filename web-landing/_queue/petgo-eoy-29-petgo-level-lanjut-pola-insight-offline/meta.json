@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-29-petgo-level-lanjut-pola-insight-offline",
+  "app": "petgo",
+  "publish_date": "2026-11-13",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "advanced",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "petgo-level-lanjut-pola-insight-offline",
+    "en": "advanced-petgo-patterns-insights",
+    "ar": "petgo-8",
+    "jv": "pandhuan-petgo-petgo-8",
+    "su": "pituduh-petgo-petgo-8",
+    "zh": "petgo-petgo-实用指南-8",
+    "ja": "petgopetgo-ガイド-8"
+  },
+  "titles": {
+    "id": "PetGo Level Lanjut: Pola &amp; Insight",
+    "en": "Advanced PetGo: Patterns &amp; Insights",
+    "ar": "PetGo — دليل PetGo",
+    "jv": "Pandhuan: PetGo Level Lanjut: Pola &amp; Insight",
+    "su": "Pituduh: PetGo Level Lanjut: Pola &amp; Insight",
+    "zh": "PetGo · PetGo 实用指南",
+    "ja": "PetGo｜PetGo ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

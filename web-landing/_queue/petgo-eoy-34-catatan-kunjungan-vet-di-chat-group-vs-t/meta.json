@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-34-catatan-kunjungan-vet-di-chat-group-vs-t",
+  "app": "petgo",
+  "publish_date": "2026-11-18",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "vs-chat",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "catatan-kunjungan-vet-di-chat-group-vs-tracker-khusus-mingguan",
+    "en": "catatan-kunjungan-vet-in-chat-groups-vs-dedicated-tracker",
+    "ar": "catatan-kunjungan-vet-9",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-9",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-9",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-9",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-9"
+  },
+  "titles": {
+    "id": "catatan kunjungan vet: panduan praktis di PetGo",
+    "en": "catatan kunjungan vet in Chat Groups vs Dedicated Tracker — Offline Fi",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: catatan kunjungan vet: panduan praktis di PetGo",
+    "su": "Pituduh: catatan kunjungan vet: panduan praktis di PetGo",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

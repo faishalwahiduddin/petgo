@@ -547,6 +547,102 @@ abstract class AppLocalizations {
   /// In id, this message translates to:
   /// **'Berkas bukan cadangan PetGo'**
   String get errorBackupNotPetGo;
+
+  /// No description provided for @actionEditPet.
+  ///
+  /// In id, this message translates to:
+  /// **'Edit hewan'**
+  String get actionEditPet;
+
+  /// No description provided for @actionMarkDone.
+  ///
+  /// In id, this message translates to:
+  /// **'Tandai selesai'**
+  String get actionMarkDone;
+
+  /// No description provided for @actionEditSchedule.
+  ///
+  /// In id, this message translates to:
+  /// **'Edit jadwal'**
+  String get actionEditSchedule;
+
+  /// No description provided for @actionEditVet.
+  ///
+  /// In id, this message translates to:
+  /// **'Edit kunjungan vet'**
+  String get actionEditVet;
+
+  /// No description provided for @actionEditDoc.
+  ///
+  /// In id, this message translates to:
+  /// **'Edit dokumen'**
+  String get actionEditDoc;
+
+  /// No description provided for @actionAttachFile.
+  ///
+  /// In id, this message translates to:
+  /// **'Lampirkan berkas'**
+  String get actionAttachFile;
+
+  /// No description provided for @fieldOptional.
+  ///
+  /// In id, this message translates to:
+  /// **'Opsional'**
+  String get fieldOptional;
+
+  /// No description provided for @fieldDateOfBirth.
+  ///
+  /// In id, this message translates to:
+  /// **'Tanggal lahir'**
+  String get fieldDateOfBirth;
+
+  /// No description provided for @fieldLastDone.
+  ///
+  /// In id, this message translates to:
+  /// **'Terakhir dikerjakan'**
+  String get fieldLastDone;
+
+  /// No description provided for @fieldCost.
+  ///
+  /// In id, this message translates to:
+  /// **'Biaya'**
+  String get fieldCost;
+
+  /// No description provided for @fieldNotes.
+  ///
+  /// In id, this message translates to:
+  /// **'Catatan'**
+  String get fieldNotes;
+
+  /// No description provided for @fieldDate.
+  ///
+  /// In id, this message translates to:
+  /// **'Tanggal'**
+  String get fieldDate;
+
+  /// No description provided for @fieldExpires.
+  ///
+  /// In id, this message translates to:
+  /// **'Kedaluwarsa'**
+  String get fieldExpires;
+
+  /// No description provided for @docHasFile.
+  ///
+  /// In id, this message translates to:
+  /// **'Berkas terlampir'**
+  String get docHasFile;
+
+  /// No description provided for @settingsReminders.
+  ///
+  /// In id, this message translates to:
+  /// **'Pengingat perawatan'**
+  String get settingsReminders;
+
+  /// No description provided for @settingsRemindersSubtitle.
+  ///
+  /// In id, this message translates to:
+  /// **'Beritahu sebelum jadwal jatuh tempo'**
+  String get settingsRemindersSubtitle;
 }
 
 class _AppLocalizationsDelegate

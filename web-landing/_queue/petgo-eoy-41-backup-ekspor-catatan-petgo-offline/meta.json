@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-41-backup-ekspor-catatan-petgo-offline",
+  "app": "petgo",
+  "publish_date": "2026-11-25",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "export",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "backup-ekspor-catatan-petgo-offline",
+    "en": "backup-export-petgo-notes",
+    "ar": "petgo-11",
+    "jv": "pandhuan-petgo-petgo-11",
+    "su": "pituduh-petgo-petgo-11",
+    "zh": "petgo-petgo-实用指南-11",
+    "ja": "petgopetgo-ガイド-11"
+  },
+  "titles": {
+    "id": "Backup &amp; Ekspor Catatan PetGo",
+    "en": "Backup &amp; Export PetGo Notes",
+    "ar": "PetGo — دليل PetGo",
+    "jv": "Pandhuan: Backup &amp; Ekspor Catatan PetGo",
+    "su": "Pituduh: Backup &amp; Ekspor Catatan PetGo",
+    "zh": "PetGo · PetGo 实用指南",
+    "ja": "PetGo｜PetGo ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

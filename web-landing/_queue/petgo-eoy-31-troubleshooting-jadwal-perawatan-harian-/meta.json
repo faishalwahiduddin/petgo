@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-31-troubleshooting-jadwal-perawatan-harian-",
+  "app": "petgo",
+  "publish_date": "2026-11-15",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "troubleshoot",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "troubleshooting-jadwal-perawatan-harian-yang-macet",
+    "en": "troubleshooting-stuck-jadwal-perawatan-harian-habits",
+    "ar": "jadwal-perawatan-harian-8",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-8",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-8",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-8",
+    "ja": "petgojadwal-perawatan-harian-ガイド-8"
+  },
+  "titles": {
+    "id": "Troubleshooting jadwal perawatan harian yang Macet",
+    "en": "Troubleshooting Stuck jadwal perawatan harian Habits",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: Troubleshooting jadwal perawatan harian yang Macet",
+    "su": "Pituduh: Troubleshooting jadwal perawatan harian yang Macet",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

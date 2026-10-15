@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-62-dashboard-minimal-untuk-catatan-kunjunga",
+  "app": "petgo",
+  "publish_date": "2026-12-16",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "measure",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "dashboard-minimal-untuk-catatan-kunjungan-vet-praktis",
+    "en": "minimal-dashboard-for-catatan-kunjungan-vet-practical",
+    "ar": "catatan-kunjungan-vet-16",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-16",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-16",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-16",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-16"
+  },
+  "titles": {
+    "id": "Dashboard Minimal untuk catatan kunjungan vet",
+    "en": "Minimal Dashboard for catatan kunjungan vet (Practical)",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: Dashboard Minimal untuk catatan kunjungan vet",
+    "su": "Pituduh: Dashboard Minimal untuk catatan kunjungan vet",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

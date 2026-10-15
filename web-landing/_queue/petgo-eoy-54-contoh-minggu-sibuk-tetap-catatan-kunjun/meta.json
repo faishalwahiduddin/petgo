@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-54-contoh-minggu-sibuk-tetap-catatan-kunjun",
+  "app": "petgo",
+  "publish_date": "2026-12-08",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "cases",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "contoh-minggu-sibuk-tetap-catatan-kunjungan-vet-2026",
+    "en": "busy-week-example-still-doing-catatan-kunjungan-vet",
+    "ar": "catatan-kunjungan-vet-14",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-14",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-14",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-14",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-14"
+  },
+  "titles": {
+    "id": "Contoh Minggu Sibuk tetap catatan kunjungan vet",
+    "en": "Busy-Week Example Still Doing catatan kunjungan vet",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: Contoh Minggu Sibuk tetap catatan kunjungan vet",
+    "su": "Pituduh: Contoh Minggu Sibuk tetap catatan kunjungan vet",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

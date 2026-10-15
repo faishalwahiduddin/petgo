@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-23-cara-review-progres-jadwal-perawatan-har",
+  "app": "petgo",
+  "publish_date": "2026-11-07",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "review",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "cara-review-progres-jadwal-perawatan-harian-tiap-minggu-offline",
+    "en": "how-to-review-jadwal-perawatan-harian-progress-weekly",
+    "ar": "jadwal-perawatan-harian-6",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-6",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-6",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-6",
+    "ja": "petgojadwal-perawatan-harian-ガイド-6"
+  },
+  "titles": {
+    "id": "Cara Review Progres jadwal perawatan harian Tiap Minggu",
+    "en": "How to Review jadwal perawatan harian Progress Weekly",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: Cara Review Progres jadwal perawatan harian Tiap Minggu",
+    "su": "Pituduh: Cara Review Progres jadwal perawatan harian Tiap Minggu",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

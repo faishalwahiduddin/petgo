@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-05-apa-itu-petgo-glosarium-singkat-offline",
+  "app": "petgo",
+  "publish_date": "2026-10-20",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "glossary",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "apa-itu-petgo-glosarium-singkat-offline",
+    "en": "what-is-petgo-a-short-glossary",
+    "ar": "petgo-2",
+    "jv": "pandhuan-petgo-petgo-2",
+    "su": "pituduh-petgo-petgo-2",
+    "zh": "petgo-petgo-实用指南-2",
+    "ja": "petgopetgo-ガイド-2"
+  },
+  "titles": {
+    "id": "Apa Itu PetGo? Glosarium Singkat",
+    "en": "What Is PetGo? A Short Glossary",
+    "ar": "PetGo — دليل PetGo",
+    "jv": "Pandhuan: Apa Itu PetGo? Glosarium Singkat",
+    "su": "Pituduh: Apa Itu PetGo? Glosarium Singkat",
+    "zh": "PetGo · PetGo 实用指南",
+    "ja": "PetGo｜PetGo ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

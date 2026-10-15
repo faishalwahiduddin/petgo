@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-10-catatan-kunjungan-vet-untuk-pemula-total",
+  "app": "petgo",
+  "publish_date": "2026-10-25",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "persona",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "catatan-kunjungan-vet-untuk-pemula-total-mingguan",
+    "en": "catatan-kunjungan-vet-for-absolute-beginners",
+    "ar": "catatan-kunjungan-vet-3",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-3",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-3",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-3",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-3"
+  },
+  "titles": {
+    "id": "catatan kunjungan vet untuk orang yang waktunya sempit",
+    "en": "catatan kunjungan vet for Absolute Beginners — Offline First",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: catatan kunjungan vet untuk orang yang waktunya sempit",
+    "su": "Pituduh: catatan kunjungan vet untuk orang yang waktunya sempit",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

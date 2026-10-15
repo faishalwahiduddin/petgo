@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Blog — petgo</title>
+    <title>Blog — PetGo</title>
     <link>https://petgo.faishal.id/id/blog/</link>
-    <description>Blog petgo: panduan jadwal keluarga, pembagian tugas rumah, daftar belanja bersama, dan kalender pengingat. Rapi urusan rumah dalam satu aplikasi. Praktis.</description>
+    <description>Blog PetGo</description>
     <language>id</language>
-    <lastBuildDate>Sun, 04 Oct 2026 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Jadwal Keluarga dan Tugas Rumah — petgo</title>
-      <link>https://petgo.faishal.id/id/blog/jadwal-keluarga-tugas-rumah/</link>
-      <guid isPermaLink="true">https://petgo.faishal.id/id/blog/jadwal-keluarga-tugas-rumah/</guid>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Jadwal keluarga petgo membagi tugas rumah adil tiap anggota dengan pengingat otomatis. Pelajari cara menyusun jadwal, rotasi tugas, dan pantau yang selesai.</description>
+      <title>Profil Hewan Peliharaan dalam Satu Tempat</title>
+      <link>https://petgo.faishal.id/id/blog/profil-hewan-peliharaan/</link>
+      <guid>https://petgo.faishal.id/id/blog/profil-hewan-peliharaan/</guid>
+      <pubDate>Tue, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Simpan jenis, usia, berat, dan catatan khusus tiap hewan di PetGo.</description>
     </item>
     <item>
-      <title>Belanja Bersama dalam Satu Daftar — petgo</title>
-      <link>https://petgo.faishal.id/id/blog/belanja-bersama-satu-daftar/</link>
-      <guid isPermaLink="true">https://petgo.faishal.id/id/blog/belanja-bersama-satu-daftar/</guid>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Daftar belanja bersama petgo menampung kebutuhan anggota agar tak ada yang lupa. Pelajari cara mencatat, membagi jatah belanja, dan hemat tiap pekan.</description>
+      <title>Jadwal Perawatan Harian yang Konsisten</title>
+      <link>https://petgo.faishal.id/id/blog/jadwal-perawatan-harian/</link>
+      <guid>https://petgo.faishal.id/id/blog/jadwal-perawatan-harian/</guid>
+      <pubDate>Tue, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Atur makan, jalan, obat, dan grooming dengan pengingat di PetGo.</description>
     </item>
     <item>
-      <title>Kalender Pengingat Keluarga — petgo</title>
-      <link>https://petgo.faishal.id/id/blog/kalender-pengingat-keluarga/</link>
-      <guid isPermaLink="true">https://petgo.faishal.id/id/blog/kalender-pengingat-keluarga/</guid>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Kalender pengingat petgo mengumpulkan acara, tagihan, dan janji temu seluruh anggota. Pelajari cara mencatat agenda, memasang alarm, dan selaraskan rencana.</description>
+      <title>Catatan Kunjungan Vet yang Siap Dibawa</title>
+      <link>https://petgo.faishal.id/id/blog/catatan-kunjungan-vet/</link>
+      <guid>https://petgo.faishal.id/id/blog/catatan-kunjungan-vet/</guid>
+      <pubDate>Tue, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Susun vaksin, diagnosis, dan biaya kunjungan agar riwayat vet tidak hilang.</description>
     </item>
   </channel>
 </rss>

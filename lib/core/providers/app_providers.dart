@@ -8,6 +8,21 @@ final localStorageServiceProvider = Provider<LocalStorageService>((ref) {
   throw UnimplementedError('override in main');
 });
 
+final remindersEnabledProvider =
+    NotifierProvider<RemindersEnabledNotifier, bool>(
+  RemindersEnabledNotifier.new,
+);
+
+class RemindersEnabledNotifier extends Notifier<bool> {
+  @override
+  bool build() => ref.watch(localStorageServiceProvider).remindersEnabled;
+
+  Future<void> setEnabled(bool value) async {
+    await ref.read(localStorageServiceProvider).setRemindersEnabled(value);
+    state = value;
+  }
+}
+
 final disclaimerProvider =
     NotifierProvider<DisclaimerNotifier, bool>(DisclaimerNotifier.new);
 
@@ -136,6 +151,25 @@ class CareSchedulesNotifier extends Notifier<List<CareSchedule>> {
     return null;
   }
 
+  Future<void> markDone(String id) async {
+    final i = state.indexWhere((e) => e.id == id);
+    if (i < 0) return;
+    final current = state[i];
+    final updated = CareSchedule(
+      id: current.id,
+      petId: current.petId,
+      title: current.title,
+      kind: current.kind,
+      intervalMonths: current.intervalMonths,
+      lastDoneAt: DateTime.now().toUtc(),
+      notes: current.notes,
+    );
+    final next = [...state];
+    next[i] = updated;
+    state = next;
+    await ref.read(localStorageServiceProvider).saveCareSchedules(next);
+  }
+
   Future<void> remove(String id) async {
     state = state.where((e) => e.id != id).toList();
     await ref.read(localStorageServiceProvider).saveCareSchedules(state);
@@ -221,6 +255,11 @@ class WeightLogsNotifier extends Notifier<List<WeightLog>> {
           .upsert(pet.copyWith(weightKg: log.weightKg));
     }
     return null;
+  }
+
+  Future<void> remove(String id) async {
+    state = state.where((e) => e.id != id).toList();
+    await ref.read(localStorageServiceProvider).saveWeightLogs(state);
   }
 
   void reload() =>

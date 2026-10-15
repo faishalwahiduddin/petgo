@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>المدونة — petgo</title>
+    <title>Blog — PetGo</title>
     <link>https://petgo.faishal.id/ar/blog/</link>
-    <description>مدونة فاميلي جو: أدلة تنظيم جدول العائلة، وتوزيع المهام المنزلية، وقوائم التسوق المشتركة، وتقويم التذكيرات. كل شيء في تطبيق واحد دون اتصال.</description>
+    <description>Blog PetGo</description>
     <language>ar</language>
-    <lastBuildDate>Sun, 04 Oct 2026 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>جدول العائلة والمهام المنزلية: توزيع عادل وتنسيق سلس — petgo</title>
-      <link>https://petgo.faishal.id/ar/blog/jadwal-keluarga-tugas-rumah/</link>
-      <guid isPermaLink="true">https://petgo.faishal.id/ar/blog/jadwal-keluarga-tugas-rumah/</guid>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
-      <description>يوزع جدول فاميلي جو المهام المنزلية بعدالة مع تذكيرات تلقائية. تعلم كيفية تنظيم الجدول، ومداولة المهام، ومتابعة ما تم إنجازه. يعمل دون اتصال.</description>
+      <title>Pet Profiles in One Place</title>
+      <link>https://petgo.faishal.id/ar/blog/pet-profiles-in-one-place/</link>
+      <guid>https://petgo.faishal.id/ar/blog/pet-profiles-in-one-place/</guid>
+      <pubDate>Tue, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Store species, age, weight, and special notes per pet in PetGo.</description>
     </item>
     <item>
-      <title>تسوق عائلي في قائمة واحدة: وداعاً للشراء المكرر والنسيان — petgo</title>
-      <link>https://petgo.faishal.id/ar/blog/belanja-bersama-satu-daftar/</link>
-      <guid isPermaLink="true">https://petgo.faishal.id/ar/blog/belanja-bersama-satu-daftar/</guid>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
-      <description>تجمع قائمة فاميلي جو المشتركة احتياجات جميع الأفراد لتفادي النسيان. تعلم كيفية تدوين الأغراض وتوزيع أدوار الشراء والتوفير أسبوعياً. تعمل دون إنترنت.</description>
+      <title>Consistent Daily Care Schedules</title>
+      <link>https://petgo.faishal.id/ar/blog/consistent-daily-care-schedules/</link>
+      <guid>https://petgo.faishal.id/ar/blog/consistent-daily-care-schedules/</guid>
+      <pubDate>Tue, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Schedule food, walks, meds, and grooming with reminders in PetGo.</description>
     </item>
     <item>
-      <title>تقويم تذكيرات العائلة: كيف تضمن عدم تفويت أي موعد — petgo</title>
-      <link>https://petgo.faishal.id/ar/blog/kalender-pengingat-keluarga/</link>
-      <guid isPermaLink="true">https://petgo.faishal.id/ar/blog/kalender-pengingat-keluarga/</guid>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
-      <description>يجمع تقويم فاميلي جو المناسبات والفواتير والمواعيد لكل أفراد العائلة. تعلم كيفية تسجيل المواعيد وضبط التنبيهات وتنسيق الخطط. يعمل دون اتصال.</description>
+      <title>Vet Visit Notes Ready to Bring</title>
+      <link>https://petgo.faishal.id/ar/blog/vet-visit-notes-ready-to-bring/</link>
+      <guid>https://petgo.faishal.id/ar/blog/vet-visit-notes-ready-to-bring/</guid>
+      <pubDate>Tue, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Organize vaccines, diagnoses, and visit costs so vet history does not vanish.</description>
     </item>
   </channel>
 </rss>

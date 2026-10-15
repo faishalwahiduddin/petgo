@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-58-jangan-screenshot-sembarangan-log-catata",
+  "app": "petgo",
+  "publish_date": "2026-12-12",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "security",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "jangan-screenshot-sembarangan-log-catatan-kunjungan-vet-mingguan",
+    "en": "don-t-casually-screenshot-catatan-kunjungan-vet-logs",
+    "ar": "catatan-kunjungan-vet-15",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-15",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-15",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-15",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-15"
+  },
+  "titles": {
+    "id": "Jangan Screenshot Sembarangan Log catatan kunjungan vet",
+    "en": "Don&#x27;t Casually Screenshot catatan kunjungan vet Logs — Offline Fi",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: Jangan Screenshot Sembarangan Log catatan kunjungan vet",
+    "su": "Pituduh: Jangan Screenshot Sembarangan Log catatan kunjungan vet",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

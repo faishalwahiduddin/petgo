@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-47-kualitas-data-jadwal-perawatan-harian-vs",
+  "app": "petgo",
+  "publish_date": "2026-12-01",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "quality",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "kualitas-data-jadwal-perawatan-harian-vs-kuantitas-offline",
+    "en": "jadwal-perawatan-harian-data-quality-vs-quantity",
+    "ar": "jadwal-perawatan-harian-12",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-12",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-12",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-12",
+    "ja": "petgojadwal-perawatan-harian-ガイド-12"
+  },
+  "titles": {
+    "id": "Kualitas Data jadwal perawatan harian vs Kuantitas",
+    "en": "jadwal perawatan harian Data Quality vs Quantity",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: Kualitas Data jadwal perawatan harian vs Kuantitas",
+    "su": "Pituduh: Kualitas Data jadwal perawatan harian vs Kuantitas",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

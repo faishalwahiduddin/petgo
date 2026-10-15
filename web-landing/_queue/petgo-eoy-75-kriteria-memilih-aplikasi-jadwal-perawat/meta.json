@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-75-kriteria-memilih-aplikasi-jadwal-perawat",
+  "app": "petgo",
+  "publish_date": "2026-12-29",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "intent-buy",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "kriteria-memilih-aplikasi-jadwal-perawatan-harian-harian",
+    "en": "criteria-for-choosing-a-jadwal-perawatan-harian-app",
+    "ar": "jadwal-perawatan-harian-19",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-19",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-19",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-19",
+    "ja": "petgojadwal-perawatan-harian-ガイド-19"
+  },
+  "titles": {
+    "id": "Kriteria Memilih Aplikasi jadwal perawatan",
+    "en": "Criteria for Choosing a jadwal perawatan harian App",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: Kriteria Memilih Aplikasi jadwal perawatan",
+    "su": "Pituduh: Kriteria Memilih Aplikasi jadwal perawatan",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

@@ -6,6 +6,7 @@ import 'package:petgo/l10n/app_localizations.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/providers/app_providers.dart';
 import '../../core/providers/locale_provider.dart';
+import '../../core/services/care_reminder_service.dart';
 import '../../core/utils/backup_file_io.dart';
 
 class SettingsScreen extends ConsumerWidget {
@@ -71,6 +72,19 @@ class SettingsScreen extends ConsumerWidget {
                 },
               ),
             ),
+          ),
+          const Divider(),
+          SwitchListTile(
+            title: Text(l10n.settingsReminders),
+            subtitle: Text(l10n.settingsRemindersSubtitle),
+            value: ref.watch(remindersEnabledProvider),
+            onChanged: (v) async {
+              await ref.read(remindersEnabledProvider.notifier).setEnabled(v);
+              await CareReminderService.instance.reschedule(
+                ref.read(careSchedulesProvider),
+                enabled: v,
+              );
+            },
           ),
           const Divider(),
           Text(

@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-40-cara-menamai-kategori-profil-hewan-pelih",
+  "app": "petgo",
+  "publish_date": "2026-11-24",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "deep",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "cara-menamai-kategori-profil-hewan-peliharaan-mingguan",
+    "en": "how-to-name-profil-hewan-peliharaan-categories",
+    "ar": "profil-hewan-peliharaan-10",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo-10",
+    "su": "pituduh-profil-hewan-peliharaan-petgo-10",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南-10",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド-10"
+  },
+  "titles": {
+    "id": "Cara Menamai Kategori profil hewan peliharaan",
+    "en": "How to Name profil hewan peliharaan Categories — Offline First",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: Cara Menamai Kategori profil hewan peliharaan",
+    "su": "Pituduh: Cara Menamai Kategori profil hewan peliharaan",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

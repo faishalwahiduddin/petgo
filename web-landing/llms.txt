@@ -1,8 +1,8 @@
-# petgo
+# PetGo
 
-> Jadwal, tugas rumah, belanja bersama & logistik keluarga.
+> Profil hewan, jadwal perawatan, vet, dan log harian — offline.
 
-petgo is a free app in the faishal.id fleet. Offline-first product; this marketing site may use optional consent-gated analytics.
+PetGo is a free app in the faishal.id fleet. Offline-first product; this marketing site may use optional consent-gated analytics.
 
 ## Links
 
@@ -15,6 +15,6 @@ petgo is a free app in the faishal.id fleet. Offline-first product; this marketi
 
 ## Blog posts
 
-- https://petgo.faishal.id/id/blog/belanja-bersama-satu-daftar/
-- https://petgo.faishal.id/id/blog/jadwal-keluarga-tugas-rumah/
-- https://petgo.faishal.id/id/blog/kalender-pengingat-keluarga/
+- https://petgo.faishal.id/id/blog/catatan-kunjungan-vet/
+- https://petgo.faishal.id/id/blog/jadwal-perawatan-harian/
+- https://petgo.faishal.id/id/blog/profil-hewan-peliharaan/

@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-43-jadwal-perawatan-harian-untuk-dipakai-be",
+  "app": "petgo",
+  "publish_date": "2026-11-27",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "family",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "jadwal-perawatan-harian-untuk-dipakai-bergantian",
+    "en": "sharing-a-device-for-jadwal-perawatan-harian",
+    "ar": "jadwal-perawatan-harian-11",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-11",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-11",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-11",
+    "ja": "petgojadwal-perawatan-harian-ガイド-11"
+  },
+  "titles": {
+    "id": "jadwal perawatan harian: panduan praktis di PetGo",
+    "en": "Sharing a Device for jadwal perawatan harian",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: jadwal perawatan harian: panduan praktis di PetGo",
+    "su": "Pituduh: jadwal perawatan harian: panduan praktis di PetGo",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-18-catatan-kunjungan-vet-2",
+  "app": "petgo",
+  "publish_date": "2026-11-02",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "faq",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "catatan-kunjungan-vet-2",
+    "en": "catatan-kunjungan-vet",
+    "ar": "catatan-kunjungan-vet-5",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-5",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-5",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-5",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-5"
+  },
+  "titles": {
+    "id": "FAQ catatan kunjungan vet: jawaban singkat yang dipakai",
+    "en": "catatan kunjungan vet — Practical Q&amp;A",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: FAQ catatan kunjungan vet: jawaban singkat yang dipakai",
+    "su": "Pituduh: FAQ catatan kunjungan vet: jawaban singkat yang dipakai",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

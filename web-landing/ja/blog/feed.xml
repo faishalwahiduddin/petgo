@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>ブログ — petgo</title>
+    <title>Blog — PetGo</title>
     <link>https://petgo.faishal.id/ja/blog/</link>
-    <description>petgo ブログ：家族の予定管理、公平な家事分担、共有買い物リスト、リマインダーカレンダーの完全ガイド。家庭の用事をひとまとめに整理。</description>
+    <description>Blog PetGo</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 04 Oct 2026 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>家族の予定と家事分担：スムーズな家庭運用のコツ — petgo</title>
-      <link>https://petgo.faishal.id/ja/blog/jadwal-keluarga-tugas-rumah/</link>
-      <guid isPermaLink="true">https://petgo.faishal.id/ja/blog/jadwal-keluarga-tugas-rumah/</guid>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
-      <description>petgoの家族予定表は自動リマインダーで家事を家族に公平に割り当てます。スケジュールの組み方、家事ローテーション、完了追跡を解説。オフライン対応。</description>
+      <title>Pet Profiles in One Place</title>
+      <link>https://petgo.faishal.id/ja/blog/pet-profiles-in-one-place/</link>
+      <guid>https://petgo.faishal.id/ja/blog/pet-profiles-in-one-place/</guid>
+      <pubDate>Tue, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Store species, age, weight, and special notes per pet in PetGo.</description>
     </item>
     <item>
-      <title>ひとつの買い物リストで共同購入：買い忘れと重複を防ぐ — petgo</title>
-      <link>https://petgo.faishal.id/ja/blog/belanja-bersama-satu-daftar/</link>
-      <guid isPermaLink="true">https://petgo.faishal.id/ja/blog/belanja-bersama-satu-daftar/</guid>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
-      <description>petgoの共有買い物リストは家族全員の欲しいものを集約し買い忘れを防ぎます。メモの取り方、買い物当番の分担、節約術を紹介。オフライン対応。</description>
+      <title>Consistent Daily Care Schedules</title>
+      <link>https://petgo.faishal.id/ja/blog/consistent-daily-care-schedules/</link>
+      <guid>https://petgo.faishal.id/ja/blog/consistent-daily-care-schedules/</guid>
+      <pubDate>Tue, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Schedule food, walks, meds, and grooming with reminders in PetGo.</description>
     </item>
     <item>
-      <title>家族リマインダーカレンダー：大切な予定を忘れない仕組み — petgo</title>
-      <link>https://petgo.faishal.id/ja/blog/kalender-pengingat-keluarga/</link>
-      <guid isPermaLink="true">https://petgo.faishal.id/ja/blog/kalender-pengingat-keluarga/</guid>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
-      <description>petgoリマインダーカレンダーは家族全員の行事や支払い期日、予約を一元管理。予定登録、アラーム設定、計画の同期手順を解説。オフライン対応。</description>
+      <title>Vet Visit Notes Ready to Bring</title>
+      <link>https://petgo.faishal.id/ja/blog/vet-visit-notes-ready-to-bring/</link>
+      <guid>https://petgo.faishal.id/ja/blog/vet-visit-notes-ready-to-bring/</guid>
+      <pubDate>Tue, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <description>Organize vaccines, diagnoses, and visit costs so vet history does not vanish.</description>
     </item>
   </channel>
 </rss>

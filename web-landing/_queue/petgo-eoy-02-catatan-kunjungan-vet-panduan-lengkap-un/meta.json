@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-02-catatan-kunjungan-vet-panduan-lengkap-un",
+  "app": "petgo",
+  "publish_date": "2026-10-17",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "how-to",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "catatan-kunjungan-vet-panduan-lengkap-untuk-pemula-praktis",
+    "en": "catatan-kunjungan-vet-complete-beginner-guide-practical",
+    "ar": "catatan-kunjungan-vet",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo",
+    "su": "pituduh-catatan-kunjungan-vet-petgo",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南",
+    "ja": "petgocatatan-kunjungan-vet-ガイド"
+  },
+  "titles": {
+    "id": "Cara mencatat catatan kunjungan vet tanpa ribet",
+    "en": "catatan kunjungan vet: Complete Beginner Guide (Practical)",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: Cara mencatat catatan kunjungan vet tanpa ribet",
+    "su": "Pituduh: Cara mencatat catatan kunjungan vet tanpa ribet",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

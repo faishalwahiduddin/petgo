@@ -1,14 +1,14 @@
 /* General Variables & Reset */
 :root {
-    --primary: #B45309;
-    --secondary: #F59E0B;
-    --accent: #FCD34D;
-    --bg-dark: #1F1305;
+    --primary: #059669;
+    --secondary: #34D399;
+    --accent: #F59E0B;
+    --bg-dark: #022C22;
     --bg-card: rgba(255, 255, 255, 0.03);
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
     --glass-border: rgba(255, 255, 255, 0.08);
-    --accent-rgb: 252, 211, 77;
+    --accent-rgb: 245, 158, 11;
 }
 
 * {

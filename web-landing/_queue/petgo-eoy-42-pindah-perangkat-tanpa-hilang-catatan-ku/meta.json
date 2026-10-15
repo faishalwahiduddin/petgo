@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-42-pindah-perangkat-tanpa-hilang-catatan-ku",
+  "app": "petgo",
+  "publish_date": "2026-11-26",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "export",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "pindah-perangkat-tanpa-hilang-catatan-kunjungan-vet-2026",
+    "en": "move-devices-without-losing-catatan-kunjungan-vet",
+    "ar": "catatan-kunjungan-vet-11",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-11",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-11",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-11",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-11"
+  },
+  "titles": {
+    "id": "Pindah Perangkat tanpa Hilang catatan kunjungan vet",
+    "en": "Move Devices Without Losing catatan kunjungan vet",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: Pindah Perangkat tanpa Hilang catatan kunjungan vet",
+    "su": "Pituduh: Pindah Perangkat tanpa Hilang catatan kunjungan vet",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

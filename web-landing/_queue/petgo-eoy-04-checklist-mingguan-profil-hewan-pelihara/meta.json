@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-04-checklist-mingguan-profil-hewan-pelihara",
+  "app": "petgo",
+  "publish_date": "2026-10-19",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "checklist",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "checklist-mingguan-profil-hewan-peliharaan-review-mingguan",
+    "en": "weekly-profil-hewan-peliharaan-checklist-review",
+    "ar": "profil-hewan-peliharaan",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo",
+    "su": "pituduh-profil-hewan-peliharaan-petgo",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド"
+  },
+  "titles": {
+    "id": "Checklist Mingguan profil hewan peliharaan + Review",
+    "en": "Weekly profil hewan peliharaan Checklist + Review — Offline First",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: Checklist Mingguan profil hewan peliharaan + Review",
+    "su": "Pituduh: Checklist Mingguan profil hewan peliharaan + Review",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

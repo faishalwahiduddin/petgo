@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-33-petgo-aplikasi-vs-catatan-di-browser-har",
+  "app": "petgo",
+  "publish_date": "2026-11-17",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "vs-web",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "petgo-aplikasi-vs-catatan-di-browser-harian",
+    "en": "petgo-app-vs-browser-notes",
+    "ar": "petgo-9",
+    "jv": "pandhuan-petgo-petgo-9",
+    "su": "pituduh-petgo-petgo-9",
+    "zh": "petgo-petgo-实用指南-9",
+    "ja": "petgopetgo-ガイド-9"
+  },
+  "titles": {
+    "id": "PetGo: Aplikasi vs Catatan di Browser",
+    "en": "PetGo: App vs Browser Notes",
+    "ar": "PetGo — دليل PetGo",
+    "jv": "Pandhuan: PetGo: Aplikasi vs Catatan di Browser",
+    "su": "Pituduh: PetGo: Aplikasi vs Catatan di Browser",
+    "zh": "PetGo · PetGo 实用指南",
+    "ja": "PetGo｜PetGo ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

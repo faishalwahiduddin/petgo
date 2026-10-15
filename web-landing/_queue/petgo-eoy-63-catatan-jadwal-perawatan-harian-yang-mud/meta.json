@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-63-catatan-jadwal-perawatan-harian-yang-mud",
+  "app": "petgo",
+  "publish_date": "2026-12-17",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "content",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "catatan-jadwal-perawatan-harian-yang-mudah-dicari-nanti-harian",
+    "en": "jadwal-perawatan-harian-notes-that-stay-searchable",
+    "ar": "jadwal-perawatan-harian-16",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-16",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-16",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-16",
+    "ja": "petgojadwal-perawatan-harian-ガイド-16"
+  },
+  "titles": {
+    "id": "Catatan jadwal perawatan harian yang Mudah Dicari Nanti",
+    "en": "jadwal perawatan harian Notes That Stay Searchable",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: Catatan jadwal perawatan harian yang Mudah Dicari Nanti",
+    "su": "Pituduh: Catatan jadwal perawatan harian yang Mudah Dicari Nanti",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-25-bangun-kebiasaan-petgo-21-hari",
+  "app": "petgo",
+  "publish_date": "2026-11-09",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "habit",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "bangun-kebiasaan-petgo-21-hari",
+    "en": "build-a-21-day-petgo-habit",
+    "ar": "petgo-7",
+    "jv": "pandhuan-petgo-petgo-7",
+    "su": "pituduh-petgo-petgo-7",
+    "zh": "petgo-petgo-实用指南-7",
+    "ja": "petgopetgo-ガイド-7"
+  },
+  "titles": {
+    "id": "Bangun Kebiasaan PetGo 21 Hari",
+    "en": "Build a 21-Day PetGo Habit",
+    "ar": "PetGo — دليل PetGo",
+    "jv": "Pandhuan: Bangun Kebiasaan PetGo 21 Hari",
+    "su": "Pituduh: Bangun Kebiasaan PetGo 21 Hari",
+    "zh": "PetGo · PetGo 实用指南",
+    "ja": "PetGo｜PetGo ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

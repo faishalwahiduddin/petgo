@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-59-percepat-input-jadwal-perawatan-harian-d",
+  "app": "petgo",
+  "publish_date": "2026-12-13",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "ux",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "percepat-input-jadwal-perawatan-harian-di-petgo-offline",
+    "en": "speed-up-jadwal-perawatan-harian-input-in-petgo",
+    "ar": "jadwal-perawatan-harian-15",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-15",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-15",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-15",
+    "ja": "petgojadwal-perawatan-harian-ガイド-15"
+  },
+  "titles": {
+    "id": "Percepat Input jadwal perawatan harian di PetGo",
+    "en": "Speed Up jadwal perawatan harian Input in PetGo",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: Percepat Input jadwal perawatan harian di PetGo",
+    "su": "Pituduh: Percepat Input jadwal perawatan harian di PetGo",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-16-contoh-log-profil-hewan-peliharaan-7-har",
+  "app": "petgo",
+  "publish_date": "2026-10-31",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "template",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "contoh-log-profil-hewan-peliharaan-7-hari-mingguan",
+    "en": "sample-7-day-profil-hewan-peliharaan-log",
+    "ar": "profil-hewan-peliharaan-4",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo-4",
+    "su": "pituduh-profil-hewan-peliharaan-petgo-4",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南-4",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド-4"
+  },
+  "titles": {
+    "id": "Contoh Log profil hewan peliharaan 7 Hari",
+    "en": "Sample 7-Day profil hewan peliharaan Log — Offline First",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: Contoh Log profil hewan peliharaan 7 Hari",
+    "su": "Pituduh: Contoh Log profil hewan peliharaan 7 Hari",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

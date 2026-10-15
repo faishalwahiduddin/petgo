@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-20-setup-profil-hewan-peliharaan-offline-ta",
+  "app": "petgo",
+  "publish_date": "2026-11-04",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "local",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "setup-profil-hewan-peliharaan-offline-tanpa-kuota-praktis",
+    "en": "set-up-offline-profil-hewan-peliharaan-without-data-practical",
+    "ar": "profil-hewan-peliharaan-5",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo-5",
+    "su": "pituduh-profil-hewan-peliharaan-petgo-5",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南-5",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド-5"
+  },
+  "titles": {
+    "id": "Setup profil hewan peliharaan Offline tanpa Kuota",
+    "en": "Set Up Offline profil hewan peliharaan Without Data (Practical)",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: Setup profil hewan peliharaan Offline tanpa Kuota",
+    "su": "Pituduh: Setup profil hewan peliharaan Offline tanpa Kuota",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

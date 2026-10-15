@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-26-streak-catatan-kunjungan-vet-tanpa-burno",
+  "app": "petgo",
+  "publish_date": "2026-11-10",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "habit",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "streak-catatan-kunjungan-vet-tanpa-burnout-praktis",
+    "en": "catatan-kunjungan-vet-streaks-without-burnout-practical",
+    "ar": "catatan-kunjungan-vet-7",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-7",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-7",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-7",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-7"
+  },
+  "titles": {
+    "id": "Streak catatan kunjungan vet tanpa Burnout",
+    "en": "catatan kunjungan vet Streaks Without Burnout (Practical)",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: Streak catatan kunjungan vet tanpa Burnout",
+    "su": "Pituduh: Streak catatan kunjungan vet tanpa Burnout",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

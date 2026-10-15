@@ -1,4 +1,4 @@
-# Pricing — FamilyGo
+# Pricing — PetGo
 
 ## Free
 
@@ -8,7 +8,7 @@
 - Limits: no paid tiers; core features included
 - Features: offline-first local storage, no account required for core use
 - Google Play: coming soon / see landing CTA
-- Site: https://familygo.faishal.id/id/
+- Site: https://petgo.faishal.id/id/
 
 ## Notes
 

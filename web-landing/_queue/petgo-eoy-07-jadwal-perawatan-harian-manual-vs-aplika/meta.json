@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-07-jadwal-perawatan-harian-manual-vs-aplika",
+  "app": "petgo",
+  "publish_date": "2026-10-22",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "comparison",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "jadwal-perawatan-harian-manual-vs-aplikasi-offline",
+    "en": "jadwal-perawatan-harian-manual-notes-vs-offline-app",
+    "ar": "jadwal-perawatan-harian-2",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-2",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-2",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-2",
+    "ja": "petgojadwal-perawatan-harian-ガイド-2"
+  },
+  "titles": {
+    "id": "jadwal perawatan harian: catatan longgar vs aplikasi",
+    "en": "jadwal perawatan harian: Manual Notes vs Offline App",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: jadwal perawatan harian: catatan longgar vs aplikasi",
+    "su": "Pituduh: jadwal perawatan harian: catatan longgar vs aplikasi",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

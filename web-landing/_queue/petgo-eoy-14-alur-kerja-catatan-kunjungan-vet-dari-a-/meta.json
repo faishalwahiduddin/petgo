@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-14-alur-kerja-catatan-kunjungan-vet-dari-a-",
+  "app": "petgo",
+  "publish_date": "2026-10-29",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "steps",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "alur-kerja-catatan-kunjungan-vet-dari-a-sampai-z-praktis",
+    "en": "catatan-kunjungan-vet-workflow-a-to-z-practical",
+    "ar": "catatan-kunjungan-vet-4",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-4",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-4",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-4",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-4"
+  },
+  "titles": {
+    "id": "Alur Kerja catatan kunjungan vet dari A sampai Z",
+    "en": "catatan kunjungan vet Workflow A to Z (Practical)",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: Alur Kerja catatan kunjungan vet dari A sampai Z",
+    "su": "Pituduh: Alur Kerja catatan kunjungan vet dari A sampai Z",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

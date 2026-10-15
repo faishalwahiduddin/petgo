@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-64-bahasa-yang-konsisten-saat-mencatat-prof",
+  "app": "petgo",
+  "publish_date": "2026-12-18",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "content",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "bahasa-yang-konsisten-saat-mencatat-profil-hewan-peliharaan-mingguan",
+    "en": "consistent-language-when-logging-profil-hewan-peliharaan",
+    "ar": "profil-hewan-peliharaan-16",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo-16",
+    "su": "pituduh-profil-hewan-peliharaan-petgo-16",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南-16",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド-16"
+  },
+  "titles": {
+    "id": "Bahasa yang Konsisten saat Mencatat profil hewan peliharaan",
+    "en": "Consistent Language When Logging profil hewan peliharaan — Offline Fir",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: Bahasa yang Konsisten saat Mencatat profil hewan peliharaan",
+    "su": "Pituduh: Bahasa yang Konsisten saat Mencatat profil hewan peliharaan",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

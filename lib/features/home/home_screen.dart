@@ -1,5 +1,9 @@
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
@@ -23,7 +27,7 @@ class HomeScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(title: Text(l10n.appTitle)),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () => _showAddPet(context, ref),
+        onPressed: () => _showPetEditor(context, ref),
         icon: const Icon(Icons.add),
         label: Text(l10n.actionAddPet),
       ),
@@ -61,29 +65,29 @@ class HomeScreen extends ConsumerWidget {
           if (active != null) ...[
             const SizedBox(height: 16),
             Card(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      active.name,
-                      style: const TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      [
-                        _speciesLabel(l10n, active.species),
-                        if (active.breed.isNotEmpty) active.breed,
-                        if (active.weightKg != null)
-                          '${active.weightKg!.toStringAsFixed(1)} kg',
-                      ].join(' · '),
-                      style: const TextStyle(color: AppColors.inkSoft),
-                    ),
-                  ],
+              child: ListTile(
+                leading: _PetAvatar(pet: active),
+                title: Text(
+                  active.name,
+                  style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                subtitle: Text(
+                  [
+                    _speciesLabel(l10n, active.species),
+                    if (active.breed.isNotEmpty) active.breed,
+                    if (active.weightKg != null)
+                      '${active.weightKg!.toStringAsFixed(1)} kg',
+                    if (active.dateOfBirth != null)
+                      _formatDob(active.dateOfBirth!),
+                  ].join(' · '),
+                ),
+                trailing: IconButton(
+                  icon: const Icon(Icons.edit_outlined),
+                  onPressed: () =>
+                      _showPetEditor(context, ref, existing: active),
                 ),
               ),
             ),
@@ -134,18 +138,28 @@ class HomeScreen extends ConsumerWidget {
             (p) => Card(
               margin: const EdgeInsets.only(bottom: 8),
               child: ListTile(
-                leading: const Icon(Icons.pets, color: AppColors.primary),
+                leading: _PetAvatar(pet: p, radius: 18),
                 title: Text(p.name),
                 subtitle: Text(_speciesLabel(l10n, p.species)),
                 selected: p.id == active?.id,
                 onTap: () =>
                     ref.read(activePetIdProvider.notifier).setActiveId(p.id),
+                trailing: IconButton(
+                  icon: const Icon(Icons.edit_outlined, size: 20),
+                  onPressed: () =>
+                      _showPetEditor(context, ref, existing: p),
+                ),
               ),
             ),
           ),
         ],
       ),
     );
+  }
+
+  String _formatDob(DateTime d) {
+    final local = d.toLocal();
+    return '${local.year}-${local.month.toString().padLeft(2, '0')}-${local.day.toString().padLeft(2, '0')}';
   }
 
   String _speciesLabel(AppLocalizations l10n, PetSpecies s) => switch (s) {
@@ -156,12 +170,21 @@ class HomeScreen extends ConsumerWidget {
         PetSpecies.other => l10n.speciesOther,
       };
 
-  Future<void> _showAddPet(BuildContext context, WidgetRef ref) async {
+  Future<void> _showPetEditor(
+    BuildContext context,
+    WidgetRef ref, {
+    Pet? existing,
+  }) async {
     final l10n = AppLocalizations.of(context)!;
-    final nameCtrl = TextEditingController();
-    var species = PetSpecies.dog;
-    final weightCtrl = TextEditingController();
-    final breedCtrl = TextEditingController();
+    final nameCtrl = TextEditingController(text: existing?.name ?? '');
+    final breedCtrl = TextEditingController(text: existing?.breed ?? '');
+    final weightCtrl = TextEditingController(
+      text: existing?.weightKg?.toStringAsFixed(1) ?? '',
+    );
+    var species = existing?.species ?? PetSpecies.dog;
+    DateTime? dob = existing?.dateOfBirth;
+    String? photoPath = existing?.photoPath;
+    final formKey = GlobalKey<FormState>();
 
     final ok = await showModalBottomSheet<bool>(
       context: context,
@@ -176,56 +199,145 @@ class HomeScreen extends ConsumerWidget {
           ),
           child: StatefulBuilder(
             builder: (context, setModal) {
-              return Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Text(
-                    l10n.actionAddPet,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 18,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  TextField(
-                    controller: nameCtrl,
-                    decoration: InputDecoration(labelText: l10n.fieldPetName),
-                  ),
-                  const SizedBox(height: 8),
-                  DropdownButtonFormField<PetSpecies>(
-                    // ignore: deprecated_member_use
-                    value: species,
-                    items: PetSpecies.values
-                        .map(
-                          (s) => DropdownMenuItem(
-                            value: s,
-                            child: Text(_speciesLabel(l10n, s)),
+              return Form(
+                key: formKey,
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Text(
+                        existing == null
+                            ? l10n.actionAddPet
+                            : l10n.actionEditPet,
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 18,
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      Center(
+                        child: GestureDetector(
+                          onTap: kIsWeb
+                              ? null
+                              : () async {
+                                  final picker = ImagePicker();
+                                  final file = await picker.pickImage(
+                                    source: ImageSource.gallery,
+                                    maxWidth: 1024,
+                                  );
+                                  if (file != null) {
+                                    setModal(() => photoPath = file.path);
+                                  }
+                                },
+                          child: CircleAvatar(
+                            radius: 36,
+                            backgroundColor:
+                                AppColors.primary.withValues(alpha: 0.15),
+                            backgroundImage: (!kIsWeb &&
+                                    photoPath != null &&
+                                    File(photoPath!).existsSync())
+                                ? FileImage(File(photoPath!))
+                                : null,
+                            child: (photoPath == null)
+                                ? const Icon(Icons.camera_alt_outlined,
+                                    color: AppColors.primary)
+                                : null,
                           ),
-                        )
-                        .toList(),
-                    onChanged: (v) {
-                      if (v != null) setModal(() => species = v);
-                    },
-                    decoration: InputDecoration(labelText: l10n.fieldSpecies),
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      TextFormField(
+                        controller: nameCtrl,
+                        decoration:
+                            InputDecoration(labelText: l10n.fieldPetName),
+                        validator: (v) {
+                          if (v == null || v.trim().length < 2) {
+                            return l10n.errorPetNameRequired;
+                          }
+                          return null;
+                        },
+                      ),
+                      const SizedBox(height: 8),
+                      DropdownButtonFormField<PetSpecies>(
+                        // ignore: deprecated_member_use
+                        value: species,
+                        items: PetSpecies.values
+                            .map(
+                              (s) => DropdownMenuItem(
+                                value: s,
+                                child: Text(_speciesLabel(l10n, s)),
+                              ),
+                            )
+                            .toList(),
+                        onChanged: (v) {
+                          if (v != null) setModal(() => species = v);
+                        },
+                        decoration:
+                            InputDecoration(labelText: l10n.fieldSpecies),
+                      ),
+                      const SizedBox(height: 8),
+                      TextFormField(
+                        controller: breedCtrl,
+                        decoration: InputDecoration(labelText: l10n.fieldBreed),
+                      ),
+                      const SizedBox(height: 8),
+                      TextFormField(
+                        controller: weightCtrl,
+                        keyboardType: const TextInputType.numberWithOptions(
+                          decimal: true,
+                        ),
+                        decoration:
+                            InputDecoration(labelText: l10n.fieldWeightKg),
+                        validator: (v) {
+                          if (v == null || v.trim().isEmpty) return null;
+                          final w = double.tryParse(v.trim());
+                          if (w == null || w <= 0 || w > 500) {
+                            return l10n.errorWeightInvalid;
+                          }
+                          return null;
+                        },
+                      ),
+                      ListTile(
+                        contentPadding: EdgeInsets.zero,
+                        title: Text(l10n.fieldDateOfBirth),
+                        subtitle: Text(
+                          dob == null
+                              ? l10n.fieldOptional
+                              : _formatDob(dob!),
+                        ),
+                        trailing: const Icon(Icons.cake_outlined),
+                        onTap: () async {
+                          final picked = await showDatePicker(
+                            context: ctx,
+                            initialDate: dob != null
+                                ? dob!.toLocal()
+                                : DateTime.now(),
+                            firstDate: DateTime(1990),
+                            lastDate: DateTime.now(),
+                          );
+                          if (picked != null) {
+                            setModal(
+                              () => dob = DateTime.utc(
+                                picked.year,
+                                picked.month,
+                                picked.day,
+                              ),
+                            );
+                          }
+                        },
+                      ),
+                      FilledButton(
+                        onPressed: () {
+                          if (formKey.currentState!.validate()) {
+                            Navigator.pop(ctx, true);
+                          }
+                        },
+                        child: Text(l10n.actionSave),
+                      ),
+                    ],
                   ),
-                  const SizedBox(height: 8),
-                  TextField(
-                    controller: breedCtrl,
-                    decoration: InputDecoration(labelText: l10n.fieldBreed),
-                  ),
-                  const SizedBox(height: 8),
-                  TextField(
-                    controller: weightCtrl,
-                    keyboardType: const TextInputType.numberWithOptions(decimal: true),
-                    decoration: InputDecoration(labelText: l10n.fieldWeightKg),
-                  ),
-                  const SizedBox(height: 16),
-                  FilledButton(
-                    onPressed: () => Navigator.pop(ctx, true),
-                    child: Text(l10n.actionSave),
-                  ),
-                ],
+                ),
               );
             },
           ),
@@ -236,11 +348,15 @@ class HomeScreen extends ConsumerWidget {
     final weight = double.tryParse(weightCtrl.text.trim());
     final err = await ref.read(petsProvider.notifier).upsert(
           Pet(
-            id: DateTime.now().microsecondsSinceEpoch.toString(),
+            id: existing?.id ??
+                DateTime.now().microsecondsSinceEpoch.toString(),
             name: nameCtrl.text.trim(),
             species: species,
             breed: breedCtrl.text.trim(),
             weightKg: weight,
+            dateOfBirth: dob,
+            photoPath: photoPath,
+            notes: existing?.notes ?? '',
           ),
         );
     if (!context.mounted) return;
@@ -257,4 +373,27 @@ class HomeScreen extends ConsumerWidget {
         'errorWeightInvalid' => l10n.errorWeightInvalid,
         _ => code,
       };
+}
+
+class _PetAvatar extends StatelessWidget {
+  const _PetAvatar({required this.pet, this.radius = 24});
+
+  final Pet pet;
+  final double radius;
+
+  @override
+  Widget build(BuildContext context) {
+    final path = pet.photoPath;
+    if (!kIsWeb && path != null && File(path).existsSync()) {
+      return CircleAvatar(
+        radius: radius,
+        backgroundImage: FileImage(File(path)),
+      );
+    }
+    return CircleAvatar(
+      radius: radius,
+      backgroundColor: AppColors.primary.withValues(alpha: 0.15),
+      child: Icon(Icons.pets, color: AppColors.primary, size: radius),
+    );
+  }
 }

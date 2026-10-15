@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-35-jadwal-perawatan-harian-saat-jadwal-pada",
+  "app": "petgo",
+  "publish_date": "2026-11-19",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "seasonal",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "jadwal-perawatan-harian-saat-jadwal-padat-akhir-tahun-offline",
+    "en": "jadwal-perawatan-harian-during-busy-year-end-weeks",
+    "ar": "jadwal-perawatan-harian-9",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-9",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-9",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-9",
+    "ja": "petgojadwal-perawatan-harian-ガイド-9"
+  },
+  "titles": {
+    "id": "jadwal perawatan harian: panduan praktis di PetGo",
+    "en": "jadwal perawatan harian During Busy Year-End Weeks",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: jadwal perawatan harian: panduan praktis di PetGo",
+    "su": "Pituduh: jadwal perawatan harian: panduan praktis di PetGo",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

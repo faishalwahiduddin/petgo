@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-32-data-profil-hewan-peliharaan-hilang-cek-",
+  "app": "petgo",
+  "publish_date": "2026-11-16",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "troubleshoot",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "data-profil-hewan-peliharaan-hilang-cek-ini-dulu-praktis",
+    "en": "profil-hewan-peliharaan-data-missing-check-these-first-practical",
+    "ar": "profil-hewan-peliharaan-8",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo-8",
+    "su": "pituduh-profil-hewan-peliharaan-petgo-8",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南-8",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド-8"
+  },
+  "titles": {
+    "id": "Data profil hewan peliharaan Hilang? Cek Ini Dulu",
+    "en": "profil hewan peliharaan Data Missing? Check These First (Practical)",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: Data profil hewan peliharaan Hilang? Cek Ini Dulu",
+    "su": "Pituduh: Data profil hewan peliharaan Hilang? Cek Ini Dulu",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

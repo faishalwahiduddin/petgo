@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-74-kapan-saatnya-pakai-aplikasi-untuk-catat",
+  "app": "petgo",
+  "publish_date": "2026-12-28",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "intent-buy",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "kapan-saatnya-pakai-aplikasi-untuk-catatan-kunjungan-vet-praktis",
+    "en": "when-to-use-an-app-for-catatan-kunjungan-vet-practical",
+    "ar": "catatan-kunjungan-vet-19",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-19",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-19",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-19",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-19"
+  },
+  "titles": {
+    "id": "Kapan Saatnya Pakai Aplikasi untuk catatan kunjungan vet",
+    "en": "When to Use an App for catatan kunjungan vet (Practical)",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: Kapan Saatnya Pakai Aplikasi untuk catatan kunjungan vet",
+    "su": "Pituduh: Kapan Saatnya Pakai Aplikasi untuk catatan kunjungan vet",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

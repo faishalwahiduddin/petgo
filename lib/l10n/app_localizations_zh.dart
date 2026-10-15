@@ -231,4 +231,52 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get errorBackupNotPetGo => 'File is not a PetGo backup';
+
+  @override
+  String get actionEditPet => 'Edit pet';
+
+  @override
+  String get actionMarkDone => 'Mark done';
+
+  @override
+  String get actionEditSchedule => 'Edit schedule';
+
+  @override
+  String get actionEditVet => 'Edit vet visit';
+
+  @override
+  String get actionEditDoc => 'Edit document';
+
+  @override
+  String get actionAttachFile => 'Attach file';
+
+  @override
+  String get fieldOptional => 'Optional';
+
+  @override
+  String get fieldDateOfBirth => 'Date of birth';
+
+  @override
+  String get fieldLastDone => 'Last done';
+
+  @override
+  String get fieldCost => 'Cost';
+
+  @override
+  String get fieldNotes => 'Notes';
+
+  @override
+  String get fieldDate => 'Date';
+
+  @override
+  String get fieldExpires => 'Expires';
+
+  @override
+  String get docHasFile => 'File attached';
+
+  @override
+  String get settingsReminders => 'Care reminders';
+
+  @override
+  String get settingsRemindersSubtitle => 'Notify before schedules are due';
 }

@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-09-petgo-untuk-orang-sibuk-harian",
+  "app": "petgo",
+  "publish_date": "2026-10-24",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "persona",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "petgo-untuk-orang-sibuk-harian",
+    "en": "petgo-for-busy-people",
+    "ar": "petgo-3",
+    "jv": "pandhuan-petgo-petgo-3",
+    "su": "pituduh-petgo-petgo-3",
+    "zh": "petgo-petgo-实用指南-3",
+    "ja": "petgopetgo-ガイド-3"
+  },
+  "titles": {
+    "id": "PetGo untuk Orang Sibuk",
+    "en": "PetGo for Busy People",
+    "ar": "PetGo — دليل PetGo",
+    "jv": "Pandhuan: PetGo untuk Orang Sibuk",
+    "su": "Pituduh: PetGo untuk Orang Sibuk",
+    "zh": "PetGo · PetGo 实用指南",
+    "ja": "PetGo｜PetGo ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

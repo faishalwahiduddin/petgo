@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-67-mode-pesawat-tetap-bisa-jadwal-perawatan",
+  "app": "petgo",
+  "publish_date": "2026-12-21",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "offline",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "mode-pesawat-tetap-bisa-jadwal-perawatan-harian",
+    "en": "airplane-mode-still-do-jadwal-perawatan-harian",
+    "ar": "jadwal-perawatan-harian-17",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-17",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-17",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-17",
+    "ja": "petgojadwal-perawatan-harian-ガイド-17"
+  },
+  "titles": {
+    "id": "Mode Pesawat: Tetap Bisa jadwal perawatan",
+    "en": "Airplane Mode: Still Do jadwal perawatan harian",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: Mode Pesawat: Tetap Bisa jadwal perawatan",
+    "su": "Pituduh: Mode Pesawat: Tetap Bisa jadwal perawatan",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

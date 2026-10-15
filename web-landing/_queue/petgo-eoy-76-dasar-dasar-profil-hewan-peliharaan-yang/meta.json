@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-76-dasar-dasar-profil-hewan-peliharaan-yang",
+  "app": "petgo",
+  "publish_date": "2026-12-30",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "evergreen",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "dasar-dasar-profil-hewan-peliharaan-yang-tidak-kedaluwarsa-mingguan",
+    "en": "evergreen-basics-of-profil-hewan-peliharaan",
+    "ar": "profil-hewan-peliharaan-19",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo-19",
+    "su": "pituduh-profil-hewan-peliharaan-petgo-19",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南-19",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド-19"
+  },
+  "titles": {
+    "id": "Dasar-Dasar profil hewan peliharaan yang Tidak Kedaluwarsa",
+    "en": "Evergreen Basics of profil hewan peliharaan — Offline First",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: Dasar-Dasar profil hewan peliharaan yang Tidak Kedaluwarsa",
+    "su": "Pituduh: Dasar-Dasar profil hewan peliharaan yang Tidak Kedaluwarsa",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

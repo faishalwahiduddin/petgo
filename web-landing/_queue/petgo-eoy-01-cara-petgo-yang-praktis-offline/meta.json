@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-01-cara-petgo-yang-praktis-offline",
+  "app": "petgo",
+  "publish_date": "2026-10-16",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "how-to",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "cara-petgo-yang-praktis-offline",
+    "en": "how-to-petgo-offline",
+    "ar": "petgo",
+    "jv": "pandhuan-petgo-petgo",
+    "su": "pituduh-petgo-petgo",
+    "zh": "petgo-petgo-实用指南",
+    "ja": "petgopetgo-ガイド"
+  },
+  "titles": {
+    "id": "Cara PetGo yang Praktis (Offline)",
+    "en": "How to PetGo Offline — Practical Steps",
+    "ar": "PetGo — دليل PetGo",
+    "jv": "Pandhuan: Cara PetGo yang Praktis (Offline)",
+    "su": "Pituduh: Cara PetGo yang Praktis (Offline)",
+    "zh": "PetGo · PetGo 实用指南",
+    "ja": "PetGo｜PetGo ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

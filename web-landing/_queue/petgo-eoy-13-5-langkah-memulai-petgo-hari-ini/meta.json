@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-13-5-langkah-memulai-petgo-hari-ini",
+  "app": "petgo",
+  "publish_date": "2026-10-28",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "steps",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "5-langkah-memulai-petgo-hari-ini",
+    "en": "5-steps-to-start-petgo-today",
+    "ar": "petgo-4",
+    "jv": "pandhuan-petgo-petgo-4",
+    "su": "pituduh-petgo-petgo-4",
+    "zh": "petgo-petgo-实用指南-4",
+    "ja": "petgopetgo-ガイド-4"
+  },
+  "titles": {
+    "id": "5 Langkah Memulai PetGo Hari Ini",
+    "en": "5 Steps to Start PetGo Today",
+    "ar": "PetGo — دليل PetGo",
+    "jv": "Pandhuan: 5 Langkah Memulai PetGo Hari Ini",
+    "su": "Pituduh: 5 Langkah Memulai PetGo Hari Ini",
+    "zh": "PetGo · PetGo 实用指南",
+    "ja": "PetGo｜PetGo ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

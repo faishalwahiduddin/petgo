@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-30-optimasi-catatan-catatan-kunjungan-vet-b",
+  "app": "petgo",
+  "publish_date": "2026-11-14",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "advanced",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "optimasi-catatan-catatan-kunjungan-vet-bulanan-2026",
+    "en": "optimize-monthly-catatan-kunjungan-vet-logs",
+    "ar": "catatan-kunjungan-vet-8",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-8",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-8",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-8",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-8"
+  },
+  "titles": {
+    "id": "Optimasi Catatan catatan kunjungan vet Bulanan",
+    "en": "Optimize Monthly catatan kunjungan vet Logs",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: Optimasi Catatan catatan kunjungan vet Bulanan",
+    "su": "Pituduh: Optimasi Catatan catatan kunjungan vet Bulanan",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

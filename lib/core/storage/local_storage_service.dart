@@ -76,6 +76,12 @@ class LocalStorageService {
   Future<void> setDisclaimerAccepted(bool v) =>
       _prefs.setBool(AppConstants.keyDisclaimer, v);
 
+  static const _kReminders = 'petgo_reminders_enabled';
+
+  bool get remindersEnabled => _prefs.getBool(_kReminders) ?? true;
+
+  Future<void> setRemindersEnabled(bool v) => _prefs.setBool(_kReminders, v);
+
   List<Pet> getPets() {
     final raw = _prefs.getString(AppConstants.keyPets);
     if (raw == null) return [];

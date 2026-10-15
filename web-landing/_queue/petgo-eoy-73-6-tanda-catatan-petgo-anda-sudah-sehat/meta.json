@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-73-6-tanda-catatan-petgo-anda-sudah-sehat",
+  "app": "petgo",
+  "publish_date": "2026-12-27",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "rank-list",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "6-tanda-catatan-petgo-anda-sudah-sehat",
+    "en": "6-signs-your-petgo-log-is-healthy",
+    "ar": "petgo-19",
+    "jv": "pandhuan-petgo-petgo-19",
+    "su": "pituduh-petgo-petgo-19",
+    "zh": "petgo-petgo-实用指南-19",
+    "ja": "petgopetgo-ガイド-19"
+  },
+  "titles": {
+    "id": "6 Tanda Catatan PetGo Anda Sudah Sehat",
+    "en": "6 Signs Your PetGo Log Is Healthy",
+    "ar": "PetGo — دليل PetGo",
+    "jv": "Pandhuan: 6 Tanda Catatan PetGo Anda Sudah Sehat",
+    "su": "Pituduh: 6 Tanda Catatan PetGo Anda Sudah Sehat",
+    "zh": "PetGo · PetGo 实用指南",
+    "ja": "PetGo｜PetGo ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-15-template-catatan-jadwal-perawatan-harian",
+  "app": "petgo",
+  "publish_date": "2026-10-30",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "template",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "template-catatan-jadwal-perawatan-harian-siap-pakai-harian",
+    "en": "ready-to-use-jadwal-perawatan-harian-log-template",
+    "ar": "jadwal-perawatan-harian-4",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-4",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-4",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-4",
+    "ja": "petgojadwal-perawatan-harian-ガイド-4"
+  },
+  "titles": {
+    "id": "Template Catatan jadwal perawatan harian Siap Pakai",
+    "en": "Ready-to-Use jadwal perawatan harian Log Template",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: Template Catatan jadwal perawatan harian Siap Pakai",
+    "su": "Pituduh: Template Catatan jadwal perawatan harian Siap Pakai",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

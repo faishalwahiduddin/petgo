@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-08-profil-hewan-peliharaan-di-hp-vs-buku-ca",
+  "app": "petgo",
+  "publish_date": "2026-10-23",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "comparison",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "profil-hewan-peliharaan-di-hp-vs-buku-catatan-praktis",
+    "en": "profil-hewan-peliharaan-on-phone-vs-paper-log-practical",
+    "ar": "profil-hewan-peliharaan-2",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo-2",
+    "su": "pituduh-profil-hewan-peliharaan-petgo-2",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南-2",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド-2"
+  },
+  "titles": {
+    "id": "profil hewan peliharaan: catatan longgar vs aplikasi",
+    "en": "profil hewan peliharaan on Phone vs Paper Log (Practical)",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: profil hewan peliharaan: catatan longgar vs aplikasi",
+    "su": "Pituduh: profil hewan peliharaan: catatan longgar vs aplikasi",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

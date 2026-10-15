@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-51-gabungkan-jadwal-perawatan-harian-dengan",
+  "app": "petgo",
+  "publish_date": "2026-12-05",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "integration",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "gabungkan-jadwal-perawatan-harian-dengan-kebiasaan-lain-harian",
+    "en": "stack-jadwal-perawatan-harian-with-other-habits",
+    "ar": "jadwal-perawatan-harian-13",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-13",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-13",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-13",
+    "ja": "petgojadwal-perawatan-harian-ガイド-13"
+  },
+  "titles": {
+    "id": "Gabungkan jadwal perawatan harian dengan Kebiasaan Lain",
+    "en": "Stack jadwal perawatan harian with Other Habits",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: Gabungkan jadwal perawatan harian dengan Kebiasaan Lain",
+    "su": "Pituduh: Gabungkan jadwal perawatan harian dengan Kebiasaan Lain",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

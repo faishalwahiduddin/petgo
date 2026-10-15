@@ -7,6 +7,7 @@ import 'core/providers/locale_provider.dart';
 import 'core/providers/theme_provider.dart';
 import 'core/providers/timezone_provider.dart';
 import 'core/router/app_router.dart';
+import 'core/services/care_reminder_service.dart';
 import 'core/storage/local_storage_service.dart';
 import 'core/theme/app_theme.dart';
 import 'core/utils/app_timezone.dart';
@@ -17,7 +18,12 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   AppTimeZone.initAppTimeZones();
   AppTimeZone.cachedDeviceZone = await AppTimeZone.getDeviceZoneName();
+  await CareReminderService.instance.init();
   final storageService = await LocalStorageService.init();
+  await CareReminderService.instance.reschedule(
+    storageService.getCareSchedules(),
+    enabled: storageService.remindersEnabled,
+  );
 
   runApp(
     ProviderScope(

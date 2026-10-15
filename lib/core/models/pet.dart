@@ -31,6 +31,7 @@ class Pet {
   final DateTime? dateOfBirth;
   final double? weightKg;
   final String notes;
+  final String? photoPath;
 
   const Pet({
     required this.id,
@@ -40,6 +41,7 @@ class Pet {
     this.dateOfBirth,
     this.weightKg,
     this.notes = '',
+    this.photoPath,
   });
 
   factory Pet.sampleDog() => Pet(
@@ -47,7 +49,7 @@ class Pet {
         name: 'Milo',
         species: PetSpecies.dog,
         breed: 'Mixed',
-        dateOfBirth: DateTime.now().subtract(const Duration(days: 365 * 2)),
+        dateOfBirth: DateTime.now().toUtc().subtract(const Duration(days: 365 * 2)),
         weightKg: 12.5,
       );
 
@@ -56,7 +58,7 @@ class Pet {
         name: 'Luna',
         species: PetSpecies.cat,
         breed: 'Domestic',
-        dateOfBirth: DateTime.now().subtract(const Duration(days: 365)),
+        dateOfBirth: DateTime.now().toUtc().subtract(const Duration(days: 365)),
         weightKg: 4.2,
       );
 
@@ -67,8 +69,10 @@ class Pet {
     DateTime? dateOfBirth,
     double? weightKg,
     String? notes,
+    String? photoPath,
     bool clearDob = false,
     bool clearWeight = false,
+    bool clearPhoto = false,
   }) =>
       Pet(
         id: id,
@@ -78,6 +82,7 @@ class Pet {
         dateOfBirth: clearDob ? null : (dateOfBirth ?? this.dateOfBirth),
         weightKg: clearWeight ? null : (weightKg ?? this.weightKg),
         notes: notes ?? this.notes,
+        photoPath: clearPhoto ? null : (photoPath ?? this.photoPath),
       );
 
   Map<String, dynamic> toJson() => {
@@ -88,6 +93,7 @@ class Pet {
         'dateOfBirth': _encodeDateOpt(dateOfBirth),
         'weightKg': weightKg,
         'notes': notes,
+        'photoPath': photoPath,
       };
 
   factory Pet.fromJson(Map<String, dynamic> j) => Pet(
@@ -101,6 +107,7 @@ class Pet {
         dateOfBirth: _decodeDateOpt(j['dateOfBirth']),
         weightKg: (j['weightKg'] as num?)?.toDouble(),
         notes: j['notes'] as String? ?? '',
+        photoPath: j['photoPath'] as String?,
       );
 }
 
@@ -291,6 +298,7 @@ class PetDocument {
   final DocKind kind;
   final DateTime? expiresAt;
   final String notes;
+  final String? filePath;
 
   const PetDocument({
     required this.id,
@@ -299,6 +307,7 @@ class PetDocument {
     required this.kind,
     this.expiresAt,
     this.notes = '',
+    this.filePath,
   });
 
   Map<String, dynamic> toJson() => {
@@ -308,6 +317,7 @@ class PetDocument {
         'kind': kind.name,
         'expiresAt': _encodeDateOpt(expiresAt),
         'notes': notes,
+        'filePath': filePath,
       };
 
   factory PetDocument.fromJson(Map<String, dynamic> j) => PetDocument(
@@ -320,5 +330,6 @@ class PetDocument {
         ),
         expiresAt: _decodeDateOpt(j['expiresAt']),
         notes: j['notes'] as String? ?? '',
+        filePath: j['filePath'] as String?,
       );
 }

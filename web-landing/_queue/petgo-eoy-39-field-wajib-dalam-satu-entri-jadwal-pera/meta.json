@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-39-field-wajib-dalam-satu-entri-jadwal-pera",
+  "app": "petgo",
+  "publish_date": "2026-11-23",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "deep",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "field-wajib-dalam-satu-entri-jadwal-perawatan-harian-harian",
+    "en": "required-fields-in-one-jadwal-perawatan-harian-entry",
+    "ar": "jadwal-perawatan-harian-10",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-10",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-10",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-10",
+    "ja": "petgojadwal-perawatan-harian-ガイド-10"
+  },
+  "titles": {
+    "id": "Field Wajib dalam Satu Entri jadwal perawatan",
+    "en": "Required Fields in One jadwal perawatan harian Entry",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: Field Wajib dalam Satu Entri jadwal perawatan",
+    "su": "Pituduh: Field Wajib dalam Satu Entri jadwal perawatan",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-36-rencana-profil-hewan-peliharaan-menjelan",
+  "app": "petgo",
+  "publish_date": "2026-11-20",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "seasonal",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "rencana-profil-hewan-peliharaan-menjelang-2027-2026",
+    "en": "profil-hewan-peliharaan-plan-heading-into-2027",
+    "ar": "profil-hewan-peliharaan-9",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo-9",
+    "su": "pituduh-profil-hewan-peliharaan-petgo-9",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南-9",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド-9"
+  },
+  "titles": {
+    "id": "Rencana profil hewan peliharaan Menjelang 2027",
+    "en": "profil hewan peliharaan Plan Heading into 2027",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: Rencana profil hewan peliharaan Menjelang 2027",
+    "su": "Pituduh: Rencana profil hewan peliharaan Menjelang 2027",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

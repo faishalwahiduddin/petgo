@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-60-desain-ritual-buka-aplikasi-untuk-profil",
+  "app": "petgo",
+  "publish_date": "2026-12-14",
+  "primary_keyword": "profil hewan peliharaan",
+  "idea_type": "ux",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "desain-ritual-buka-aplikasi-untuk-profil-hewan-peliharaan-2026",
+    "en": "app-open-ritual-design-for-profil-hewan-peliharaan",
+    "ar": "profil-hewan-peliharaan-15",
+    "jv": "pandhuan-profil-hewan-peliharaan-petgo-15",
+    "su": "pituduh-profil-hewan-peliharaan-petgo-15",
+    "zh": "petgo-profil-hewan-peliharaan-实用指南-15",
+    "ja": "petgoprofil-hewan-peliharaan-ガイド-15"
+  },
+  "titles": {
+    "id": "Desain Ritual Buka Aplikasi untuk profil hewan peliharaan",
+    "en": "App-Open Ritual Design for profil hewan peliharaan",
+    "ar": "profil hewan peliharaan — دليل PetGo",
+    "jv": "Pandhuan: Desain Ritual Buka Aplikasi untuk profil hewan peliharaan",
+    "su": "Pituduh: Desain Ritual Buka Aplikasi untuk profil hewan peliharaan",
+    "zh": "PetGo · profil hewan peliharaan 实用指南",
+    "ja": "PetGo｜profil hewan peliharaan ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

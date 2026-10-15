@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-11-kesalahan-umum-saat-jadwal-perawatan-har",
+  "app": "petgo",
+  "publish_date": "2026-10-26",
+  "primary_keyword": "jadwal perawatan harian",
+  "idea_type": "mistakes",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "kesalahan-umum-saat-jadwal-perawatan-harian-offline",
+    "en": "common-mistakes-when-doing-jadwal-perawatan-harian",
+    "ar": "jadwal-perawatan-harian-3",
+    "jv": "pandhuan-jadwal-perawatan-harian-petgo-3",
+    "su": "pituduh-jadwal-perawatan-harian-petgo-3",
+    "zh": "petgo-jadwal-perawatan-harian-实用指南-3",
+    "ja": "petgojadwal-perawatan-harian-ガイド-3"
+  },
+  "titles": {
+    "id": "Kesalahan Umum saat jadwal perawatan harian",
+    "en": "Common Mistakes When Doing jadwal perawatan harian",
+    "ar": "jadwal perawatan harian — دليل PetGo",
+    "jv": "Pandhuan: Kesalahan Umum saat jadwal perawatan harian",
+    "su": "Pituduh: Kesalahan Umum saat jadwal perawatan harian",
+    "zh": "PetGo · jadwal perawatan harian 实用指南",
+    "ja": "PetGo｜jadwal perawatan harian ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

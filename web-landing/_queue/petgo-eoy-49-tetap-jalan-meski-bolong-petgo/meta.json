@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-49-tetap-jalan-meski-bolong-petgo",
+  "app": "petgo",
+  "publish_date": "2026-12-03",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "motivation",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "tetap-jalan-meski-bolong-petgo",
+    "en": "keep-going-after-missing-petgo",
+    "ar": "petgo-13",
+    "jv": "pandhuan-petgo-petgo-13",
+    "su": "pituduh-petgo-petgo-13",
+    "zh": "petgo-petgo-实用指南-13",
+    "ja": "petgopetgo-ガイド-13"
+  },
+  "titles": {
+    "id": "Tetap Jalan meski Bolong PetGo",
+    "en": "Keep Going After Missing PetGo",
+    "ar": "PetGo — دليل PetGo",
+    "jv": "Pandhuan: Tetap Jalan meski Bolong PetGo",
+    "su": "Pituduh: Tetap Jalan meski Bolong PetGo",
+    "zh": "PetGo · PetGo 实用指南",
+    "ja": "PetGo｜PetGo ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}

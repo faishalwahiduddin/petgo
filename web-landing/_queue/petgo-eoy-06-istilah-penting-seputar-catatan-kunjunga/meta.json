@@ -1,0 +1,29 @@
+{
+  "package_id": "petgo-eoy-06-istilah-penting-seputar-catatan-kunjunga",
+  "app": "petgo",
+  "publish_date": "2026-10-21",
+  "primary_keyword": "catatan kunjungan vet",
+  "idea_type": "glossary",
+  "status": "queued",
+  "banner_ready": false,
+  "seo": true,
+  "slugs": {
+    "id": "istilah-penting-seputar-catatan-kunjungan-vet-2026",
+    "en": "key-terms-around-catatan-kunjungan-vet",
+    "ar": "catatan-kunjungan-vet-2",
+    "jv": "pandhuan-catatan-kunjungan-vet-petgo-2",
+    "su": "pituduh-catatan-kunjungan-vet-petgo-2",
+    "zh": "petgo-catatan-kunjungan-vet-实用指南-2",
+    "ja": "petgocatatan-kunjungan-vet-ガイド-2"
+  },
+  "titles": {
+    "id": "Istilah Penting seputar catatan kunjungan vet",
+    "en": "Key Terms Around catatan kunjungan vet",
+    "ar": "catatan kunjungan vet — دليل PetGo",
+    "jv": "Pandhuan: Istilah Penting seputar catatan kunjungan vet",
+    "su": "Pituduh: Istilah Penting seputar catatan kunjungan vet",
+    "zh": "PetGo · catatan kunjungan vet 实用指南",
+    "ja": "PetGo｜catatan kunjungan vet ガイド"
+  },
+  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+}
