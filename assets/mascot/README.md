@@ -1,22 +1,19 @@
-# Maskot Tori — kandidat anchor
+# Maskot Pego — kandidat anchor
 
-**rubah mekanik (fennec fox)** · peran Sidekick
+**anak anjing corgi ramah (corgi pup)** · peran Companion
 
-Fennec fox bertelinga besar peka mendengar bunyi mesin halus — teliti merawat kondisi kendaraan.
+Corgi yang setia, lincah, dan penuh kasih sayang mewakili ikatan tulus antara pemilik dan hewan peliharaan dalam perawatan harian.
 
 Spesifikasi dan prompt: [`docs/mascots/prompts/petgo.md`](../../../docs/mascots/prompts/petgo.md)
 
 | File | Uji terukur | Catatan |
 |---|---|---|
-| `anchor-candidate-01.png` | pending | Belum digenerate |
+| `anchor-candidate-01.png` | lolos | Backup anchor fennec fox lama |
+| `anchor.png` | lolos | Anchor resmi: 100% Golden Rules compliant (Pego si corgi ramah) |
 
 Uji terukur hanya menyaring rasio, transparansi, palet, dominasi aksen, outline,
 dan pemisahan grayscale. **Tiga hal ini tetap butuh mata:**
 
-- Signature detail: topi mekanik datar slate #334155 beremblem speedometer emas #F59E0B di depan
-- Siluet: kepala rubah mungil dengan dua telinga segitiga besar menjulang, moncong runcing lembut
+- Signature detail: bandana leher sage green #5B7F5A dengan liontin jejak kaki emas #D4A373, telinga tegak membulat khas corgi
+- Siluet: kepala corgi bulat dengan telinga besar tegak membulat, tubuh gembul berkaki pendek, senyum kawaii ramah
 - Selalu: tanpa hidung, satu highlight per mata, tanpa cast shadow
-
-Regenerate: `bash docs/mascots/generate_anchors.sh petgo`
-
-Dibuat via Gemini "Gambar" (Pro Mendalam), dikendalikan `gstack browse`.
