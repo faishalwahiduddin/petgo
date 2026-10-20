@@ -6,6 +6,16 @@ PetGo — Pet manager: profil hewan, jadwal perawatan (vaksin/cacing/flea/groomi
 **Subdomain:** petgo.faishal.id · **CF Project:** `petgo-faishal` · **appId:** `id.faishal.petgo`
 **Git remote:** `git@github.com:faishalwahiduddin/petgo.git`
 
+## Struktur repo (§ORG)
+
+<!-- repo-layout:begin -->
+- Root repo hanya **source code + konfigurasi**. Jangan membuat folder atau berkas baru di root (laporan, catatan, scratch, screenshot, ekspor).
+- Rencana → `docs/plans/active/` (tuntas → `docs/plans/archive/`) · changelog → `docs/changelog/YYYY/MM/YYYY-MM-DD-<slug>.md` · test Playwright → `tests/e2e/` (Flutter: `test/`, `integration_test/`) · trace / openspec / store / QA / riset → `docs/<topik>/`.
+- Screenshot & artefak QA (`test-results/`, `playwright-report/`, `qa-*`, `screenshots/`, bukti run) tidak pernah di-commit — sudah di-ignore lewat blok `repo-layout standard` di `.gitignore`.
+- Berkas sementara → scratchpad sesi atau `/tmp`, bukan repo.
+- Aturan lengkap: `~/projects/docs/standards.md` §ORG.
+<!-- repo-layout:end -->
+
 ## Tech Stack
 **Flutter 3.44.8 · Dart 3.12.2 · Riverpod 3.x · GoRouter · Cloudflare**
 

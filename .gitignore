@@ -46,3 +46,32 @@ app.*.map.json
 .omc/
 .omo/
 node_modules/
+
+# >>> repo-layout standard (docs/standards.md §ORG) >>>
+# QA & test artefacts — never committed
+/test-results/
+tests/**/test-results/
+playwright-report/
+blob-report/
+qa-artifacts/
+qa-screenshots/
+proofshot-artifacts/
+/screenshots/
+/.screenshots/
+.playwright-mcp/
+/qa-report-*.html
+**/qa/**/screenshots/
+**/runs/**/screenshots/
+docs/qa/**/*.png
+docs/qa/**/*.jpg
+docs/qa/**/*.jpeg
+docs/qa/**/*.webp
+tests/e2e/.auth/
+# Agent / tool session state
+.omc/*
+!.omc/skills/
+.omo/
+.sisyphus/
+.codegraph/
+.superpowers/
+# <<< repo-layout standard <<<

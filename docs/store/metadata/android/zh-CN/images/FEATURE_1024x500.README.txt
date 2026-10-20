@@ -1,0 +1,2 @@
+Place featureGraphic.png (1024x500) here.
+Generate it from docs/store/screenshots/feature-graphic.html?lang=zh-CN.
