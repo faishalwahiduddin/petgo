@@ -1,0 +1,39 @@
+{
+  "flow": "FLOW-DAY-01",
+  "title": "Mencatat log harian dan berat",
+  "summary": "Pemilik mencatat makan/jalan/litter dengan satu ketukan dan menimbang berat hewan.",
+  "role": "ROL-001",
+  "tc": "FLOW-DAY-01-T01",
+  "baseURL": "flutter build web (lokal)",
+  "video": "video.mp4",
+  "steps": [
+    {
+      "n": 1,
+      "title": "Buka Harian",
+      "instruction": "Ketuk tab **Harian**: **Catat cepat** dan **Timeline** aktivitas hewan aktif.",
+      "image": "step-01.png",
+      "t": 9.3
+    },
+    {
+      "n": 2,
+      "title": "Catat cepat",
+      "instruction": "Ketuk **Makan**, **Jalan**, atau **Litter**; aktivitas langsung masuk ke **Timeline**.",
+      "image": "step-02.png",
+      "t": 11.2
+    },
+    {
+      "n": 3,
+      "title": "Catat berat",
+      "instruction": "Ketuk **Catat berat** dan isi **Berat (kg)** (0–500). Berat terbaru memperbarui profil hewan.",
+      "image": "step-03.png",
+      "t": 15.3
+    },
+    {
+      "n": 4,
+      "title": "Berat tersimpan",
+      "instruction": "Setelah **Simpan**, berat tercatat di riwayat dan profil hewan aktif.",
+      "image": "step-04.png",
+      "t": 17.6
+    }
+  ]
+}

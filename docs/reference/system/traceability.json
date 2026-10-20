@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "app": "petgo",
+  "note": "SSOT §TRACE (standards.md). Layar = pages (route GoRouter); app lokal tanpa API/email. Turunan: trace-graph.json, traceability-matrix.md (graph.mjs --write).",
+  "roles": {
+    "USR": "ROL-001"
+  },
+  "modules": {
+    "PET": "MOD-001",
+    "CAR": "MOD-002",
+    "DAY": "MOD-003",
+    "DOC": "MOD-004",
+    "SET": "MOD-005"
+  },
+  "epics": [
+    {
+      "id": "EP-001",
+      "module": "MOD-001",
+      "title": "Profil hewan"
+    },
+    {
+      "id": "EP-002",
+      "module": "MOD-002",
+      "title": "Perawatan, kesehatan & dokumen"
+    },
+    {
+      "id": "EP-003",
+      "module": "MOD-005",
+      "title": "Cadangan & preferensi"
+    }
+  ],
+  "flows": [
+    {
+      "id": "FLOW-PET-01",
+      "story": "US-001",
+      "epic": "EP-001",
+      "role": "ROL-001",
+      "module": "MOD-001",
+      "title": "Menambah profil hewan",
+      "status": "as-built"
+    },
+    {
+      "id": "FLOW-CAR-01",
+      "story": "US-002",
+      "epic": "EP-002",
+      "role": "ROL-001",
+      "module": "MOD-002",
+      "title": "Mengelola jadwal perawatan",
+      "status": "as-built"
+    },
+    {
+      "id": "FLOW-VET-01",
+      "story": "US-003",
+      "epic": "EP-002",
+      "role": "ROL-001",
+      "module": "MOD-002",
+      "title": "Mencatat kunjungan dokter hewan",
+      "status": "as-built"
+    },
+    {
+      "id": "FLOW-DAY-01",
+      "story": [
+        "US-004",
+        "US-005"
+      ],
+      "epic": "EP-002",
+      "role": "ROL-001",
+      "module": "MOD-003",
+      "title": "Mencatat log harian dan berat",
+      "status": "as-built"
+    },
+    {
+      "id": "FLOW-DOC-01",
+      "story": "US-006",
+      "epic": "EP-002",
+      "role": "ROL-001",
+      "module": "MOD-004",
+      "title": "Menyimpan dokumen hewan",
+      "status": "as-built"
+    },
+    {
+      "id": "FLOW-SET-01",
+      "story": [
+        "US-007",
+        "US-008"
+      ],
+      "epic": "EP-003",
+      "role": "ROL-001",
+      "module": "MOD-005",
+      "title": "Mencadangkan data dan mengatur pengingat",
+      "status": "as-built"
+    }
+  ],
+  "pages": [
+    {
+      "id": "USR-PET-001",
+      "route": "/onboarding",
+      "source": "lib/features/onboarding/onboarding_page.dart",
+      "role": "ROL-001",
+      "module": "MOD-001",
+      "flows": [
+        "FLOW-PET-01"
+      ]
+    },
+    {
+      "id": "USR-PET-002",
+      "route": "/",
+      "source": "lib/features/home/home_screen.dart",
+      "role": "ROL-001",
+      "module": "MOD-001",
+      "flows": [
+        "FLOW-PET-01"
+      ]
+    },
+    {
+      "id": "USR-CAR-001",
+      "route": "/care",
+      "source": "lib/features/care/care_screen.dart",
+      "role": "ROL-001",
+      "module": "MOD-002",
+      "flows": [
+        "FLOW-CAR-01",
+        "FLOW-VET-01"
+      ]
+    },
+    {
+      "id": "USR-DAY-001",
+      "route": "/daily",
+      "source": "lib/features/daily/daily_screen.dart",
+      "role": "ROL-001",
+      "module": "MOD-003",
+      "flows": [
+        "FLOW-DAY-01"
+      ]
+    },
+    {
+      "id": "USR-DOC-001",
+      "route": "/docs",
+      "source": "lib/features/docs/docs_screen.dart",
+      "role": "ROL-001",
+      "module": "MOD-004",
+      "flows": [
+        "FLOW-DOC-01"
+      ]
+    },
+    {
+      "id": "USR-SET-001",
+      "route": "/settings",
+      "source": "lib/features/settings/settings_screen.dart",
+      "role": "ROL-001",
+      "module": "MOD-005",
+      "flows": [
+        "FLOW-SET-01",
+        "FLOW-PET-01"
+      ]
+    }
+  ],
+  "apis": [],
+  "emails": [],
+  "functions": [
+    {
+      "id": "USR-PET-101",
+      "name": "PetsNotifier / activePetProvider",
+      "source": "lib/core/providers/app_providers.dart",
+      "role": "ROL-001",
+      "module": "MOD-001",
+      "flows": [
+        "FLOW-PET-01"
+      ]
+    },
+    {
+      "id": "USR-CAR-101",
+      "name": "CareSchedulesNotifier / CareSchedule.urgency",
+      "source": "lib/core/models/pet.dart",
+      "role": "ROL-001",
+      "module": "MOD-002",
+      "flows": [
+        "FLOW-CAR-01"
+      ]
+    },
+    {
+      "id": "USR-CAR-102",
+      "name": "VetLogsNotifier",
+      "source": "lib/core/providers/app_providers.dart",
+      "role": "ROL-001",
+      "module": "MOD-002",
+      "flows": [
+        "FLOW-VET-01"
+      ]
+    },
+    {
+      "id": "USR-DAY-101",
+      "name": "DailyLogsNotifier / WeightLogsNotifier",
+      "source": "lib/core/providers/app_providers.dart",
+      "role": "ROL-001",
+      "module": "MOD-003",
+      "flows": [
+        "FLOW-DAY-01"
+      ]
+    },
+    {
+      "id": "USR-DOC-101",
+      "name": "DocumentsNotifier",
+      "source": "lib/core/providers/app_providers.dart",
+      "role": "ROL-001",
+      "module": "MOD-004",
+      "flows": [
+        "FLOW-DOC-01"
+      ]
+    },
+    {
+      "id": "USR-SET-101",
+      "name": "LocalStorageService (seed/backup)",
+      "source": "lib/core/storage/local_storage_service.dart",
+      "role": "ROL-001",
+      "module": "MOD-005",
+      "flows": [
+        "FLOW-SET-01"
+      ]
+    }
+  ]
+}

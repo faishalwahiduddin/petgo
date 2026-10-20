@@ -39,13 +39,29 @@ dan dokumen lokal. Offline-first, tanpa backend, tanpa akun.
 | `US-005` | **Berat badan** | 2 | Timbang rutin + grafik tren | `lib/features/` |
 | `US-006` | **Dokumen lokal** | 2 | Foto kartu vaksin dan dokumen via file | `lib/features/` |
 | `US-007` | **Ekspor/impor** | 2 | Backup JSON via share + FilePicker | `lib/features/` |
-| `US-008` | **i18n** | 3 | Indonesia + Inggris | `lib/l10n/` |
+| `US-008` | **i18n** | 3 | 8 bahasa (id, en, ar, jv, su, zh, ja, es) | `lib/l10n/` |
 
 ### 4.2 Di luar cakupan
 
 - Pengingat push server-side (notifikasi lokal bila didukung platform)
 - Direktori dokter hewan atau booking klinik
 - Backend, akun, sinkronisasi cloud
+
+### 4.3 Kebutuhan produk (§TRACE)
+
+`FR`/`NFR` di kolom pertama adalah SSOT; kolom berikutnya menunjuk `BR` asal
+([BRD](./BRD.md)) dan story/flow yang merealisasikannya
+([user-flows](./reference/specs/user-flows.md)).
+
+| ID | Kebutuhan | Asal | Realisasi |
+|---|---|---|---|
+| FR-001 | Profil hewan (nama 2–50 karakter, spesies, ras, berat 0–500 kg, tanggal lahir); hewan pertama otomatis aktif; hapus men-cascade semua catatan; hewan terakhir tidak bisa dihapus. | BR-005 | US-001, FLOW-PET-01 |
+| FR-002 | Jadwal perawatan (judul wajib, interval ≥ 1 bulan) dengan status aman/segera (≤ 14 hari)/terlewat; tandai selesai mencatat tanggal hari ini. | BR-001 | US-002, FLOW-CAR-01 |
+| FR-003 | Kunjungan vet (judul wajib, klinik, obat, biaya opsional) terurut terbaru. | BR-002 | US-003, FLOW-VET-01 |
+| FR-004 | Log harian satu ketukan (makan, jalan, litter) dan catatan berat 0–500 kg yang memperbarui profil hewan aktif. | BR-003 | US-004, US-005, FLOW-DAY-01 |
+| FR-005 | Dokumen per hewan (judul wajib, jenis, masa berlaku opsional, lampiran). | BR-004 | US-006, FLOW-DOC-01 |
+| FR-006 | Ekspor/impor cadangan; berkas app lain, tanpa hewan, atau JSON mentah ditolak; pengingat perawatan; 8 bahasa. | BR-006 | US-007, US-008, FLOW-SET-01 |
+| NFR-001 | Offline-first: data hanya di `shared_preferences` perangkat; data korup dibaca sebagai kosong. | BR-006 | FLOW-SET-01, FLOW-VET-01 |
 
 ## 5. Data Model
 

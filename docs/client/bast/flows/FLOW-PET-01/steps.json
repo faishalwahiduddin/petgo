@@ -1,0 +1,39 @@
+{
+  "flow": "FLOW-PET-01",
+  "title": "Menambah profil hewan",
+  "summary": "Pemilik menyetujui penafian, lalu menambah profil hewan (nama, spesies, ras, berat) dan memilihnya sebagai hewan aktif.",
+  "role": "ROL-001",
+  "tc": "FLOW-PET-01-T01",
+  "baseURL": "flutter build web (lokal)",
+  "video": "video.mp4",
+  "steps": [
+    {
+      "n": 1,
+      "title": "Baca penafian",
+      "instruction": "Saat pertama dibuka, PetGo menegaskan data tersimpan lokal dan **bukan diagnosis dokter hewan**. Ketuk **Saya mengerti — lanjut**.",
+      "image": "step-01.png",
+      "t": 5.8
+    },
+    {
+      "n": 2,
+      "title": "Daftar hewan",
+      "instruction": "Tab **Hewan** menampilkan **Hewan aktif**, jadwal yang jatuh tempo, dan **Semua hewan**.",
+      "image": "step-02.png",
+      "t": 8.1
+    },
+    {
+      "n": 3,
+      "title": "Isi profil",
+      "instruction": "Ketuk **Tambah hewan**, isi **Nama** (2–50 karakter), **Spesies**, **Ras**, dan **Berat (kg)** (0–500).",
+      "image": "step-03.png",
+      "t": 14.1
+    },
+    {
+      "n": 4,
+      "title": "Simpan",
+      "instruction": "Ketuk **Simpan**. Hewan baru muncul di **Semua hewan** dan bisa dipilih sebagai **Hewan aktif**.",
+      "image": "step-04.png",
+      "t": 16.4
+    }
+  ]
+}

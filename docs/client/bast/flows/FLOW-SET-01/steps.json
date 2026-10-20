@@ -1,0 +1,18 @@
+{
+  "flow": "FLOW-SET-01",
+  "title": "Mencadangkan data dan mengatur pengingat",
+  "summary": "Pemilik membuka **Pengaturan** untuk bahasa, pengingat perawatan, serta ekspor/impor cadangan.",
+  "role": "ROL-001",
+  "tc": "FLOW-SET-01-T01",
+  "baseURL": "flutter build web (lokal)",
+  "video": "video.mp4",
+  "steps": [
+    {
+      "n": 1,
+      "title": "Buka Pengaturan",
+      "instruction": "Ketuk tab **Pengaturan**: **Bahasa**, **Profil hewan**, **Pengingat perawatan**, **Ekspor cadangan**, dan **Impor cadangan**.",
+      "image": "step-01.png",
+      "t": 7.8
+    }
+  ]
+}

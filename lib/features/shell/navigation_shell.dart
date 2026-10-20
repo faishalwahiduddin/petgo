@@ -5,6 +5,10 @@ import 'package:petgo/l10n/app_localizations.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/ui/glass_bar.dart';
 
+/// Height of the Material 3 [NavigationBar] drawn over tab pages (extendBody):
+/// tab-page FABs pad by this so the bar does not cover them.
+const kShellNavBarHeight = 80.0;
+
 class NavigationShell extends StatelessWidget {
   const NavigationShell({super.key, required this.navigationShell});
 

@@ -1,0 +1,39 @@
+{
+  "flow": "FLOW-CAR-01",
+  "title": "Mengelola jadwal perawatan",
+  "summary": "Pemilik melihat jadwal vaksin/obat cacing beserta sisa hari, menandai selesai, dan menambah jadwal baru.",
+  "role": "ROL-001",
+  "tc": "FLOW-CAR-01-T01",
+  "baseURL": "flutter build web (lokal)",
+  "video": "video.mp4",
+  "steps": [
+    {
+      "n": 1,
+      "title": "Buka Perawatan",
+      "instruction": "Ketuk tab **Perawatan**: setiap jadwal menampilkan interval dan sisa hari menuju jatuh tempo.",
+      "image": "step-01.png",
+      "t": 8.6
+    },
+    {
+      "n": 2,
+      "title": "Tandai selesai",
+      "instruction": "Ketuk **Tandai selesai** setelah perawatan dilakukan; tanggal hari ini tercatat dan jatuh tempo berikutnya dihitung ulang.",
+      "image": "step-02.png",
+      "t": 10.7
+    },
+    {
+      "n": 3,
+      "title": "Tambah jadwal",
+      "instruction": "Ketuk **Tambah jadwal**, isi **Judul**, jenis, dan **Interval (bulan)** (minimal 1).",
+      "image": "step-03.png",
+      "t": 14.4
+    },
+    {
+      "n": 4,
+      "title": "Jadwal tersimpan",
+      "instruction": "Ketuk **Simpan**. Jadwal baru masuk ke daftar perawatan.",
+      "image": "step-04.png",
+      "t": 16.7
+    }
+  ]
+}

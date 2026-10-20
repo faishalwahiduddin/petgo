@@ -62,3 +62,17 @@ Tidak ada peran berbasis server.
 
 - Tanpa sinkron antar perangkat; pindah HP memakai file backup.
 - Pengingat jadwal hanya seakurat data yang dimasukkan pemilik.
+
+## 6. Kebutuhan bisnis (§TRACE)
+
+ID di kolom pertama adalah SSOT `BR-NNN`; kolom terakhir menunjuk kebutuhan
+produk di [PRD](./PRD.md) yang merealisasikannya.
+
+| ID | Kebutuhan bisnis | Direalisasikan oleh |
+|---|---|---|
+| BR-001 | Perawatan tidak terlewat: jadwal vaksin, cacing, flea, dan grooming dengan jatuh tempo jelas; selesai mencatat tanggal aktual. | FR-002 |
+| BR-002 | Riwayat siap ditunjukkan: kunjungan vet, diagnosis, obat, dan biaya per hewan. | FR-003 |
+| BR-003 | Kesehatan terpantau lewat log harian dan tren berat. | FR-004 |
+| BR-004 | Dokumen penting tersimpan rapi per hewan. | FR-005 |
+| BR-005 | Satu aplikasi untuk banyak hewan dengan pemilih profil. | FR-001 |
+| BR-006 | Data tetap milik pemilik: lokal, tanpa akun, penafian bukan diagnosis, cadangan bisa diimpor kembali. | FR-006, NFR-001 |

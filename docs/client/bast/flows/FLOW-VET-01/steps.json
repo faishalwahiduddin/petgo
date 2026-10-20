@@ -1,0 +1,25 @@
+{
+  "flow": "FLOW-VET-01",
+  "title": "Mencatat kunjungan dokter hewan",
+  "summary": "Pemilik mencatat kunjungan ke dokter hewan beserta klinik, obat, dan biaya.",
+  "role": "ROL-001",
+  "tc": "FLOW-VET-01-T01",
+  "baseURL": "flutter build web (lokal)",
+  "video": "video.mp4",
+  "steps": [
+    {
+      "n": 1,
+      "title": "Isi kunjungan",
+      "instruction": "Di tab **Perawatan**, ketuk **Catat vet**. Isi **Judul** (wajib), **Klinik**, **Obat**, dan **Biaya**.",
+      "image": "step-01.png",
+      "t": 14.1
+    },
+    {
+      "n": 2,
+      "title": "Simpan",
+      "instruction": "Ketuk **Simpan**. Kunjungan tampil di **Kunjungan & obat**, terbaru di atas.",
+      "image": "step-02.png",
+      "t": 16.4
+    }
+  ]
+}

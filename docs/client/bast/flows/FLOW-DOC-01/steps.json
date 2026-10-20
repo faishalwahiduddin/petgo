@@ -1,0 +1,32 @@
+{
+  "flow": "FLOW-DOC-01",
+  "title": "Menyimpan dokumen hewan",
+  "summary": "Pemilik mencatat dokumen penting (kartu vaksin, resep, asuransi) per hewan.",
+  "role": "ROL-001",
+  "tc": "FLOW-DOC-01-T01",
+  "baseURL": "flutter build web (lokal)",
+  "video": "video.mp4",
+  "steps": [
+    {
+      "n": 1,
+      "title": "Buka Dokumen",
+      "instruction": "Ketuk tab **Dokumen**: daftar dokumen hewan aktif.",
+      "image": "step-01.png",
+      "t": 8.4
+    },
+    {
+      "n": 2,
+      "title": "Tambah dokumen",
+      "instruction": "Ketuk **Tambah dokumen**, isi **Judul** (wajib), jenis, dan masa berlaku bila ada.",
+      "image": "step-02.png",
+      "t": 12.1
+    },
+    {
+      "n": 3,
+      "title": "Dokumen tersimpan",
+      "instruction": "Ketuk **Simpan**. Dokumen muncul di daftar.",
+      "image": "step-03.png",
+      "t": 14.4
+    }
+  ]
+}

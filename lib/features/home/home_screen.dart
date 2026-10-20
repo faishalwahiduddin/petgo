@@ -9,6 +9,7 @@ import 'package:petgo/l10n/app_localizations.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
+import '../shell/navigation_shell.dart' show kShellNavBarHeight;
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -26,10 +27,14 @@ class HomeScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.appTitle)),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () => _showPetEditor(context, ref),
-        icon: const Icon(Icons.add),
-        label: Text(l10n.actionAddPet),
+      floatingActionButton: Padding(
+        // Lift above the shell's glass nav bar (extendBody) so it stays tappable.
+        padding: const EdgeInsets.only(bottom: kShellNavBarHeight),
+        child: FloatingActionButton.extended(
+          onPressed: () => _showPetEditor(context, ref),
+          icon: const Icon(Icons.add),
+          label: Text(l10n.actionAddPet),
+        ),
       ),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
@@ -188,6 +193,7 @@ class HomeScreen extends ConsumerWidget {
 
     final ok = await showModalBottomSheet<bool>(
       context: context,
+      useRootNavigator: true,
       isScrollControlled: true,
       builder: (ctx) {
         return Padding(

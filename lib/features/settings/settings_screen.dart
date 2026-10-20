@@ -30,6 +30,7 @@ class SettingsScreen extends ConsumerWidget {
             onTap: () async {
               final picked = await showModalBottomSheet<Locale>(
                 context: context,
+                useRootNavigator: true,
                 builder: (ctx) => ListView(
                   shrinkWrap: true,
                   children: supportedLocales

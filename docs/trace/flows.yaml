@@ -1,0 +1,154 @@
+# docs/trace/flows.yaml — test case per flow (standards §TRACE). Ditulis tangan.
+# Bukti: test("<TC-ID> …") / testWidgets("<TC-ID> …") di test/**/*_test.dart; BAST: test/bast/bast_flows.mjs.
+version: 1
+app: petgo
+
+flows:
+  - id: FLOW-PET-01
+    title: "Menambah profil hewan"
+    priority: P0
+    requirement: [FR-001]
+    touches:
+      - lib/features/onboarding/**
+      - lib/features/home/home_screen.dart
+      - lib/core/providers/app_providers.dart
+    cases:
+      - id: FLOW-PET-01-T01
+        kind: positive
+        layer: unit
+        title: "hewan pertama tersimpan dan otomatis menjadi hewan aktif"
+      - id: FLOW-PET-01-T02
+        kind: negative
+        layer: unit
+        title: "nama satu huruf atau berat di luar 0–500 kg ditolak"
+      - id: FLOW-PET-01-T03
+        kind: edge
+        layer: unit
+        title: "batas: nama 50 karakter dan berat 500 kg diterima, 51 karakter ditolak"
+      - id: FLOW-PET-01-T04
+        kind: corner
+        layer: unit
+        title: "hapus hewan aktif men-cascade semua catatannya; hewan terakhir diblok"
+
+  - id: FLOW-CAR-01
+    title: "Mengelola jadwal perawatan"
+    priority: P0
+    requirement: [FR-002]
+    touches:
+      - lib/features/care/care_screen.dart
+      - lib/core/models/pet.dart
+    cases:
+      - id: FLOW-CAR-01-T01
+        kind: positive
+        layer: unit
+        title: "tandai selesai mencatat tanggal aktual dan menggeser jatuh tempo"
+      - id: FLOW-CAR-01-T02
+        kind: negative
+        layer: unit
+        title: "jadwal tanpa judul atau interval < 1 bulan ditolak"
+      - id: FLOW-CAR-01-T03
+        kind: edge
+        layer: unit
+        title: "batas urgensi: jatuh tempo hari ini terlewat, H-14 segera, H-15 aman"
+      - id: FLOW-CAR-01-T04
+        kind: corner
+        layer: unit
+        title: "interval melewati akhir tahun dan akhir bulan dijepit ke tanggal terakhir"
+
+  - id: FLOW-VET-01
+    title: "Mencatat kunjungan dokter hewan"
+    priority: P1
+    requirement: [FR-003]
+    touches:
+      - lib/features/care/care_screen.dart
+    cases:
+      - id: FLOW-VET-01-T01
+        kind: positive
+        layer: unit
+        title: "kunjungan vet tersimpan terurut terbaru dengan obat dan biaya"
+      - id: FLOW-VET-01-T02
+        kind: negative
+        layer: unit
+        title: "kunjungan tanpa judul ditolak"
+      - id: FLOW-VET-01-T03
+        kind: edge
+        layer: unit
+        title: "biaya kosong diperbolehkan dan bertahan setelah disimpan ulang"
+      - id: FLOW-VET-01-T04
+        kind: corner
+        layer: unit
+        title: "menyimpan ulang id yang sama memperbarui; data vet korup dibaca kosong"
+
+  - id: FLOW-DAY-01
+    title: "Mencatat log harian dan berat"
+    priority: P1
+    requirement: [FR-004]
+    touches:
+      - lib/features/daily/**
+    cases:
+      - id: FLOW-DAY-01-T01
+        kind: positive
+        layer: unit
+        title: "log makan dan timbang berat memperbarui berat profil hewan aktif"
+      - id: FLOW-DAY-01-T02
+        kind: negative
+        layer: unit
+        title: "berat 0 atau di atas 500 kg ditolak"
+      - id: FLOW-DAY-01-T03
+        kind: edge
+        layer: unit
+        title: "riwayat berat terurut terbaru meski dicatat tidak berurutan"
+      - id: FLOW-DAY-01-T04
+        kind: corner
+        layer: unit
+        title: "timbang hewan yang tidak aktif tidak mengubah profil hewan aktif"
+
+  - id: FLOW-DOC-01
+    title: "Menyimpan dokumen hewan"
+    priority: P2
+    requirement: [FR-005]
+    touches:
+      - lib/features/docs/**
+    cases:
+      - id: FLOW-DOC-01-T01
+        kind: positive
+        layer: unit
+        title: "dokumen kartu vaksin dengan masa berlaku tersimpan"
+      - id: FLOW-DOC-01-T02
+        kind: negative
+        layer: unit
+        title: "dokumen tanpa judul ditolak"
+      - id: FLOW-DOC-01-T03
+        kind: edge
+        layer: unit
+        title: "dokumen tanpa masa berlaku tetap tersimpan"
+      - id: FLOW-DOC-01-T04
+        kind: corner
+        layer: unit
+        title: "jenis dokumen tak dikenal di data lama dibaca tanpa crash"
+
+  - id: FLOW-SET-01
+    title: "Mencadangkan data dan mengatur pengingat"
+    priority: P2
+    requirement: [FR-006, NFR-001]
+    touches:
+      - lib/features/settings/**
+      - lib/core/storage/local_storage_service.dart
+      - lib/core/utils/backup_codec.dart
+    cases:
+      - id: FLOW-SET-01-T01
+        kind: positive
+        layer: unit
+        title: "ekspor cadangan lalu impor memulihkan hewan dan jadwal"
+      - id: FLOW-SET-01-T02
+        kind: negative
+        layer: unit
+        title: "cadangan milik app lain, tanpa hewan, atau JSON mentah ditolak"
+      - id: FLOW-SET-01-T03
+        kind: edge
+        layer: unit
+        title: "instalasi baru berisi contoh hewan dan tidak menimpa data yang ada"
+      - id: FLOW-SET-01-T04
+        kind: corner
+        layer: unit
+        title: "impor dengan hewan aktif yang hilang memilih hewan pertama"

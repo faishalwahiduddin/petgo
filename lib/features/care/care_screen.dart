@@ -6,6 +6,7 @@ import '../../core/constants/app_colors.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
 import '../../core/services/care_reminder_service.dart';
+import '../shell/navigation_shell.dart' show kShellNavBarHeight;
 
 class CareScreen extends ConsumerWidget {
   const CareScreen({super.key});
@@ -26,28 +27,32 @@ class CareScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.navCare)),
-      floatingActionButton: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          FloatingActionButton.extended(
-            heroTag: 'vet',
-            onPressed: pet == null
-                ? null
-                : () => _editVet(context, ref, pet),
-            icon: const Icon(Icons.local_hospital_outlined),
-            label: Text(l10n.actionAddVet),
-          ),
-          const SizedBox(height: 10),
-          FloatingActionButton.extended(
-            heroTag: 'sch',
-            onPressed: pet == null
-                ? null
-                : () => _editSchedule(context, ref, pet),
-            icon: const Icon(Icons.add),
-            label: Text(l10n.actionAddSchedule),
-          ),
-        ],
+      floatingActionButton: Padding(
+        // Lift above the shell's glass nav bar (extendBody) so it stays tappable.
+        padding: const EdgeInsets.only(bottom: kShellNavBarHeight),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            FloatingActionButton.extended(
+              heroTag: 'vet',
+              onPressed: pet == null
+                  ? null
+                  : () => _editVet(context, ref, pet),
+              icon: const Icon(Icons.local_hospital_outlined),
+              label: Text(l10n.actionAddVet),
+            ),
+            const SizedBox(height: 10),
+            FloatingActionButton.extended(
+              heroTag: 'sch',
+              onPressed: pet == null
+                  ? null
+                  : () => _editSchedule(context, ref, pet),
+              icon: const Icon(Icons.add),
+              label: Text(l10n.actionAddSchedule),
+            ),
+          ],
+        ),
       ),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 140),
@@ -179,6 +184,7 @@ class CareScreen extends ConsumerWidget {
     final formKey = GlobalKey<FormState>();
     final ok = await showModalBottomSheet<bool>(
       context: context,
+      useRootNavigator: true,
       isScrollControlled: true,
       builder: (ctx) => Padding(
         padding: EdgeInsets.only(
@@ -307,6 +313,7 @@ class CareScreen extends ConsumerWidget {
     final formKey = GlobalKey<FormState>();
     final ok = await showModalBottomSheet<bool>(
       context: context,
+      useRootNavigator: true,
       isScrollControlled: true,
       builder: (ctx) => Padding(
         padding: EdgeInsets.only(
