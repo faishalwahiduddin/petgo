@@ -1,1 +1,1 @@
-Bug fixes and improvements (1.0.5).
+アプリアイコンの更新と安定性の向上。

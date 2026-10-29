@@ -1,1 +1,1 @@
-Bug fixes and improvements (1.0.5).
+更新启动器图标并提高应用程序稳定性。
