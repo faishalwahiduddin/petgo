@@ -1,3 +1,3 @@
-PetGo manages your pets: profiles, vaccine/deworm/flea/grooming schedules, vet visits, feed/walk/litter logs, weight history, and local documents. 100% offline.
+يساعدك PetGo على إدارة حيواناتك الأليفة: ملفات تعريفية، وجداول اللقاحات ومضادات الديدان والبراغيث والعناية بالفرو، وزيارات الطبيب البيطري، وسجلات التغذية والتمشية والفضلات، وسجل الوزن، والمستندات المحلية. يعمل دون إنترنت بنسبة 100%.
 
-Part of the faishal.id suite.
+جزء من مجموعة تطبيقات faishal.id.

@@ -1,1 +1,1 @@
-pet,vet,vaccine,dog,cat
+宠物,狗,猫,疫苗,兽医,体重,遛狗,离线

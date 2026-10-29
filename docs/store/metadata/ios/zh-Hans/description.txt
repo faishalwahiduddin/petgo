@@ -1,3 +1,3 @@
-PetGo manages your pets: profiles, vaccine/deworm/flea/grooming schedules, vet visits, feed/walk/litter logs, weight history, and local documents. 100% offline.
+PetGo 帮你管理爱宠:宠物档案、疫苗/驱虫/防跳蚤/美容计划、兽医就诊、喂食/遛弯/猫砂记录、体重历史,以及本地文档。100% 离线。
 
-Part of the faishal.id suite.
+faishal.id 系列应用之一。

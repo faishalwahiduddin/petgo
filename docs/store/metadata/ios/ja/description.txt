@@ -1,3 +1,3 @@
-PetGo manages your pets: profiles, vaccine/deworm/flea/grooming schedules, vet visits, feed/walk/litter logs, weight history, and local documents. 100% offline.
+PetGo は、ペットのお世話をまとめて管理するアプリです。プロフィール、ワクチン・駆虫・ノミ対策・トリミングの予定、動物病院の受診、ごはん・散歩・トイレの記録、体重の履歴、端末内の書類を管理できます。完全オフラインで動作します。
 
-Part of the faishal.id suite.
+faishal.id シリーズの一つです。

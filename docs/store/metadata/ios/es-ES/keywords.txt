@@ -1,1 +1,1 @@
-pet,vet,vaccine,dog,cat
+mascotas,veterinario,vacuna,perro,gato,peso,paseo,cuidados
