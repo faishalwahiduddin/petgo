@@ -99,7 +99,7 @@ body.full .stage { gap: 2px; }
   background: linear-gradient(160deg, var(--primary) 0%, var(--dark) 100%);
   color: var(--on-primary);
   display: flex; flex-direction: column; align-items: center;
-  padding: 6.25cqh 8.33cqw 0;
+  padding: 0;
 }
 /* decorative soft blobs (hidden when a bespoke panorama is present) */
 .slide::before, .slide::after {
@@ -327,105 +327,202 @@ body.full .cell .tablet-slide { transform: none; }
 .tablet-slide.rtl .mascot-png { left: auto; right: 2cqw; transform: scaleX(-1); }
 
 /* ============================================================
-   v4 — screenshot-first device sizing
-   The 57.4cqw phone frame left the app UI at ~1/3 of the slide.
-   Phone: 72cqw, closer-to-16:9 frame. Tablet: 88cqw.
+   v13 — Safe-band balanced framing & enlarged device mockup
+   - Slide padding reset to 0 so cq units evaluate deterministically against .slide
+   - Copy given margin-top: 7.5cqh to safely clear the top decorative line (y=116..128)
+   - Headline and subtext enlarged for strong legibility
+   - Device mockup enlarged to 75.8cqh, sitting near the bottom without crossing the bottom line (y=1790)
+   - Brand chip positioned at bottom: 1.5cqh (below the bottom decorative rule)
    ============================================================ */
-.slide { padding: 3.5cqh 7cqw 0; }
-.slide .copy { max-width: 88cqw; }
-.slide .headline { font-size: 6.0cqw; }
-.slide .subtext { font-size: 2.7cqw; margin-top: 1.0cqh; }
-.slide .device { margin-top: 1.8cqh; width: 72cqw; aspect-ratio: 620 / 1180; }
+.slide { padding: 0; }
+.slide .copy {
+  margin-top: 7.5cqh;
+  max-width: 90cqw;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.slide .headline {
+  font-size: 7.1cqw;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.04cqw;
+  text-shadow: 0 2px 14px rgba(0,0,0,.18);
+}
+.slide .subtext {
+  font-size: 3.25cqw;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 0.75cqh;
+  opacity: .92;
+}
 
-.tablet-slide { padding: 5.5cqh 6cqw 0; }
-.tablet-slide .headline { font-size: 5.4cqw; }
-.tablet-slide .subtext { font-size: 2.6cqw; margin-top: 1.2cqw; }
-.tablet-device { margin-top: 3cqh; width: min(88cqw, 58cqh); height: min(112cqw, 78cqh); }
-
-/* v5 — match the phone frame to the 1080×1920 raw so the UI is not side-cropped */
-.slide .device { width: 78cqw; aspect-ratio: 620 / 1080; margin-top: 1.6cqh; }
-
-/* ============================================================
-   v6 — Android frame, bigger brand chip, device fills the slide
-   ============================================================ */
 .slide .device {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 1.25cqh;
+  height: 75.8cqh;
   width: auto;
-  height: min(74cqh, 150cqw);
-  aspect-ratio: 620 / 1080;
-  margin-top: 1.6cqh;
-  border-radius: 4.6cqw;
+  aspect-ratio: auto;
+  background: #0c0c0e;
+  border-radius: 4.8cqw;
+  padding: 1.2cqw;
+  box-shadow: 0 3.7cqw 7.4cqw rgba(0,0,0,.35), inset 0 0 0 0.28cqw rgba(255,255,255,.08);
   flex: 0 0 auto;
 }
 .slide .device .cam {
   position: absolute; top: 1.15cqh; left: 50%; transform: translateX(-50%);
-  width: 2.4cqw; height: 2.4cqw; border-radius: 50%;
+  width: 2.2cqw; height: 2.2cqw; border-radius: 50%;
   background: #050506; z-index: 3;
   box-shadow: inset 0 0 0 0.28cqw rgba(255,255,255,.07);
 }
-.slide .brand { bottom: 2.2cqh; gap: 2.2cqw; }
-.slide .brand img { width: 8.6cqw; height: 8.6cqw; border-radius: 2.2cqw; }
-.slide .brand .wm .n { font-size: 4.2cqw; }
-
-.tablet-device {
-  height: min(72cqh, 108cqw);
-  width: min(88cqw, 58cqh);
-  border-radius: 3.2cqw;
-}
-.tablet-slide .brand { bottom: 3cqh; gap: 2.2cqw; }
-.tablet-slide .brand img { width: 8cqw; height: 8cqw; border-radius: 2cqw; }
-.tablet-slide .brand .wm .n { font-size: 4cqw; }
-
-/* ============================================================
-   v7 — remove slide side padding: container-query units were
-   measured from the padded content box, shrinking every element.
-   ============================================================ */
-.slide { padding: 3.5cqh 0 0; }
-.tablet-slide { padding: 5cqh 0 0; }
-.slide .device { height: min(80cqh, 160cqw); }
-
-/* ============================================================
-   v8 — platform-correct bezels + bigger bottom brand
-   Play / Android: punch-hole. iPhone: Dynamic Island + rounder frame.
-   The raw status bar is cropped so an iOS-captured locale cannot show
-   two cameras at once.
-   ============================================================ */
 .device .notch { display: none; }
-.slide.ios .device { border-radius: 9cqw; }
-.slide.ios .device .cam { display: none; }
-.slide.ios .device .notch {
-  display: block; position: absolute; top: 1.1cqh; left: 50%;
-  transform: translateX(-50%); width: 11cqw; height: 3.1cqh;
-  border-radius: 999px; background: #050506; z-index: 3;
-}
-.slide .device .screen img {
-  transform: translateY(-3.4%) scale(1.08);
-  transform-origin: top center;
-}
-.slide .brand img { width: 10cqw; height: 10cqw; border-radius: 2.6cqw; }
-.slide .brand .wm .n { font-size: 4.8cqw; }
-.tablet-slide .brand img { width: 9cqw; height: 9cqw; border-radius: 2.2cqw; }
-.tablet-slide .brand .wm .n { font-size: 4.4cqw; }
-
-/* v9 — crop the raw status bar/notch harder so an iOS-captured locale
-   cannot leave a second camera behind the Android punch-hole. */
-.slide .device .screen img { transform: translateY(-5.8%) scale(1.1); }
-
-/* v10 — Play crops the raw status bar hard (some locales were captured on
-   iOS and still carry a notch); iPhone keeps the header below the island. */
-.slide .device .screen img { transform: translateY(-8%) scale(1.12); }
-.slide.ios .device .screen img { transform: translateY(-3.4%) scale(1.08); }
-
-/* v11 — detect an iOS-captured raw and use the iPhone bezel for that slide */
-.slide .device .screen img { transform: translateY(-3.4%) scale(1.08); }
+.slide.size-iphone69 .device,
 .slide.ios .device,
-.slide.ios-raw .device { border-radius: 9cqw; }
+.slide.ios-raw .device {
+  border-radius: 8cqw;
+}
+.slide.size-iphone69 .device .cam,
 .slide.ios .device .cam,
 .slide.ios-raw .device .cam { display: none; }
+.slide.size-iphone69 .device .notch,
 .slide.ios .device .notch,
 .slide.ios-raw .device .notch {
   display: block; position: absolute; top: 1.1cqh; left: 50%;
   transform: translateX(-50%); width: 11cqw; height: 3.1cqh;
   border-radius: 999px; background: #050506; z-index: 3;
 }
-.slide.ios .device .screen img,
-.slide.ios-raw .device .screen img { transform: translateY(-3.4%) scale(1.08); }
+
+.slide .device .screen {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 9 / 16;
+  border-radius: 3.7cqw;
+  overflow: hidden;
+  background: #f2f2f2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide.size-iphone69 .device .screen,
+.slide.ios .device .screen,
+.slide.ios-raw .device .screen {
+  aspect-ratio: 1290 / 2796;
+  border-radius: 6.8cqw;
+}
+.slide .device .screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transform: none;
+  display: block;
+}
+
+.slide .brand {
+  position: absolute;
+  bottom: 1.5cqh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 1.6cqw;
+}
+.slide .brand img { width: 6.8cqw; height: 6.8cqw; border-radius: 1.8cqw; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+.slide .brand .wm { text-align: left; }
+.slide .brand .wm .n { font-size: 3.4cqw; font-weight: 700; line-height: 1.1; }
+.slide .brand .wm .u { font-size: 2.04cqw; font-weight: 400; opacity: .8; }
+
+/* ---------- Tablet slides ---------- */
+.tablet-slide {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tablet-slide .copy {
+  margin-top: 7.5cqh;
+  max-width: 88cqw;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.tablet-slide .headline {
+  font-size: 6.2cqw;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.04cqw;
+  text-shadow: 0 0.2cqw 1.2cqw rgba(0,0,0,.18);
+}
+.tablet-slide .subtext {
+  font-size: 3.0cqw;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 0.75cqh;
+  opacity: .92;
+}
+
+.tablet-device {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 1.25cqh;
+  height: 75.8cqh;
+  width: auto;
+  aspect-ratio: auto;
+  background: #0c0c0e;
+  border-radius: 3.6cqw;
+  padding: 1.2cqw;
+  box-shadow: 0 3cqw 7cqw rgba(0,0,0,.35), inset 0 0 0 0.25cqw rgba(255,255,255,.08);
+  flex: 0 0 auto;
+}
+.tablet-device .cam {
+  position: absolute; top: 0.8cqw; left: 50%; transform: translateX(-50%);
+  width: 1.2cqw; height: 1.2cqw; border-radius: 50%; background: #26262a; z-index: 3;
+}
+.tablet-device .screen {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 10 / 16; /* 1200x1920 (7") and 1600x2560 (10") */
+  border-radius: 2.5cqw;
+  overflow: hidden;
+  background: #f2f2f2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tablet-slide.size-ipad13 .tablet-device .screen,
+.tablet-device.size-ipad13 .screen {
+  aspect-ratio: 3 / 4; /* 2064x2752 (iPad 13") */
+}
+.tablet-device .screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transform: none;
+  display: block;
+}
+
+.tablet-slide .brand {
+  position: absolute;
+  bottom: 1.5cqh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 1.6cqw;
+}
+.tablet-slide .brand img { width: 6.5cqw; height: 6.5cqw; border-radius: 1.8cqw; box-shadow: 0 0.6cqw 1.8cqw rgba(0,0,0,.25); }
+.tablet-slide .brand .wm { text-align: left; }
+.tablet-slide .brand .wm .n { font-size: 3.2cqw; font-weight: 700; line-height: 1.1; }
+.tablet-slide .brand .wm .u { font-size: 2cqw; font-weight: 400; opacity: .8; }

@@ -88,8 +88,8 @@
   const segs = slides.length || 4;
   const langClass = lang === 'ja-JP' ? ' cjk-ja' : lang === 'zh-CN' ? ' cjk-zh' : '';
   const POSES = ['welcome', 'explaining', 'pointing', 'celebrating'];
-  // Locales captured on iOS get the iPhone bezel even on the Play canvas.
-  const iosRaw = (C.rawIos || []).indexOf(lang) !== -1;
+  // Locales on the Play canvas always get the Android bezel; iPhone bezel is reserved for iphone69
+  const iosRaw = size === 'iphone69';
 
   slides.forEach(function (s, i) {
     // In ar the Play carousel is displayed right-to-left, so reverse the
@@ -101,13 +101,13 @@
     cell.style.height = (S.h * previewScale) + 'px';
     cell.innerHTML =
       '<span class="label">' + (i + 1) + '.png · ' + S.label + '</span>' +
-      '<div class="slide' + (isRTL ? ' rtl' : '') + langClass + (hasPano ? ' has-art' : '') + (veryLight ? ' light' : (lightBrand ? ' darken' : '')) + (size === 'iphone69' ? ' ios' : '') + (iosRaw ? ' ios-raw' : '') + '" id="slide-' + (i + 1) + '" style="width:' + S.w + 'px;height:' + S.h + 'px">' +
+      '<div class="slide size-' + size + (isRTL ? ' rtl' : '') + langClass + (hasPano ? ' has-art' : '') + (veryLight ? ' light' : (lightBrand ? ' darken' : '')) + (size === 'iphone69' ? ' ios' : '') + (iosRaw ? ' ios-raw' : '') + '" id="slide-' + (i + 1) + '" style="width:' + S.w + 'px;height:' + S.h + 'px">' +
         (hasPano ? '<div class="pano" style="--seg:' + seg + ';--segs:' + segs + '">' + panoSvg(A) + '</div>' : '') +
         '<div class="copy">' +
           '<div class="headline">' + esc(s.headline) + '</div>' +
           '<div class="subtext">' + esc(s.subtext) + '</div>' +
         '</div>' +
-        '<div class="device">' +
+        '<div class="device size-' + size + '">' +
           '<div class="cam"></div><div class="notch"></div>' +
           '<div class="screen">' +
             '<img src="raw/' + lang + '/' + (i + 1) + '.png" alt="" ' +

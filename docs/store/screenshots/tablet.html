@@ -102,13 +102,13 @@
     cell.style.height = (S.h * previewScale) + 'px';
     cell.innerHTML =
       '<span class="label">' + (i + 1) + '.png · ' + S.label + '</span>' +
-      '<div class="tablet-slide' + (isRTL ? ' rtl' : '') + langClass + (hasPano ? ' has-art' : '') + (veryLight ? ' light' : (lightBrand ? ' darken' : '')) + '" id="tslide-' + (i + 1) + '" style="width:' + S.w + 'px;height:' + S.h + 'px">' +
+      '<div class="tablet-slide size-' + size + (isRTL ? ' rtl' : '') + langClass + (hasPano ? ' has-art' : '') + (veryLight ? ' light' : (lightBrand ? ' darken' : '')) + '" id="tslide-' + (i + 1) + '" style="width:' + S.w + 'px;height:' + S.h + 'px">' +
         (hasPano ? '<div class="pano" style="--seg:' + seg + ';--segs:' + segs + '">' + panoSvg(A) + '</div>' : '') +
         '<div class="copy">' +
           '<div class="headline">' + esc(s.headline) + '</div>' +
           '<div class="subtext">' + esc(s.subtext) + '</div>' +
         '</div>' +
-        '<div class="tablet-device">' +
+        '<div class="tablet-device size-' + size + '">' +
           '<div class="cam"></div>' +
           '<div class="screen">' +
             '<img src="' + primaryRaw + '/' + lang + '/' + (i + 1) + '.png" alt="" ' +
