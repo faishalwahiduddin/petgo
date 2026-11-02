@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "kenapa-profil-hewan-peliharaan-sulit-konsisten-2026",
-    "en": "why-profil-hewan-peliharaan-habits-break",
-    "ar": "profil-hewan-peliharaan-3",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-3",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-3",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-3",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-3"
+    "id": "kenapa-profil-hewan-peliharaan-sulit-konsisten",
+    "en": "why-pet-profile-habits-break",
+    "ar": "lmadha-ytathr-mlf-alhywan-alalyf",
+    "jv": "kenapa-profil-hewan-peliharaan-angel-konsisten",
+    "su": "naha-profil-hewan-peliharaan-hese-konsisten",
+    "zh": "wei-shen-me-chong-wu-dang-an-zong-shi-nan-yi-jian-chi",
+    "ja": "petto-no-purofiiru-ga-tsuzuka-nai-riyuu"
   },
   "titles": {
-    "id": "Kenapa profil hewan peliharaan Sulit Konsisten",
-    "en": "Why profil hewan peliharaan Habits Break",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Kenapa profil hewan peliharaan Sulit Konsisten",
-    "su": "Pituduh: Kenapa profil hewan peliharaan Sulit Konsisten",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "Kenapa profil hewan peliharaan sulit konsisten?",
+    "en": "Why pet profile habits break",
+    "ar": "لماذا يتعثر ملف الحيوان الأليف؟",
+    "jv": "Kenapa profil hewan peliharaan angel konsisten?",
+    "su": "Naha profil hewan peliharaan hésé konsisten?",
+    "zh": "为什么宠物档案总是难以坚持",
+    "ja": "ペットのプロフィールが続かない理由"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Alasan profil hewan peliharaan sulit dijaga rapi, dari kebiasaan mudah putus, versi paling kecil yang bisa dipegang, sampai cara lanjut setelah bolong.",
+    "en": "Why a pet profile is hard to keep neat, from habits that break easily to a smallest version you can stick with and how to continue after a gap.",
+    "ar": "لماذا يصعب الحفاظ على ملف الحيوان الأليف مرتباً؟ نتناول العادات التي تنكسر بسهولة، وأصغر نسخة يمكن الالتزام بها، وطريقة المتابعة بعد الانقطاع.",
+    "ja": "ペットのプロフィールが続かない理由を解説。崩れやすい習慣、続けやすい最小バージョン、空白後の再開方法を扱います。",
+    "zh": "宠物档案为何难以保持整洁：从容易中断的习惯讲起，介绍可以坚持的最小版本和中断后的继续方法。",
+    "jv": "Alasan profil hewan peliharaan angel tetep rapi, saka kebiasan sing gampang luntur, versi paling cilik sing bisa dicekel, nganti carané terusan sawisé bolong.",
+    "su": "Alesan profil hewan peliharaan hésé dijaga rapih: kabiasaan nu gampang leungit, versi paling leutik nu bisa dipegang, jeung cara neruskeun sanggeus bolong."
+  }
 }

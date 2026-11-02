@@ -9,21 +9,30 @@
   "seo": true,
   "slugs": {
     "id": "jadwal-perawatan-harian-untuk-pengguna-di-indonesia",
-    "en": "jadwal-perawatan-harian-for-users-in-indonesia",
-    "ar": "jadwal-perawatan-harian-5",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-5",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-5",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-5",
-    "ja": "petgojadwal-perawatan-harian-ガイド-5"
+    "en": "daily-care-schedule-for-readers-in-indonesia",
+    "ar": "jdwl-alraaya-alywmy-lqra-indwnysya",
+    "jv": "jadwal-perawatan-harian-kanggo-pangguna-ing-indonesia",
+    "su": "jadwal-perawatan-harian-pikeun-pamake-di-indonesia",
+    "zh": "gei-yin-du-ni-xi-ya-du-zhe-de-mei-ri-zhao-hu-shi-jian-biao",
+    "ja": "indoneshia-no-dokusha-notameno-mainichi-no-kea-yotei"
   },
   "titles": {
-    "id": "jadwal perawatan harian: panduan praktis di PetGo",
-    "en": "jadwal perawatan harian for Users in Indonesia",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: jadwal perawatan harian: panduan praktis di PetGo",
-    "su": "Pituduh: jadwal perawatan harian: panduan praktis di PetGo",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian untuk pengguna di Indonesia",
+    "en": "daily care schedule for readers in Indonesia",
+    "ar": "جدول الرعاية اليومي لقرّاء إندونيسيا",
+    "jv": "jadwal perawatan harian kanggo pangguna ing Indonesia",
+    "su": "jadwal perawatan harian pikeun pamaké di Indonésia",
+    "zh": "给印度尼西亚读者的每日照护时间表",
+    "ja": "インドネシアの読者のための毎日のケア予定"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Jadwal perawatan harian untuk pengguna di Indonesia, dimulai dari versi paling kecil, memilih waktu yang cocok dengan rutinitas, dan tinjauan mingguan.",
+    "en": "A daily care schedule for readers in Indonesia, starting from the smallest version, picking a time that fits your routine, and a brief weekly check.",
+    "ar": "جدول الرعاية اليومي للقرّاء في إندونيسيا: ابدأ بأصغر نسخة، واختر وقتاً يناسب روتينك اليومي، وراجع الجدول بشكل أسبوعي موجز.",
+    "ja": "インドネシアの読者向けの毎日のケア予定。最小バージョンから始め、日々の生活に合う時間の選び方と週次の確認を解説。",
+    "zh": "面向印度尼西亚读者的每日照护时间表：从最小版本起步，选择与日常作息相配的时间，并做简短每周回顾。",
+    "jv": "Jadwal perawatan harian kanggo pangguna ing Indonesia: wiwit saka versi paling cilik, milih wektu sing cocok karo rutinitas, lan tinjauan saben minggu.",
+    "su": "Jadwal perawatan harian pikeun pamaké di Indonésia: dimimitian ti versi paling leutik, milih waktu nu cocog jeung rutinitas, jeung tinjauan mingguan nu singkat."
+  }
 }

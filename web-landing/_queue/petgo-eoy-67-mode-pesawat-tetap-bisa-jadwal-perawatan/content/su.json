@@ -1,0 +1,85 @@
+{
+  "title": "jadwal perawatan harian full offline: naon anu tetep jalan",
+  "description": "Jadwal perawatan harian full offline: fitur mana nu tetep jalan tanpa sambungan, panyimpenan dina alat, pangecekan unggal minggu, jeung léngkah sanggeus bolong.",
+  "badge": "kulawarga · offline",
+  "answer": "Di grup kulawarga tilu urang nanya jadwal perawatan harian, jeung teu aya jawaban anu sarua. PetGo nyimpen jadwal perawatan harian dina alat, jadi tetep kabuka tanpa kuota jeung tanpa akun.",
+  "toc": [
+    "Kasimpen dina alat",
+    "Tinjauan unggal minggu",
+    "Sanggeus bolong"
+  ],
+  "sections": [
+    {
+      "h2": "Kasimpen dina alat",
+      "p": "PetGo nyimpen jadwal perawatan harian dina alat, jadi tetep kabuka tanpa kuota jeung tanpa akun.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Tinjauan unggal minggu",
+      "p": "Saminggu sakali, tempo bagian anu paling sering bolong, tuluy leutikan targetna.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Sanggeus bolong",
+      "p": "Lamun bolong sababaraha poé, ulah mupus riwayat. Buka catetan panungtungan, eusian hiji poé, tuluy tutup.",
+      "h3": null,
+      "p3": null
+    }
+  ],
+  "table": {
+    "caption": "Rangka jadwal perawatan harian",
+    "headers": [
+      "Léngkah",
+      "Eusi minimal",
+      "Bérés lamun"
+    ],
+    "rows": [
+      [
+        "Baris anggota",
+        "status + tanggal",
+        "bisa ditinjau"
+      ],
+      [
+        "Pananda",
+        "posisi panungtungan",
+        "bisa diteruskeun isukan"
+      ],
+      [
+        "Evaluasi minggu",
+        "hiji panyesuaian",
+        "diterapkeun Senén"
+      ]
+    ]
+  },
+  "list": [
+    "Tangtukeun hiji waktu tetep, lain “mun sempet”.",
+    "Buka PetGo basa waktu éta datang, ulah engké peuting.",
+    "Catet hiji halangan, lain alesan panjang.",
+    "Cadangkeun data saméméh ganti HP."
+  ],
+  "faqs": [
+    [
+      "Naha jadwal perawatan harian bisa dibuka offline?",
+      "Bisa. PetGo nyimpen kabéh dina alat, jadi teu butuh kuota."
+    ],
+    [
+      "Kudu akun heula?",
+      "Teu. Mimitian tanpa login; cadangkeun data sakapeung."
+    ],
+    [
+      "Mimitian ti mana?",
+      "Ti bagian pangpondokna. Tambahan yén geus dua minggu stabil."
+    ],
+    [
+      "Lamun bolong sababaraha poé?",
+      "Ulah mupus riwayat. Teraskeun tina catetan panungtungan jeung catet hiji halangan."
+    ]
+  ],
+  "cta": [
+    "Mimitian jadwal perawatan harian poé ieu",
+    "Buka PetGo"
+  ],
+  "slug": "pituduh-jadwal-perawatan-harian-petgo-17"
+}

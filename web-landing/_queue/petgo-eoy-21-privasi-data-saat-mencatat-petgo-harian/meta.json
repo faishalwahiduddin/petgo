@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "privasi-data-saat-mencatat-petgo-harian",
-    "en": "data-privacy-when-logging-petgo",
-    "ar": "petgo-6",
-    "jv": "pandhuan-petgo-petgo-6",
-    "su": "pituduh-petgo-petgo-6",
-    "zh": "petgo-petgo-实用指南-6",
-    "ja": "petgopetgo-ガイド-6"
+    "id": "privasi-catatan-kunjungan-vet-apa-yang-tersimpan-di-perangkat",
+    "en": "where-your-vet-visit-log-data-actually-lives",
+    "ar": "ayn-thfz-byanat-sjlat-zyara-altbyb-albytry",
+    "jv": "data-catatan-kunjungan-vet-kasimpen-ing-ngendi",
+    "su": "data-catatan-kunjungan-vet-disimpen-di-mana",
+    "zh": "chong-wu-jiu-zhen-ji-lu-de-shu-ju-bao-cun-zai-na-li",
+    "ja": "doubutsubyouin-no-kiroku-no-deeta-hadokoni-hozon-sareruka"
   },
   "titles": {
-    "id": "Privasi data saat mencatat catatan kunjungan vet",
-    "en": "Data Privacy When Logging PetGo",
-    "ar": "PetGo — دليل PetGo",
-    "jv": "Pandhuan: Privasi data saat mencatat catatan kunjungan vet",
-    "su": "Pituduh: Privasi data saat mencatat catatan kunjungan vet",
-    "zh": "PetGo · PetGo 实用指南",
-    "ja": "PetGo｜PetGo ガイド"
+    "id": "Privasi catatan kunjungan vet: apa yang tersimpan di perangkat",
+    "en": "Where your vet visit log data actually lives",
+    "ar": "أين تُحفظ بيانات سجلات زيارة الطبيب البيطري",
+    "jv": "Data catatan kunjungan vet kasimpen ing ngendi",
+    "su": "Data catatan kunjungan vet disimpen di mana",
+    "zh": "宠物就诊记录的数据保存在哪里",
+    "ja": "動物病院の記録のデータはどこに保存されるか"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Membahas privasi catatan kunjungan vet: apa saja yang tersimpan di perangkat, cara meninjau catatan tiap minggu, dan langkah setelah ada jeda.",
+    "en": "Covers vet visit log privacy: what is stored on the device, how to review the log each week, and what to do after a gap.",
+    "ar": "أين تُحفظ بيانات سجلات زيارة الطبيب البيطري فعلاً؟ نوضح ما يبقى على الجهاز، وكيف تراجع السجل كل أسبوع، وما الذي تفعله بعد أي انقطاع.",
+    "ja": "プライバシーを解説。動物病院の記録で端末に何が保存されるか、週ごとの見直し方、空白の後にすべきことを扱います。",
+    "zh": "讲解宠物就诊记录的隐私问题：设备上保存了哪些内容，如何每周回顾记录，以及中断后该怎么办。",
+    "jv": "Mbahas privasi catatan kunjungan vet: apa wae sing kasimpen ing piranti, carané mriksa catatan saben minggu, lan langkah sawisé ana jeda.",
+    "su": "Ngabahas privasi catatan kunjungan vet: naon waé nu disimpen dina alat, cara ninjau catatan unggal minggu, jeung léngkah sanggeus aya jeda."
+  }
 }

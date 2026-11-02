@@ -1,0 +1,85 @@
+{
+  "title": "profil hewan peliharaan: pilihan sing cukup masuk akal",
+  "description": "Dhaftar pilihan profil hewan peliharaan sing masuk akal, diwiwiti saka versi paling cilik, wektu dijalanké, lan carané mriksa saben minggu.",
+  "badge": "kulawarga · offline",
+  "answer": "Ing grup kulawarga wong telu padha takon profil hewan peliharaan, lan ora ana wangsulan sing padha. PetGo nyimpen profil hewan peliharaan ing piranti, dadi tetep kebukak tanpa kuota lan tanpa akun.",
+  "toc": [
+    "Versi paling cilik",
+    "Kapan nglakoni",
+    "Tinjauan saben minggu"
+  ],
+  "sections": [
+    {
+      "h2": "Versi paling cilik",
+      "p": "Siji baris saben anggota: status, tanggal, siji bab sing perlu ditindak.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Kapan nglakoni",
+      "p": "Isinen nalika mangan bengi utawa nalika grup kulawarga wis rame.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Tinjauan saben minggu",
+      "p": "Seminggu sepisan, tilik bagéan sing paling kerep bolong, banjur cilikna targeté.",
+      "h3": null,
+      "p3": null
+    }
+  ],
+  "table": {
+    "caption": "Rangka profil hewan peliharaan",
+    "headers": [
+      "Langkah",
+      "Isi minimal",
+      "Rampung yèn"
+    ],
+    "rows": [
+      [
+        "Baris anggota",
+        "status + tanggal",
+        "bisa ditinjau"
+      ],
+      [
+        "Pananda",
+        "posisi pungkasan",
+        "bisa diterusaké sesuk"
+      ],
+      [
+        "Evaluasi minggu",
+        "siji panyesuaian",
+        "diterapaké Senén"
+      ]
+    ]
+  },
+  "list": [
+    "Temtokna siji wektu tetep, dudu “yèn sempet”.",
+    "Bukak PetGo nalika wektu iku teka, aja mengko bengi.",
+    "Catheten siji alangan, dudu alesan dawa.",
+    "Cadhangana data sadurungé ganti HP."
+  ],
+  "faqs": [
+    [
+      "Apa profil hewan peliharaan bisa dibukak offline?",
+      "Bisa. PetGo nyimpen kabèh ing piranti, dadi ora butuh kuota."
+    ],
+    [
+      "Kudu akun dhisik?",
+      "Ora. Wiwit tanpa login; cadhangana data sak dhéwé."
+    ],
+    [
+      "Wiwit saka ngendi?",
+      "Saka bagéan paling cendhak. Tambah jembar yèn wis rong minggu stabil."
+    ],
+    [
+      "Yèn bolong sawetara dina?",
+      "Aja mbusak riwayat. Terusaké saka cathetan pungkasan lan catheten siji alangan."
+    ]
+  ],
+  "cta": [
+    "Wiwiti profil hewan peliharaan dina iki",
+    "Bukak PetGo"
+  ],
+  "slug": "pandhuan-profil-hewan-peliharaan-petgo-18"
+}

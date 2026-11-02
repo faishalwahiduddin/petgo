@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "metrik-sederhana-untuk-profil-hewan-peliharaan-2026",
-    "en": "simple-metrics-for-profil-hewan-peliharaan",
-    "ar": "profil-hewan-peliharaan-6",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-6",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-6",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-6",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-6"
+    "id": "cara-meninjau-profil-hewan-peliharaan-tiap-minggu",
+    "en": "how-to-review-pet-profile-every-week",
+    "ar": "kyf-traja-mlf-alhywan-alalyf-asbwaya",
+    "jv": "kepriye-ninjau-profil-hewan-peliharaan-saben-minggu",
+    "su": "kumaha-ninjau-profil-hewan-peliharaan-unggal-minggu",
+    "zh": "mei-zhou-ru-he-fu-pan-chong-wu-dang-an",
+    "ja": "maishuu-petto-no-purofiiru-wo-minaosu-houhou"
   },
   "titles": {
-    "id": "Metrik Sederhana untuk profil hewan peliharaan",
-    "en": "Simple Metrics for profil hewan peliharaan",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Metrik Sederhana untuk profil hewan peliharaan",
-    "su": "Pituduh: Metrik Sederhana untuk profil hewan peliharaan",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "Cara meninjau profil hewan peliharaan tiap minggu",
+    "en": "How to review pet profile every week",
+    "ar": "كيف تراجع ملف الحيوان الأليف أسبوعياً",
+    "jv": "Kepriyé ninjau profil hewan peliharaan saben minggu",
+    "su": "Kumaha ninjau profil hewan peliharaan unggal minggu",
+    "zh": "每周如何复盘宠物档案",
+    "ja": "毎週ペットのプロフィールを見直す方法"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Langkah meninjau profil hewan peliharaan setiap minggu, dengan catatan yang tersimpan di perangkat dan cara kembali normal setelah ada hari yang bolong.",
+    "en": "Reviewing a pet profile every week, with entries stored on your device and a way back to normal after a day has been missed.",
+    "ar": "كيف تراجع ملف الحيوان الأليف أسبوعياً مع السجلات المحفوظة على جهازك، وطريقة العودة إلى الروتين المعتاد بعد يوم لم تُسجَّل فيه البيانات.",
+    "ja": "ペットのプロフィールを毎週見直す手順。端末に保存された内容の確認と、記録が抜けた後に戻る方法を紹介します。",
+    "zh": "每周如何回顾宠物档案：查看保存在设备上的内容，并说明记录中断之后如何恢复正常的节奏。",
+    "jv": "Langkah mriksa profil hewan peliharaan saben minggu, karo cathetan sing kasimpen ing piranti lan carané bali normal sawisé ana dina sing bolong.",
+    "su": "Léngkah ninjau profil hewan peliharaan unggal minggu, kalawan catetan nu disimpen dina alat jeung cara balik normal sanggeus aya poé nu bolong."
+  }
 }

@@ -1,0 +1,85 @@
+{
+  "title": "Advanced vet visit log once the routine holds",
+  "description": "Advanced vet visit log once the routine is stable: what it means in practice, going back to the smallest version when needed, and on-device data.",
+  "badge": "family · offline",
+  "answer": "Three people in the family chat ask about vet visit log, and none of the answers match. PetGo keeps vet visit log on-device, so it stays readable with no data plan and no account.",
+  "toc": [
+    "What vet visit log means in practice",
+    "The smallest version",
+    "Stored on your device"
+  ],
+  "sections": [
+    {
+      "h2": "What vet visit log means in practice",
+      "p": "In practice, vet visit log means dated evidence you can reopen, not an intention you only remember.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "The smallest version",
+      "p": "One line per member: status, date, and the single thing that needs action.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Stored on your device",
+      "p": "PetGo keeps vet visit log on-device, so it stays readable with no data plan and no account.",
+      "h3": null,
+      "p3": null
+    }
+  ],
+  "table": {
+    "caption": "A working frame for vet visit log",
+    "headers": [
+      "Step",
+      "Minimum",
+      "Done when"
+    ],
+    "rows": [
+      [
+        "Member line",
+        "status + date",
+        "reviewable"
+      ],
+      [
+        "Bookmark",
+        "last position",
+        "resumable tomorrow"
+      ],
+      [
+        "Weekly review",
+        "one adjustment",
+        "applied Monday"
+      ]
+    ]
+  },
+  "list": [
+    "Pick one fixed time, not “whenever there is room”.",
+    "Open PetGo when that time arrives, not later tonight.",
+    "Note one blocker, not a long excuse.",
+    "Back up before you switch phones."
+  ],
+  "faqs": [
+    [
+      "Can I open vet visit log offline?",
+      "Yes. PetGo keeps everything on-device, so no data plan is needed."
+    ],
+    [
+      "Do I need an account first?",
+      "No. Start without login; export a backup from time to time."
+    ],
+    [
+      "Where do I start?",
+      "With the shortest piece. Add scope only after two steady weeks."
+    ],
+    [
+      "What if I miss a few days?",
+      "Do not wipe history. Resume from the last entry and note one blocker."
+    ]
+  ],
+  "cta": [
+    "Start vet visit log today",
+    "Open PetGo"
+  ],
+  "slug": "advanced-petgo-patterns-insights"
+}

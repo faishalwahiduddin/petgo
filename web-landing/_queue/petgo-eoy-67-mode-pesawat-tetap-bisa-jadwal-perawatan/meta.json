@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "mode-pesawat-tetap-bisa-jadwal-perawatan-harian",
-    "en": "airplane-mode-still-do-jadwal-perawatan-harian",
-    "ar": "jadwal-perawatan-harian-17",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-17",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-17",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-17",
-    "ja": "petgojadwal-perawatan-harian-ガイド-17"
+    "id": "jadwal-perawatan-harian-full-offline-apa-yang-tetap-jalan",
+    "en": "daily-care-schedule-fully-offline-what-still-works",
+    "ar": "jdwl-alraaya-alywmy-bla-atsal-tmama-ma-ybqa-yaml",
+    "jv": "jadwal-perawatan-harian-full-offline-apa-sing-tetep-mlaku",
+    "su": "jadwal-perawatan-harian-full-offline-naon-anu-tetep-jalan",
+    "zh": "mei-ri-zhao-hu-shi-jian-biao-wan-quan-li-xian-na-xie-gong-neng-hai-neng",
+    "ja": "mainichi-no-kea-yotei-kanzen-ofurain-nani-ga-ugoku-ka"
   },
   "titles": {
-    "id": "Mode Pesawat: Tetap Bisa jadwal perawatan",
-    "en": "Airplane Mode: Still Do jadwal perawatan harian",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Mode Pesawat: Tetap Bisa jadwal perawatan",
-    "su": "Pituduh: Mode Pesawat: Tetap Bisa jadwal perawatan",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian full offline: apa yang tetap jalan",
+    "en": "daily care schedule fully offline: what still works",
+    "ar": "جدول الرعاية اليومي بلا اتصال تماماً: ما يبقى يعمل",
+    "jv": "jadwal perawatan harian full offline: apa sing tetep mlaku",
+    "su": "jadwal perawatan harian full offline: naon anu tetep jalan",
+    "zh": "每日照护时间表完全离线：哪些功能还能用",
+    "ja": "毎日のケア予定完全オフライン：何が動くか"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Jadwal perawatan harian full offline: fitur apa yang tetap berjalan tanpa koneksi, penyimpanan di perangkat, tinjauan mingguan, dan langkah setelah bolong.",
+    "en": "Daily care schedule fully offline: which features still run without a connection, on-device storage, the weekly check, and steps after a gap.",
+    "ar": "جدول الرعاية اليومي بلا اتصال تماماً: ما الذي يبقى يعمل دون شبكة، والحفظ على الجهاز، والمراجعة الأسبوعية، وخطوات ما بعد الفجوة.",
+    "ja": "毎日のケア予定を完全オフラインで使う。接続なしで動く機能、端末への保存、毎週の確認、空白の後の対応を解説します。",
+    "zh": "每日照护时间表完全离线：断网仍可运行的功能、设备端存储、每周检查，以及空档后的步骤。",
+    "jv": "Jadwal perawatan harian full offline: fitur apa sing tetep mlaku tanpa sambungan, panyimpanan ing piranti, pangecekan saben minggu, lan langkah sawisé bolong.",
+    "su": "Jadwal perawatan harian full offline: fitur mana nu tetep jalan tanpa sambungan, panyimpenan dina alat, pangecekan unggal minggu, jeung léngkah sanggeus bolong."
+  }
 }

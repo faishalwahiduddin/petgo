@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "10-field-profil-hewan-peliharaan-yang-worth-disimpan-2026",
-    "en": "10-profil-hewan-peliharaan-fields-worth-keeping",
-    "ar": "profil-hewan-peliharaan-18",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-18",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-18",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-18",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-18"
+    "id": "profil-hewan-peliharaan-daftar-pilihan-yang-masuk-akal",
+    "en": "pet-profile-a-shortlist-that-makes-sense",
+    "ar": "mlf-alhywan-alalyf-khyarat-qlyla-mntqya",
+    "jv": "profil-hewan-peliharaan-pilihan-sing-cukup-masuk-akal",
+    "su": "profil-hewan-peliharaan-pilihan-anu-asup-akal",
+    "zh": "chong-wu-dang-an-zhi-de-kao-lv-de-ji-zhong-xuan-ze",
+    "ja": "petto-no-purofiiru-nattoku-dekiru-sentakushi"
   },
   "titles": {
-    "id": "10 Field profil hewan peliharaan yang Worth Disimpan",
-    "en": "10 profil hewan peliharaan Fields Worth Keeping",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: 10 Field profil hewan peliharaan yang Worth Disimpan",
-    "su": "Pituduh: 10 Field profil hewan peliharaan yang Worth Disimpan",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan: daftar pilihan yang masuk akal",
+    "en": "pet profile: a shortlist that makes sense",
+    "ar": "ملف الحيوان الأليف: خيارات قليلة منطقية",
+    "jv": "profil hewan peliharaan: pilihan sing cukup masuk akal",
+    "su": "profil hewan peliharaan: pilihan anu asup akal",
+    "zh": "宠物档案：值得考虑的几种选择",
+    "ja": "ペットのプロフィール：納得できる選択肢"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Daftar pilihan profil hewan peliharaan yang masuk akal, dimulai dari versi paling kecil, waktu menjalankannya, dan cara meninjau tiap minggu.",
+    "en": "A shortlist of pet profile options that make sense, starting from the smallest version, when to run it, and how to review it each week.",
+    "ar": "قائمة قصيرة من خيارات ملف الحيوان الأليف المنطقية، تبدأ من أصغر نسخة، مع توقيت التشغيل وطريقة المراجعة الأسبوعية.",
+    "ja": "ペットのプロフィール：納得できる選択肢。最小バージョンから始める方法、実行タイミング、毎週の見直し方を比べる。",
+    "zh": "合理的宠物档案备选方案：从最小版本开始，说明执行时机，以及每周如何回顾，供你比较选择。",
+    "jv": "Dhaftar pilihan profil hewan peliharaan sing masuk akal, diwiwiti saka versi paling cilik, wektu dijalanké, lan carané mriksa saben minggu.",
+    "su": "Daftar pilihan profil hewan peliharaan nu masuk akal, dimimitian ti versi paling leutik, waktu dilaksanakeun, jeung cara ninjau unggal minggu."
+  }
 }

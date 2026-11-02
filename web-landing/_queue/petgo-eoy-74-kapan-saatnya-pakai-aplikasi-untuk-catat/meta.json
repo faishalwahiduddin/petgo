@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "kapan-saatnya-pakai-aplikasi-untuk-catatan-kunjungan-vet-praktis",
-    "en": "when-to-use-an-app-for-catatan-kunjungan-vet-practical",
-    "ar": "catatan-kunjungan-vet-19",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-19",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-19",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-19",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-19"
+    "id": "catatan-kunjungan-vet-yang-perlu-dicek-sebelum-memilih",
+    "en": "vet-visit-log-what-to-check-before-you-choose",
+    "ar": "sjlat-zyara-altbyb-albytry-ma-tthqq-mnh-qbl-alakhtyar",
+    "jv": "catatan-kunjungan-vet-sing-kudu-dipriksa-sadurunge-milih",
+    "su": "catatan-kunjungan-vet-anu-kudu-dipariksa-samemeh-milih",
+    "zh": "chong-wu-jiu-zhen-ji-lu-xuan-ze-qian-gai-que-ren-shen-me",
+    "ja": "doubutsubyouin-no-kiroku-erabu-mae-ni-kakuninsu-rukoto"
   },
   "titles": {
-    "id": "Kapan Saatnya Pakai Aplikasi untuk catatan kunjungan vet",
-    "en": "When to Use an App for catatan kunjungan vet (Practical)",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Kapan Saatnya Pakai Aplikasi untuk catatan kunjungan vet",
-    "su": "Pituduh: Kapan Saatnya Pakai Aplikasi untuk catatan kunjungan vet",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet: yang perlu dicek sebelum memilih",
+    "en": "vet visit log: what to check before you choose",
+    "ar": "سجلات زيارة الطبيب البيطري: ما تتحقق منه قبل الاختيار",
+    "jv": "catatan kunjungan vet: sing kudu dipriksa sadurungé milih",
+    "su": "catatan kunjungan vet: anu kudu dipariksa saméméh milih",
+    "zh": "宠物就诊记录：选择前该确认什么",
+    "ja": "動物病院の記録：選ぶ前に確認すること"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Hal-hal yang perlu dicek sebelum memilih cara mencatat kunjungan vet: alasan kebiasaan mudah putus, data di perangkat, dan tinjauan mingguan.",
+    "en": "What to check before you choose how to log vet visits: why routines break, whether data stays on the device, and the weekly review.",
+    "ar": "ما ينبغي التحقق منه قبل اختيار طريقة تسجيل زيارة الطبيب البيطري: أسباب الانقطاع المعتادة، وحفظ البيانات على الجهاز، والمراجعة الأسبوعية.",
+    "ja": "選ぶ前に確認すること。動物病院の記録が途切れる理由、端末に保存されるか、毎週の見直しの負担。",
+    "zh": "选择宠物就诊记录方式前需要检查的事项：习惯中断的原因、数据是否保存在设备上，以及每周回顾。",
+    "jv": "Perkara sing kudu dipriksa sadurungé milih cara nyathet kunjungan vet: sebab kebiasan gampang mandheg, data ing piranti, lan tinjauan saben minggu.",
+    "su": "Hal-hal nu kudu dipariksa saméméh milih cara nyatet kunjungan vet: alesan kabiasaan gampang putus, data dina alat, jeung tinjauan mingguan."
+  }
 }

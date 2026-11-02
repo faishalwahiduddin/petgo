@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unduh PetGo — Mobile App Smart Link</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="Unduh aplikasi PetGo untuk perangkat Android dan iOS.">
+
+    <!-- Favicon Links -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        :root {
+            --primary: #059669;
+            --secondary: #34D399;
+            --accent: #F59E0B;
+            --bg-dark: #022C22;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --accent-rgb: 245, 158, 11;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 50% 15%, rgba(var(--accent-rgb), 0.12) 0%, transparent 55%),
+                radial-gradient(circle at 85% 85%, rgba(var(--accent-rgb), 0.06) 0%, transparent 40%);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            background-color: rgba(10, 15, 25, 0.7);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 72px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+
+        .brand-logo-wrap {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .brand-logo-wrap svg, .brand-logo-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .brand-name {
+            font-size: 19px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff 40%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .app-main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 24px;
+        }
+
+        .smart-card {
+            max-width: 640px;
+            width: 100%;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 28px;
+            padding: 48px 36px;
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            text-align: center;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 50px rgba(var(--accent-rgb), 0.1);
+            position: relative;
+        }
+
+        .smart-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 999px;
+            background: rgba(var(--accent-rgb), 0.12);
+            border: 1px solid rgba(var(--accent-rgb), 0.35);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .app-icon-large {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--glass-border);
+        }
+
+        .app-icon-large svg, .app-icon-large img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .smart-title {
+            font-size: clamp(24px, 5vw, 32px);
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.25;
+        }
+
+        .smart-subtitle {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Redirecting State (Mobile) */
+        #redirect-state {
+            display: none;
+            padding: 20px 0;
+        }
+
+        .spinner {
+            width: 44px;
+            height: 44px;
+            margin: 0 auto 20px auto;
+            border: 3px solid rgba(var(--accent-rgb), 0.2);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .redirect-text {
+            font-size: 17px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .redirect-sub {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        /* Desktop View: QR Code */
+        .qr-box {
+            background: #ffffff;
+            padding: 14px;
+            border-radius: 18px;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .qr-box img {
+            display: block;
+            width: 180px;
+            height: 180px;
+        }
+
+        .qr-instruction {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .qr-instruction strong {
+            color: var(--text-main);
+        }
+
+        .store-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 28px;
+        }
+
+        .store-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 13px;
+            transition: all 0.25s ease;
+        }
+
+        .store-btn:hover:not(.disabled) {
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(var(--accent-rgb), 0.15);
+        }
+
+        .store-btn.disabled {
+            opacity: 0.65;
+            cursor: default;
+        }
+
+        .store-btn-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            line-height: 1.2;
+        }
+
+        .store-btn-text span {
+            font-size: 10px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .store-btn-text strong {
+            font-size: 13px;
+            color: #ffffff;
+        }
+
+        .footer-action {
+            margin-top: 10px;
+        }
+
+        .btn-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-link:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--glass-border);
+            background-color: rgba(10, 15, 25, 0.5);
+            padding: 24px 0;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--text-main);
+        }
+
+        @media (max-width: 640px) {
+            .smart-card {
+                padding: 36px 20px;
+            }
+            .store-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .store-btn {
+                justify-content: center;
+            }
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="/id/" class="brand">
+                <div class="brand-logo-wrap">
+                    <svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient: Deep Royal Emerald / Companion Forest -->
+    <linearGradient id="pgBg" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+
+    <!-- Radiant Mint-Sage Ambient Glow -->
+    <radialGradient id="pgGlow" cx="420" cy="340" r="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6EE7B7" stop-opacity="0.45"/>
+      <stop offset="45%" stop-color="#34D399" stop-opacity="0.18"/>
+      <stop offset="85%" stop-color="#047857" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Edge Vignette -->
+    <radialGradient id="pgVignette" cx="512" cy="512" r="740" gradientUnits="userSpaceOnUse">
+      <stop offset="65%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.32"/>
+    </radialGradient>
+
+    <!-- 24K Polished Gold Pet Crest / Liontin Jejak Kaki Emas -->
+    <linearGradient id="pgGold" x1="512" y1="200" x2="512" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="85%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+
+    <!-- Crisp Ivory White / Pego Chest White -->
+    <linearGradient id="pgWhite" x1="512" y1="180" x2="512" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0FDF4"/>
+    </linearGradient>
+
+    <!-- Sage Green Bandana Collar Accent -->
+    <linearGradient id="pgSage" x1="300" y1="200" x2="724" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="50%" stop-color="#5B7F5A"/>
+      <stop offset="100%" stop-color="#3E5A3D"/>
+    </linearGradient>
+
+    <!-- Warm Corgi Fur Accent -->
+    <linearGradient id="pgWarm" x1="300" y1="200" x2="724" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#D4A373"/>
+      <stop offset="100%" stop-color="#A16207"/>
+    </linearGradient>
+
+    <!-- Inner Shield Inset (Emerald Night) -->
+    <linearGradient id="pgDeepEmerald" x1="512" y1="260" x2="512" y2="780" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="pgShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="28" stdDeviation="30" flood-color="#021C16" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+    <filter id="pawShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#022C22" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Top Gloss Sheen -->
+    <linearGradient id="pgSheen" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="pgClip"><rect width="1024" height="1024" rx="0"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#pgClip)">
+    <!-- Background Plates -->
+    <rect width="1024" height="1024" fill="url(#pgBg)"/>
+    <rect width="1024" height="1024" fill="url(#pgGlow)"/>
+    <rect width="1024" height="1024" fill="url(#pgVignette)"/>
+
+    <!-- ==================== HERO PET CARE CREST & GOLDEN PAW MEDAL ==================== -->
+    <g filter="url(#pgShadow)">
+      <!-- Corgi Companion Rounded Ears Silhouette at the top of crest -->
+      <!-- Left Corgi Ear -->
+      <path d="M 330 290 C 270 190 330 110 400 160 C 440 190 440 260 410 320 Z" 
+            fill="url(#pgWarm)"/>
+      <path d="M 346 270 C 304 200 344 146 390 180 C 418 202 418 250 398 290 Z" 
+            fill="url(#pgWhite)" opacity="0.4"/>
+
+      <!-- Right Corgi Ear -->
+      <path d="M 694 290 C 754 190 694 110 624 160 C 584 190 584 260 614 320 Z" 
+            fill="url(#pgWarm)"/>
+      <path d="M 678 270 C 720 200 680 146 634 180 C 606 202 606 250 626 290 Z" 
+            fill="url(#pgWhite)" opacity="0.4"/>
+
+      <!-- Outer Protective Care Shield / Medal Frame -->
+      <path d="M 512 210 Q 750 210 750 430 C 750 640 512 830 512 830 C 512 830 274 640 274 430 Q 274 210 512 210 Z" 
+            fill="url(#pgGold)"/>
+
+      <!-- Shield Inner Deep Field -->
+      <path d="M 512 238 Q 722 238 722 436 C 722 626 512 798 512 798 C 512 798 302 626 302 436 Q 302 238 512 238 Z" 
+            fill="url(#pgDeepEmerald)"/>
+
+      <!-- Sage Green Bandana Collar Arch across top -->
+      <path d="M 314 340 Q 512 400 710 340 L 718 388 Q 512 452 306 388 Z" 
+            fill="url(#pgSage)"/>
+      <circle cx="512" cy="414" r="16" fill="url(#pgGold)"/>
+    </g>
+
+    <!-- ==================== HERO GOLDEN PAW EMBLEM (CENTER) ==================== -->
+    <g filter="url(#pawShadow)">
+      <!-- 4 Rounded Toe Pads -->
+      <!-- Toe 1 (Far Left) -->
+      <ellipse cx="396" cy="466" rx="34" ry="46" transform="rotate(-24 396 466)" fill="url(#pgGold)"/>
+      <!-- Toe 2 (Center Left) -->
+      <ellipse cx="468" cy="426" rx="36" ry="50" transform="rotate(-8 468 426)" fill="url(#pgGold)"/>
+      <!-- Toe 3 (Center Right) -->
+      <ellipse cx="556" cy="426" rx="36" ry="50" transform="rotate(8 556 426)" fill="url(#pgGold)"/>
+      <!-- Toe 4 (Far Right) -->
+      <ellipse cx="628" cy="466" rx="34" ry="46" transform="rotate(24 628 466)" fill="url(#pgGold)"/>
+
+      <!-- Central Main Palm Pad (Heart-Curved Paw Base) -->
+      <path d="M 512 524 C 440 524 390 564 390 626 C 390 682 434 722 512 722 C 590 722 634 682 634 626 C 634 564 584 524 512 524 Z" 
+            fill="url(#pgGold)"/>
+
+      <!-- Embedded Veterinary Care Cross in Center of Main Pad -->
+      <path d="M 494 572 L 530 572 L 530 608 L 566 608 L 566 644 L 530 644 L 530 680 L 494 680 L 494 644 L 458 644 L 458 608 L 494 608 Z" 
+            fill="url(#pgWhite)"/>
+
+      <!-- Inner Pad Highlight Specular -->
+      <circle cx="440" cy="570" r="12" fill="#FFFFFF" opacity="0.6"/>
+      <circle cx="472" cy="406" r="8" fill="#FFFFFF" opacity="0.7"/>
+      <circle cx="552" cy="406" r="8" fill="#FFFFFF" opacity="0.7"/>
+    </g>
+
+    <!-- Milestone Care Sparkles -->
+    <g transform="translate(240, 310)">
+      <path d="M 0 -36 Q 0 0 36 0 Q 0 0 0 36 Q 0 0 -36 0 Q 0 0 0 -36 Z" fill="#FEF08A"/>
+    </g>
+    <g transform="translate(784, 310)">
+      <path d="M 0 -36 Q 0 0 36 0 Q 0 0 0 36 Q 0 0 -36 0 Q 0 0 0 -36 Z" fill="#FEF08A"/>
+    </g>
+
+    <!-- Top Gloss Sheen -->
+    <rect width="1024" height="340" fill="url(#pgSheen)"/>
+  </g>
+</svg>
+
+                </div>
+                <span class="brand-name">PetGo</span>
+            </a>
+            <a href="/id/" class="nav-link">Lihat Website</a>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <div class="smart-card">
+            <!-- Mobile Redirecting Indicator -->
+            <div id="redirect-state">
+                <div class="spinner"></div>
+                <h2 class="redirect-text" id="redirect-msg">Membuka Toko Aplikasi...</h2>
+                <p class="redirect-sub">Mengalihkan perangkat Anda secara otomatis ke halaman instalasi.</p>
+                <div style="margin-top: 16px;">
+                    <a href="https://play.google.com/store/apps/details?id=id.faishal.petgo&utm_source=faishal.id&utm_medium=smart_link&utm_campaign=app_redirect" class="store-btn" id="manual-btn" style="display: inline-flex;">
+                        <span>Ketuk jika tidak terbuka otomatis</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Standard Content (Desktop & Fallback) -->
+            <div id="default-state">
+                <div class="smart-badge">
+                    <span>📲</span> Smart App Link
+                </div>
+                <div class="app-icon-large">
+                    <svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient: Deep Royal Emerald / Companion Forest -->
+    <linearGradient id="pgBg" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+
+    <!-- Radiant Mint-Sage Ambient Glow -->
+    <radialGradient id="pgGlow" cx="420" cy="340" r="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6EE7B7" stop-opacity="0.45"/>
+      <stop offset="45%" stop-color="#34D399" stop-opacity="0.18"/>
+      <stop offset="85%" stop-color="#047857" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Edge Vignette -->
+    <radialGradient id="pgVignette" cx="512" cy="512" r="740" gradientUnits="userSpaceOnUse">
+      <stop offset="65%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.32"/>
+    </radialGradient>
+
+    <!-- 24K Polished Gold Pet Crest / Liontin Jejak Kaki Emas -->
+    <linearGradient id="pgGold" x1="512" y1="200" x2="512" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="85%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+
+    <!-- Crisp Ivory White / Pego Chest White -->
+    <linearGradient id="pgWhite" x1="512" y1="180" x2="512" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0FDF4"/>
+    </linearGradient>
+
+    <!-- Sage Green Bandana Collar Accent -->
+    <linearGradient id="pgSage" x1="300" y1="200" x2="724" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="50%" stop-color="#5B7F5A"/>
+      <stop offset="100%" stop-color="#3E5A3D"/>
+    </linearGradient>
+
+    <!-- Warm Corgi Fur Accent -->
+    <linearGradient id="pgWarm" x1="300" y1="200" x2="724" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#D4A373"/>
+      <stop offset="100%" stop-color="#A16207"/>
+    </linearGradient>
+
+    <!-- Inner Shield Inset (Emerald Night) -->
+    <linearGradient id="pgDeepEmerald" x1="512" y1="260" x2="512" y2="780" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="pgShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="28" stdDeviation="30" flood-color="#021C16" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+    <filter id="pawShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#022C22" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Top Gloss Sheen -->
+    <linearGradient id="pgSheen" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="pgClip"><rect width="1024" height="1024" rx="0"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#pgClip)">
+    <!-- Background Plates -->
+    <rect width="1024" height="1024" fill="url(#pgBg)"/>
+    <rect width="1024" height="1024" fill="url(#pgGlow)"/>
+    <rect width="1024" height="1024" fill="url(#pgVignette)"/>
+
+    <!-- ==================== HERO PET CARE CREST & GOLDEN PAW MEDAL ==================== -->
+    <g filter="url(#pgShadow)">
+      <!-- Corgi Companion Rounded Ears Silhouette at the top of crest -->
+      <!-- Left Corgi Ear -->
+      <path d="M 330 290 C 270 190 330 110 400 160 C 440 190 440 260 410 320 Z" 
+            fill="url(#pgWarm)"/>
+      <path d="M 346 270 C 304 200 344 146 390 180 C 418 202 418 250 398 290 Z" 
+            fill="url(#pgWhite)" opacity="0.4"/>
+
+      <!-- Right Corgi Ear -->
+      <path d="M 694 290 C 754 190 694 110 624 160 C 584 190 584 260 614 320 Z" 
+            fill="url(#pgWarm)"/>
+      <path d="M 678 270 C 720 200 680 146 634 180 C 606 202 606 250 626 290 Z" 
+            fill="url(#pgWhite)" opacity="0.4"/>
+
+      <!-- Outer Protective Care Shield / Medal Frame -->
+      <path d="M 512 210 Q 750 210 750 430 C 750 640 512 830 512 830 C 512 830 274 640 274 430 Q 274 210 512 210 Z" 
+            fill="url(#pgGold)"/>
+
+      <!-- Shield Inner Deep Field -->
+      <path d="M 512 238 Q 722 238 722 436 C 722 626 512 798 512 798 C 512 798 302 626 302 436 Q 302 238 512 238 Z" 
+            fill="url(#pgDeepEmerald)"/>
+
+      <!-- Sage Green Bandana Collar Arch across top -->
+      <path d="M 314 340 Q 512 400 710 340 L 718 388 Q 512 452 306 388 Z" 
+            fill="url(#pgSage)"/>
+      <circle cx="512" cy="414" r="16" fill="url(#pgGold)"/>
+    </g>
+
+    <!-- ==================== HERO GOLDEN PAW EMBLEM (CENTER) ==================== -->
+    <g filter="url(#pawShadow)">
+      <!-- 4 Rounded Toe Pads -->
+      <!-- Toe 1 (Far Left) -->
+      <ellipse cx="396" cy="466" rx="34" ry="46" transform="rotate(-24 396 466)" fill="url(#pgGold)"/>
+      <!-- Toe 2 (Center Left) -->
+      <ellipse cx="468" cy="426" rx="36" ry="50" transform="rotate(-8 468 426)" fill="url(#pgGold)"/>
+      <!-- Toe 3 (Center Right) -->
+      <ellipse cx="556" cy="426" rx="36" ry="50" transform="rotate(8 556 426)" fill="url(#pgGold)"/>
+      <!-- Toe 4 (Far Right) -->
+      <ellipse cx="628" cy="466" rx="34" ry="46" transform="rotate(24 628 466)" fill="url(#pgGold)"/>
+
+      <!-- Central Main Palm Pad (Heart-Curved Paw Base) -->
+      <path d="M 512 524 C 440 524 390 564 390 626 C 390 682 434 722 512 722 C 590 722 634 682 634 626 C 634 564 584 524 512 524 Z" 
+            fill="url(#pgGold)"/>
+
+      <!-- Embedded Veterinary Care Cross in Center of Main Pad -->
+      <path d="M 494 572 L 530 572 L 530 608 L 566 608 L 566 644 L 530 644 L 530 680 L 494 680 L 494 644 L 458 644 L 458 608 L 494 608 Z" 
+            fill="url(#pgWhite)"/>
+
+      <!-- Inner Pad Highlight Specular -->
+      <circle cx="440" cy="570" r="12" fill="#FFFFFF" opacity="0.6"/>
+      <circle cx="472" cy="406" r="8" fill="#FFFFFF" opacity="0.7"/>
+      <circle cx="552" cy="406" r="8" fill="#FFFFFF" opacity="0.7"/>
+    </g>
+
+    <!-- Milestone Care Sparkles -->
+    <g transform="translate(240, 310)">
+      <path d="M 0 -36 Q 0 0 36 0 Q 0 0 0 36 Q 0 0 -36 0 Q 0 0 0 -36 Z" fill="#FEF08A"/>
+    </g>
+    <g transform="translate(784, 310)">
+      <path d="M 0 -36 Q 0 0 36 0 Q 0 0 0 36 Q 0 0 -36 0 Q 0 0 0 -36 Z" fill="#FEF08A"/>
+    </g>
+
+    <!-- Top Gloss Sheen -->
+    <rect width="1024" height="340" fill="url(#pgSheen)"/>
+  </g>
+</svg>
+
+                </div>
+                <h1 class="smart-title">Pasang PetGo</h1>
+                <p class="smart-subtitle" id="smart-desc">
+                    Gunakan kamera ponsel Anda untuk memindai kode QR, atau pilih toko aplikasi di bawah ini untuk mengunduh langsung ke perangkat Anda.
+                </p>
+
+                <!-- Desktop QR Code -->
+                <div id="qr-container">
+                    <div class="qr-box">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://petgo.faishal.id/app" alt="QR Code Unduh PetGo">
+                    </div>
+                    <p class="qr-instruction">
+                        Pindai kode QR di atas dengan <strong>Kamera Smartphone</strong> Anda.
+                    </p>
+                </div>
+
+                <!-- Store Buttons -->
+                <div class="store-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=id.faishal.petgo&utm_source=faishal.id&utm_medium=smart_link&utm_campaign=app_redirect" class="store-btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 512 512" class="store-icon" width="22" height="22">
+                <path fill="#f57c00" d="M12 28.5L248 264.5L12 500.5C9.5 498 8 493 8 485.5V54.5C8 47 9.5 42 12 28.5Z"/>
+                <path fill="#ffb74d" d="M374 138.5L248 264.5L12 28.5C16.5 24 23 23 30.5 27.5L374 138.5Z"/>
+                <path fill="#f57c00" d="M374 390.5L30.5 497.5C23 502 16.5 501 12 496.5L248 264.5L374 390.5Z"/>
+                <path fill="#ffa726" d="M500 221.5L403.5 166.5L374 138.5L248 264.5L374 390.5L403.5 362.5L500 307.5C508 303 512 293 512 285.5C512 278 508 268 500 221.5Z"/>
+            </svg>
+            <div class="store-btn-text">
+                <span>Dapatkan di</span>
+                <strong>Google Play</strong>
+            </div>
+        </a>
+                    <a href="https://www.amazon.com/dp/B0HPS6PPV9" class="store-btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 512 512" class="store-icon" width="22" height="22" fill="#FF9900">
+                <path d="M312.4 344c-28.2 21.3-70.6 32.7-106.1 32.7-49.8 0-94.8-18.4-128.7-49.2-3.8-3.4-3.8-9.1 0-12.5 7.6-6.8 16.4-13.7 25.1-19.8 3.8-2.7 8.4-2.7 12.2.8 26.6 24.3 60.1 38.8 95.9 38.8 27.4 0 58.7-8.4 81.5-24.3 4.6-3 10.7-.8 13.7 3.8 3.8 5.3 8.4 11.4 12.2 16.7 3 4.6 2.3 10.7-1.5 13.7zM337.5 315.1c-3.8-5.3-19-2.3-38.1 4.6-5.3 1.5-6.1-3-1.5-6.1 16-10.7 42.6-7.6 45.7-3.8 3.8 4.6.8 31.2-14.5 42.6-4.6 3.4-8.4.8-6.1-3.8 7.6-15.2 18.2-33.5 14.5-33.5zM279.7 137.6c-48.7 3.8-84.5 32.7-84.5 83.7 0 51 32.7 75.3 75.3 75.3 35.8 0 57.8-19 66.2-32.7l3 19.8c1.5 7.6 6.8 12.2 14.5 12.2h28.2c7.6 0 12.9-6.1 11.4-13.7l-26.6-140.7c-2.3-12.9-10.7-19.8-23.6-20.5-23.6-1.5-45.7-3.4-63.9-3.4zm10.7 131.6c-24.3 0-41.9-14.5-41.9-38.8 0-25.1 19-39.6 44.9-42.6 15.2-1.5 28.2-1.5 36.5 0l11.4 63.9c-12.2 11.4-29.7 17.5-50.9 17.5z"/>
+            </svg>
+            <div class="store-btn-text">
+                <span>Dapatkan di</span>
+                <strong>Amazon Appstore</strong>
+            </div>
+        </a>
+                    <div class="store-btn disabled">
+        <svg viewBox="0 0 512 512" class="store-icon" width="22" height="22" fill="currentColor">
+            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-91.9-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-14.9 69.5-34.3z"/>
+        </svg>
+        <div class="store-btn-text">
+            <span>Segera Hadir di</span>
+            <strong>App Store</strong>
+        </div>
+    </div>
+                </div>
+
+                <div class="footer-action">
+                    <a href="/id/" class="btn-link">
+                        <span>← Kembali ke Beranda Website</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 faishal.id. Hak cipta dilindungi undang-undang.</p>
+            <div class="footer-links">
+                <a href="https://faishal.id" class="footer-link">faishal.id Hub</a>
+                <a href="/id/" class="footer-link">Beranda</a>
+                <a href="/id/privacy.html" class="footer-link">Kebijakan Privasi</a>
+                <a href="/id/terms.html" class="footer-link">Syarat &amp; Ketentuan</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera || '';
+            var isAndroid = /android/i.test(ua);
+            var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+            var isAmazon = /Silk|Kindle|KFTT|KFOT|B0/i.test(ua);
+
+            var playUrl = "https://play.google.com/store/apps/details?id=id.faishal.petgo&utm_source=faishal.id&utm_medium=smart_link&utm_campaign=app_redirect";
+            var amazonUrl = "https://www.amazon.com/dp/B0HPS6PPV9";
+            var appStoreUrl = "";
+            var hasPlay = true;
+            var hasAmazon = true;
+            var hasAppStore = false;
+
+            var targetUrl = "";
+            var targetName = "";
+
+            if (isAndroid) {
+                if (isAmazon && hasAmazon && amazonUrl) {
+                    targetUrl = amazonUrl;
+                    targetName = "Amazon Appstore";
+                } else if (hasPlay && playUrl) {
+                    targetUrl = playUrl;
+                    targetName = "Google Play Store";
+                } else if (hasAmazon && amazonUrl) {
+                    targetUrl = amazonUrl;
+                    targetName = "Amazon Appstore";
+                } else if (playUrl) {
+                    targetUrl = playUrl;
+                    targetName = "Google Play Store";
+                }
+            } else if (isIOS) {
+                if (hasAppStore && appStoreUrl) {
+                    targetUrl = appStoreUrl;
+                    targetName = "Apple App Store";
+                } else {
+                    // iOS user, but app is not yet live on App Store
+                    var desc = document.getElementById('smart-desc');
+                    if (desc) {
+                        desc.innerHTML = '<span style="color: var(--accent); font-weight: 600;">Versi iOS (iPhone & iPad) sedang dalam proses peninjauan App Store.</span><br>Saat ini aplikasi sudah tersedia di Android (Google Play & Amazon Appstore).';
+                    }
+                    var qrCont = document.getElementById('qr-container');
+                    if (qrCont) {
+                        qrCont.style.display = 'none';
+                    }
+                    return; // Do not auto redirect, show friendly status
+                }
+            }
+
+            if (targetUrl) {
+                // Show redirect state
+                var redState = document.getElementById('redirect-state');
+                var defState = document.getElementById('default-state');
+                var msg = document.getElementById('redirect-msg');
+                var manualBtn = document.getElementById('manual-btn');
+
+                if (redState && defState) {
+                    redState.style.display = 'block';
+                    defState.style.display = 'none';
+                    if (msg) msg.textContent = 'Membuka ' + targetName + '...';
+                    if (manualBtn) {
+                        manualBtn.href = targetUrl;
+                        manualBtn.innerHTML = '<strong>Buka ' + targetName + '</strong>';
+                    }
+                }
+
+                // Execute immediate redirect
+                window.location.replace(targetUrl);
+            }
+        })();
+    </script>
+</body>
+</html>

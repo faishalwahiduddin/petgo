@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "percepat-input-jadwal-perawatan-harian-di-petgo-offline",
-    "en": "speed-up-jadwal-perawatan-harian-input-in-petgo",
-    "ar": "jadwal-perawatan-harian-15",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-15",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-15",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-15",
-    "ja": "petgojadwal-perawatan-harian-ガイド-15"
+    "id": "jadwal-perawatan-harian-yang-tidak-bikin-malas-membuka-app",
+    "en": "daily-care-schedule-that-does-not-feel-like-a-chore-to-open",
+    "ar": "jdwl-alraaya-alywmy-la-ythql-fthh",
+    "jv": "jadwal-perawatan-harian-sing-ora-males-dibukak",
+    "su": "jadwal-perawatan-harian-anu-teu-hoream-dibuka",
+    "zh": "da-kai-bu-fei-jin-de-mei-ri-zhao-hu-shi-jian-biao",
+    "ja": "hiraku-noga-okkuu-ninaranai-mainichi-no-kea-yotei"
   },
   "titles": {
-    "id": "Percepat Input jadwal perawatan harian di PetGo",
-    "en": "Speed Up jadwal perawatan harian Input in PetGo",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Percepat Input jadwal perawatan harian di PetGo",
-    "su": "Pituduh: Percepat Input jadwal perawatan harian di PetGo",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian yang tidak bikin malas membuka app",
+    "en": "daily care schedule that does not feel like a chore to open",
+    "ar": "جدول الرعاية اليومي لا يثقل فتحه",
+    "jv": "jadwal perawatan harian sing ora males dibukak",
+    "su": "jadwal perawatan harian anu teu hoream dibuka",
+    "zh": "打开不费劲的每日照护时间表",
+    "ja": "開くのが億劫にならない毎日のケア予定"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Jadwal perawatan harian yang tidak membuat malas membuka aplikasi: alasan kebiasaan putus, versi paling kecil untuk dibuka, dan cara kembali setelah bolong.",
+    "en": "A daily care schedule that does not make you dread opening the app: why routines break, the smallest version to open, and how to return after a gap.",
+    "ar": "جدول رعاية يومي لا يثقل فتحه: أسباب تعثر العادة، وأصغر نسخة تُفتح بسهولة، وطريقة العودة بعد الانقطاع.",
+    "ja": "開くのが億劫にならない毎日のケア予定。習慣が途切れる理由、開きやすい最小バージョン、空白の後の戻り方。",
+    "zh": "打开不费劲的每日照护时间表：习惯中断的原因、容易打开的最小版本，以及空档后如何回来。",
+    "jv": "Jadwal perawatan harian sing ora gawé males mbukak aplikasi: sebab kebiasan mandheg, versi paling cilik kanggo dibukak, lan carané bali sawisé bolong.",
+    "su": "Jadwal perawatan harian nu teu bikin malas muka aplikasi: alesan kabiasaan putus, versi paling leutik pikeun dibuka, jeung cara balik sanggeus bolong."
+  }
 }

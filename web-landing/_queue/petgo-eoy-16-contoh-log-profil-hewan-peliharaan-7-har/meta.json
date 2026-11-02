@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "contoh-log-profil-hewan-peliharaan-7-hari-mingguan",
-    "en": "sample-7-day-profil-hewan-peliharaan-log",
-    "ar": "profil-hewan-peliharaan-4",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-4",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-4",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-4",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-4"
+    "id": "template-profil-hewan-peliharaan-siap-pakai",
+    "en": "a-ready-to-use-pet-profile-template",
+    "ar": "qalb-mlf-alhywan-alalyf-jahz-llastkhdam",
+    "jv": "templat-profil-hewan-peliharaan-siap-dipigunakake",
+    "su": "citakan-profil-hewan-peliharaan-siap-dipake",
+    "zh": "chong-wu-dang-an-mu-ban-ke-zhi-jie-tao-yong",
+    "ja": "sugu-tsukae-ru-petto-no-purofiirutenpureeto"
   },
   "titles": {
-    "id": "Contoh Log profil hewan peliharaan 7 Hari",
-    "en": "Sample 7-Day profil hewan peliharaan Log — Offline First",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Contoh Log profil hewan peliharaan 7 Hari",
-    "su": "Pituduh: Contoh Log profil hewan peliharaan 7 Hari",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "Template profil hewan peliharaan siap pakai",
+    "en": "A ready-to-use pet profile template",
+    "ar": "قالب ملف الحيوان الأليف جاهز للاستخدام",
+    "jv": "Templat profil hewan peliharaan siap dipigunakaké",
+    "su": "Citakan profil hewan peliharaan siap dipaké",
+    "zh": "宠物档案模板（可直接套用）",
+    "ja": "すぐ使えるペットのプロフィールテンプレート"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Templat profil hewan peliharaan siap dipakai, dengan versi paling kecil sebagai titik awal, patokan kapan mengisinya, dan bagian tinjauan mingguan.",
+    "en": "A ready-to-use pet profile template with the smallest version as a starting point, a guide for when to fill it in, and a weekly check section.",
+    "ar": "قالب جاهز لملف الحيوان الأليف يبدأ بأصغر نسخة، مع توجيه لوقت التعبئة وقسم للمراجعة الأسبوعية، ليكون نقطة انطلاق سريعة.",
+    "ja": "すぐ使えるペットのプロフィールテンプレート。最小バージョンを出発点に、記入のタイミングと週次確認の欄を用意。",
+    "zh": "可直接套用的宠物档案模板，以最小版本作为起点，附带填写时机的参考和每周检查的部分。",
+    "jv": "Templat profil hewan peliharaan siap dipigunakaké, karo versi paling cilik minangka wiwitan, pathokan kapan ngisi, lan bagéan tinjauan saben minggu.",
+    "su": "Citakan profil hewan peliharaan nu siap dipaké, kalawan versi paling leutik salaku titik mimiti, patokan iraha ngeusian, jeung bagian tinjauan mingguan."
+  }
 }

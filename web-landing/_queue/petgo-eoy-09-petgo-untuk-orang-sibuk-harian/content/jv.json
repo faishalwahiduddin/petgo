@@ -1,0 +1,85 @@
+{
+  "title": "catatan kunjungan vet kanggo sing wektuné sempit",
+  "description": "Carané nyathet catatan kunjungan vet nalika wektu kepepet: pilih wektu sing realistis, wiwit saka versi paling cilik, lan terusake sawisé dina sing kelangan.",
+  "badge": "kulawarga · offline",
+  "answer": "Ing grup kulawarga wong telu padha takon catatan kunjungan vet, lan ora ana wangsulan sing padha. PetGo nyimpen catatan kunjungan vet ing piranti, dadi tetep kebukak tanpa kuota lan tanpa akun.",
+  "toc": [
+    "Kapan nglakoni",
+    "Versi paling cilik",
+    "Sawisé bolong"
+  ],
+  "sections": [
+    {
+      "h2": "Kapan nglakoni",
+      "p": "Isinen nalika mangan bengi utawa nalika grup kulawarga wis rame.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Versi paling cilik",
+      "p": "Siji baris saben anggota: status, tanggal, siji bab sing perlu ditindak.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Sawisé bolong",
+      "p": "Yèn bolong sawetara dina, aja mbusak riwayat. Bukak cathetan pungkasan, isinen sedina, banjur tutup.",
+      "h3": null,
+      "p3": null
+    }
+  ],
+  "table": {
+    "caption": "Rangka catatan kunjungan vet",
+    "headers": [
+      "Langkah",
+      "Isi minimal",
+      "Rampung yèn"
+    ],
+    "rows": [
+      [
+        "Baris anggota",
+        "status + tanggal",
+        "bisa ditinjau"
+      ],
+      [
+        "Pananda",
+        "posisi pungkasan",
+        "bisa diterusaké sesuk"
+      ],
+      [
+        "Evaluasi minggu",
+        "siji panyesuaian",
+        "diterapaké Senén"
+      ]
+    ]
+  },
+  "list": [
+    "Temtokna siji wektu tetep, dudu “yèn sempet”.",
+    "Bukak PetGo nalika wektu iku teka, aja mengko bengi.",
+    "Catheten siji alangan, dudu alesan dawa.",
+    "Cadhangana data sadurungé ganti HP."
+  ],
+  "faqs": [
+    [
+      "Apa catatan kunjungan vet bisa dibukak offline?",
+      "Bisa. PetGo nyimpen kabèh ing piranti, dadi ora butuh kuota."
+    ],
+    [
+      "Kudu akun dhisik?",
+      "Ora. Wiwit tanpa login; cadhangana data sak dhéwé."
+    ],
+    [
+      "Wiwit saka ngendi?",
+      "Saka bagéan paling cendhak. Tambah jembar yèn wis rong minggu stabil."
+    ],
+    [
+      "Yèn bolong sawetara dina?",
+      "Aja mbusak riwayat. Terusaké saka cathetan pungkasan lan catheten siji alangan."
+    ]
+  ],
+  "cta": [
+    "Wiwiti catatan kunjungan vet dina iki",
+    "Bukak PetGo"
+  ],
+  "slug": "pandhuan-petgo-petgo-3"
+}

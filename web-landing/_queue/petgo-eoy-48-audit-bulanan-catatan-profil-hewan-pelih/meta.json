@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "audit-bulanan-catatan-profil-hewan-peliharaan-2026",
-    "en": "monthly-audit-of-profil-hewan-peliharaan-logs",
-    "ar": "profil-hewan-peliharaan-12",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-12",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-12",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-12",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-12"
+    "id": "profil-hewan-peliharaan-yang-datanya-bisa-dipercaya",
+    "en": "pet-profile-whose-records-you-can-trust",
+    "ar": "mlf-alhywan-alalyf-bsjlat-mwthwqa",
+    "jv": "profil-hewan-peliharaan-sing-dhatae-bisa-dipercaya",
+    "su": "profil-hewan-peliharaan-anu-datana-bisa-dipercaya",
+    "zh": "ji-lu-ke-xin-de-chong-wu-dang-an",
+    "ja": "kiroku-wo-shinrai-dekiru-petto-no-purofiiru"
   },
   "titles": {
-    "id": "Audit Bulanan Catatan profil hewan peliharaan",
-    "en": "Monthly Audit of profil hewan peliharaan Logs",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Audit Bulanan Catatan profil hewan peliharaan",
-    "su": "Pituduh: Audit Bulanan Catatan profil hewan peliharaan",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan yang datanya bisa dipercaya",
+    "en": "pet profile whose records you can trust",
+    "ar": "ملف الحيوان الأليف بسجلات موثوقة",
+    "jv": "profil hewan peliharaan sing dhataé bisa dipercaya",
+    "su": "profil hewan peliharaan anu datana bisa dipercaya",
+    "zh": "记录可信的宠物档案",
+    "ja": "記録を信頼できるペットのプロフィール"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Cara menjaga profil hewan peliharaan yang datanya bisa dipercaya: kenapa pengisian sering terhenti, versi paling kecil sebagai awal, dan kembali setelah bolong.",
+    "en": "Keeping a pet profile whose records you can trust: why updates often drop off, the smallest version as a start, and resuming after a gap.",
+    "ar": "كيف تحافظ على ملف الحيوان الأليف بسجلات موثوقة: لماذا تتوقف التحديثات، وأصغر نسخة كبداية، والعودة بعد أي انقطاع.",
+    "ja": "記録を信頼できるペットのプロフィール。更新が途切れる理由、出発点となる最小バージョン、空白後の再開方法を扱う。",
+    "zh": "如何让宠物档案的数据值得信赖：为何更新容易中断，以最小版本作为开始，以及空档后如何恢复。",
+    "jv": "Carané njaga profil hewan peliharaan sing datané bisa dipercaya: kenapa pangisian kerep mandheg, versi paling cilik minangka wiwitan, lan bali sawisé bolong.",
+    "su": "Cara ngajaga profil hewan peliharaan nu datana bisa dipercaya: naha pangisian sering eureun, versi paling leutik salaku mimiti, jeung balik sanggeus bolong."
+  }
 }

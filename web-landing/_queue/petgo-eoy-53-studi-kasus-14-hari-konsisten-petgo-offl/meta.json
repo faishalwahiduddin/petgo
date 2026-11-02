@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "studi-kasus-14-hari-konsisten-petgo-offline",
-    "en": "case-study-14-consistent-days-of-petgo",
-    "ar": "petgo-14",
-    "jv": "pandhuan-petgo-petgo-14",
-    "su": "pituduh-petgo-petgo-14",
-    "zh": "petgo-petgo-实用指南-14",
-    "ja": "petgopetgo-ガイド-14"
+    "id": "studi-kasus-catatan-kunjungan-vet-selama-14-hari",
+    "en": "case-study-vet-visit-log-for-14-days",
+    "ar": "hala-amlya-sjlat-zyara-altbyb-albytry-larbaa-ashr-ywma",
+    "jv": "studi-kasus-catatan-kunjungan-vet-14-dina",
+    "su": "studi-kasus-catatan-kunjungan-vet-14-poe",
+    "zh": "an-li-14-tian-de-chong-wu-jiu-zhen-ji-lu",
+    "ja": "jirei-14-nichikan-no-doubutsubyouin-no-kiroku"
   },
   "titles": {
-    "id": "Studi Kasus: 14 Hari Konsisten PetGo",
-    "en": "Case Study: 14 Consistent Days of PetGo",
-    "ar": "PetGo — دليل PetGo",
-    "jv": "Pandhuan: Studi Kasus: 14 Hari Konsisten PetGo",
-    "su": "Pituduh: Studi Kasus: 14 Hari Konsisten PetGo",
-    "zh": "PetGo · PetGo 实用指南",
-    "ja": "PetGo｜PetGo ガイド"
+    "id": "Studi kasus: catatan kunjungan vet selama 14 hari",
+    "en": "Case study: vet visit log for 14 days",
+    "ar": "حالة عملية: سجلات زيارة الطبيب البيطري لأربعة عشر يوماً",
+    "jv": "Studi kasus: catatan kunjungan vet 14 dina",
+    "su": "Studi kasus: catatan kunjungan vet 14 poé",
+    "zh": "案例：14 天的宠物就诊记录",
+    "ja": "事例：14日間の動物病院の記録"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Studi kasus catatan kunjungan vet selama 14 hari, menelusuri tinjauan mingguan, penyimpanan di perangkat, dan langkah yang diambil setelah ada jeda.",
+    "en": "A 14-day case study of the vet visit log, following the weekly review, on-device storage, and the steps taken after a missed stretch.",
+    "ar": "حالة عملية لسجلات زيارة الطبيب البيطري على مدى أربعة عشر يوماً، تتتبع المراجعة الأسبوعية وحفظ البيانات على الجهاز والخطوات بعد الانقطاع.",
+    "ja": "14日間の動物病院の記録の事例。毎週の見直し、端末への保存、空白の後に取った対応を順に紹介します。",
+    "zh": "宠物就诊记录的14天案例研究：跟踪每周回顾、设备端存储，以及出现空档后采取的步骤。",
+    "jv": "Studi kasus catatan kunjungan vet suwene 14 dina: nelusuri tinjauan saben minggu, panyimpanan ing piranti, lan langkah sing ditindakké sawisé ana jeda.",
+    "su": "Studi kasus catatan kunjungan vet salila 14 poé: nuturkeun tinjauan unggal minggu, panyimpenan dina alat, jeung léngkah nu dilakukeun sanggeus aya jeda."
+  }
 }

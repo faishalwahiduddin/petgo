@@ -116,6 +116,12 @@ abstract class AppLocalizations {
   /// **'PetGo'**
   String get appTitle;
 
+  /// No description provided for @appTagline.
+  ///
+  /// In id, this message translates to:
+  /// **'Profil hewan, jadwal perawatan & log harian'**
+  String get appTagline;
+
   /// No description provided for @navPets.
   ///
   /// In id, this message translates to:
@@ -155,7 +161,7 @@ abstract class AppLocalizations {
   /// No description provided for @onboardingDescription.
   ///
   /// In id, this message translates to:
-  /// **'Kelola profil hewan, jadwal vaksin/cacing, kunjungan vet, dan log harian secara offline di perangkat Anda.\n\nTanpa akun. Data tersimpan lokal.'**
+  /// **'Kelola profil hewan, jadwal vaksin dan cacing, kunjungan vet, serta log harian — semuanya offline.\n\nTanpa akun. Data tidak pernah keluar dari perangkat Anda.'**
   String get onboardingDescription;
 
   /// No description provided for @onboardingContinue.
@@ -163,6 +169,114 @@ abstract class AppLocalizations {
   /// In id, this message translates to:
   /// **'Saya mengerti — lanjut'**
   String get onboardingContinue;
+
+  /// No description provided for @onbSkip.
+  ///
+  /// In id, this message translates to:
+  /// **'Lewati'**
+  String get onbSkip;
+
+  /// No description provided for @onbNext.
+  ///
+  /// In id, this message translates to:
+  /// **'Lanjut'**
+  String get onbNext;
+
+  /// No description provided for @onbGetStarted.
+  ///
+  /// In id, this message translates to:
+  /// **'Mulai sekarang'**
+  String get onbGetStarted;
+
+  /// No description provided for @onbSlide1Title.
+  ///
+  /// In id, this message translates to:
+  /// **'Profil hewan'**
+  String get onbSlide1Title;
+
+  /// No description provided for @onbSlide1Sub.
+  ///
+  /// In id, this message translates to:
+  /// **'Anjing, kucing, dan hewan lainnya'**
+  String get onbSlide1Sub;
+
+  /// No description provided for @onbSlide1Badge.
+  ///
+  /// In id, this message translates to:
+  /// **'100% offline & privat'**
+  String get onbSlide1Badge;
+
+  /// No description provided for @onbSlide2Title.
+  ///
+  /// In id, this message translates to:
+  /// **'Jadwal perawatan'**
+  String get onbSlide2Title;
+
+  /// No description provided for @onbSlide2Sub.
+  ///
+  /// In id, this message translates to:
+  /// **'Vaksin, cacing, kutu, dan grooming'**
+  String get onbSlide2Sub;
+
+  /// No description provided for @onbSlide2Badge.
+  ///
+  /// In id, this message translates to:
+  /// **'Pengingat lokal'**
+  String get onbSlide2Badge;
+
+  /// No description provided for @onbSlide3Title.
+  ///
+  /// In id, this message translates to:
+  /// **'Log harian'**
+  String get onbSlide3Title;
+
+  /// No description provided for @onbSlide3Sub.
+  ///
+  /// In id, this message translates to:
+  /// **'Makan, jalan, dan litter'**
+  String get onbSlide3Sub;
+
+  /// No description provided for @onbSlide3Badge.
+  ///
+  /// In id, this message translates to:
+  /// **'Tanpa iklan & tanpa akun'**
+  String get onbSlide3Badge;
+
+  /// No description provided for @onbSlide4Title.
+  ///
+  /// In id, this message translates to:
+  /// **'Dokumen lokal'**
+  String get onbSlide4Title;
+
+  /// No description provided for @onbSlide4Sub.
+  ///
+  /// In id, this message translates to:
+  /// **'Kartu vaksin dan resep tersimpan rapi'**
+  String get onbSlide4Sub;
+
+  /// No description provided for @onbSlide4Badge.
+  ///
+  /// In id, this message translates to:
+  /// **'Data di perangkat'**
+  String get onbSlide4Badge;
+
+  /// No description provided for @onbPrivacyHeadline.
+  ///
+  /// In id, this message translates to:
+  /// **'Privasi & offline terjamin'**
+  String get onbPrivacyHeadline;
+
+  /// No description provided for @onbPrivacyDetail.
+  ///
+  /// In id, this message translates to:
+  /// **'Semua data tersimpan aman di perangkat Anda, tanpa pelacak.'**
+  String get onbPrivacyDetail;
+
+  /// No description provided for @loadingLabel.
+  ///
+  /// In id, this message translates to:
+  /// **'Memuat…'**
+  String get loadingLabel;
 
   /// No description provided for @homeActivePet.
   ///
@@ -179,7 +293,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeDueSoon.
   ///
   /// In id, this message translates to:
-  /// **'Jatuh tempo / segera'**
+  /// **'Jatuh tempo & segera'**
   String get homeDueSoon;
 
   /// No description provided for @homeNoDue.
@@ -353,7 +467,7 @@ abstract class AppLocalizations {
   /// No description provided for @careFlea.
   ///
   /// In id, this message translates to:
-  /// **'Kutu / flea'**
+  /// **'Kutu & caplak'**
   String get careFlea;
 
   /// No description provided for @careGrooming.

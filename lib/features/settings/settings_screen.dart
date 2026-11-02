@@ -26,21 +26,47 @@ class SettingsScreen extends ConsumerWidget {
           ListTile(
             leading: const Icon(Icons.language, color: AppColors.primary),
             title: Text(l10n.settingsLanguage),
-            subtitle: Text(locale.languageCode.toUpperCase()),
+            subtitle: Text(_languageLabel(locale)),
             onTap: () async {
               final picked = await showModalBottomSheet<Locale>(
                 context: context,
                 useRootNavigator: true,
-                builder: (ctx) => ListView(
-                  shrinkWrap: true,
-                  children: supportedLocales
-                      .map(
+                builder: (ctx) => SafeArea(
+                  top: false,
+                  child: ListView(
+                    shrinkWrap: true,
+                    padding: const EdgeInsets.only(bottom: 8),
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
+                        child: Text(
+                          l10n.settingsLanguage,
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
+                      ...supportedLocales.map(
                         (l) => ListTile(
-                          title: Text(l.languageCode.toUpperCase()),
+                          // Autonyms: a language is always listed in its own
+                          // script so it stays findable whatever the UI locale.
+                          title: Text(_languageLabel(l)),
+                          // Compact rows keep all eight locales above the
+                          // sheet edge instead of clipping the last one.
+                          visualDensity: VisualDensity.compact,
+                          trailing: l.languageCode == locale.languageCode
+                              ? Icon(
+                                  Icons.check,
+                                  color: Theme.of(ctx).colorScheme.primary,
+                                )
+                              : null,
+                          selected: l.languageCode == locale.languageCode,
                           onTap: () => Navigator.pop(ctx, l),
                         ),
-                      )
-                      .toList(),
+                      ),
+                    ],
+                  ),
                 ),
               );
               if (picked != null) {
@@ -142,7 +168,7 @@ class SettingsScreen extends ConsumerWidget {
               return Text(
                 '${l10n.settingsVersion}: $label',
                 textAlign: TextAlign.center,
-                style: const TextStyle(color: AppColors.inkSoft),
+                style: TextStyle(color: context.textSecondary),
               );
             },
           ),
@@ -150,4 +176,17 @@ class SettingsScreen extends ConsumerWidget {
       ),
     );
   }
+
+  /// Native name for each supported locale (no l10n round-trip needed).
+  String _languageLabel(Locale l) => switch (l.languageCode) {
+        'id' => 'Bahasa Indonesia',
+        'en' => 'English',
+        'ar' => 'العربية',
+        'jv' => 'Basa Jawa',
+        'su' => 'Basa Sunda',
+        'zh' => '中文',
+        'ja' => '日本語',
+        'es' => 'Español',
+        _ => l.languageCode.toUpperCase(),
+      };
 }

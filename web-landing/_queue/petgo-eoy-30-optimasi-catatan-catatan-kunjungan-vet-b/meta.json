@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "optimasi-catatan-catatan-kunjungan-vet-bulanan-2026",
-    "en": "optimize-monthly-catatan-kunjungan-vet-logs",
-    "ar": "catatan-kunjungan-vet-8",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-8",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-8",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-8",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-8"
+    "id": "catatan-kunjungan-vet-secara-mendalam-tanpa-muter-muter",
+    "en": "vet-visit-log-explained-without-the-runaround",
+    "ar": "sjlat-zyara-altbyb-albytry-bshrh-mbashr-bla-lf",
+    "jv": "catatan-kunjungan-vet-kanthi-jero-tanpa-mubeng-mubeng",
+    "su": "catatan-kunjungan-vet-diwincik-tanpa-muter-muter",
+    "zh": "chong-wu-jiu-zhen-ji-lu-shen-ru-jiang-qing-chu",
+    "ja": "doubutsubyouin-no-kiroku-wo-toomawari-sezuni-shin-hori"
   },
   "titles": {
-    "id": "Optimasi Catatan catatan kunjungan vet Bulanan",
-    "en": "Optimize Monthly catatan kunjungan vet Logs",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Optimasi Catatan catatan kunjungan vet Bulanan",
-    "su": "Pituduh: Optimasi Catatan catatan kunjungan vet Bulanan",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet secara mendalam tanpa muter-muter",
+    "en": "vet visit log, explained without the runaround",
+    "ar": "سجلات زيارة الطبيب البيطري بشرح مباشر بلا لفّ",
+    "jv": "catatan kunjungan vet kanthi jero tanpa mubeng-mubeng",
+    "su": "catatan kunjungan vet diwincik tanpa muter-muter",
+    "zh": "宠物就诊记录深入讲清楚",
+    "ja": "動物病院の記録を遠回りせずに深掘り"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Penjelasan mendalam catatan kunjungan vet tanpa bertele-tele: arti praktisnya, versi paling kecil untuk memulai, dan cara datanya tersimpan di perangkat.",
+    "en": "A deep dive into the vet visit log without the runaround: what it means in practice, the smallest version to start, and how the data is stored.",
+    "ar": "شرح متعمق لسجلات زيارة الطبيب البيطري بعبارات مباشرة: معناها العملي، وأصغر نسخة للبدء، وكيفية حفظ البيانات على الجهاز.",
+    "ja": "遠回りせずに深掘りする動物病院の記録。実践での意味、最初に試す最小バージョン、データの保存の仕組みを説明します。",
+    "zh": "不绕弯子地深入讲解宠物就诊记录：实际意义、用来起步的最小版本，以及数据如何保存。",
+    "jv": "Katerangan jero bab catatan kunjungan vet tanpa mubeng-mubeng: tegesé ing praktik, versi paling cilik kanggo miwiti, lan carané data kasimpen.",
+    "su": "Katerangan jero ngeunaan catatan kunjungan vet tanpa muter-muter: hartina dina prakték, versi paling leutik pikeun mimitian, jeung kumaha data disimpen."
+  }
 }

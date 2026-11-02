@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "checklist-mingguan-profil-hewan-peliharaan-review-mingguan",
-    "en": "weekly-profil-hewan-peliharaan-checklist-review",
-    "ar": "profil-hewan-peliharaan",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo",
-    "su": "pituduh-profil-hewan-peliharaan-petgo",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド"
+    "id": "checklist-profil-hewan-peliharaan-untuk-satu-layar",
+    "en": "a-one-screen-pet-profile-checklist",
+    "ar": "qaima-mlf-alhywan-alalyf-fy-shasha-wahda",
+    "jv": "dhaftar-priksa-profil-hewan-peliharaan-mung-siji-layar",
+    "su": "daptar-pariksa-profil-hewan-peliharaan-dina-hiji-layar",
+    "zh": "yi-ye-zhi-de-chong-wu-dang-an-qing-dan",
+    "ja": "1-gamen-de-owa-ru-petto-no-purofiiruchekkurisuto"
   },
   "titles": {
-    "id": "Checklist Mingguan profil hewan peliharaan + Review",
-    "en": "Weekly profil hewan peliharaan Checklist + Review — Offline First",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Checklist Mingguan profil hewan peliharaan + Review",
-    "su": "Pituduh: Checklist Mingguan profil hewan peliharaan + Review",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "Checklist profil hewan peliharaan untuk satu layar",
+    "en": "A one-screen pet profile checklist",
+    "ar": "قائمة ملف الحيوان الأليف في شاشة واحدة",
+    "jv": "Dhaftar priksa profil hewan peliharaan mung siji layar",
+    "su": "Daptar pariksa profil hewan peliharaan dina hiji layar",
+    "zh": "一页纸的宠物档案清单",
+    "ja": "1画面で終わるペットのプロフィールチェックリスト"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Checklist profil hewan peliharaan yang muat di satu layar: versi paling kecil, waktu yang pas untuk mengisinya, dan cara meninjau datanya tiap minggu.",
+    "en": "A one-screen pet profile checklist covering the smallest version to start, the right moment to fill it in, and how to review its data each week.",
+    "ar": "قائمة مرجعية لملف الحيوان الأليف في شاشة واحدة تشمل أصغر نسخة للبدء، والوقت المناسب لتعبئته، وطريقة مراجعة بياناته كل أسبوع.",
+    "ja": "1画面で収まるペットのプロフィール確認リスト。最小バージョン、記入の目安、週に一度のデータ見直しを紹介します。",
+    "zh": "一页纸的宠物档案清单：从最小版本起步，明确填写的合适时机，并每周检查数据，方便随手查看。",
+    "jv": "Dhaftar priksa profil hewan peliharaan sing muat ing siji layar: versi paling cilik, wektu sing pas kanggo ngisi, lan cara mriksa datané saben minggu.",
+    "su": "Daptar pariksa profil hewan peliharaan nu muat dina hiji layar: versi paling leutik, waktu nu pas pikeun ngeusian, jeung cara ninjau datana unggal minggu."
+  }
 }

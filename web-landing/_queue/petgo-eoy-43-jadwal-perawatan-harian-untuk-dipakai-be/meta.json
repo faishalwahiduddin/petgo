@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "jadwal-perawatan-harian-untuk-dipakai-bergantian",
-    "en": "sharing-a-device-for-jadwal-perawatan-harian",
-    "ar": "jadwal-perawatan-harian-11",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-11",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-11",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-11",
-    "ja": "petgojadwal-perawatan-harian-ガイド-11"
+    "id": "jadwal-perawatan-harian-untuk-satu-rumah",
+    "en": "daily-care-schedule-for-the-whole-household",
+    "ar": "jdwl-alraaya-alywmy-lkl-afrad-almnzl",
+    "jv": "jadwal-perawatan-harian-kanggo-sakulawarga",
+    "su": "jadwal-perawatan-harian-pikeun-sakulawarga",
+    "zh": "quan-jia-yi-qi-yong-de-mei-ri-zhao-hu-shi-jian-biao",
+    "ja": "kazoku-minnade-tsukau-mainichi-no-kea-yotei"
   },
   "titles": {
-    "id": "jadwal perawatan harian: panduan praktis di PetGo",
-    "en": "Sharing a Device for jadwal perawatan harian",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: jadwal perawatan harian: panduan praktis di PetGo",
-    "su": "Pituduh: jadwal perawatan harian: panduan praktis di PetGo",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian untuk satu rumah",
+    "en": "daily care schedule for the whole household",
+    "ar": "جدول الرعاية اليومي لكل أفراد المنزل",
+    "jv": "jadwal perawatan harian kanggo sakulawarga",
+    "su": "jadwal perawatan harian pikeun sakulawarga",
+    "zh": "全家一起用的每日照护时间表",
+    "ja": "家族みんなで使う毎日のケア予定"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Jadwal perawatan harian untuk satu rumah: cara meninjaunya tiap minggu, catatan yang tersimpan di perangkat, dan langkah kembali setelah ada hari yang bolong.",
+    "en": "Daily care schedule for a single household: how to review it each week, the entries stored on the device, and steps to recover after a missed day.",
+    "ar": "جدول الرعاية اليومي لكل أفراد المنزل: طريقة مراجعته كل أسبوع، والسجلات المحفوظة على الجهاز، وخطوات العودة بعد يوم فائت.",
+    "ja": "家族みんなで使う毎日のケア予定。毎週の見直し方、端末に保存される記録、飛んだ日の後に立て直す手順を解説します。",
+    "zh": "一个家庭共用的每日照护时间表：如何每周回顾，设备上保存的记录，以及漏掉一天后的恢复步骤。",
+    "jv": "Jadwal perawatan harian kanggo sakulawarga: carané mriksa saben minggu, cathetan sing kasimpen ing piranti, lan langkah mulih sawisé ana dina bolong.",
+    "su": "Jadwal perawatan harian pikeun sakumah: cara ninjau unggal minggu, catetan nu disimpen dina alat, jeung léngkah balik sanggeus aya poé bolong."
+  }
 }

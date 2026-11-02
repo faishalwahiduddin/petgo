@@ -9,6 +9,9 @@
 
   // A continuous wave band + drifting dots crossing all four seams.
   window.STORE_ART = {
+    // Marks the generic module so the templates can darken a bright brand
+    // without touching bespoke art that already chose its own ink/background.
+    generic: true,
     theme: { bg: 'linear-gradient(160deg, ' + primary + ' 0%, ' + dark + ' 100%)' },
     panoramaSvg:
       '<svg viewBox="0 0 4320 1920" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">' +

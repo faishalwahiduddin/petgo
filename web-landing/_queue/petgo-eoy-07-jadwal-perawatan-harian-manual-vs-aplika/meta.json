@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "jadwal-perawatan-harian-manual-vs-aplikasi-offline",
-    "en": "jadwal-perawatan-harian-manual-notes-vs-offline-app",
-    "ar": "jadwal-perawatan-harian-2",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-2",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-2",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-2",
-    "ja": "petgojadwal-perawatan-harian-ガイド-2"
+    "id": "jadwal-perawatan-harian-catatan-longgar-vs-aplikasi-offline",
+    "en": "daily-care-schedule-loose-notes-vs-an-offline-app",
+    "ar": "jdwl-alraaya-alywmy-mlahzat-mtfrqa-am-ttbyq-bla-atsal",
+    "jv": "jadwal-perawatan-harian-cathetan-longgar-utawa-aplikasi-offline",
+    "su": "jadwal-perawatan-harian-catetan-longgar-atawa-aplikasi-offline",
+    "zh": "mei-ri-zhao-hu-shi-jian-biao-ling-san-bi-ji-yu-li-xian-ying-yong-de-cha",
+    "ja": "mainichi-no-kea-yotei-memo-to-ofurainapuri-no-chigai"
   },
   "titles": {
-    "id": "jadwal perawatan harian: catatan longgar vs aplikasi",
-    "en": "jadwal perawatan harian: Manual Notes vs Offline App",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: jadwal perawatan harian: catatan longgar vs aplikasi",
-    "su": "Pituduh: jadwal perawatan harian: catatan longgar vs aplikasi",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian: catatan longgar vs aplikasi offline",
+    "en": "daily care schedule: loose notes vs an offline app",
+    "ar": "جدول الرعاية اليومي: ملاحظات متفرقة أم تطبيق بلا اتصال",
+    "jv": "jadwal perawatan harian: cathetan longgar utawa aplikasi offline",
+    "su": "jadwal perawatan harian: catetan longgar atawa aplikasi offline",
+    "zh": "每日照护时间表：零散笔记与离线应用的差别",
+    "ja": "毎日のケア予定：メモとオフラインアプリの違い"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Membandingkan jadwal perawatan harian yang dicatat seadanya dengan aplikasi offline, mulai dari alasan catatan longgar mudah putus sampai tinjauan mingguan.",
+    "en": "Comparing a daily care schedule kept in loose notes with an offline app, from why loose notes break down to the weekly check.",
+    "ar": "مقارنة بين جدول الرعاية اليومي المكتوب في ملاحظات متفرقة وتطبيق يعمل دون اتصال، مع أسباب تعثر الملاحظات وحفظ البيانات على الجهاز.",
+    "ja": "毎日のケア予定をメモで書く場合とオフラインアプリの場合を比較。メモが続かない理由と週次の確認を扱います。",
+    "zh": "比较零散笔记与离线应用记录每日照护时间表的差别，说明笔记为何容易中断，以及每周回顾。",
+    "jv": "Mbandhingké jadwal perawatan harian sing dicathet longgar karo aplikasi offline, saka sebab cathetan longgar gampang mandheg nganti tinjauan saben minggu.",
+    "su": "Ngabandingkeun jadwal perawatan harian nu dicatet seadanya jeung aplikasi offline: naha catatan longgar gampang rusak, jeung tinjauan mingguan."
+  }
 }

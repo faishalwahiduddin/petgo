@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "bahasa-yang-konsisten-saat-mencatat-profil-hewan-peliharaan-mingguan",
-    "en": "consistent-language-when-logging-profil-hewan-peliharaan",
-    "ar": "profil-hewan-peliharaan-16",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-16",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-16",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-16",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-16"
+    "id": "menyusun-profil-hewan-peliharaan-yang-enak-dibaca",
+    "en": "writing-pet-profile-notes-people-can-read",
+    "ar": "ktaba-mlf-alhywan-alalyf-bshkl-yqra",
+    "jv": "nulis-profil-hewan-peliharaan-sing-kepenak-diwaca",
+    "su": "nulis-profil-hewan-peliharaan-anu-genah-dibaca",
+    "zh": "ba-chong-wu-dang-an-xie-de-rang-ren-du-de-xia-qu",
+    "ja": "yome-ru-petto-no-purofiiru-no-kakikata"
   },
   "titles": {
-    "id": "Bahasa yang Konsisten saat Mencatat profil hewan peliharaan",
-    "en": "Consistent Language When Logging profil hewan peliharaan — Offline Fir",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Bahasa yang Konsisten saat Mencatat profil hewan peliharaan",
-    "su": "Pituduh: Bahasa yang Konsisten saat Mencatat profil hewan peliharaan",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "Menyusun profil hewan peliharaan yang enak dibaca",
+    "en": "Writing pet profile notes people can read",
+    "ar": "كتابة ملف الحيوان الأليف بشكل يُقرأ",
+    "jv": "Nulis profil hewan peliharaan sing kepénak diwaca",
+    "su": "Nulis profil hewan peliharaan anu genah dibaca",
+    "zh": "把宠物档案写得让人读得下去",
+    "ja": "読めるペットのプロフィールの書き方"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Profil hewan peliharaan yang enak dibaca: cara menulis yang konsisten, tinjauan mingguan, penyimpanan di perangkat, dan langkah setelah ada catatan bolong.",
+    "en": "Writing a pet profile that reads well: keeping the wording consistent, the weekly review, on-device storage, and steps after a gap.",
+    "ar": "كتابة ملف الحيوان الأليف بشكل يسهل قراءته: الاتساق في الصياغة، والمراجعة الأسبوعية، والحفظ على الجهاز، وخطوات ما بعد الفجوة.",
+    "ja": "読めるペットのプロフィールの書き方。一貫した表現で書くコツ、毎週の見直し、端末保存、記録が抜けた後の対応。",
+    "zh": "写出读起来顺畅的宠物档案：保持措辞一致，每周回顾，设备端保存，以及空档后的步骤。",
+    "jv": "Nulis profil hewan peliharaan sing kepénak diwaca: basa sing konsisten, tinjauan saben minggu, panyimpanan ing piranti, lan langkah sawisé ana bolong.",
+    "su": "Nulis profil hewan peliharaan nu enak dibaca: basa nu konsisten, tinjauan unggal minggu, panyimpenan dina alat, jeung léngkah sanggeus aya catetan bolong."
+  }
 }

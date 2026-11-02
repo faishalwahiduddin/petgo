@@ -12,6 +12,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get appTitle => 'PetGo';
 
   @override
+  String get appTagline => 'Profil hewan, jadwal perawatan & log harian';
+
+  @override
   String get navPets => 'Hewan';
 
   @override
@@ -31,10 +34,65 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get onboardingDescription =>
-      'Kelola profil hewan, jadwal vaksin/cacing, kunjungan vet, dan log harian secara offline di perangkat Anda.\n\nTanpa akun. Data tersimpan lokal.';
+      'Kelola profil hewan, jadwal vaksin dan cacing, kunjungan vet, serta log harian — semuanya offline.\n\nTanpa akun. Data tidak pernah keluar dari perangkat Anda.';
 
   @override
   String get onboardingContinue => 'Saya mengerti — lanjut';
+
+  @override
+  String get onbSkip => 'Lewati';
+
+  @override
+  String get onbNext => 'Lanjut';
+
+  @override
+  String get onbGetStarted => 'Mulai sekarang';
+
+  @override
+  String get onbSlide1Title => 'Profil hewan';
+
+  @override
+  String get onbSlide1Sub => 'Anjing, kucing, dan hewan lainnya';
+
+  @override
+  String get onbSlide1Badge => '100% offline & privat';
+
+  @override
+  String get onbSlide2Title => 'Jadwal perawatan';
+
+  @override
+  String get onbSlide2Sub => 'Vaksin, cacing, kutu, dan grooming';
+
+  @override
+  String get onbSlide2Badge => 'Pengingat lokal';
+
+  @override
+  String get onbSlide3Title => 'Log harian';
+
+  @override
+  String get onbSlide3Sub => 'Makan, jalan, dan litter';
+
+  @override
+  String get onbSlide3Badge => 'Tanpa iklan & tanpa akun';
+
+  @override
+  String get onbSlide4Title => 'Dokumen lokal';
+
+  @override
+  String get onbSlide4Sub => 'Kartu vaksin dan resep tersimpan rapi';
+
+  @override
+  String get onbSlide4Badge => 'Data di perangkat';
+
+  @override
+  String get onbPrivacyHeadline => 'Privasi & offline terjamin';
+
+  @override
+  String get onbPrivacyDetail =>
+      'Semua data tersimpan aman di perangkat Anda, tanpa pelacak.';
+
+  @override
+  String get loadingLabel => 'Memuat…';
 
   @override
   String get homeActivePet => 'Hewan aktif';
@@ -43,7 +101,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get homeNoPets => 'Belum ada hewan. Tambahkan profil dulu.';
 
   @override
-  String get homeDueSoon => 'Jatuh tempo / segera';
+  String get homeDueSoon => 'Jatuh tempo & segera';
 
   @override
   String get homeNoDue => 'Tidak ada jadwal mendesak.';
@@ -130,7 +188,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get careDeworm => 'Obat cacing';
 
   @override
-  String get careFlea => 'Kutu / flea';
+  String get careFlea => 'Kutu & caplak';
 
   @override
   String get careGrooming => 'Grooming';

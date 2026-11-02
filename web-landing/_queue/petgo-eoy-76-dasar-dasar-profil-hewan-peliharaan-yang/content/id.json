@@ -1,0 +1,85 @@
+{
+  "title": "profil hewan peliharaan: panduan yang tetap relevan",
+  "description": "Pegangan profil hewan peliharaan yang tetap berguna lama: arti praktisnya, versi paling kecil untuk memulai, dan data di perangkat.",
+  "badge": "keluarga · offline",
+  "answer": "Di grup keluarga tiga orang menanyakan profil hewan peliharaan, dan tidak ada jawaban yang sama. PetGo menyimpan profil hewan peliharaan di perangkat, jadi datanya tetap terbuka tanpa kuota dan tanpa akun.",
+  "toc": [
+    "Arti praktis profil hewan peliharaan",
+    "Versi paling kecil",
+    "Tersimpan di perangkat"
+  ],
+  "sections": [
+    {
+      "h2": "Arti praktis profil hewan peliharaan",
+      "p": "Dalam praktik, profil hewan peliharaan berarti ada bukti bertanggal yang bisa dibuka ulang—bukan niat yang cuma diingat.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Versi paling kecil",
+      "p": "Satu baris per anggota: status, tanggal, satu hal yang perlu ditindak.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Tersimpan di perangkat",
+      "p": "PetGo menyimpan profil hewan peliharaan di perangkat, jadi datanya tetap terbuka tanpa kuota dan tanpa akun.",
+      "h3": null,
+      "p3": null
+    }
+  ],
+  "table": {
+    "caption": "Kerangka profil hewan peliharaan",
+    "headers": [
+      "Langkah",
+      "Isi minimal",
+      "Selesai bila"
+    ],
+    "rows": [
+      [
+        "Baris anggota",
+        "status + tanggal",
+        "bisa ditinjau"
+      ],
+      [
+        "Penanda",
+        "posisi terakhir",
+        "bisa dilanjut besok"
+      ],
+      [
+        "Evaluasi minggu",
+        "satu penyesuaian",
+        "diterapkan Senin"
+      ]
+    ]
+  },
+  "list": [
+    "Tetapkan satu waktu tetap, bukan “kapan sempat”.",
+    "Buka PetGo saat waktu itu tiba, bukan nanti malam.",
+    "Catat satu hambatan, bukan alasan panjang.",
+    "Cadangkan data sebelum ganti ponsel."
+  ],
+  "faqs": [
+    [
+      "Apakah profil hewan peliharaan bisa dibuka offline?",
+      "Ya. PetGo menyimpan semuanya di perangkat, jadi tidak butuh kuota."
+    ],
+    [
+      "Perlu akun dulu?",
+      "Tidak. Mulai tanpa login; cadangkan data secara berkala."
+    ],
+    [
+      "Mulai dari mana?",
+      "Dari bagian terpendek. Tambah cakupan hanya setelah dua minggu stabil."
+    ],
+    [
+      "Kalau bolong beberapa hari?",
+      "Jangan hapus riwayat. Lanjut dari bagian terakhir dan catat satu hambatan."
+    ]
+  ],
+  "cta": [
+    "Mulai profil hewan peliharaan hari ini",
+    "Buka PetGo"
+  ],
+  "slug": "dasar-dasar-profil-hewan-peliharaan-yang-tidak-kedaluwarsa-mingguan"
+}

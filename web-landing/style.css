@@ -382,6 +382,21 @@ body {
     font-style: italic;
 }
 
+.evidence-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 4px 0 6px 0;
+    line-height: 1.4;
+}
+
+.evidence-quote {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 4px 0 8px 0;
+}
+
 /* Features Section */
 .features {
     padding: 100px 0;
@@ -1187,14 +1202,14 @@ html[dir="rtl"] .article-answer {
     margin-bottom: 20px;
 }
 
-.article-body a {
+.article-body a:not(.btn):not(.store-btn) {
     color: var(--accent);
     text-decoration: underline;
     text-underline-offset: 4px;
     transition: opacity 0.2s ease;
 }
 
-.article-body a:hover {
+.article-body a:not(.btn):not(.store-btn):hover {
     opacity: 0.85;
 }
 

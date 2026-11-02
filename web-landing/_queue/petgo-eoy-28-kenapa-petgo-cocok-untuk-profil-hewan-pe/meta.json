@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "kenapa-petgo-cocok-untuk-profil-hewan-peliharaan-mingguan",
-    "en": "why-petgo-fits-profil-hewan-peliharaan",
-    "ar": "profil-hewan-peliharaan-7",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-7",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-7",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-7",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-7"
+    "id": "profil-hewan-peliharaan-alat-mana-yang-benar-benar-dipakai",
+    "en": "pet-profile-which-tool-you-will-actually-use",
+    "ar": "mlf-alhywan-alalyf-ay-adaa-ststkhdmha-fala",
+    "jv": "profil-hewan-peliharaan-piranti-endi-sing-tenan-dipigunakake",
+    "su": "profil-hewan-peliharaan-alat-mana-anu-beneran-dipake",
+    "zh": "chong-wu-dang-an-na-ge-gong-ju-zhen-de-hui-yong",
+    "ja": "petto-no-purofiiru-jissaini-tsukau-dougu-hadoreka"
   },
   "titles": {
-    "id": "Kenapa PetGo Cocok untuk profil hewan peliharaan",
-    "en": "Why PetGo Fits profil hewan peliharaan — Offline First",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Kenapa PetGo Cocok untuk profil hewan peliharaan",
-    "su": "Pituduh: Kenapa PetGo Cocok untuk profil hewan peliharaan",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan: alat mana yang benar-benar dipakai",
+    "en": "pet profile: which tool you will actually use",
+    "ar": "ملف الحيوان الأليف: أي أداة ستستخدمها فعلاً",
+    "jv": "profil hewan peliharaan: piranti endi sing tenan dipigunakaké",
+    "su": "profil hewan peliharaan: alat mana anu beneran dipaké",
+    "zh": "宠物档案：哪个工具真的会用",
+    "ja": "ペットのプロフィール：実際に使う道具はどれか"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Memilih alat profil hewan peliharaan yang benar-benar akan dipakai, dilihat dari alasan kebiasaan putus, penyimpanan di perangkat, dan ritme tinjauan mingguan.",
+    "en": "Picking the pet profile tool you will stick with, weighed by the reasons routines fall apart, on-device storage and the rhythm of the weekly check.",
+    "ar": "أي أداة لملف الحيوان الأليف تستحق الاستخدام اليومي؟ نقارن بحسب سبب الانقطاع، والبيانات على الجهاز، وإيقاع المراجعة الأسبوعية.",
+    "ja": "本当に使い続けられるペットのプロフィール道具の選び方。習慣が崩れる理由、端末の保存、週次確認のリズムで整理。",
+    "zh": "选择真正会坚持使用的宠物档案工具，依据是中断原因、设备存储方式和每周检查的节奏。",
+    "jv": "Pilihan piranti profil hewan peliharaan sing bakal kepake tenan, dideleng saka sebab kebiasan mandheg, panyimpanan ing piranti, lan ritme tinjauan saben minggu.",
+    "su": "Pilihan alat profil hewan peliharaan nu bakal dipaké, dilihat tina alesan kabiasaan putus, panyimpenan dina alat, jeung ritme tinjauan unggal minggu."
+  }
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "catatan-kunjungan-vet-tanpa-akun-plus-dan-minus-mingguan",
-    "en": "catatan-kunjungan-vet-without-an-account-pros-cons",
-    "ar": "catatan-kunjungan-vet-6",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-6",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-6",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-6",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-6"
+    "id": "catatan-kunjungan-vet-full-offline-apa-yang-tetap-jalan",
+    "en": "vet-visit-log-fully-offline-what-still-works",
+    "ar": "sjlat-zyara-altbyb-albytry-bla-atsal-tmama-ma-ybqa-yaml",
+    "jv": "catatan-kunjungan-vet-full-offline-apa-sing-tetep-mlaku",
+    "su": "catatan-kunjungan-vet-full-offline-naon-anu-tetep-jalan",
+    "zh": "chong-wu-jiu-zhen-ji-lu-wan-quan-li-xian-na-xie-gong-neng-hai-neng-yong",
+    "ja": "doubutsubyouin-no-kiroku-kanzen-ofurain-nani-ga-ugoku-ka"
   },
   "titles": {
-    "id": "Privasi data saat mencatat catatan kunjungan vet",
-    "en": "catatan kunjungan vet Without an Account: Pros &amp; Cons — Offline Fi",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Privasi data saat mencatat catatan kunjungan vet",
-    "su": "Pituduh: Privasi data saat mencatat catatan kunjungan vet",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet full offline: apa yang tetap jalan",
+    "en": "vet visit log fully offline: what still works",
+    "ar": "سجلات زيارة الطبيب البيطري بلا اتصال تماماً: ما يبقى يعمل",
+    "jv": "catatan kunjungan vet full offline: apa sing tetep mlaku",
+    "su": "catatan kunjungan vet full offline: naon anu tetep jalan",
+    "zh": "宠物就诊记录完全离线：哪些功能还能用",
+    "ja": "動物病院の記録完全オフライン：何が動くか"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Mode full offline untuk catatan kunjungan vet: fitur yang tetap jalan tanpa koneksi, cara data tersimpan di perangkat, dan cara melanjutkan setelah jeda.",
+    "en": "Vet visit log fully offline: which features keep working without a connection, how the data is stored on the device, and how to pick up after a break.",
+    "ar": "العمل بلا اتصال تماماً في سجلات زيارة الطبيب البيطري: ما الميزات التي تبقى تعمل دون شبكة، وكيف تُحفظ البيانات على الجهاز، وكيف تعود بعد الانقطاع.",
+    "ja": "完全オフラインで使う動物病院の記録。通信なしで動く機能、端末への保存、中断後の再開方法を説明します。",
+    "zh": "宠物就诊记录完全离线时仍可用的功能、数据在设备上的保存方式，以及中断之后如何继续。",
+    "jv": "Catatan kunjungan vet full offline: fitur apa sing tetep mlaku tanpa sambungan, carané data kasimpen ing piranti, lan carané terusan sawisé jeda.",
+    "su": "Catatan kunjungan vet sacara full offline: fitur mana nu tetep jalan tanpa sambungan, kumaha data disimpen dina alat, jeung cara neruskeun sanggeus eureun."
+  }
 }

@@ -12,271 +12,329 @@ class AppLocalizationsAr extends AppLocalizations {
   String get appTitle => 'PetGo';
 
   @override
-  String get navPets => 'Pets';
+  String get appTagline => 'ملفات الحيوانات وجداول الرعاية والسجلات اليومية';
 
   @override
-  String get navCare => 'Care';
+  String get navPets => 'الحيوانات';
 
   @override
-  String get navDaily => 'Daily';
+  String get navCare => 'الرعاية';
 
   @override
-  String get navDocs => 'Docs';
+  String get navDaily => 'اليوميات';
 
   @override
-  String get navSettings => 'Settings';
+  String get navDocs => 'المستندات';
+
+  @override
+  String get navSettings => 'الإعدادات';
 
   @override
   String get onboardingHeadline => 'PetGo';
 
   @override
   String get onboardingDescription =>
-      'Manage pet profiles, vaccine/deworm schedules, vet visits, and daily care offline on your device.\n\nNo account. Data stays local.';
+      'نظّم ملفات حيواناتك الأليفة وجداول التطعيم ومكافحة الديدان وزيارات الطبيب البيطري والرعاية اليومية، كل ذلك دون اتصال على جهازك.\n\nبلا حساب. تبقى بياناتك على جهازك.';
 
   @override
-  String get onboardingContinue => 'I understand — continue';
+  String get onboardingContinue => 'فهمت — تابع';
 
   @override
-  String get homeActivePet => 'Active pet';
+  String get onbSkip => 'تخطٍّ';
 
   @override
-  String get homeNoPets => 'No pets yet. Add a profile first.';
+  String get onbNext => 'التالي';
 
   @override
-  String get homeDueSoon => 'Due / soon';
+  String get onbGetStarted => 'ابدأ الآن';
 
   @override
-  String get homeNoDue => 'Nothing urgent.';
+  String get onbSlide1Title => 'ملفات الحيوانات';
 
   @override
-  String get homeAllPets => 'All pets';
+  String get onbSlide1Sub => 'كلاب وقطط وأكثر';
 
   @override
-  String get actionAddPet => 'Add pet';
+  String get onbSlide1Badge => '‏100% دون اتصال وخاصة';
 
   @override
-  String get actionAddSchedule => 'Add schedule';
+  String get onbSlide2Title => 'جداول الرعاية';
 
   @override
-  String get actionAddVet => 'Log vet visit';
+  String get onbSlide2Sub => 'تطعيم ومكافحة ديدان وبراغيث وتنظيف';
 
   @override
-  String get actionAddWeight => 'Log weight';
+  String get onbSlide2Badge => 'تذكير محلي';
 
   @override
-  String get actionAddDoc => 'Add document';
+  String get onbSlide3Title => 'السجل اليومي';
 
   @override
-  String get actionSave => 'Save';
+  String get onbSlide3Sub => 'طعام وتنزه وفراش';
 
   @override
-  String get actionCancel => 'Cancel';
+  String get onbSlide3Badge => 'بلا إعلانات وبلا حساب';
 
   @override
-  String get speciesDog => 'Dog';
+  String get onbSlide4Title => 'مستندات على الجهاز';
 
   @override
-  String get speciesCat => 'Cat';
+  String get onbSlide4Sub => 'بطاقات التطعيم والوصفات مرتبة';
 
   @override
-  String get speciesBird => 'Bird';
+  String get onbSlide4Badge => 'البيانات على جهازك';
 
   @override
-  String get speciesRabbit => 'Rabbit';
+  String get onbPrivacyHeadline => 'خصوصية دون اتصال';
 
   @override
-  String get speciesOther => 'Other';
+  String get onbPrivacyDetail =>
+      'تُحفظ جميع بياناتك بأمان على جهازك، دون أي متتبعات.';
 
   @override
-  String get fieldPetName => 'Name';
+  String get loadingLabel => 'جارٍ التحميل…';
 
   @override
-  String get fieldSpecies => 'Species';
+  String get homeActivePet => 'الحيوان النشط';
 
   @override
-  String get fieldBreed => 'Breed';
+  String get homeNoPets => 'لا توجد حيوانات بعد. أضف ملفًا أولًا.';
 
   @override
-  String get fieldWeightKg => 'Weight (kg)';
+  String get homeDueSoon => 'مستحق وقريب';
 
   @override
-  String get fieldTitle => 'Title';
+  String get homeNoDue => 'لا مواعيد عاجلة.';
 
   @override
-  String get fieldIntervalMonths => 'Interval (months)';
+  String get homeAllPets => 'كل الحيوانات';
 
   @override
-  String get fieldClinic => 'Clinic';
+  String get actionAddPet => 'إضافة حيوان';
 
   @override
-  String get fieldMedication => 'Medication';
+  String get actionAddSchedule => 'إضافة موعد';
 
   @override
-  String get careSchedulesTitle => 'Care schedules';
+  String get actionAddVet => 'تسجيل زيارة الطبيب';
 
   @override
-  String get vetLogsTitle => 'Vet & meds';
+  String get actionAddWeight => 'تسجيل الوزن';
 
   @override
-  String get careEmptySchedules => 'No schedules yet.';
+  String get actionAddDoc => 'إضافة مستند';
 
   @override
-  String get careEmptyVet => 'No vet logs yet.';
+  String get actionSave => 'حفظ';
 
   @override
-  String get careVaccine => 'Vaccine';
+  String get actionCancel => 'إلغاء';
 
   @override
-  String get careDeworm => 'Deworm';
+  String get speciesDog => 'كلب';
 
   @override
-  String get careFlea => 'Flea';
+  String get speciesCat => 'قطة';
 
   @override
-  String get careGrooming => 'Grooming';
+  String get speciesBird => 'طائر';
 
   @override
-  String get careOther => 'Other';
+  String get speciesRabbit => 'أرنب';
+
+  @override
+  String get speciesOther => 'أخرى';
+
+  @override
+  String get fieldPetName => 'الاسم';
+
+  @override
+  String get fieldSpecies => 'النوع';
+
+  @override
+  String get fieldBreed => 'السلالة';
+
+  @override
+  String get fieldWeightKg => 'الوزن (كغ)';
+
+  @override
+  String get fieldTitle => 'العنوان';
+
+  @override
+  String get fieldIntervalMonths => 'الفترة (أشهر)';
+
+  @override
+  String get fieldClinic => 'العيادة';
+
+  @override
+  String get fieldMedication => 'الدواء';
+
+  @override
+  String get careSchedulesTitle => 'جداول الرعاية';
+
+  @override
+  String get vetLogsTitle => 'الزيارات والأدوية';
+
+  @override
+  String get careEmptySchedules => 'لا جداول بعد.';
+
+  @override
+  String get careEmptyVet => 'لا سجلات بيطرية بعد.';
+
+  @override
+  String get careVaccine => 'تطعيم';
+
+  @override
+  String get careDeworm => 'مكافحة الديدان';
+
+  @override
+  String get careFlea => 'براغيث';
+
+  @override
+  String get careGrooming => 'تنظيف';
+
+  @override
+  String get careOther => 'أخرى';
 
   @override
   String everyMonths(int months) {
-    return 'every $months mo';
+    return 'كل $months أشهر';
   }
 
   @override
   String daysRemaining(int days) {
-    return '$days days left';
+    return 'بقي $days يومًا';
   }
 
   @override
-  String get urgencyOverdue => 'Overdue';
+  String get urgencyOverdue => 'متأخر';
 
   @override
-  String get dailyQuickAdd => 'Quick log';
+  String get dailyQuickAdd => 'تسجيل سريع';
 
   @override
-  String get dailyTimeline => 'Timeline';
+  String get dailyTimeline => 'الخط الزمني';
 
   @override
-  String get dailyEmpty => 'No daily logs yet.';
+  String get dailyEmpty => 'لا سجلات يومية بعد.';
 
   @override
-  String get dailyFeed => 'Feed';
+  String get dailyFeed => 'طعام';
 
   @override
-  String get dailyWalk => 'Walk';
+  String get dailyWalk => 'تنزه';
 
   @override
-  String get dailyLitter => 'Litter';
+  String get dailyLitter => 'فراش';
 
   @override
-  String get dailyOther => 'Other';
+  String get dailyOther => 'أخرى';
 
   @override
-  String get weightHistory => 'Weight history';
+  String get weightHistory => 'سجل الوزن';
 
   @override
-  String get docsEmpty => 'No documents yet.';
+  String get docsEmpty => 'لا مستندات بعد.';
 
   @override
-  String get docVaccineCard => 'Vaccine card';
+  String get docVaccineCard => 'بطاقة التطعيم';
 
   @override
-  String get docPrescription => 'Prescription';
+  String get docPrescription => 'وصفة طبية';
 
   @override
-  String get docInsurance => 'Insurance';
+  String get docInsurance => 'تأمين';
 
   @override
-  String get docOther => 'Other';
+  String get docOther => 'أخرى';
 
   @override
-  String get settingsLanguage => 'Language';
+  String get settingsLanguage => 'اللغة';
 
   @override
-  String get settingsPets => 'Pet profiles';
+  String get settingsPets => 'ملفات الحيوانات';
 
   @override
-  String get settingsBackup => 'Backup';
+  String get settingsBackup => 'النسخ الاحتياطي';
 
   @override
-  String get settingsVersion => 'Version';
+  String get settingsVersion => 'الإصدار';
 
   @override
-  String get tileExportBackup => 'Export backup';
+  String get tileExportBackup => 'تصدير نسخة احتياطية';
 
   @override
-  String get tileImportBackup => 'Import backup';
+  String get tileImportBackup => 'استيراد نسخة احتياطية';
 
   @override
-  String get snackbarImportSuccess => 'Backup imported';
+  String get snackbarImportSuccess => 'تم استيراد النسخة الاحتياطية';
 
   @override
-  String get errorPetNameRequired => 'Pet name needs at least 2 characters';
+  String get errorPetNameRequired => 'اسم الحيوان لا يقل عن حرفين';
 
   @override
-  String get errorPetNameTooLong => 'Pet name is too long';
+  String get errorPetNameTooLong => 'اسم الحيوان طويل جدًا';
 
   @override
-  String get errorWeightInvalid => 'Invalid weight';
+  String get errorWeightInvalid => 'الوزن غير صالح';
 
   @override
-  String get errorMinOnePet => 'Keep at least one pet profile';
+  String get errorMinOnePet => 'يجب الإبقاء على ملف حيوان واحد على الأقل';
 
   @override
-  String get errorTitleRequired => 'Title is required';
+  String get errorTitleRequired => 'العنوان مطلوب';
 
   @override
-  String get errorIntervalRequired => 'Interval must be at least 1 month';
+  String get errorIntervalRequired => 'يجب ألا تقل الفترة عن شهر واحد';
 
   @override
-  String get errorBackupNotPetGo => 'File is not a PetGo backup';
+  String get errorBackupNotPetGo => 'هذا الملف ليس نسخة احتياطية من PetGo';
 
   @override
-  String get actionEditPet => 'Edit pet';
+  String get actionEditPet => 'تعديل الحيوان';
 
   @override
-  String get actionMarkDone => 'Mark done';
+  String get actionMarkDone => 'تحديد كمنجز';
 
   @override
-  String get actionEditSchedule => 'Edit schedule';
+  String get actionEditSchedule => 'تعديل الموعد';
 
   @override
-  String get actionEditVet => 'Edit vet visit';
+  String get actionEditVet => 'تعديل الزيارة';
 
   @override
-  String get actionEditDoc => 'Edit document';
+  String get actionEditDoc => 'تعديل المستند';
 
   @override
-  String get actionAttachFile => 'Attach file';
+  String get actionAttachFile => 'إرفاق ملف';
 
   @override
-  String get fieldOptional => 'Optional';
+  String get fieldOptional => 'اختياري';
 
   @override
-  String get fieldDateOfBirth => 'Date of birth';
+  String get fieldDateOfBirth => 'تاريخ الميلاد';
 
   @override
-  String get fieldLastDone => 'Last done';
+  String get fieldLastDone => 'آخر تنفيذ';
 
   @override
-  String get fieldCost => 'Cost';
+  String get fieldCost => 'التكلفة';
 
   @override
-  String get fieldNotes => 'Notes';
+  String get fieldNotes => 'ملاحظات';
 
   @override
-  String get fieldDate => 'Date';
+  String get fieldDate => 'التاريخ';
 
   @override
-  String get fieldExpires => 'Expires';
+  String get fieldExpires => 'ينتهي في';
 
   @override
-  String get docHasFile => 'File attached';
+  String get docHasFile => 'ملف مرفق';
 
   @override
-  String get settingsReminders => 'Care reminders';
+  String get settingsReminders => 'تذكيرات الرعاية';
 
   @override
-  String get settingsRemindersSubtitle => 'Notify before schedules are due';
+  String get settingsRemindersSubtitle => 'أشعرك قبل حلول المواعيد';
 }

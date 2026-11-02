@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "catatan-jadwal-perawatan-harian-yang-mudah-dicari-nanti-harian",
-    "en": "jadwal-perawatan-harian-notes-that-stay-searchable",
-    "ar": "jadwal-perawatan-harian-16",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-16",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-16",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-16",
-    "ja": "petgojadwal-perawatan-harian-ガイド-16"
+    "id": "menyusun-jadwal-perawatan-harian-yang-enak-dibaca",
+    "en": "writing-daily-care-schedule-notes-people-can-read",
+    "ar": "ktaba-jdwl-alraaya-alywmy-bshkl-yqra",
+    "jv": "nulis-jadwal-perawatan-harian-sing-kepenak-diwaca",
+    "su": "nulis-jadwal-perawatan-harian-anu-genah-dibaca",
+    "zh": "ba-mei-ri-zhao-hu-shi-jian-biao-xie-de-rang-ren-du-de-xia-qu",
+    "ja": "yome-ru-mainichi-no-kea-yotei-no-kakikata"
   },
   "titles": {
-    "id": "Catatan jadwal perawatan harian yang Mudah Dicari Nanti",
-    "en": "jadwal perawatan harian Notes That Stay Searchable",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Catatan jadwal perawatan harian yang Mudah Dicari Nanti",
-    "su": "Pituduh: Catatan jadwal perawatan harian yang Mudah Dicari Nanti",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "Menyusun jadwal perawatan harian yang enak dibaca",
+    "en": "Writing daily care schedule notes people can read",
+    "ar": "كتابة جدول الرعاية اليومي بشكل يُقرأ",
+    "jv": "Nulis jadwal perawatan harian sing kepénak diwaca",
+    "su": "Nulis jadwal perawatan harian anu genah dibaca",
+    "zh": "把每日照护时间表写得让人读得下去",
+    "ja": "読める毎日のケア予定の書き方"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Tips menulis jadwal perawatan harian yang enak dibaca, mulai dari tinjauan mingguan, data yang tersimpan di perangkat, dan langkah setelah hari terlewat.",
+    "en": "Tips for writing a daily care schedule that reads well, starting from the weekly review, data stored on the device, and steps after a missed day.",
+    "ar": "نصائح لكتابة جدول الرعاية اليومي بشكل سهل القراءة، تبدأ بالمراجعة الأسبوعية، ثم البيانات المحفوظة على الجهاز، وخطوات ما بعد يوم فائت.",
+    "ja": "読める毎日のケア予定の書き方。毎週の見直しを起点に、端末に保存されるデータと、飛んだ日の後の手順を解説します。",
+    "zh": "写出读起来顺畅的每日照护时间表的技巧：从每周回顾入手，设备上保存的数据，以及漏掉一天后的步骤。",
+    "jv": "Tips nulis jadwal perawatan harian sing kepénak diwaca, wiwit saka tinjauan saben minggu, data sing kasimpen ing piranti, lan langkah sawisé dina kelangan.",
+    "su": "Tips nulis jadwal perawatan harian nu enak dibaca, dimimitian ti tinjauan unggal minggu, data nu disimpen dina alat, jeung léngkah sanggeus poé kaliwat."
+  }
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "catatan-kunjungan-vet-untuk-pemula-total-mingguan",
-    "en": "catatan-kunjungan-vet-for-absolute-beginners",
-    "ar": "catatan-kunjungan-vet-3",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-3",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-3",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-3",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-3"
+    "id": "catatan-kunjungan-vet-untuk-orang-yang-waktunya-sempit-bagian-2",
+    "en": "vet-visit-log-for-people-with-no-spare-time-part-2",
+    "ar": "sjlat-zyara-altbyb-albytry-lmn-la-ymlk-wqta-aljz-2",
+    "jv": "catatan-kunjungan-vet-kanggo-sing-wektune-sempit-bagian-2",
+    "su": "catatan-kunjungan-vet-pikeun-anu-waktosna-heureut-bagian-2",
+    "zh": "shi-jian-hen-shao-de-ren-zen-me-zuo-chong-wu-jiu-zhen-ji-lu-di-2-pian",
+    "ja": "jikan-ganai-nin-notameno-doubutsubyouin-no-kiroku-dai-2-kai"
   },
   "titles": {
-    "id": "catatan kunjungan vet untuk orang yang waktunya sempit",
-    "en": "catatan kunjungan vet for Absolute Beginners — Offline First",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: catatan kunjungan vet untuk orang yang waktunya sempit",
-    "su": "Pituduh: catatan kunjungan vet untuk orang yang waktunya sempit",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet untuk orang yang waktunya sempit · bagian 2",
+    "en": "vet visit log for people with no spare time · part 2",
+    "ar": "سجلات زيارة الطبيب البيطري لمن لا يملك وقتاً · الجزء 2",
+    "jv": "catatan kunjungan vet kanggo sing wektuné sempit · bagian 2",
+    "su": "catatan kunjungan vet pikeun anu waktosna heureut · bagian 2",
+    "zh": "时间很少的人怎么做宠物就诊记录 · 第2篇",
+    "ja": "時間がない人のための動物病院の記録 · 第2回"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Lanjutan untuk pencatat dengan waktu sempit: menentukan kapan catatan kunjungan vet dijalankan, menjaga versi paling kecil, dan kembali setelah jeda.",
+    "en": "Part 2 for busy note-takers: deciding when to run the vet visit log, holding onto the smallest version, and getting back on track after a break.",
+    "ar": "الجزء الثاني لمن يملك وقتاً محدوداً: تحديد موعد تشغيل سجلات زيارة الطبيب البيطري، والحفاظ على أصغر نسخة، والعودة بعد أي انقطاع.",
+    "ja": "時間がない人のための動物病院の記録、第2回。記録する時間を決め、最小バージョンを保ち、途切れた後に戻る方法。",
+    "zh": "写给时间有限的记录者的第二篇：确定何时记录宠物就诊，守住最小版本，中断后如何回到正轨。",
+    "jv": "Lanjutan kanggo sing wektuné sempit: nemtokké kapan catatan kunjungan vet dijalanké, njaga versi paling cilik, lan bali sawisé mandheg.",
+    "su": "Lanjutan pikeun anu waktuna heureut: nangtukeun iraha catatan kunjungan vet dilaksanakeun, ngajaga versi paling leutik, jeung balik deui sanggeus eureun."
+  }
 }

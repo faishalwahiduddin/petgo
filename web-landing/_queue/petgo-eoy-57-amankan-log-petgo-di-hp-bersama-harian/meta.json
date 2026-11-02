@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "amankan-log-petgo-di-hp-bersama-harian",
-    "en": "secure-petgo-logs-on-a-shared-phone",
-    "ar": "petgo-15",
-    "jv": "pandhuan-petgo-petgo-15",
-    "su": "pituduh-petgo-petgo-15",
-    "zh": "petgo-petgo-实用指南-15",
-    "ja": "petgopetgo-ガイド-15"
+    "id": "keamanan-data-catatan-kunjungan-vet-di-ponsel",
+    "en": "keeping-vet-visit-log-data-safe-on-your-phone",
+    "ar": "hmaya-byanat-sjlat-zyara-altbyb-albytry-ala-alhatf",
+    "jv": "keamanan-data-catatan-kunjungan-vet-ing-hp",
+    "su": "kaamanan-data-catatan-kunjungan-vet-dina-hp",
+    "zh": "shou-ji-shang-de-chong-wu-jiu-zhen-ji-lu-shu-ju-an-quan",
+    "ja": "sumaho-no-doubutsubyouin-no-kiroku-deeta-wo-mamoru"
   },
   "titles": {
-    "id": "Amankan Log PetGo di HP Bersama",
-    "en": "Secure PetGo Logs on a Shared Phone",
-    "ar": "PetGo — دليل PetGo",
-    "jv": "Pandhuan: Amankan Log PetGo di HP Bersama",
-    "su": "Pituduh: Amankan Log PetGo di HP Bersama",
-    "zh": "PetGo · PetGo 实用指南",
-    "ja": "PetGo｜PetGo ガイド"
+    "id": "Keamanan data catatan kunjungan vet di ponsel",
+    "en": "Keeping vet visit log data safe on your phone",
+    "ar": "حماية بيانات سجلات زيارة الطبيب البيطري على الهاتف",
+    "jv": "Keamanan data catatan kunjungan vet ing HP",
+    "su": "Kaamanan data catatan kunjungan vet dina HP",
+    "zh": "手机上的宠物就诊记录数据安全",
+    "ja": "スマホの動物病院の記録データを守る"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Membahas cara menjaga data catatan kunjungan vet di ponsel, apa yang tersimpan di perangkat, tinjauan mingguan, dan langkah setelah ada catatan terlewat.",
+    "en": "Covers how to keep vet visit log data safe on your phone, what is stored on the device, the weekly check, and steps after a missed entry.",
+    "ar": "حماية بيانات سجلات زيارة الطبيب البيطري على هاتفك: ما يُحفظ على الجهاز، وإيقاع المراجعة الأسبوعية، وخطوات بعد أي إدخال فائت.",
+    "ja": "スマホ上の動物病院の記録データを守る方法。端末に保存されるもの、毎週の確認、記録が抜けた後の対応を扱います。",
+    "zh": "讲解如何保护手机上的宠物就诊记录数据：设备上保存的内容、每周检查，以及漏记后的做法。",
+    "jv": "Mbahas carané njaga data catatan kunjungan vet ing HP, apa sing kasimpen ing piranti, tinjauan saben minggu, lan langkah sawisé cathetan kelangan.",
+    "su": "Ngabahas cara ngajaga data catatan kunjungan vet di HP, naon nu disimpen dina alat, tinjauan unggal minggu, jeung léngkah sanggeus aya catetan kaliwat."
+  }
 }

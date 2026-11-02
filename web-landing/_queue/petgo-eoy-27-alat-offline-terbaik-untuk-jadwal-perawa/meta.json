@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "alat-offline-terbaik-untuk-jadwal-perawatan-harian-harian",
-    "en": "best-offline-tools-for-jadwal-perawatan-harian",
-    "ar": "jadwal-perawatan-harian-7",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-7",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-7",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-7",
-    "ja": "petgojadwal-perawatan-harian-ガイド-7"
+    "id": "jadwal-perawatan-harian-alat-mana-yang-benar-benar-dipakai",
+    "en": "daily-care-schedule-which-tool-you-will-actually-use",
+    "ar": "jdwl-alraaya-alywmy-ay-adaa-ststkhdmha-fala",
+    "jv": "jadwal-perawatan-harian-piranti-endi-sing-tenan-dipigunakake",
+    "su": "jadwal-perawatan-harian-alat-mana-anu-beneran-dipake",
+    "zh": "mei-ri-zhao-hu-shi-jian-biao-na-ge-gong-ju-zhen-de-hui-yong",
+    "ja": "mainichi-no-kea-yotei-jissaini-tsukau-dougu-hadoreka"
   },
   "titles": {
-    "id": "Alat Offline Terbaik untuk jadwal perawatan",
-    "en": "Best Offline Tools for jadwal perawatan harian",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Alat Offline Terbaik untuk jadwal perawatan",
-    "su": "Pituduh: Alat Offline Terbaik untuk jadwal perawatan",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian: alat mana yang benar-benar dipakai",
+    "en": "daily care schedule: which tool you will actually use",
+    "ar": "جدول الرعاية اليومي: أي أداة ستستخدمها فعلاً",
+    "jv": "jadwal perawatan harian: piranti endi sing tenan dipigunakaké",
+    "su": "jadwal perawatan harian: alat mana anu beneran dipaké",
+    "zh": "每日照护时间表：哪个工具真的会用",
+    "ja": "毎日のケア予定：実際に使う道具はどれか"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Memilih alat jadwal perawatan harian yang benar-benar akan dipakai, dilihat dari alasan kebiasaan putus, penyimpanan di perangkat, dan tinjauan mingguan.",
+    "en": "Choosing the daily care schedule tool you will really use, judged by why routines break, storage on the device and the weekly check.",
+    "ar": "نقارن أدوات جدول الرعاية اليومي لنختار ما ستستخدمه فعلاً، مع النظر في أسباب الانقطاع وحفظ البيانات على الجهاز والمراجعة الأسبوعية.",
+    "ja": "毎日使う道具として本当に続く毎日のケア予定アプリの選び方。挫折理由、端末保存、週次確認の観点から比較します。",
+    "zh": "挑选真正会用的每日照护时间表工具：从习惯中断的原因、设备端存储和每周检查等角度进行比较。",
+    "jv": "Milih piranti jadwal perawatan harian sing bakal dipigunakaké, dideleng saka sebab kebiasan mandheg, panyimpanan ing piranti, lan tinjauan saben minggu.",
+    "su": "Milih alat jadwal perawatan harian nu bakal bener-bener dipaké unggal poé, dilihat tina alesan kabiasaan putus, panyimpenan dina alat, jeung tinjauan mingguan."
+  }
 }

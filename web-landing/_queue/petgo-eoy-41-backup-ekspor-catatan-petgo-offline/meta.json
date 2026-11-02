@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "backup-ekspor-catatan-petgo-offline",
-    "en": "backup-export-petgo-notes",
-    "ar": "petgo-11",
-    "jv": "pandhuan-petgo-petgo-11",
-    "su": "pituduh-petgo-petgo-11",
-    "zh": "petgo-petgo-实用指南-11",
-    "ja": "petgopetgo-ガイド-11"
+    "id": "ekspor-data-catatan-kunjungan-vet-apa-yang-ikut-tersimpan",
+    "en": "exporting-vet-visit-log-what-comes-with-the-file",
+    "ar": "tsdyr-sjlat-zyara-altbyb-albytry-ma-aldhy-yhfz-fala",
+    "jv": "ekspor-data-catatan-kunjungan-vet-apa-sing-melu-kasimpen",
+    "su": "ekspor-data-catatan-kunjungan-vet-naon-anu-milu-kasimpen",
+    "zh": "dao-chu-chong-wu-jiu-zhen-ji-lu-wen-jian-li-dou-you-shen-me",
+    "ja": "doubutsubyouin-no-kiroku-no-kakidashi-nani-ga-hozon-sareruka"
   },
   "titles": {
-    "id": "Backup &amp; Ekspor Catatan PetGo",
-    "en": "Backup &amp; Export PetGo Notes",
-    "ar": "PetGo — دليل PetGo",
-    "jv": "Pandhuan: Backup &amp; Ekspor Catatan PetGo",
-    "su": "Pituduh: Backup &amp; Ekspor Catatan PetGo",
-    "zh": "PetGo · PetGo 实用指南",
-    "ja": "PetGo｜PetGo ガイド"
+    "id": "Ekspor data catatan kunjungan vet: apa yang ikut tersimpan",
+    "en": "Exporting vet visit log: what comes with the file",
+    "ar": "تصدير سجلات زيارة الطبيب البيطري: ما الذي يُحفظ فعلاً",
+    "jv": "Ekspor data catatan kunjungan vet: apa sing melu kasimpen",
+    "su": "Ékspor data catatan kunjungan vet: naon anu milu kasimpen",
+    "zh": "导出宠物就诊记录：文件里都有什么",
+    "ja": "動物病院の記録の書き出し：何が保存されるか"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Cara mengekspor data catatan kunjungan vet dan apa saja yang ikut tersimpan dalam file itu, sekaligus meninjaunya tiap minggu dan langkah setelah jeda.",
+    "en": "How to export your vet visit log data and what gets saved in the file, plus how to review it each week and what to do after a gap.",
+    "ar": "تصدير سجلات زيارة الطبيب البيطري وما يُحفظ فعلاً في الملف، مع مراجعة أسبوعية وخطوات واضحة بعد أي انقطاع في التسجيل.",
+    "ja": "書き出しの仕方。動物病院の記録ファイルに何が含まれて保存されるか、毎週の見直し方、途切れた後の対応を説明します。",
+    "zh": "导出宠物就诊记录的数据，以及文件里包含哪些内容，并说明每周回顾和中断后的处理办法。",
+    "jv": "Carané ngekspor data catatan kunjungan vet lan apa wae sing melu kasimpen ing file, sekalian mriksa saben minggu lan langkah sawisé jeda.",
+    "su": "Cara ngékspor data catatan kunjungan vet jeung naon waé nu kaasup disimpen dina file, sakalian ninjau unggal minggu jeung léngkah sanggeus jeda."
+  }
 }

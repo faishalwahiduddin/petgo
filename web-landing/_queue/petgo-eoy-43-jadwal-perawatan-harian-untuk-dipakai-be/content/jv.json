@@ -1,0 +1,85 @@
+{
+  "title": "jadwal perawatan harian kanggo sakulawarga",
+  "description": "Jadwal perawatan harian kanggo sakulawarga: carané mriksa saben minggu, cathetan sing kasimpen ing piranti, lan langkah mulih sawisé ana dina bolong.",
+  "badge": "kulawarga · offline",
+  "answer": "Ing grup kulawarga wong telu padha takon jadwal perawatan harian, lan ora ana wangsulan sing padha. PetGo nyimpen jadwal perawatan harian ing piranti, dadi tetep kebukak tanpa kuota lan tanpa akun.",
+  "toc": [
+    "Tinjauan saben minggu",
+    "Kasimpen ing piranti",
+    "Sawisé bolong"
+  ],
+  "sections": [
+    {
+      "h2": "Tinjauan saben minggu",
+      "p": "Seminggu sepisan, tilik bagéan sing paling kerep bolong, banjur cilikna targeté.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Kasimpen ing piranti",
+      "p": "PetGo nyimpen jadwal perawatan harian ing piranti, dadi tetep kebukak tanpa kuota lan tanpa akun.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Sawisé bolong",
+      "p": "Yèn bolong sawetara dina, aja mbusak riwayat. Bukak cathetan pungkasan, isinen sedina, banjur tutup.",
+      "h3": null,
+      "p3": null
+    }
+  ],
+  "table": {
+    "caption": "Rangka jadwal perawatan harian",
+    "headers": [
+      "Langkah",
+      "Isi minimal",
+      "Rampung yèn"
+    ],
+    "rows": [
+      [
+        "Baris anggota",
+        "status + tanggal",
+        "bisa ditinjau"
+      ],
+      [
+        "Pananda",
+        "posisi pungkasan",
+        "bisa diterusaké sesuk"
+      ],
+      [
+        "Evaluasi minggu",
+        "siji panyesuaian",
+        "diterapaké Senén"
+      ]
+    ]
+  },
+  "list": [
+    "Temtokna siji wektu tetep, dudu “yèn sempet”.",
+    "Bukak PetGo nalika wektu iku teka, aja mengko bengi.",
+    "Catheten siji alangan, dudu alesan dawa.",
+    "Cadhangana data sadurungé ganti HP."
+  ],
+  "faqs": [
+    [
+      "Apa jadwal perawatan harian bisa dibukak offline?",
+      "Bisa. PetGo nyimpen kabèh ing piranti, dadi ora butuh kuota."
+    ],
+    [
+      "Kudu akun dhisik?",
+      "Ora. Wiwit tanpa login; cadhangana data sak dhéwé."
+    ],
+    [
+      "Wiwit saka ngendi?",
+      "Saka bagéan paling cendhak. Tambah jembar yèn wis rong minggu stabil."
+    ],
+    [
+      "Yèn bolong sawetara dina?",
+      "Aja mbusak riwayat. Terusaké saka cathetan pungkasan lan catheten siji alangan."
+    ]
+  ],
+  "cta": [
+    "Wiwiti jadwal perawatan harian dina iki",
+    "Bukak PetGo"
+  ],
+  "slug": "pandhuan-jadwal-perawatan-harian-petgo-11"
+}

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "tutorial-catatan-kunjungan-vet-dari-nol-tanpa-ribet-mingguan",
-    "en": "catatan-kunjungan-vet-tutorial-from-zero-no-fluff",
-    "ar": "catatan-kunjungan-vet-18",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-18",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-18",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-18",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-18"
+    "id": "catatan-kunjungan-vet-untuk-pemula-mulai-dari-mana-bagian-3",
+    "en": "vet-visit-log-for-beginners-where-to-start-part-3",
+    "ar": "sjlat-zyara-altbyb-albytry-llmbtdiyn-mn-ayn-tbda-aljz-3",
+    "jv": "catatan-kunjungan-vet-kanggo-pamula-wiwit-saka-ngendi-bagian-3",
+    "su": "catatan-kunjungan-vet-pikeun-pamula-mimitian-ti-mana-bagian-3",
+    "zh": "chong-wu-jiu-zhen-ji-lu-ru-men-cong-na-li-kai-shi-di-3-pian",
+    "ja": "doubutsubyouin-no-kiroku-nyuumon-dokokara-hajime-ruka-dai-3-kai"
   },
   "titles": {
-    "id": "Tutorial catatan kunjungan vet dari Nol (Tanpa Ribet)",
-    "en": "catatan kunjungan vet Tutorial from Zero (No Fluff) — Offline First",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Tutorial catatan kunjungan vet dari Nol (Tanpa Ribet)",
-    "su": "Pituduh: Tutorial catatan kunjungan vet dari Nol (Tanpa Ribet)",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet untuk pemula: mulai dari mana · bagian 3",
+    "en": "vet visit log for beginners: where to start · part 3",
+    "ar": "سجلات زيارة الطبيب البيطري للمبتدئين: من أين تبدأ · الجزء 3",
+    "jv": "catatan kunjungan vet kanggo pamula: wiwit saka ngendi · bagian 3",
+    "su": "catatan kunjungan vet pikeun pamula: mimitian ti mana · bagian 3",
+    "zh": "宠物就诊记录入门：从哪里开始 · 第3篇",
+    "ja": "動物病院の記録入門：どこから始めるか · 第3回"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Bagian ketiga panduan pemula catatan kunjungan vet, membahas arti praktisnya, versi paling kecil, dan penyimpanan data di perangkat.",
+    "en": "Part 3 of the beginner's vet visit log guide, covering what it means in practice, the smallest version, and storing data on the device.",
+    "ar": "الجزء الثالث من دليل المبتدئين إلى سجلات زيارة الطبيب البيطري، يتناول المعنى العملي وأصغر نسخة وحفظ البيانات على جهازك.",
+    "ja": "入門の第3回。動物病院の記録の実践での意味、最小バージョン、端末への保存を順に扱い、次の一歩を示します。",
+    "zh": "新手宠物就诊记录指南第三篇：实际意义、最小版本，以及在设备上保存数据的方法，一步步来。",
+    "jv": "Bagéan katelu pandhuan pamula catatan kunjungan vet, mbahas tegesé ing praktik, versi paling cilik, lan panyimpanan data ing piranti.",
+    "su": "Bagian katilu panduan pamula catatan kunjungan vet, ngabahas hartina dina prakték, versi paling leutik, jeung panyimpenan data dina alat."
+  }
 }

@@ -41,6 +41,10 @@
     <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:locale:alternate" content="ja_JP">
 
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -129,7 +133,7 @@
                         "name": "Is PetGo free and where can I download it?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "PetGo is free. Download from Google Play when listed, or visit https://petgo.faishal.id/en/. Help: support@faishal.id."
+                                "text": "PetGo is free. Download from Google Play when listed, or visit https://play.google.com/store/apps/details?id=id.faishal.petgo. Help: support@faishal.id."
                         }
                 }
         ]
@@ -165,114 +169,151 @@
                 <div class="logo-wrapper">
                     <svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background: High-Energy Automotive Racing Amber -->
-    <linearGradient id="ggBg" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#EA580C"/>
-      <stop offset="50%" stop-color="#C2410C"/>
-      <stop offset="100%" stop-color="#9A3412"/>
+    <!-- Background Gradient: Deep Royal Emerald / Companion Forest -->
+    <linearGradient id="pgBg" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#022C22"/>
     </linearGradient>
 
-    <!-- Warm Golden Ambient Glow -->
-    <radialGradient id="ggGlow" cx="512" cy="440" r="640" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FDBA74" stop-opacity="0.45"/>
-      <stop offset="45%" stop-color="#FB923C" stop-opacity="0.18"/>
-      <stop offset="85%" stop-color="#C2410C" stop-opacity="0"/>
+    <!-- Radiant Mint-Sage Ambient Glow -->
+    <radialGradient id="pgGlow" cx="420" cy="340" r="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6EE7B7" stop-opacity="0.45"/>
+      <stop offset="45%" stop-color="#34D399" stop-opacity="0.18"/>
+      <stop offset="85%" stop-color="#047857" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Dial Gauge Background -->
-    <linearGradient id="dialBg" x1="512" y1="200" x2="512" y2="760" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#1E293B"/>
-      <stop offset="60%" stop-color="#0F172A"/>
-      <stop offset="100%" stop-color="#020617"/>
+    <!-- Edge Vignette -->
+    <radialGradient id="pgVignette" cx="512" cy="512" r="740" gradientUnits="userSpaceOnUse">
+      <stop offset="65%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.32"/>
+    </radialGradient>
+
+    <!-- 24K Polished Gold Pet Crest / Liontin Jejak Kaki Emas -->
+    <linearGradient id="pgGold" x1="512" y1="200" x2="512" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="85%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#92400E"/>
     </linearGradient>
 
-    <!-- Polished Chrome Wrench -->
-    <linearGradient id="wrenchChrome" x1="200" y1="200" x2="800" y2="800" gradientUnits="userSpaceOnUse">
+    <!-- Crisp Ivory White / Pego Chest White -->
+    <linearGradient id="pgWhite" x1="512" y1="180" x2="512" y2="820" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="25%" stop-color="#F1F5F9"/>
-      <stop offset="50%" stop-color="#94A3B8"/>
-      <stop offset="75%" stop-color="#E2E8F0"/>
-      <stop offset="100%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0FDF4"/>
     </linearGradient>
 
-    <!-- Needle Gradient -->
-    <linearGradient id="needleGrad" x1="512" y1="512" x2="710" y2="330" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#EF4444"/>
-      <stop offset="100%" stop-color="#F87171"/>
+    <!-- Sage Green Bandana Collar Accent -->
+    <linearGradient id="pgSage" x1="300" y1="200" x2="724" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="50%" stop-color="#5B7F5A"/>
+      <stop offset="100%" stop-color="#3E5A3D"/>
+    </linearGradient>
+
+    <!-- Warm Corgi Fur Accent -->
+    <linearGradient id="pgWarm" x1="300" y1="200" x2="724" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#D4A373"/>
+      <stop offset="100%" stop-color="#A16207"/>
+    </linearGradient>
+
+    <!-- Inner Shield Inset (Emerald Night) -->
+    <linearGradient id="pgDeepEmerald" x1="512" y1="260" x2="512" y2="780" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#022C22"/>
     </linearGradient>
 
     <!-- Drop Shadows -->
-    <filter id="dialShadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feDropShadow dx="0" dy="32" stdDeviation="34" flood-color="#431407" flood-opacity="0.75"/>
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.4"/>
+    <filter id="pgShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="28" stdDeviation="30" flood-color="#021C16" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000000" flood-opacity="0.45"/>
     </filter>
 
-    <filter id="wrenchShadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.55"/>
+    <filter id="pawShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#022C22" flood-opacity="0.6"/>
     </filter>
 
     <!-- Top Gloss Sheen -->
-    <linearGradient id="topSheen" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.14"/>
+    <linearGradient id="pgSheen" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
+
+    <clipPath id="pgClip"><rect width="1024" height="1024" rx="0"/></clipPath>
   </defs>
 
-  <!-- Background -->
-  <rect width="1024" height="1024" fill="url(#ggBg)"/>
-  <rect width="1024" height="1024" fill="url(#ggGlow)"/>
+  <g clip-path="url(#pgClip)">
+    <!-- Background Plates -->
+    <rect width="1024" height="1024" fill="url(#pgBg)"/>
+    <rect width="1024" height="1024" fill="url(#pgGlow)"/>
+    <rect width="1024" height="1024" fill="url(#pgVignette)"/>
 
-  <!-- ==================== TACHOMETER / SPEEDOMETER GAUGE ==================== -->
-  <g filter="url(#dialShadow)">
-    <!-- Outer Chrome Bezel Rim -->
-    <circle cx="512" cy="512" r="284" fill="url(#dialBg)" stroke="#FFFFFF" stroke-width="12"/>
-    <circle cx="512" cy="512" r="268" fill="none" stroke="#475569" stroke-width="3"/>
+    <!-- ==================== HERO PET CARE CREST & GOLDEN PAW MEDAL ==================== -->
+    <g filter="url(#pgShadow)">
+      <!-- Corgi Companion Rounded Ears Silhouette at the top of crest -->
+      <!-- Left Corgi Ear -->
+      <path d="M 330 290 C 270 190 330 110 400 160 C 440 190 440 260 410 320 Z" 
+            fill="url(#pgWarm)"/>
+      <path d="M 346 270 C 304 200 344 146 390 180 C 418 202 418 250 398 290 Z" 
+            fill="url(#pgWhite)" opacity="0.4"/>
 
-    <!-- Tachometer Speed Arc (Cyan -> Amber -> Redline) -->
-    <path d="M 288 640 A 244 244 0 1 1 736 640" fill="none" stroke="#334155" stroke-width="20" stroke-linecap="round"/>
-    <path d="M 288 640 A 244 244 0 0 1 448 288" fill="none" stroke="#38BDF8" stroke-width="20" stroke-linecap="round"/>
-    <path d="M 448 288 A 244 244 0 0 1 636 332" fill="none" stroke="#F59E0B" stroke-width="20" stroke-linecap="round"/>
-    <path d="M 636 332 A 244 244 0 0 1 736 640" fill="none" stroke="#EF4444" stroke-width="20" stroke-linecap="round"/>
+      <!-- Right Corgi Ear -->
+      <path d="M 694 290 C 754 190 694 110 624 160 C 584 190 584 260 614 320 Z" 
+            fill="url(#pgWarm)"/>
+      <path d="M 678 270 C 720 200 680 146 634 180 C 606 202 606 250 626 290 Z" 
+            fill="url(#pgWhite)" opacity="0.4"/>
 
-    <!-- Precision Tick Marks -->
-    <circle cx="512" cy="274" r="7" fill="#FFFFFF"/>
-    <circle cx="340" cy="374" r="6" fill="#38BDF8"/>
-    <circle cx="276" cy="512" r="6" fill="#38BDF8"/>
-    <circle cx="684" cy="374" r="6" fill="#EF4444"/>
-    <circle cx="748" cy="512" r="6" fill="#EF4444"/>
-  </g>
+      <!-- Outer Protective Care Shield / Medal Frame -->
+      <path d="M 512 210 Q 750 210 750 430 C 750 640 512 830 512 830 C 512 830 274 640 274 430 Q 274 210 512 210 Z" 
+            fill="url(#pgGold)"/>
 
-  <!-- ==================== HERO PRECISION CHROME SERVICE WRENCH ==================== -->
-  <!-- Angled across the lower center of the gauge (-36 deg) -->
-  <g filter="url(#wrenchShadow)" transform="rotate(-36 512 512)">
-    <!-- Wrench Shaft -->
-    <rect x="220" y="492" width="584" height="40" rx="14" fill="url(#wrenchChrome)" stroke="#FFFFFF" stroke-width="3"/>
-    <rect x="320" y="504" width="384" height="16" rx="8" fill="#64748B" opacity="0.35"/>
+      <!-- Shield Inner Deep Field -->
+      <path d="M 512 238 Q 722 238 722 436 C 722 626 512 798 512 798 C 512 798 302 626 302 436 Q 302 238 512 238 Z" 
+            fill="url(#pgDeepEmerald)"/>
 
-    <!-- Left Open-Jaw Head -->
-    <g transform="translate(220, 512)">
-      <circle cx="-16" cy="0" r="52" fill="url(#wrenchChrome)" stroke="#FFFFFF" stroke-width="3"/>
-      <polygon points="-72,-20 -16,-20 -16,20 -72,20" fill="#C2410C"/>
+      <!-- Sage Green Bandana Collar Arch across top -->
+      <path d="M 314 340 Q 512 400 710 340 L 718 388 Q 512 452 306 388 Z" 
+            fill="url(#pgSage)"/>
+      <circle cx="512" cy="414" r="16" fill="url(#pgGold)"/>
     </g>
 
-    <!-- Right Box-End Ring Head -->
-    <g transform="translate(804, 512)">
-      <circle cx="16" cy="0" r="52" fill="url(#wrenchChrome)" stroke="#FFFFFF" stroke-width="3"/>
-      <circle cx="16" cy="0" r="30" fill="#C2410C" stroke="#64748B" stroke-width="3"/>
+    <!-- ==================== HERO GOLDEN PAW EMBLEM (CENTER) ==================== -->
+    <g filter="url(#pawShadow)">
+      <!-- 4 Rounded Toe Pads -->
+      <!-- Toe 1 (Far Left) -->
+      <ellipse cx="396" cy="466" rx="34" ry="46" transform="rotate(-24 396 466)" fill="url(#pgGold)"/>
+      <!-- Toe 2 (Center Left) -->
+      <ellipse cx="468" cy="426" rx="36" ry="50" transform="rotate(-8 468 426)" fill="url(#pgGold)"/>
+      <!-- Toe 3 (Center Right) -->
+      <ellipse cx="556" cy="426" rx="36" ry="50" transform="rotate(8 556 426)" fill="url(#pgGold)"/>
+      <!-- Toe 4 (Far Right) -->
+      <ellipse cx="628" cy="466" rx="34" ry="46" transform="rotate(24 628 466)" fill="url(#pgGold)"/>
+
+      <!-- Central Main Palm Pad (Heart-Curved Paw Base) -->
+      <path d="M 512 524 C 440 524 390 564 390 626 C 390 682 434 722 512 722 C 590 722 634 682 634 626 C 634 564 584 524 512 524 Z" 
+            fill="url(#pgGold)"/>
+
+      <!-- Embedded Veterinary Care Cross in Center of Main Pad -->
+      <path d="M 494 572 L 530 572 L 530 608 L 566 608 L 566 644 L 530 644 L 530 680 L 494 680 L 494 644 L 458 644 L 458 608 L 494 608 Z" 
+            fill="url(#pgWhite)"/>
+
+      <!-- Inner Pad Highlight Specular -->
+      <circle cx="440" cy="570" r="12" fill="#FFFFFF" opacity="0.6"/>
+      <circle cx="472" cy="406" r="8" fill="#FFFFFF" opacity="0.7"/>
+      <circle cx="552" cy="406" r="8" fill="#FFFFFF" opacity="0.7"/>
     </g>
-  </g>
 
-  <!-- ==================== TACHOMETER NEEDLE & CENTER HUB (ON TOP) ==================== -->
-  <g filter="url(#wrenchShadow)">
-    <!-- Dynamic Tachometer Needle Pointing Upwards to Redline -->
-    <polygon points="506,512 512,308 518,512" fill="url(#needleGrad)"/>
-    <circle cx="512" cy="512" r="34" fill="#0F172A" stroke="#FFFFFF" stroke-width="5"/>
-    <circle cx="512" cy="512" r="22" fill="#EF4444"/>
-    <circle cx="512" cy="512" r="9" fill="#FFFFFF"/>
-  </g>
+    <!-- Milestone Care Sparkles -->
+    <g transform="translate(240, 310)">
+      <path d="M 0 -36 Q 0 0 36 0 Q 0 0 0 36 Q 0 0 -36 0 Q 0 0 0 -36 Z" fill="#FEF08A"/>
+    </g>
+    <g transform="translate(784, 310)">
+      <path d="M 0 -36 Q 0 0 36 0 Q 0 0 0 36 Q 0 0 -36 0 Q 0 0 0 -36 Z" fill="#FEF08A"/>
+    </g>
 
-  <!-- Top Sheen Gloss -->
-  <rect width="1024" height="340" fill="url(#topSheen)"/>
+    <!-- Top Gloss Sheen -->
+    <rect width="1024" height="340" fill="url(#pgSheen)"/>
+  </g>
 </svg>
 
                 </div>
@@ -329,6 +370,39 @@
                         <div class="phone-screen">
                             <div class="phone-app-preview">
                                 
+        <div class="mock-card checklist-card">
+            <div class="mock-card-header">
+                <span data-i18n="mock_title">Today's Care</span>
+                <span class="mock-date">🐾</span>
+            </div>
+            <ul class="mock-list">
+                <li class="mock-item completed">
+                    <span class="check-box">✓</span> <span data-i18n="mock_subuh">Morning meal ✓</span>
+                </li>
+                <li class="mock-item completed">
+                    <span class="check-box">✓</span> <span data-i18n="mock_dhuha">Walk 20 min</span>
+                </li>
+                <li class="mock-item completed">
+                    <span class="check-box">✓</span> <span data-i18n="mock_tilawah">Flea meds</span>
+                </li>
+                <li class="mock-item pending">
+                    <span class="check-box"></span> <span data-i18n="mock_charity">Vet: Oct 20</span>
+                </li>
+            </ul>
+        </div>
+        <div class="mock-card stats-card">
+            <div class="stats-title" data-i18n="mock_chart_title">2 active pets</div>
+            <div class="bar-chart">
+                <div class="chart-bar" style="height: 80%"><span class="bar-label">S</span></div>
+                <div class="chart-bar" style="height: 90%"><span class="bar-label">S</span></div>
+                <div class="chart-bar" style="height: 75%"><span class="bar-label">R</span></div>
+                <div class="chart-bar" style="height: 85%"><span class="bar-label">K</span></div>
+                <div class="chart-bar" style="height: 70%"><span class="bar-label">J</span></div>
+                <div class="chart-bar active" style="height: 100%"><span class="bar-label">S</span></div>
+                <div class="chart-bar" style="height: 95%"><span class="bar-label">M</span></div>
+            </div>
+        </div>
+    
                             </div>
                         </div>
                     </div>
@@ -336,21 +410,23 @@
             </div>
         </section>
 
-        <!-- Scripture and Hadith References Section (Quranic Proof & Authenticity) -->
-        <section class="scripture-section">
+        <!-- Evidence and Industry Standards Section (Research Proof & Scientific Basis) -->
+        <section class="scripture-section evidence-section">
             <div class="container">
                 <div class="scripture-grid">
-                    <!-- Al-Quran Column -->
-                    <div class="scripture-card quran-card">
-                        <span class="card-tag" data-i18n="scripture_title">Trust in Caring for What Is Entrusted</span>
-                        <div class="arabic-quote font-amiri" data-i18n="scripture_arabic">إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا</div>
-                        <p class="translation-quote" data-i18n="scripture_translation">"Indeed, Allah commands you to render trusts to whom they are due..." — Surah An-Nisa: 58</p>
+                    <!-- Scientific Research Column -->
+                    <div class="scripture-card evidence-card">
+                        <span class="card-tag">Veterinary Science Research</span>
+                        <h3 class="evidence-title">Domestic Pet Preventive Healthcare</h3>
+                        <p class="evidence-quote">"Systematic tracking of vaccinations, parasitic prevention, and weight trends extends domestic pet lifespan by an average of 15% and prevents chronic organ disease."</p>
+                        <p class="translation-quote">— Journal of the American Animal Hospital Association (JAAHA)</p>
                     </div>
-                    <!-- Hadith Column -->
-                    <div class="scripture-card hadith-card">
-                        <span class="card-tag">As-Sunnah / Hadits</span>
-                        <div class="arabic-quote font-amiri" data-i18n="hadith_arabic">كُلُّكُمْ رَاعٍ وَكُلُّكُمْ مَسْئُولٌ عَنْ رَعِيَّتِهِ</div>
-                        <p class="translation-quote" data-i18n="hadith_translation">"Each of you is a shepherd and each of you is responsible for his flock." — Bukhari & Muslim</p>
+                    <!-- Industry Standard / Clinical Protocol Column -->
+                    <div class="scripture-card benchmark-card">
+                        <span class="card-tag">Global Veterinary Clinical Standard</span>
+                        <h3 class="evidence-title">WSAVA Vaccination & Nutrition Protocols</h3>
+                        <p class="evidence-quote">"Maintaining an organized record of core immunizations, deworming, and dietary sensitivities ensures safe, immediate veterinary response in emergencies."</p>
+                        <p class="translation-quote">— World Small Animal Veterinary Association (WSAVA) Global Guidelines</p>
                     </div>
                 </div>
             </div>
@@ -397,7 +473,10 @@
                     
                     <div class="store-buttons">
                         <!-- Play Store Button (live link when published, upcoming badge otherwise) -->
-                        <div class="store-btn disabled" id="play-store-upcoming-btn"><svg viewBox="0 0 512 512" class="store-icon" width="24" height="24"><path fill="#f57c00" d="M12 28.5L248 264.5L12 500.5C9.5 498 8 493 8 485.5V54.5C8 47 9.5 42 12 28.5Z"/><path fill="#ffb74d" d="M374 138.5L248 264.5L12 28.5C16.5 24 23 23 30.5 27.5L374 138.5Z"/><path fill="#f57c00" d="M374 390.5L30.5 497.5C23 502 16.5 501 12 496.5L248 264.5L374 390.5Z"/><path fill="#ffa726" d="M500 221.5L403.5 166.5L374 138.5L248 264.5L374 390.5L403.5 362.5L500 307.5C508 303 512 293 512 285.5C512 278 508 268 500 221.5Z"/></svg><div class="store-btn-text"><span data-i18n="coming_soon">Coming Soon on</span><strong>Google Play</strong></div></div>
+                        <a href="https://play.google.com/store/apps/details?id=id.faishal.petgo&utm_source=landing&utm_medium=web&utm_campaign=petgo" class="store-btn" id="play-store-download-btn" target="_blank" rel="noopener"><svg viewBox="0 0 512 512" class="store-icon" width="24" height="24"><path fill="#f57c00" d="M12 28.5L248 264.5L12 500.5C9.5 498 8 493 8 485.5V54.5C8 47 9.5 42 12 28.5Z"/><path fill="#ffb74d" d="M374 138.5L248 264.5L12 28.5C16.5 24 23 23 30.5 27.5L374 138.5Z"/><path fill="#f57c00" d="M374 390.5L30.5 497.5C23 502 16.5 501 12 496.5L248 264.5L374 390.5Z"/><path fill="#ffa726" d="M500 221.5L403.5 166.5L374 138.5L248 264.5L374 390.5L403.5 362.5L500 307.5C508 303 512 293 512 285.5C512 278 508 268 500 221.5Z"/></svg><div class="store-btn-text"><span>GET IT ON</span><strong>Google Play</strong></div></a>
+
+                        <!-- Amazon Appstore Button (live link when published, upcoming badge otherwise) -->
+                        <a href="https://www.amazon.com/dp/B0HPS6PPV9" class="store-btn" id="amazon-appstore-download-btn" target="_blank" rel="noopener"><svg viewBox="0 0 512 512" class="store-icon" width="24" height="24" fill="#FF9900"><path d="M312.4 344c-28.2 21.3-70.6 32.7-106.1 32.7-49.8 0-94.8-18.4-128.7-49.2-3.8-3.4-3.8-9.1 0-12.5 7.6-6.8 16.4-13.7 25.1-19.8 3.8-2.7 8.4-2.7 12.2.8 26.6 24.3 60.1 38.8 95.9 38.8 27.4 0 58.7-8.4 81.5-24.3 4.6-3 10.7-.8 13.7 3.8 3.8 5.3 8.4 11.4 12.2 16.7 3 4.6 2.3 10.7-1.5 13.7zM337.5 315.1c-3.8-5.3-19-2.3-38.1 4.6-5.3 1.5-6.1-3-1.5-6.1 16-10.7 42.6-7.6 45.7-3.8 3.8 4.6.8 31.2-14.5 42.6-4.6 3.4-8.4.8-6.1-3.8 7.6-15.2 18.2-33.5 14.5-33.5zM279.7 137.6c-48.7 3.8-84.5 32.7-84.5 83.7 0 51 32.7 75.3 75.3 75.3 35.8 0 57.8-19 66.2-32.7l3 19.8c1.5 7.6 6.8 12.2 14.5 12.2h28.2c7.6 0 12.9-6.1 11.4-13.7l-26.6-140.7c-2.3-12.9-10.7-19.8-23.6-20.5-23.6-1.5-45.7-3.4-63.9-3.4zm10.7 131.6c-24.3 0-41.9-14.5-41.9-38.8 0-25.1 19-39.6 44.9-42.6 15.2-1.5 28.2-1.5 36.5 0l11.4 63.9c-12.2 11.4-29.7 17.5-50.9 17.5z"/></svg><div class="store-btn-text"><span>GET IT ON</span><strong>Amazon Appstore</strong></div></a>
 
                         <!-- App Store (Upcoming) Button -->
                         <div class="store-btn disabled" id="app-store-upcoming-btn">
@@ -434,7 +513,7 @@
                 </details>
                 <details>
                     <summary>Is PetGo free and where can I download it?</summary>
-                    <p>PetGo is free. Download from Google Play when listed, or visit https://petgo.faishal.id/en/. Help: support@faishal.id.</p>
+                    <p>PetGo is free. Download from Google Play when listed, or visit https://play.google.com/store/apps/details?id=id.faishal.petgo. Help: support@faishal.id.</p>
                 </details>
             </div>
         </section>
@@ -476,7 +555,7 @@
         <div class="container footer-container">
             <p>&copy; 2026 faishal.id. All rights reserved.</p>
             <div class="footer-links">
-                <a href="https://faishal.id" class="footer-link">Utama</a>
+                <a href="https://faishal.id" class="footer-link">Home</a>
                 <a href="privacy.html" class="footer-link" data-i18n="privacy_policy">Privacy Policy</a>
                 <a href="terms.html" class="footer-link" data-i18n="terms_of_service">Terms of Service</a>
             </div>

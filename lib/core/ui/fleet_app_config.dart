@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../l10n/app_localizations.dart';
+
 class FleetSlideItem {
   final String headline;
   final String subtext;
@@ -14,6 +16,19 @@ class FleetSlideItem {
   });
 }
 
+/// Icons for the four onboarding slides, in slide order.
+const _slideIcons = <IconData>[
+  Icons.pets_rounded,
+  Icons.medical_services_rounded,
+  Icons.today_rounded,
+  Icons.folder_rounded,
+];
+
+/// Brand colours and icons shared by the splash and onboarding screens.
+///
+/// Every user-visible string comes from `AppLocalizations`; [localized] builds
+/// the full contract the v2 onboarding screen needs. [current] stays minimal
+/// for the splash, which only reads the colours and the fallback icon.
 class FleetAppConfig {
   final String appName;
   final String tagline;
@@ -21,6 +36,10 @@ class FleetAppConfig {
   final Color darkColor;
   final Color accentColor;
   final IconData fallbackIcon;
+
+  /// Icons for the four onboarding slides, in slide order.
+  final List<IconData> slideIcons;
+
   final String skipLabel;
   final String nextLabel;
   final String getStartedLabel;
@@ -30,53 +49,69 @@ class FleetAppConfig {
   final List<FleetSlideItem> slides;
 
   const FleetAppConfig({
-    required this.appName,
-    required this.tagline,
     required this.primaryColor,
     required this.darkColor,
     required this.accentColor,
     required this.fallbackIcon,
-    this.skipLabel = 'Lewati',
-    this.nextLabel = 'Lanjut',
-    this.getStartedLabel = 'Mulai Sekarang',
-    this.defaultBadgeText = '100% Offline & Cepat',
-    this.privacyHeadline = 'Privasi & Offline Terjamin',
-    this.privacyDetail =
-        'Semua data tersimpan aman di perangkat Anda tanpa pelacak.',
-    required this.slides,
+    this.slideIcons = const [],
+    this.appName = '',
+    this.tagline = '',
+    this.skipLabel = '',
+    this.nextLabel = '',
+    this.getStartedLabel = '',
+    this.defaultBadgeText = '',
+    this.privacyHeadline = '',
+    this.privacyDetail = '',
+    this.slides = const [],
   });
 
-  static final FleetAppConfig current = FleetAppConfig(
-    appName: 'PetGo',
-    tagline: 'Profil hewan, jadwal perawatan, dan log harian — offline.',
+  static const FleetAppConfig current = FleetAppConfig(
+    primaryColor: Color(0xFF5B7F5A),
+    darkColor: Color(0xFF3E5A3D),
+    accentColor: Color(0xFFD4A373),
+    fallbackIcon: Icons.pets_rounded,
+    slideIcons: _slideIcons,
+  );
+
+  /// Localized variant used by the onboarding router.
+  factory FleetAppConfig.localized(AppLocalizations l) => FleetAppConfig(
+    appName: l.appTitle,
+    tagline: l.appTagline,
     primaryColor: const Color(0xFF5B7F5A),
     darkColor: const Color(0xFF3E5A3D),
     accentColor: const Color(0xFFD4A373),
     fallbackIcon: Icons.pets_rounded,
-    slides: const [
+    slideIcons: _slideIcons,
+    skipLabel: l.onbSkip,
+    nextLabel: l.onbNext,
+    getStartedLabel: l.onbGetStarted,
+    defaultBadgeText: l.onbSlide1Badge,
+    privacyHeadline: l.onbPrivacyHeadline,
+    privacyDetail: l.onbPrivacyDetail,
+    slides: [
       FleetSlideItem(
-        headline: 'Profil hewan',
-        subtext: 'Anjing, kucing, dan lainnya',
-        icon: Icons.pets_rounded,
-        badgeText: '100% Offline & Privat',
+        headline: l.onbSlide1Title,
+        subtext: l.onbSlide1Sub,
+        icon: _slideIcons[0],
+        badgeText: l.onbSlide1Badge,
       ),
       FleetSlideItem(
-        headline: 'Jadwal perawatan',
-        subtext: 'Vaksin, cacing, flea, grooming',
-        icon: Icons.medical_services_rounded,
-        badgeText: 'Pengingat lokal',
+        headline: l.onbSlide2Title,
+        subtext: l.onbSlide2Sub,
+        icon: _slideIcons[1],
+        badgeText: l.onbSlide2Badge,
       ),
       FleetSlideItem(
-        headline: 'Log harian',
-        subtext: 'Makan, jalan, litter',
-        icon: Icons.today_rounded,
-        badgeText: 'Tanpa Iklan & Tanpa Akun',
+        headline: l.onbSlide3Title,
+        subtext: l.onbSlide3Sub,
+        icon: _slideIcons[2],
+        badgeText: l.onbSlide3Badge,
       ),
       FleetSlideItem(
-        headline: 'Dokumen lokal',
-        subtext: 'Kartu vaksin & resep',
-        icon: Icons.folder_rounded,
-        badgeText: 'Data di perangkat',
+        headline: l.onbSlide4Title,
+        subtext: l.onbSlide4Sub,
+        icon: _slideIcons[3],
+        badgeText: l.onbSlide4Badge,
       ),
     ],
   );

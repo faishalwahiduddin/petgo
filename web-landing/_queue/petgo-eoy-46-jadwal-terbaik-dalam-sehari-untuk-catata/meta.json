@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "jadwal-terbaik-dalam-sehari-untuk-catatan-kunjungan-vet-mingguan",
-    "en": "best-time-of-day-for-catatan-kunjungan-vet",
-    "ar": "catatan-kunjungan-vet-12",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-12",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-12",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-12",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-12"
+    "id": "catatan-kunjungan-vet-daftar-pilihan-yang-masuk-akal",
+    "en": "vet-visit-log-a-shortlist-that-makes-sense",
+    "ar": "sjlat-zyara-altbyb-albytry-khyarat-qlyla-mntqya",
+    "jv": "catatan-kunjungan-vet-pilihan-sing-cukup-masuk-akal",
+    "su": "catatan-kunjungan-vet-pilihan-anu-asup-akal",
+    "zh": "chong-wu-jiu-zhen-ji-lu-zhi-de-kao-lv-de-ji-zhong-xuan-ze",
+    "ja": "doubutsubyouin-no-kiroku-nattoku-dekiru-sentakushi"
   },
   "titles": {
-    "id": "Jadwal Terbaik dalam Sehari untuk catatan kunjungan vet",
-    "en": "Best Time of Day for catatan kunjungan vet — Offline First",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Jadwal Terbaik dalam Sehari untuk catatan kunjungan vet",
-    "su": "Pituduh: Jadwal Terbaik dalam Sehari untuk catatan kunjungan vet",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet: daftar pilihan yang masuk akal",
+    "en": "vet visit log: a shortlist that makes sense",
+    "ar": "سجلات زيارة الطبيب البيطري: خيارات قليلة منطقية",
+    "jv": "catatan kunjungan vet: pilihan sing cukup masuk akal",
+    "su": "catatan kunjungan vet: pilihan anu asup akal",
+    "zh": "宠物就诊记录：值得考虑的几种选择",
+    "ja": "動物病院の記録：納得できる選択肢"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Daftar pilihan catatan kunjungan vet yang masuk akal: versi paling kecil untuk dicoba dulu, kapan menjalankannya, dan tinjauan mingguan untuk memilih.",
+    "en": "A shortlist of vet visit log options that make sense: the smallest version to try first, when to run it, and a weekly review to choose from.",
+    "ar": "خيارات قليلة منطقية لسجلات زيارة الطبيب البيطري: أصغر نسخة تجربها أولاً، ووقت التشغيل، ومراجعة أسبوعية تساعد على الاختيار.",
+    "ja": "現実的な選択肢から選ぶ動物病院の記録。最初に試す最小バージョン、実行タイミング、週次の見直しを紹介します。",
+    "zh": "值得考虑的宠物就诊记录方案：先试最小版本，决定何时执行，并用每周回顾来做选择，逐步确定适合自己的做法。",
+    "jv": "Dhaftar pilihan catatan kunjungan vet sing masuk akal: versi paling cilik kanggo dicoba dhisik, kapan dijalanké, lan tinjauan saben minggu kanggo milih.",
+    "su": "Daftar pilihan catatan kunjungan vet nu masuk akal: versi paling leutik pikeun dicoba heula, iraha dilaksanakeun, jeung tinjauan mingguan pikeun milih."
+  }
 }

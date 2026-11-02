@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "streak-catatan-kunjungan-vet-tanpa-burnout-praktis",
-    "en": "catatan-kunjungan-vet-streaks-without-burnout-practical",
-    "ar": "catatan-kunjungan-vet-7",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-7",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-7",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-7",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-7"
+    "id": "menjaga-catatan-kunjungan-vet-saat-semangat-turun",
+    "en": "keeping-vet-visit-log-going-when-motivation-drops",
+    "ar": "alahtfaz-bsjlat-zyara-altbyb-albytry-hyn-tdaf-alhmasa",
+    "jv": "njaga-catatan-kunjungan-vet-nalika-semangat-mudhun",
+    "su": "ngajaga-catatan-kunjungan-vet-nalika-sumanget-turun",
+    "zh": "re-qing-xia-jiang-shi-ru-he-shou-zhu-chong-wu-jiu-zhen-ji-lu",
+    "ja": "yaru-kiga-saga-tta-nichi-no-doubutsubyouin-no-kiroku"
   },
   "titles": {
-    "id": "Streak catatan kunjungan vet tanpa Burnout",
-    "en": "catatan kunjungan vet Streaks Without Burnout (Practical)",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Streak catatan kunjungan vet tanpa Burnout",
-    "su": "Pituduh: Streak catatan kunjungan vet tanpa Burnout",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "Menjaga catatan kunjungan vet saat semangat turun",
+    "en": "Keeping vet visit log going when motivation drops",
+    "ar": "الاحتفاظ بـسجلات زيارة الطبيب البيطري حين تضعف الحماسة",
+    "jv": "Njaga catatan kunjungan vet nalika semangat mudhun",
+    "su": "Ngajaga catatan kunjungan vet nalika sumanget turun",
+    "zh": "热情下降时如何守住宠物就诊记录",
+    "ja": "やる気が下がった日の動物病院の記録"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Cara tetap mencatat kunjungan vet ketika semangat menurun: alasan kebiasaan melemah, versi paling kecil yang masih bisa dijalankan, dan langkah kembali.",
+    "en": "Keeping the vet visit log going when motivation dips: why habits weaken, a smallest version you can still run, and how to restart after a pause.",
+    "ar": "الاستمرار في سجلات زيارة الطبيب البيطري حين تضعف الحماسة: لماذا تفتر العادة، وأصغر نسخة ما زال بالإمكان تشغيلها، وكيف تعود بعد توقف.",
+    "ja": "やる気が下がった日も動物病院の記録を続けるコツ。習慣が弱まる理由、まだ回せる最小バージョン、再開の仕方。",
+    "zh": "在热情下降时坚持宠物就诊记录：分析习惯减弱的原因，仍可执行的最小版本，以及停顿后的重新开始。",
+    "jv": "Carané tetep nyathet catatan kunjungan vet nalika semangat mudhun: sebab kebiasan kendho, versi paling cilik sing isih bisa dijalanké, lan langkah bali.",
+    "su": "Cara tetep nyatet catatan kunjungan vet lamun sumanget turun: alesan kabiasaan ngelemah, versi paling leutik nu masih bisa dilaksanakeun, jeung léngkah balik."
+  }
 }

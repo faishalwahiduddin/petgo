@@ -1,0 +1,85 @@
+{
+  "title": "catatan kunjungan vet tingkat lanjut setelah rutin stabil",
+  "description": "Catatan kunjungan vet tingkat lanjut setelah rutinitas sudah stabil: makna praktisnya, kembali ke versi paling kecil bila perlu, dan data di perangkat.",
+  "badge": "keluarga · offline",
+  "answer": "Di grup keluarga tiga orang menanyakan catatan kunjungan vet, dan tidak ada jawaban yang sama. PetGo menyimpan catatan kunjungan vet di perangkat, jadi datanya tetap terbuka tanpa kuota dan tanpa akun.",
+  "toc": [
+    "Arti praktis catatan kunjungan vet",
+    "Versi paling kecil",
+    "Tersimpan di perangkat"
+  ],
+  "sections": [
+    {
+      "h2": "Arti praktis catatan kunjungan vet",
+      "p": "Dalam praktik, catatan kunjungan vet berarti ada bukti bertanggal yang bisa dibuka ulang—bukan niat yang cuma diingat.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Versi paling kecil",
+      "p": "Satu baris per anggota: status, tanggal, satu hal yang perlu ditindak.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Tersimpan di perangkat",
+      "p": "PetGo menyimpan catatan kunjungan vet di perangkat, jadi datanya tetap terbuka tanpa kuota dan tanpa akun.",
+      "h3": null,
+      "p3": null
+    }
+  ],
+  "table": {
+    "caption": "Kerangka catatan kunjungan vet",
+    "headers": [
+      "Langkah",
+      "Isi minimal",
+      "Selesai bila"
+    ],
+    "rows": [
+      [
+        "Baris anggota",
+        "status + tanggal",
+        "bisa ditinjau"
+      ],
+      [
+        "Penanda",
+        "posisi terakhir",
+        "bisa dilanjut besok"
+      ],
+      [
+        "Evaluasi minggu",
+        "satu penyesuaian",
+        "diterapkan Senin"
+      ]
+    ]
+  },
+  "list": [
+    "Tetapkan satu waktu tetap, bukan “kapan sempat”.",
+    "Buka PetGo saat waktu itu tiba, bukan nanti malam.",
+    "Catat satu hambatan, bukan alasan panjang.",
+    "Cadangkan data sebelum ganti ponsel."
+  ],
+  "faqs": [
+    [
+      "Apakah catatan kunjungan vet bisa dibuka offline?",
+      "Ya. PetGo menyimpan semuanya di perangkat, jadi tidak butuh kuota."
+    ],
+    [
+      "Perlu akun dulu?",
+      "Tidak. Mulai tanpa login; cadangkan data secara berkala."
+    ],
+    [
+      "Mulai dari mana?",
+      "Dari bagian terpendek. Tambah cakupan hanya setelah dua minggu stabil."
+    ],
+    [
+      "Kalau bolong beberapa hari?",
+      "Jangan hapus riwayat. Lanjut dari bagian terakhir dan catat satu hambatan."
+    ]
+  ],
+  "cta": [
+    "Mulai catatan kunjungan vet hari ini",
+    "Buka PetGo"
+  ],
+  "slug": "petgo-level-lanjut-pola-insight-offline"
+}

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "cara-petgo-yang-praktis-offline",
-    "en": "how-to-petgo-offline",
-    "ar": "petgo",
-    "jv": "pandhuan-petgo-petgo",
-    "su": "pituduh-petgo-petgo",
-    "zh": "petgo-petgo-实用指南",
-    "ja": "petgopetgo-ガイド"
+    "id": "cara-memulai-catatan-kunjungan-vet-tanpa-ribet",
+    "en": "how-to-start-vet-visit-log-without-friction",
+    "ar": "kyf-tbda-sjlat-zyara-altbyb-albytry-dwn-taqyd",
+    "jv": "kepriye-miwiti-catatan-kunjungan-vet-tanpa-ruwet",
+    "su": "kumaha-ngamimitian-catatan-kunjungan-vet-tanpa-ribet",
+    "zh": "ru-he-kai-shi-chong-wu-jiu-zhen-ji-lu-bu-bi-fu-za",
+    "ja": "doubutsubyouin-no-kiroku-wo-muri-naku-hajime-ru-houhou"
   },
   "titles": {
-    "id": "Cara PetGo yang Praktis (Offline)",
-    "en": "How to PetGo Offline — Practical Steps",
-    "ar": "PetGo — دليل PetGo",
-    "jv": "Pandhuan: Cara PetGo yang Praktis (Offline)",
-    "su": "Pituduh: Cara PetGo yang Praktis (Offline)",
-    "zh": "PetGo · PetGo 实用指南",
-    "ja": "PetGo｜PetGo ガイド"
+    "id": "Cara memulai catatan kunjungan vet tanpa ribet",
+    "en": "How to start vet visit log without friction",
+    "ar": "كيف تبدأ سجلات زيارة الطبيب البيطري دون تعقيد",
+    "jv": "Kepriyé miwiti catatan kunjungan vet tanpa ruwet",
+    "su": "Kumaha ngamimitian catatan kunjungan vet tanpa ribet",
+    "zh": "如何开始宠物就诊记录（不必复杂）",
+    "ja": "動物病院の記録を無理なく始める方法"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Panduan singkat untuk mulai mencatat kunjungan vet di PetGo tanpa ribet: mulai dari versi paling kecil, tentukan kapan mencatat, dan lakukan tinjauan mingguan.",
+    "en": "A short guide to starting a vet visit log in PetGo without the hassle: begin with the smallest version, choose when to run it, and do a weekly check.",
+    "ar": "دليل موجز لبدء سجلات زيارة الطبيب البيطري في PetGo دون تعقيد، يبدأ بأصغر نسخة ممكنة ثم يحدد وقت التنفيذ ومراجعة أسبوعية خفيفة.",
+    "ja": "PetGoで動物病院の記録を無理なく始める方法。最小バージョンから始め、記録する時間帯と週に一度の確認を解説します。",
+    "zh": "在PetGo中轻松开始宠物就诊记录，从最小版本入手，确定何时记录，并做每周简单回顾。",
+    "jv": "Pandhuan cekak kanggo miwiti catatan kunjungan vet ing PetGo tanpa ruwet: wiwit saka versi paling cilik, kapan wektu nyathet, lan pangecekan saben minggu.",
+    "su": "Panduan ringkes pikeun mimitian catatan kunjungan vet di PetGo tanpa ribet: dimimitian ti versi paling leutik, iraha waktuna nyatet, jeung tinjauan mingguan."
+  }
 }

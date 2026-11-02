@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "faq-petgo-pertanyaan-yang-sering-muncul-offline",
-    "en": "petgo-faq-frequent-questions",
-    "ar": "petgo-5",
-    "jv": "pandhuan-petgo-petgo-5",
-    "su": "pituduh-petgo-petgo-5",
-    "zh": "petgo-petgo-实用指南-5",
-    "ja": "petgopetgo-ガイド-5"
+    "id": "faq-catatan-kunjungan-vet-jawaban-yang-sering-dicari",
+    "en": "vet-visit-log-faq-the-questions-people-actually-ask",
+    "ar": "asila-sjlat-zyara-altbyb-albytry-alshaiaa",
+    "jv": "pitakon-catatan-kunjungan-vet-sing-kerep-ditakokake",
+    "su": "patarosan-catatan-kunjungan-vet-anu-sering-ditaroskeun",
+    "zh": "chong-wu-jiu-zhen-ji-lu-chang-jian-wen-ti-da-jia-zhen-zheng-hui-wen-de",
+    "ja": "doubutsubyouin-no-kiroku-noyokuaru-shitsumon"
   },
   "titles": {
-    "id": "FAQ PetGo: Pertanyaan yang Sering Muncul",
-    "en": "PetGo FAQ: Frequent Questions",
-    "ar": "PetGo — دليل PetGo",
-    "jv": "Pandhuan: FAQ PetGo: Pertanyaan yang Sering Muncul",
-    "su": "Pituduh: FAQ PetGo: Pertanyaan yang Sering Muncul",
-    "zh": "PetGo · PetGo 实用指南",
-    "ja": "PetGo｜PetGo ガイド"
+    "id": "FAQ catatan kunjungan vet: jawaban yang sering dicari",
+    "en": "vet visit log FAQ: the questions people actually ask",
+    "ar": "أسئلة سجلات زيارة الطبيب البيطري الشائعة",
+    "jv": "Pitakon catatan kunjungan vet sing kerep ditakokaké",
+    "su": "Patarosan catatan kunjungan vet anu sering ditaroskeun",
+    "zh": "宠物就诊记录常见问题：大家真正会问的",
+    "ja": "動物病院の記録のよくある質問"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Jawaban atas pertanyaan yang sering dicari tentang catatan kunjungan vet: arti praktisnya, versi paling kecil, dan apakah datanya tersimpan di perangkat.",
+    "en": "Answers to the vet visit log questions people search for most: what it means in practice, the smallest version, and whether data stays on the device.",
+    "ar": "إجابات عن الأسئلة الشائعة حول سجلات زيارة الطبيب البيطري: معناها العملي، وأصغر نسخة للبدء، وهل تبقى البيانات محفوظة على الجهاز.",
+    "ja": "よくある質問への答え。動物病院の記録の実践での意味、最小バージョン、端末にデータが残るかを説明します。",
+    "zh": "宠物就诊记录常见问题解答：说明它的实际意义、最小版本，以及数据是否真的保存在设备上。",
+    "jv": "Wangsulan saka pitakon sing kerep ditakokaké bab catatan kunjungan vet: tegesé ing praktik, versi paling cilik, lan apa data tetep kasimpen ing piranti.",
+    "su": "Jawaban patarosan nu sering ditaroskeun ngeunaan catatan kunjungan vet: hartina dina prakték, versi paling leutik, jeung naha data tetep disimpen dina alat."
+  }
 }

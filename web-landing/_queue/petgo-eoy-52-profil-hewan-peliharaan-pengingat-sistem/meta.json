@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "profil-hewan-peliharaan-pengingat-sistem-mingguan",
-    "en": "profil-hewan-peliharaan-system-reminders",
-    "ar": "profil-hewan-peliharaan-13",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-13",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-13",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-13",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-13"
+    "id": "profil-hewan-peliharaan-dan-aplikasi-lain-di-ponsel-anda",
+    "en": "pet-profile-and-the-other-apps-on-your-phone",
+    "ar": "mlf-alhywan-alalyf-wttbyqat-hatfk-alakhra",
+    "jv": "profil-hewan-peliharaan-lan-aplikasi-liya-ing-hp",
+    "su": "profil-hewan-peliharaan-jeung-aplikasi-sejen-dina-hp",
+    "zh": "chong-wu-dang-an-yu-shou-ji-shang-de-qi-ta-ying-yong",
+    "ja": "petto-no-purofiiru-to-sumaho-no-hokano-apuri"
   },
   "titles": {
-    "id": "profil hewan peliharaan: panduan praktis di PetGo",
-    "en": "profil hewan peliharaan + System Reminders — Offline First",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: profil hewan peliharaan: panduan praktis di PetGo",
-    "su": "Pituduh: profil hewan peliharaan: panduan praktis di PetGo",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan dan aplikasi lain di ponsel Anda",
+    "en": "pet profile and the other apps on your phone",
+    "ar": "ملف الحيوان الأليف وتطبيقات هاتفك الأخرى",
+    "jv": "profil hewan peliharaan lan aplikasi liya ing HP",
+    "su": "profil hewan peliharaan jeung aplikasi séjén dina HP",
+    "zh": "宠物档案与手机上的其他应用",
+    "ja": "ペットのプロフィールとスマホの他のアプリ"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Bagaimana profil hewan peliharaan berjalan bersama aplikasi lain di ponsel Anda, arti praktisnya, versi paling kecil, dan data yang tetap di perangkat.",
+    "en": "How the pet profile works alongside the other apps on your phone, what it means in practice, the smallest version, and data kept on the device.",
+    "ar": "كيف يعمل ملف الحيوان الأليف مع تطبيقات هاتفك الأخرى: معناه العملي، وأصغر نسخة، وبيانات تبقى على الجهاز.",
+    "ja": "ペットのプロフィールとスマホの他のアプリの組み合わせ。実践での意味、最小バージョン、端末に残るデータを解説。",
+    "zh": "宠物档案如何与手机上的其他应用协同，它的实际意义、最小版本，以及保留在设备上的数据。",
+    "jv": "Carané profil hewan peliharaan mlaku bareng aplikasi liyané ing HP kowé: tegesé ing praktik, versi paling cilik, lan data sing tetep ing piranti.",
+    "su": "Kumaha profil hewan peliharaan jalan babarengan jeung aplikasi séjén dina HP anjeun, hartina dina prakték, versi paling leutik, jeung data nu tetep dina alat."
+  }
 }

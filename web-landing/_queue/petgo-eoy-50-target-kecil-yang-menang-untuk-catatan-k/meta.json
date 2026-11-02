@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "target-kecil-yang-menang-untuk-catatan-kunjungan-vet-praktis",
-    "en": "small-winning-targets-for-catatan-kunjungan-vet-practical",
-    "ar": "catatan-kunjungan-vet-13",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-13",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-13",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-13",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-13"
+    "id": "catatan-kunjungan-vet-yang-tidak-bikin-malas-membuka-app",
+    "en": "vet-visit-log-that-does-not-feel-like-a-chore-to-open",
+    "ar": "sjlat-zyara-altbyb-albytry-la-ythql-fthh",
+    "jv": "catatan-kunjungan-vet-sing-ora-males-dibukak",
+    "su": "catatan-kunjungan-vet-anu-teu-hoream-dibuka",
+    "zh": "da-kai-bu-fei-jin-de-chong-wu-jiu-zhen-ji-lu",
+    "ja": "hiraku-noga-okkuu-ninaranai-doubutsubyouin-no-kiroku"
   },
   "titles": {
-    "id": "Target Kecil yang Menang untuk catatan kunjungan vet",
-    "en": "Small Winning Targets for catatan kunjungan vet (Practical)",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Target Kecil yang Menang untuk catatan kunjungan vet",
-    "su": "Pituduh: Target Kecil yang Menang untuk catatan kunjungan vet",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet yang tidak bikin malas membuka app",
+    "en": "vet visit log that does not feel like a chore to open",
+    "ar": "سجلات زيارة الطبيب البيطري لا يثقل فتحه",
+    "jv": "catatan kunjungan vet sing ora males dibukak",
+    "su": "catatan kunjungan vet anu teu hoream dibuka",
+    "zh": "打开不费劲的宠物就诊记录",
+    "ja": "開くのが億劫にならない動物病院の記録"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Membuat catatan kunjungan vet yang tidak bikin malas dibuka: alasan kebiasaan tak bertahan, target kecil yang mudah dimenangkan, dan langkah setelah bolong.",
+    "en": "How to make a vet visit log that does not feel like a chore to open: why habits fail to last, small targets you can win, and steps after a gap.",
+    "ar": "سجلات زيارة الطبيب البيطري التي لا يثقل فتحها: لماذا تتوقف العادة، وأهداف صغيرة يسهل تحقيقها، وخطوات بعد أي فجوة في التسجيل.",
+    "ja": "開くのが億劫にならない動物病院の記録。習慣が続かない理由、達成しやすい小さな目標、空白後にすべきこと。",
+    "zh": "让人不觉得打开很烦的宠物就诊记录：习惯难以持久的原因，容易达成的小目标，以及中断后的做法。",
+    "jv": "Carané gawé catatan kunjungan vet sing ora males dibukak: sebab kebiasan ora awet, target cilik sing gampang kecekel, lan langkah sawisé bolong.",
+    "su": "Cara nyieun catatan kunjungan vet nu teu hoream dibuka: alesan kabiasaan teu awet, target leutik nu gampang kahontal, jeung léngkah sanggeus bolong."
+  }
 }

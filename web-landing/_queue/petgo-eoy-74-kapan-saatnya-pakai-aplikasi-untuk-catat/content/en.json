@@ -1,0 +1,85 @@
+{
+  "title": "vet visit log: what to check before you choose",
+  "description": "What to check before you choose how to log vet visits: why routines break, whether data stays on the device, and the weekly review.",
+  "badge": "family · offline",
+  "answer": "Three people in the family chat ask about vet visit log, and none of the answers match. PetGo keeps vet visit log on-device, so it stays readable with no data plan and no account.",
+  "toc": [
+    "Why it breaks",
+    "Stored on your device",
+    "The weekly check"
+  ],
+  "sections": [
+    {
+      "h2": "Why it breaks",
+      "p": "Three people in the family chat ask about vet visit log, and none of the answers match.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Stored on your device",
+      "p": "PetGo keeps vet visit log on-device, so it stays readable with no data plan and no account.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "The weekly check",
+      "p": "Once a week, look at the part that breaks most often and shrink the target instead of adding willpower.",
+      "h3": null,
+      "p3": null
+    }
+  ],
+  "table": {
+    "caption": "A working frame for vet visit log",
+    "headers": [
+      "Step",
+      "Minimum",
+      "Done when"
+    ],
+    "rows": [
+      [
+        "Member line",
+        "status + date",
+        "reviewable"
+      ],
+      [
+        "Bookmark",
+        "last position",
+        "resumable tomorrow"
+      ],
+      [
+        "Weekly review",
+        "one adjustment",
+        "applied Monday"
+      ]
+    ]
+  },
+  "list": [
+    "Pick one fixed time, not “whenever there is room”.",
+    "Open PetGo when that time arrives, not later tonight.",
+    "Note one blocker, not a long excuse.",
+    "Back up before you switch phones."
+  ],
+  "faqs": [
+    [
+      "Can I open vet visit log offline?",
+      "Yes. PetGo keeps everything on-device, so no data plan is needed."
+    ],
+    [
+      "Do I need an account first?",
+      "No. Start without login; export a backup from time to time."
+    ],
+    [
+      "Where do I start?",
+      "With the shortest piece. Add scope only after two steady weeks."
+    ],
+    [
+      "What if I miss a few days?",
+      "Do not wipe history. Resume from the last entry and note one blocker."
+    ]
+  ],
+  "cta": [
+    "Start vet visit log today",
+    "Open PetGo"
+  ],
+  "slug": "when-to-use-an-app-for-catatan-kunjungan-vet-practical"
+}

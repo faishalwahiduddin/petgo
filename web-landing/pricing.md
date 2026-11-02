@@ -7,7 +7,7 @@
 - Platforms: Android, iOS (when listed), Web
 - Limits: no paid tiers; core features included
 - Features: offline-first local storage, no account required for core use
-- Google Play: coming soon / see landing CTA
+- Google Play: https://play.google.com/store/apps/details?id=id.faishal.petgo
 - Site: https://petgo.faishal.id/id/
 
 ## Notes

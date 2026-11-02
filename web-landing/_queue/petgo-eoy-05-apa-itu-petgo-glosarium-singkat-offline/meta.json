@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "apa-itu-petgo-glosarium-singkat-offline",
-    "en": "what-is-petgo-a-short-glossary",
-    "ar": "petgo-2",
-    "jv": "pandhuan-petgo-petgo-2",
-    "su": "pituduh-petgo-petgo-2",
-    "zh": "petgo-petgo-实用指南-2",
-    "ja": "petgopetgo-ガイド-2"
+    "id": "apa-itu-catatan-kunjungan-vet-penjelasan-singkat",
+    "en": "what-is-vet-visit-log-a-short-explanation",
+    "ar": "ma-mana-sjlat-zyara-altbyb-albytry-shrh-mwjz",
+    "jv": "apa-iku-catatan-kunjungan-vet-katrangan-cekak",
+    "su": "naon-eta-catatan-kunjungan-vet-katerangan-pondok",
+    "zh": "chong-wu-jiu-zhen-ji-lu-shi-shen-me-jian-ming-jie-shi",
+    "ja": "doubutsubyouin-no-kiroku-toha-mijikai-setsumei"
   },
   "titles": {
-    "id": "Apa Itu PetGo? Glosarium Singkat",
-    "en": "What Is PetGo? A Short Glossary",
-    "ar": "PetGo — دليل PetGo",
-    "jv": "Pandhuan: Apa Itu PetGo? Glosarium Singkat",
-    "su": "Pituduh: Apa Itu PetGo? Glosarium Singkat",
-    "zh": "PetGo · PetGo 实用指南",
-    "ja": "PetGo｜PetGo ガイド"
+    "id": "Apa itu catatan kunjungan vet? Penjelasan singkat",
+    "en": "What is vet visit log? A short explanation",
+    "ar": "ما معنى سجلات زيارة الطبيب البيطري؟ شرح موجز",
+    "jv": "Apa iku catatan kunjungan vet? Katrangan cekak",
+    "su": "Naon éta catatan kunjungan vet? Katerangan pondok",
+    "zh": "宠物就诊记录是什么？简明解释",
+    "ja": "動物病院の記録とは？短い説明"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Penjelasan singkat apa itu catatan kunjungan vet, arti praktisnya, versi paling kecil yang bisa dipakai, dan cara datanya tersimpan di perangkat.",
+    "en": "A short explanation of what a vet visit log is, what it means in practice, the smallest version you can use, and how the data stays on your device.",
+    "ar": "شرح موجز لمعنى سجلات زيارة الطبيب البيطري، وما يعنيه عملياً، وأصغر نسخة يمكن استخدامها، وكيف تبقى البيانات محفوظة على جهازك.",
+    "ja": "記録の意味を短く解説。動物病院の記録とは何か、実際の意味、最小バージョン、端末に保存される仕組みを説明します。",
+    "zh": "简要说明宠物就诊记录是什么、实际意味着什么、可以先用的最小版本，以及数据如何保存在设备上。",
+    "jv": "Katrangan cekak apa iku catatan kunjungan vet, tegesé ing praktik, versi paling cilik sing bisa dipakai, lan carané data kasimpen ing piranti.",
+    "su": "Katerangan singkat naon éta catatan kunjungan vet, hartina dina prakték, versi paling leutik nu bisa dipaké, jeung kumaha data disimpen dina alat."
+  }
 }

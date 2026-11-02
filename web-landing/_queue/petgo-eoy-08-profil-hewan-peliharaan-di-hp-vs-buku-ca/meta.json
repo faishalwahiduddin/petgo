@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "profil-hewan-peliharaan-di-hp-vs-buku-catatan-praktis",
-    "en": "profil-hewan-peliharaan-on-phone-vs-paper-log-practical",
-    "ar": "profil-hewan-peliharaan-2",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-2",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-2",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-2",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-2"
+    "id": "profil-hewan-peliharaan-catatan-longgar-vs-aplikasi-offline",
+    "en": "pet-profile-loose-notes-vs-an-offline-app",
+    "ar": "mlf-alhywan-alalyf-mlahzat-mtfrqa-am-ttbyq-bla-atsal",
+    "jv": "profil-hewan-peliharaan-cathetan-longgar-utawa-aplikasi-offline",
+    "su": "profil-hewan-peliharaan-catetan-longgar-atawa-aplikasi-offline",
+    "zh": "chong-wu-dang-an-ling-san-bi-ji-yu-li-xian-ying-yong-de-cha-bie",
+    "ja": "petto-no-purofiiru-memo-to-ofurainapuri-no-chigai"
   },
   "titles": {
-    "id": "profil hewan peliharaan: catatan longgar vs aplikasi",
-    "en": "profil hewan peliharaan on Phone vs Paper Log (Practical)",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: profil hewan peliharaan: catatan longgar vs aplikasi",
-    "su": "Pituduh: profil hewan peliharaan: catatan longgar vs aplikasi",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan: catatan longgar vs aplikasi offline",
+    "en": "pet profile: loose notes vs an offline app",
+    "ar": "ملف الحيوان الأليف: ملاحظات متفرقة أم تطبيق بلا اتصال",
+    "jv": "profil hewan peliharaan: cathetan longgar utawa aplikasi offline",
+    "su": "profil hewan peliharaan: catetan longgar atawa aplikasi offline",
+    "zh": "宠物档案：零散笔记与离线应用的差别",
+    "ja": "ペットのプロフィール：メモとオフラインアプリの違い"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Membandingkan profil hewan peliharaan di catatan biasa dengan aplikasi offline, termasuk alasan catatan longgar mudah ditinggalkan dan tinjauan mingguan.",
+    "en": "Comparing a pet profile kept in plain notes with an offline app, covering why loose notes are easy to abandon and how a weekly check helps.",
+    "ar": "مقارنة بين ملف الحيوان الأليف في ملاحظات عادية وتطبيق يعمل بلا اتصال، توضح لماذا تُهجر الملاحظات بسهولة ودور المراجعة الأسبوعية.",
+    "ja": "メモで管理するペットのプロフィールと、オフラインアプリを比較。続かなくなる理由と端末保存を解説します。",
+    "zh": "比较普通笔记与离线应用记录宠物档案的差别，说明笔记为何容易被放弃，以及每周回顾的作用。",
+    "jv": "Mbandhingké profil hewan peliharaan ing cathetan biasa karo aplikasi offline, kalebu sebab cathetan longgar gampang ditinggal lan tinjauan saben minggu.",
+    "su": "Ngabandingkeun profil hewan peliharaan dina catetan biasa jeung aplikasi offline, kaasup alesan catetan longgar gampang ditinggalkeun jeung tinjauan mingguan."
+  }
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "jadwal-perawatan-harian-saat-jadwal-padat-akhir-tahun-offline",
-    "en": "jadwal-perawatan-harian-during-busy-year-end-weeks",
-    "ar": "jadwal-perawatan-harian-9",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-9",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-9",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-9",
-    "ja": "petgojadwal-perawatan-harian-ガイド-9"
+    "id": "jadwal-perawatan-harian-di-musim-paling-ramai",
+    "en": "daily-care-schedule-in-the-busiest-season",
+    "ar": "jdwl-alraaya-alywmy-fy-akthr-almwasm-anshghala",
+    "jv": "jadwal-perawatan-harian-ing-mangsa-paling-rame",
+    "su": "jadwal-perawatan-harian-dina-usum-pangsibukna",
+    "zh": "zui-mang-de-ji-jie-li-de-mei-ri-zhao-hu-shi-jian-biao",
+    "ja": "ichiban-isogashii-jiki-no-mainichi-no-kea-yotei"
   },
   "titles": {
-    "id": "jadwal perawatan harian: panduan praktis di PetGo",
-    "en": "jadwal perawatan harian During Busy Year-End Weeks",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: jadwal perawatan harian: panduan praktis di PetGo",
-    "su": "Pituduh: jadwal perawatan harian: panduan praktis di PetGo",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian di musim paling ramai",
+    "en": "daily care schedule in the busiest season",
+    "ar": "جدول الرعاية اليومي في أكثر المواسم انشغالاً",
+    "jv": "jadwal perawatan harian ing mangsa paling rame",
+    "su": "jadwal perawatan harian dina usum pangsibukna",
+    "zh": "最忙的季节里的每日照护时间表",
+    "ja": "いちばん忙しい時期の毎日のケア予定"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Menjaga jadwal perawatan harian di musim paling ramai dengan versi paling kecil, patokan waktu menjalankannya, dan tinjauan mingguan yang ringan.",
+    "en": "Keeping the daily care schedule going in the busiest season with the smallest version, a timing guide, and a light weekly review.",
+    "ar": "الحفاظ على جدول الرعاية اليومي في أكثر المواسم انشغالاً بأصغر نسخة ممكنة، وتوجيه لوقت التشغيل، ومراجعة أسبوعية خفيفة.",
+    "ja": "最も忙しい時期でも毎日のケア予定を続ける方法。最小バージョン、実行タイミングの目安、軽い週次の見直しを紹介します。",
+    "zh": "在最忙的季节坚持每日照护时间表：用最小版本、执行时间参考和轻量的每周回顾来维持。",
+    "jv": "Njaga jadwal perawatan harian ing mangsa paling rame nganggo versi paling cilik, pathokan wektu dijalanké, lan tinjauan saben minggu sing entheng.",
+    "su": "Ngajaga jadwal perawatan harian di usum pangsibukna nganggo versi paling leutik, patokan waktu dilaksanakeun, jeung tinjauan mingguan nu ringan."
+  }
 }

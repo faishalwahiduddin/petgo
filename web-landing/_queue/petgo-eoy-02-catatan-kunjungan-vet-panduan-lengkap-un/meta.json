@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "catatan-kunjungan-vet-panduan-lengkap-untuk-pemula-praktis",
-    "en": "catatan-kunjungan-vet-complete-beginner-guide-practical",
-    "ar": "catatan-kunjungan-vet",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo",
-    "su": "pituduh-catatan-kunjungan-vet-petgo",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南",
-    "ja": "petgocatatan-kunjungan-vet-ガイド"
+    "id": "rencana-30-hari-untuk-catatan-kunjungan-vet",
+    "en": "a-30-day-plan-for-vet-visit-log",
+    "ar": "khta-thlathyn-ywma-lsjlat-zyara-altbyb-albytry",
+    "jv": "rencana-30-dina-kanggo-catatan-kunjungan-vet",
+    "su": "rencana-30-poe-pikeun-catatan-kunjungan-vet",
+    "zh": "chong-wu-jiu-zhen-ji-lu-de-30-tian-ji-hua",
+    "ja": "doubutsubyouin-no-kiroku-no-30-nichi-puran"
   },
   "titles": {
-    "id": "Cara mencatat catatan kunjungan vet tanpa ribet",
-    "en": "catatan kunjungan vet: Complete Beginner Guide (Practical)",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Cara mencatat catatan kunjungan vet tanpa ribet",
-    "su": "Pituduh: Cara mencatat catatan kunjungan vet tanpa ribet",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "Rencana 30 hari untuk catatan kunjungan vet",
+    "en": "A 30-day plan for vet visit log",
+    "ar": "خطة ثلاثين يوماً لـسجلات زيارة الطبيب البيطري",
+    "jv": "Rencana 30 dina kanggo catatan kunjungan vet",
+    "su": "Rencana 30 poé pikeun catatan kunjungan vet",
+    "zh": "宠物就诊记录的30天计划",
+    "ja": "動物病院の記録の30日プラン"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Rencana 30 hari untuk catatan kunjungan vet di PetGo, dimulai dari langkah kecil dan dilanjutkan dengan tinjauan mingguan untuk memeriksa ritmenya.",
+    "en": "A 30-day plan for vet visit log in PetGo, starting with small steps and carrying on with a weekly check to see whether the rhythm is holding.",
+    "ar": "خطة من ثلاثين يوماً لتنظيم سجلات زيارة الطبيب البيطري في PetGo، تبدأ بخطوات صغيرة وتتابع بمراجعة أسبوعية للتأكد من استمرار الإيقاع.",
+    "ja": "30日で身につける動物病院の記録。小さな一歩から始め、週次の振り返りで続けられているかを確かめます。",
+    "zh": "用30天计划循序渐进地记录宠物就诊，从小步开始，并通过每周回顾检查节奏是否还在坚持。",
+    "jv": "Rencana 30 dina kanggo catatan kunjungan vet ing PetGo, diwiwiti saka langkah cilik lan dilanjutake karo tinjauan saben minggu kanggo mriksa ritmené.",
+    "su": "Rencana 30 poé pikeun catatan kunjungan vet di PetGo, dimimitian ku léngkah leutik jeung dituluykeun ku tinjauan mingguan pikeun meriksa ritmena."
+  }
 }

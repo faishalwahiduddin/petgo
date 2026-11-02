@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "kriteria-memilih-aplikasi-jadwal-perawatan-harian-harian",
-    "en": "criteria-for-choosing-a-jadwal-perawatan-harian-app",
-    "ar": "jadwal-perawatan-harian-19",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-19",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-19",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-19",
-    "ja": "petgojadwal-perawatan-harian-ガイド-19"
+    "id": "jadwal-perawatan-harian-yang-perlu-dicek-sebelum-memilih",
+    "en": "daily-care-schedule-what-to-check-before-you-choose",
+    "ar": "jdwl-alraaya-alywmy-ma-tthqq-mnh-qbl-alakhtyar",
+    "jv": "jadwal-perawatan-harian-sing-kudu-dipriksa-sadurunge-milih",
+    "su": "jadwal-perawatan-harian-anu-kudu-dipariksa-samemeh-milih",
+    "zh": "mei-ri-zhao-hu-shi-jian-biao-xuan-ze-qian-gai-que-ren-shen-me",
+    "ja": "mainichi-no-kea-yotei-erabu-mae-ni-kakuninsu-rukoto"
   },
   "titles": {
-    "id": "Kriteria Memilih Aplikasi jadwal perawatan",
-    "en": "Criteria for Choosing a jadwal perawatan harian App",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Kriteria Memilih Aplikasi jadwal perawatan",
-    "su": "Pituduh: Kriteria Memilih Aplikasi jadwal perawatan",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian: yang perlu dicek sebelum memilih",
+    "en": "daily care schedule: what to check before you choose",
+    "ar": "جدول الرعاية اليومي: ما تتحقق منه قبل الاختيار",
+    "jv": "jadwal perawatan harian: sing kudu dipriksa sadurungé milih",
+    "su": "jadwal perawatan harian: anu kudu dipariksa saméméh milih",
+    "zh": "每日照护时间表：选择前该确认什么",
+    "ja": "毎日のケア予定：選ぶ前に確認すること"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Yang perlu dicek sebelum memilih alat jadwal perawatan harian: kenapa jadwal mudah putus, penyimpanan di perangkat, dan beban tinjauan mingguan.",
+    "en": "What to check before choosing a daily care schedule tool: why schedules break, storage on the device, and how light the weekly review feels.",
+    "ar": "ما تتحقق منه قبل اختيار أداة جدول الرعاية اليومي: لماذا تنقطع الجداول، وموضع الحفظ على الجهاز، وثقل المراجعة الأسبوعية.",
+    "ja": "毎日のケア予定：選ぶ前に確認すること。ツールを決める前に見るべき、途切れる理由、端末保存、毎週の見直し。",
+    "zh": "选择每日照护时间表工具前要检查的事项：为何时间表容易中断，设备端存储，以及每周回顾的负担。",
+    "jv": "Sing kudu dipriksa sadurungé milih piranti jadwal perawatan harian: kenapa jadwal gampang mandheg, panyimpanan ing piranti, lan bobot tinjauan saben minggu.",
+    "su": "Nu kudu dipariksa saméméh milih alat jadwal perawatan harian: naha jadwal gampang putus, panyimpenan dina alat, jeung beban tinjauan mingguan."
+  }
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "jangan-screenshot-sembarangan-log-catatan-kunjungan-vet-mingguan",
-    "en": "don-t-casually-screenshot-catatan-kunjungan-vet-logs",
-    "ar": "catatan-kunjungan-vet-15",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-15",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-15",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-15",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-15"
+    "id": "keamanan-data-catatan-kunjungan-vet-di-ponsel-bagian-2",
+    "en": "where-vet-visit-log-is-stored",
+    "ar": "hmaya-byanat-sjlat-zyara-altbyb-albytry-ala-alhatf-aljz-2",
+    "jv": "keamanan-data-catatan-kunjungan-vet-ing-hp-bagian-2",
+    "su": "kaamanan-data-catatan-kunjungan-vet-dina-hp-bagian-2",
+    "zh": "shou-ji-shang-de-chong-wu-jiu-zhen-ji-lu-shu-ju-an-quan-di-2-pian",
+    "ja": "sumaho-no-doubutsubyouin-no-kiroku-deeta-wo-mamoru-dai-2-kai"
   },
   "titles": {
-    "id": "Jangan Screenshot Sembarangan Log catatan kunjungan vet",
-    "en": "Don&#x27;t Casually Screenshot catatan kunjungan vet Logs — Offline Fi",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Jangan Screenshot Sembarangan Log catatan kunjungan vet",
-    "su": "Pituduh: Jangan Screenshot Sembarangan Log catatan kunjungan vet",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "Keamanan data catatan kunjungan vet di ponsel · bagian 2",
+    "en": "Where vet visit log is stored",
+    "ar": "حماية بيانات سجلات زيارة الطبيب البيطري على الهاتف · الجزء 2",
+    "jv": "Keamanan data catatan kunjungan vet ing HP · bagian 2",
+    "su": "Kaamanan data catatan kunjungan vet dina HP · bagian 2",
+    "zh": "手机上的宠物就诊记录数据安全 · 第2篇",
+    "ja": "スマホの動物病院の記録データを守る · 第2回"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Lanjutan pembahasan keamanan data catatan kunjungan vet di ponsel: di mana catatan disimpan di perangkat, tinjauan mingguan, dan langkah setelah bolong.",
+    "en": "Part 2 on keeping vet visit log data safe on your phone: where the log is stored on the device, the weekly check, and what to do after a gap.",
+    "ar": "الجزء الثاني عن حماية بيانات سجلات زيارة الطبيب البيطري على الهاتف: موضع حفظ السجل على الجهاز، والمراجعة الأسبوعية، وما يُفعل بعد الانقطاع.",
+    "ja": "スマホの動物病院の記録データを守る第2回。記録が端末のどこに保存されるか、毎週の確認、空白の後の対応を解説。",
+    "zh": "保护手机上宠物就诊记录数据的第二篇：记录在设备上的保存位置、每周检查，以及中断后的处理。",
+    "jv": "Lanjutan keamanan data catatan kunjungan vet ing HP: ing ngendi cathetan kasimpen ing piranti, tinjauan saben minggu, lan langkah sawisé bolong.",
+    "su": "Lanjutan ngeunaan kaamanan data catatan kunjungan vet di HP: di mana catatan disimpen dina alat, tinjauan unggal minggu, jeung léngkah sanggeus bolong."
+  }
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "data-profil-hewan-peliharaan-hilang-cek-ini-dulu-praktis",
-    "en": "profil-hewan-peliharaan-data-missing-check-these-first-practical",
-    "ar": "profil-hewan-peliharaan-8",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-8",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-8",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-8",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-8"
+    "id": "profil-hewan-peliharaan-macet-perbaiki-friksi-dulu",
+    "en": "pet-profile-stuck-fix-the-friction-first",
+    "ar": "mlf-alhywan-alalyf-mtwqf-qll-alahtkak-awla",
+    "jv": "profil-hewan-peliharaan-macet-ngurangi-alangan-dhisik",
+    "su": "profil-hewan-peliharaan-macet-kurangan-halangan-heula",
+    "zh": "chong-wu-dang-an-ka-zhu-le-xian-jian-shao-mo-ca",
+    "ja": "petto-no-purofiiru-ga-toma-ttara-mazu-masatsu-wo-hera-su"
   },
   "titles": {
-    "id": "Data profil hewan peliharaan Hilang? Cek Ini Dulu",
-    "en": "profil hewan peliharaan Data Missing? Check These First (Practical)",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Data profil hewan peliharaan Hilang? Cek Ini Dulu",
-    "su": "Pituduh: Data profil hewan peliharaan Hilang? Cek Ini Dulu",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan macet? Perbaiki friksi dulu",
+    "en": "pet profile stuck? Fix the friction first",
+    "ar": "ملف الحيوان الأليف متوقف؟ قلّل الاحتكاك أولاً",
+    "jv": "profil hewan peliharaan macet? Ngurangi alangan dhisik",
+    "su": "profil hewan peliharaan macét? Kurangan halangan heula",
+    "zh": "宠物档案卡住了？先减少摩擦",
+    "ja": "ペットのプロフィールが止まったら、まず摩擦を減らす"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Profil hewan peliharaan yang macet: perbaiki dulu gesekan yang menunda pengisian, pakai versi paling kecil, dan lanjutkan lagi setelah ada jeda.",
+    "en": "A stalled pet profile: fix the friction that delays entries first, use the smallest version, and pick it up again after a break.",
+    "ar": "حين يتوقف ملف الحيوان الأليف عن التحديث: عالج الاحتكاك الذي يؤخر التعبئة أولاً، واستخدم أصغر نسخة، وعُد إلى الملف بعد أي توقف.",
+    "ja": "止まったときの対処。ペットのプロフィールの記入を遅らせる摩擦を先に直し、最小バージョンを使い、空白後に戻る方法。",
+    "zh": "宠物档案卡住时：先消除拖延填写的摩擦，使用最小版本，并在中断后重新回到档案，循序渐进地恢复。",
+    "jv": "Profil hewan peliharaan sing macet: dandani dhisik gesekan sing ngundurké pangisian, nganggo versi paling cilik, lan bali nerusake sawisé ana jeda.",
+    "su": "Profil hewan peliharaan nu macet: benerkeun heula gesekan nu ngahambat ngeusian, pake versi paling leutik, jeung balik deui sanggeus aya jeda."
+  }
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "komunikasi-soal-progres-profil-hewan-peliharaan-praktis",
-    "en": "talking-about-profil-hewan-peliharaan-progress-practical",
-    "ar": "profil-hewan-peliharaan-11",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-11",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-11",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-11",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-11"
+    "id": "profil-hewan-peliharaan-untuk-satu-rumah",
+    "en": "pet-profile-for-the-whole-household",
+    "ar": "mlf-alhywan-alalyf-lkl-afrad-almnzl",
+    "jv": "profil-hewan-peliharaan-kanggo-sakulawarga",
+    "su": "profil-hewan-peliharaan-pikeun-sakulawarga",
+    "zh": "quan-jia-yi-qi-yong-de-chong-wu-dang-an",
+    "ja": "kazoku-minnade-tsukau-petto-no-purofiiru"
   },
   "titles": {
-    "id": "Komunikasi soal Progres profil hewan peliharaan",
-    "en": "Talking About profil hewan peliharaan Progress (Practical)",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Komunikasi soal Progres profil hewan peliharaan",
-    "su": "Pituduh: Komunikasi soal Progres profil hewan peliharaan",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan untuk satu rumah",
+    "en": "pet profile for the whole household",
+    "ar": "ملف الحيوان الأليف لكل أفراد المنزل",
+    "jv": "profil hewan peliharaan kanggo sakulawarga",
+    "su": "profil hewan peliharaan pikeun sakulawarga",
+    "zh": "全家一起用的宠物档案",
+    "ja": "家族みんなで使うペットのプロフィール"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Untuk satu rumah, profil hewan peliharaan dicatat dengan cara meninjau tiap minggu, data di perangkat, dan langkah bila ada catatan bolong.",
+    "en": "Pet profile for a single household, with a weekly review routine, data stored on the device, and steps for when an entry has been missed.",
+    "ar": "ملف الحيوان الأليف لكل أفراد المنزل، مع إيقاع مراجعة أسبوعية، والبيانات المحفوظة على الجهاز، وخطوات التعامل مع السجل المتأخر.",
+    "ja": "家族みんなで使うペットのプロフィール。週次の見直しの進め方、端末に保存される内容、記録が抜けたときの対応。",
+    "zh": "一个家庭共用的宠物档案：每周回顾的做法，设备上保存的数据，以及记录漏掉时的处理步骤。",
+    "jv": "Profil hewan peliharaan kanggo sakulawarga, karo ritme tinjauan saben minggu, data sing kasimpen ing piranti, lan langkah nalika ana cathetan bolong.",
+    "su": "Profil hewan peliharaan pikeun sakumah, kalawan ritme tinjauan unggal minggu, data nu disimpen dina alat, jeung léngkah lamun aya catetan bolong."
+  }
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "7-tips-jadwal-perawatan-harian-yang-paling-berdampak-offline",
-    "en": "7-high-impact-jadwal-perawatan-harian-tips",
-    "ar": "jadwal-perawatan-harian-18",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-18",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-18",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-18",
-    "ja": "petgojadwal-perawatan-harian-ガイド-18"
+    "id": "jadwal-perawatan-harian-daftar-pilihan-yang-masuk-akal",
+    "en": "daily-care-schedule-a-shortlist-that-makes-sense",
+    "ar": "jdwl-alraaya-alywmy-khyarat-qlyla-mntqya",
+    "jv": "jadwal-perawatan-harian-pilihan-sing-cukup-masuk-akal",
+    "su": "jadwal-perawatan-harian-pilihan-anu-asup-akal",
+    "zh": "mei-ri-zhao-hu-shi-jian-biao-zhi-de-kao-lv-de-ji-zhong-xuan-ze",
+    "ja": "mainichi-no-kea-yotei-nattoku-dekiru-sentakushi"
   },
   "titles": {
-    "id": "7 Tips jadwal perawatan harian yang Paling Berdampak",
-    "en": "7 High-Impact jadwal perawatan harian Tips",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: 7 Tips jadwal perawatan harian yang Paling Berdampak",
-    "su": "Pituduh: 7 Tips jadwal perawatan harian yang Paling Berdampak",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian: daftar pilihan yang masuk akal",
+    "en": "daily care schedule: a shortlist that makes sense",
+    "ar": "جدول الرعاية اليومي: خيارات قليلة منطقية",
+    "jv": "jadwal perawatan harian: pilihan sing cukup masuk akal",
+    "su": "jadwal perawatan harian: pilihan anu asup akal",
+    "zh": "每日照护时间表：值得考虑的几种选择",
+    "ja": "毎日のケア予定：納得できる選択肢"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Daftar pilihan jadwal perawatan harian yang masuk akal: versi paling kecil untuk dimulai, kapan menjalankannya, dan tinjauan mingguan sebagai pengecekan.",
+    "en": "A shortlist of daily care schedule options that make sense: the smallest version to start, when to run it, and a weekly review as a check.",
+    "ar": "خيارات قليلة منطقية لجدول الرعاية اليومي: أصغر نسخة للبدء، ووقت التشغيل، ومراجعة أسبوعية تُستخدم كفحص أخير.",
+    "ja": "納得できる選択肢として毎日のケア予定。最初に試す最小バージョン、実行タイミング、確認役としての毎週の見直し。",
+    "zh": "合理的每日照护时间表备选方案：先从最小版本开始，确定执行时机，并以每周回顾作为检查。",
+    "jv": "Dhaftar pilihan jadwal perawatan harian sing masuk akal: versi paling cilik kanggo diwiwiti, kapan dijalanké, lan tinjauan saben minggu minangka pengecekan.",
+    "su": "Daftar pilihan jadwal perawatan harian nu masuk akal: versi paling leutik pikeun dimimitian, iraha dilaksanakeun, jeung tinjauan mingguan salaku pariksa."
+  }
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "kesalahan-umum-saat-jadwal-perawatan-harian-offline",
-    "en": "common-mistakes-when-doing-jadwal-perawatan-harian",
-    "ar": "jadwal-perawatan-harian-3",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-3",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-3",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-3",
-    "ja": "petgojadwal-perawatan-harian-ガイド-3"
+    "id": "kenapa-jadwal-perawatan-harian-sulit-konsisten",
+    "en": "why-daily-care-schedule-habits-break",
+    "ar": "lmadha-ytathr-jdwl-alraaya-alywmy",
+    "jv": "kenapa-jadwal-perawatan-harian-angel-konsisten",
+    "su": "naha-jadwal-perawatan-harian-hese-konsisten",
+    "zh": "wei-shen-me-mei-ri-zhao-hu-shi-jian-biao-zong-shi-nan-yi-jian-chi",
+    "ja": "mainichi-no-kea-yotei-ga-tsuzuka-nai-riyuu"
   },
   "titles": {
-    "id": "Kesalahan Umum saat jadwal perawatan harian",
-    "en": "Common Mistakes When Doing jadwal perawatan harian",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Kesalahan Umum saat jadwal perawatan harian",
-    "su": "Pituduh: Kesalahan Umum saat jadwal perawatan harian",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "Kenapa jadwal perawatan harian sulit konsisten?",
+    "en": "Why daily care schedule habits break",
+    "ar": "لماذا يتعثر جدول الرعاية اليومي؟",
+    "jv": "Kenapa jadwal perawatan harian angel konsisten?",
+    "su": "Naha jadwal perawatan harian hésé konsisten?",
+    "zh": "为什么每日照护时间表总是难以坚持",
+    "ja": "毎日のケア予定が続かない理由"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Penyebab jadwal perawatan harian sulit konsisten, dibahas dari alasan catatan mudah putus, peran versi paling kecil, dan cara kembali setelah ada jeda.",
+    "en": "Why a daily care schedule is hard to keep consistent, covering the reasons habits break, how the smallest version helps, and how to restart after a gap.",
+    "ar": "أسباب تعثر جدول الرعاية اليومي وصعوبة الاستمرار عليه، مع دور أصغر نسخة في تخفيف الضغط وكيفية العودة إلى الجدول بعد فترة انقطاع.",
+    "ja": "毎日のケア予定が続きにくい理由を解説。挫折の原因、最小バージョンの効き目、空白の後に再開する方法を取り上げます。",
+    "zh": "每日照护时间表为何难以坚持：解释习惯中断的原因、最小版本的作用，以及空档之后如何重新开始。",
+    "jv": "Sebab jadwal perawatan harian angel konsisten, dibahas saka alasan cathetan gampang mandheg, peran versi paling cilik, lan carané bali sawisé ana jeda.",
+    "su": "Sabab jadwal perawatan harian hésé konsisten, dibahas tina alesan catetan gampang rusak, peran versi paling leutik, jeung cara balik sanggeus aya jeda."
+  }
 }

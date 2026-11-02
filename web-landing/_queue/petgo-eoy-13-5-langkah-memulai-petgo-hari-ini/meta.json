@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "5-langkah-memulai-petgo-hari-ini",
-    "en": "5-steps-to-start-petgo-today",
-    "ar": "petgo-4",
-    "jv": "pandhuan-petgo-petgo-4",
-    "su": "pituduh-petgo-petgo-4",
-    "zh": "petgo-petgo-实用指南-4",
-    "ja": "petgopetgo-ガイド-4"
+    "id": "catatan-kunjungan-vet-lima-langkah-pertama",
+    "en": "vet-visit-log-the-first-five-steps",
+    "ar": "sjlat-zyara-altbyb-albytry-alkhtwat-alkhms-alawla",
+    "jv": "catatan-kunjungan-vet-limang-langkah-kapisan",
+    "su": "catatan-kunjungan-vet-lima-lengkah-munggaran",
+    "zh": "chong-wu-jiu-zhen-ji-lu-de-tou-wu-ge-bu-zhou",
+    "ja": "doubutsubyouin-no-kiroku-no-saisho-no-5-suteppu"
   },
   "titles": {
-    "id": "5 Langkah Memulai PetGo Hari Ini",
-    "en": "5 Steps to Start PetGo Today",
-    "ar": "PetGo — دليل PetGo",
-    "jv": "Pandhuan: 5 Langkah Memulai PetGo Hari Ini",
-    "su": "Pituduh: 5 Langkah Memulai PetGo Hari Ini",
-    "zh": "PetGo · PetGo 实用指南",
-    "ja": "PetGo｜PetGo ガイド"
+    "id": "catatan kunjungan vet: lima langkah pertama",
+    "en": "vet visit log: the first five steps",
+    "ar": "سجلات زيارة الطبيب البيطري: الخطوات الخمس الأولى",
+    "jv": "catatan kunjungan vet: limang langkah kapisan",
+    "su": "catatan kunjungan vet: lima léngkah munggaran",
+    "zh": "宠物就诊记录的头五个步骤",
+    "ja": "動物病院の記録の最初の5ステップ"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Lima langkah pertama catatan kunjungan vet di PetGo, dari versi paling kecil dan memilih kapan menjalankannya, sampai tinjauan mingguan pertama.",
+    "en": "The first five steps for a vet visit log in PetGo, from the smallest version and choosing when to run it, through to your first weekly check.",
+    "ar": "الخطوات الخمس الأولى لسجلات زيارة الطبيب البيطري في PetGo، من أصغر نسخة واختيار وقت التشغيل، وصولاً إلى أول مراجعة أسبوعية.",
+    "ja": "PetGoで動物病院の記録を始める最初の5ステップ。最小バージョンから、実行タイミングの決め方、最初の週次確認まで。",
+    "zh": "在PetGo中记录宠物就诊的前五个步骤：从最小版本开始，选定记录时间，直到第一次每周检查。",
+    "jv": "Limang langkah kapisan catatan kunjungan vet ing PetGo, wiwit saka versi paling cilik lan milih kapan dijalanké, nganti tinjauan saben minggu sing pisanan.",
+    "su": "Lima léngkah mimiti catatan kunjungan vet di PetGo, dimimitian ti versi paling leutik, milih iraha dilaksanakeun, nepi ka tinjauan mingguan kahiji."
+  }
 }

@@ -79,7 +79,7 @@ class DailyScreen extends ConsumerWidget {
           const SizedBox(height: 8),
           if (logs.isEmpty)
             Text(l10n.dailyEmpty,
-                style: const TextStyle(color: AppColors.inkSoft))
+                style: TextStyle(color: context.textSecondary))
           else
             ...logs.take(30).map(
                   (e) => Card(
@@ -87,9 +87,7 @@ class DailyScreen extends ConsumerWidget {
                     child: ListTile(
                       leading: Icon(_icon(e.kind), color: AppColors.primary),
                       title: Text(_dailyLabel(l10n, e.kind)),
-                      subtitle: Text(
-                        e.date.toLocal().toString().split('.').first,
-                      ),
+                      subtitle: Text(_formatWhen(e.date.toLocal())),
                       onLongPress: () =>
                           ref.read(dailyLogsProvider.notifier).remove(e.id),
                     ),
@@ -122,6 +120,19 @@ class DailyScreen extends ConsumerWidget {
         ],
       ),
     );
+  }
+
+  /// Timeline stamp: time only for today, date + time for older entries.
+  /// Raw `DateTime.toString()` leaked microseconds into the row.
+  String _formatWhen(DateTime d) {
+    final now = DateTime.now();
+    final hh = d.hour.toString().padLeft(2, '0');
+    final mm = d.minute.toString().padLeft(2, '0');
+    final sameDay = d.year == now.year && d.month == now.month && d.day == now.day;
+    if (sameDay) return '$hh:$mm';
+    final mo = d.month.toString().padLeft(2, '0');
+    final dd = d.day.toString().padLeft(2, '0');
+    return '${d.year}-$mo-$dd · $hh:$mm';
   }
 
   IconData _icon(DailyCareKind k) => switch (k) {

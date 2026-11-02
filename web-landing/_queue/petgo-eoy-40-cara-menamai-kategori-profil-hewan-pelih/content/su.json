@@ -1,0 +1,85 @@
+{
+  "title": "profil hewan peliharaan diwincik tanpa muter-muter",
+  "description": "Pedaran profil hewan peliharaan tanpa muter-muter: hartina dina prakték, versi paling leutik, jeung bagian panyimpenan dina alat nu perlu dipahami.",
+  "badge": "kulawarga · offline",
+  "answer": "Di grup kulawarga tilu urang nanya profil hewan peliharaan, jeung teu aya jawaban anu sarua. PetGo nyimpen profil hewan peliharaan dina alat, jadi tetep kabuka tanpa kuota jeung tanpa akun.",
+  "toc": [
+    "Hartina profil hewan peliharaan dina prakték",
+    "Versi pangleutikna",
+    "Kasimpen dina alat"
+  ],
+  "sections": [
+    {
+      "h2": "Hartina profil hewan peliharaan dina prakték",
+      "p": "Dina praktékna, profil hewan peliharaan téh bukti tanggalan anu bisa dibuka deui—lain niat anu ngan diinget-inget.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Versi pangleutikna",
+      "p": "Hiji baris per anggota: status, tanggal, hiji hal anu kudu ditindak.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Kasimpen dina alat",
+      "p": "PetGo nyimpen profil hewan peliharaan dina alat, jadi tetep kabuka tanpa kuota jeung tanpa akun.",
+      "h3": null,
+      "p3": null
+    }
+  ],
+  "table": {
+    "caption": "Rangka profil hewan peliharaan",
+    "headers": [
+      "Léngkah",
+      "Eusi minimal",
+      "Bérés lamun"
+    ],
+    "rows": [
+      [
+        "Baris anggota",
+        "status + tanggal",
+        "bisa ditinjau"
+      ],
+      [
+        "Pananda",
+        "posisi panungtungan",
+        "bisa diteruskeun isukan"
+      ],
+      [
+        "Evaluasi minggu",
+        "hiji panyesuaian",
+        "diterapkeun Senén"
+      ]
+    ]
+  },
+  "list": [
+    "Tangtukeun hiji waktu tetep, lain “mun sempet”.",
+    "Buka PetGo basa waktu éta datang, ulah engké peuting.",
+    "Catet hiji halangan, lain alesan panjang.",
+    "Cadangkeun data saméméh ganti HP."
+  ],
+  "faqs": [
+    [
+      "Naha profil hewan peliharaan bisa dibuka offline?",
+      "Bisa. PetGo nyimpen kabéh dina alat, jadi teu butuh kuota."
+    ],
+    [
+      "Kudu akun heula?",
+      "Teu. Mimitian tanpa login; cadangkeun data sakapeung."
+    ],
+    [
+      "Mimitian ti mana?",
+      "Ti bagian pangpondokna. Tambahan yén geus dua minggu stabil."
+    ],
+    [
+      "Lamun bolong sababaraha poé?",
+      "Ulah mupus riwayat. Teraskeun tina catetan panungtungan jeung catet hiji halangan."
+    ]
+  ],
+  "cta": [
+    "Mimitian profil hewan peliharaan poé ieu",
+    "Buka PetGo"
+  ],
+  "slug": "pituduh-profil-hewan-peliharaan-petgo-10"
+}

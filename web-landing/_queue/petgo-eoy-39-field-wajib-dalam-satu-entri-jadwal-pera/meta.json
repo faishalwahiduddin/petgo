@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "field-wajib-dalam-satu-entri-jadwal-perawatan-harian-harian",
-    "en": "required-fields-in-one-jadwal-perawatan-harian-entry",
-    "ar": "jadwal-perawatan-harian-10",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-10",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-10",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-10",
-    "ja": "petgojadwal-perawatan-harian-ガイド-10"
+    "id": "jadwal-perawatan-harian-secara-mendalam-tanpa-muter-muter",
+    "en": "daily-care-schedule-explained-without-the-runaround",
+    "ar": "jdwl-alraaya-alywmy-bshrh-mbashr-bla-lf",
+    "jv": "jadwal-perawatan-harian-kanthi-jero-tanpa-mubeng-mubeng",
+    "su": "jadwal-perawatan-harian-diwincik-tanpa-muter-muter",
+    "zh": "mei-ri-zhao-hu-shi-jian-biao-shen-ru-jiang-qing-chu",
+    "ja": "mainichi-no-kea-yotei-wo-toomawari-sezuni-shin-hori"
   },
   "titles": {
-    "id": "Field Wajib dalam Satu Entri jadwal perawatan",
-    "en": "Required Fields in One jadwal perawatan harian Entry",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Field Wajib dalam Satu Entri jadwal perawatan",
-    "su": "Pituduh: Field Wajib dalam Satu Entri jadwal perawatan",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian secara mendalam tanpa muter-muter",
+    "en": "daily care schedule, explained without the runaround",
+    "ar": "جدول الرعاية اليومي بشرح مباشر بلا لفّ",
+    "jv": "jadwal perawatan harian kanthi jero tanpa mubeng-mubeng",
+    "su": "jadwal perawatan harian diwincik tanpa muter-muter",
+    "zh": "每日照护时间表深入讲清楚",
+    "ja": "毎日のケア予定を遠回りせずに深掘り"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Pembahasan mendalam jadwal perawatan harian yang langsung ke inti: arti praktisnya, versi paling kecil untuk dimulai, dan cara datanya disimpan di perangkat.",
+    "en": "A deep dive into the daily care schedule that gets straight to the point: what it means in practice, the smallest version, and how data is stored.",
+    "ar": "شرح مباشر ومعمّق لجدول الرعاية اليومي: معناه العملي، وأصغر نسخة للبدء، وكيف تُحفظ البيانات على الجهاز من دون لفّ أو دوران.",
+    "ja": "遠回りなしに深掘り。毎日のケア予定の実践での意味、始めるための最小バージョン、データの保存方法を解説します。",
+    "zh": "直接切入要点的每日照护时间表深入讲解：实际意义、用来起步的最小版本，以及数据保存方式。",
+    "jv": "Pembahasan jero jadwal perawatan harian sing langsung ing intine: tegesé ing praktik, versi paling cilik kanggo miwiti, lan carané data kasimpen.",
+    "su": "Pedaran jero jadwal perawatan harian nu langsung ka inti: hartina dina prakték, versi paling leutik pikeun mimitian, jeung cara data disimpen."
+  }
 }

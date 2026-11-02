@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "checklist-jadwal-perawatan-harian-harian-yang-bisa-ditiru-harian",
-    "en": "daily-jadwal-perawatan-harian-checklist-you-can-copy",
-    "ar": "jadwal-perawatan-harian",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo",
-    "su": "pituduh-jadwal-perawatan-harian-petgo",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南",
-    "ja": "petgojadwal-perawatan-harian-ガイド"
+    "id": "checklist-jadwal-perawatan-harian-untuk-satu-layar",
+    "en": "a-one-screen-daily-care-schedule-checklist",
+    "ar": "qaima-jdwl-alraaya-alywmy-fy-shasha-wahda",
+    "jv": "dhaftar-priksa-jadwal-perawatan-harian-mung-siji-layar",
+    "su": "daptar-pariksa-jadwal-perawatan-harian-dina-hiji-layar",
+    "zh": "yi-ye-zhi-de-mei-ri-zhao-hu-shi-jian-biao-qing-dan",
+    "ja": "1-gamen-de-owa-ru-mainichi-no-kea-yotei-chekkurisuto"
   },
   "titles": {
-    "id": "Checklist jadwal perawatan harian Harian yang Bisa Ditiru",
-    "en": "Daily jadwal perawatan harian Checklist You Can Copy",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Checklist jadwal perawatan harian Harian yang Bisa Ditiru",
-    "su": "Pituduh: Checklist jadwal perawatan harian Harian yang Bisa Ditiru",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "Checklist jadwal perawatan harian untuk satu layar",
+    "en": "A one-screen daily care schedule checklist",
+    "ar": "قائمة جدول الرعاية اليومي في شاشة واحدة",
+    "jv": "Dhaftar priksa jadwal perawatan harian mung siji layar",
+    "su": "Daptar pariksa jadwal perawatan harian dina hiji layar",
+    "zh": "一页纸的每日照护时间表清单",
+    "ja": "1画面で終わる毎日のケア予定チェックリスト"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Checklist jadwal perawatan harian yang muat di satu layar: versi paling kecil untuk memulai, kapan menjalankannya setiap hari, dan tinjauan mingguan.",
+    "en": "A one-screen daily care schedule checklist: the smallest version to start, when to run it each day, and the weekly review to keep it steady.",
+    "ar": "قائمة مرجعية لجدول الرعاية اليومي تتسع لشاشة واحدة: أصغر نسخة للبدء، ووقت تشغيلها كل يوم، ومراجعة أسبوعية تحافظ على الانتظام.",
+    "ja": "1画面で終わる毎日のケア予定チェックリスト。最小バージョン、毎日の実行タイミング、週次の確認をまとめました。",
+    "zh": "一页纸的每日照护时间表清单：最小版本的起步方式、每天何时执行，以及每周检查要点。",
+    "jv": "Dhaftar priksa jadwal perawatan harian sing muat ing siji layar: versi paling cilik kanggo miwiti, kapan dijalanké saben dina, lan tinjauan saben minggu.",
+    "su": "Daptar pariksa jadwal perawatan harian nu muat dina hiji layar: versi paling leutik pikeun mimitian, iraha dilaksanakeunana unggal poé, jeung tinjauan mingguan."
+  }
 }

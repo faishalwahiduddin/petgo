@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Halaman Tidak Ditemukan | PetGo</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="Halaman yang Anda cari tidak ditemukan atau telah dipindahkan. Kembali ke beranda PetGo.">
+
+    <!-- Favicon Links -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        :root {
+            --primary: #059669;
+            --secondary: #34D399;
+            --accent: #F59E0B;
+            --bg-dark: #022C22;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --accent-rgb: 245, 158, 11;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 15% 20%, rgba(var(--accent-rgb), 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 85% 80%, rgba(var(--accent-rgb), 0.06) 0%, transparent 40%);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            background-color: rgba(10, 15, 25, 0.7);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 72px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+
+        .brand-logo-wrap {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .brand-logo-wrap svg, .brand-logo-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .brand-name {
+            font-size: 19px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff 40%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .nav-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--text-main);
+        }
+
+        /* 404 Main Content */
+        .error-main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 24px;
+        }
+
+        .error-card {
+            max-width: 720px;
+            width: 100%;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 28px;
+            padding: 56px 40px;
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            text-align: center;
+            position: relative;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 50px rgba(var(--accent-rgb), 0.08);
+        }
+
+        .error-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 999px;
+            background: rgba(var(--accent-rgb), 0.12);
+            border: 1px solid rgba(var(--accent-rgb), 0.35);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .error-code {
+            font-size: clamp(80px, 16vw, 130px);
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -3px;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #ffffff 30%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 10px 30px rgba(var(--accent-rgb), 0.2);
+        }
+
+        .error-title {
+            font-size: clamp(22px, 4vw, 30px);
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 14px;
+            line-height: 1.3;
+        }
+
+        .error-desc {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            max-width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .error-desc strong {
+            color: var(--text-main);
+        }
+
+        /* Actions */
+        .error-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 36px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 13px 24px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #0b1120;
+            box-shadow: 0 8px 20px rgba(var(--accent-rgb), 0.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(var(--accent-rgb), 0.4);
+            filter: brightness(1.08);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-main);
+            border: 1px solid var(--glass-border);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Divider & Store Section */
+        .error-divider {
+            height: 1px;
+            background: var(--glass-border);
+            margin: 28px 0;
+            position: relative;
+        }
+
+        .error-divider span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--bg-dark);
+            padding: 0 14px;
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .store-quick-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .store-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 18px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 13px;
+            transition: all 0.25s ease;
+        }
+
+        .store-btn:hover:not(.disabled) {
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .store-btn.disabled {
+            opacity: 0.65;
+            cursor: default;
+        }
+
+        .store-btn-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            line-height: 1.2;
+        }
+
+        .store-btn-text span {
+            font-size: 10px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .store-btn-text strong {
+            font-size: 13px;
+            color: #ffffff;
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--glass-border);
+            background-color: rgba(10, 15, 25, 0.5);
+            padding: 24px 0;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--text-main);
+        }
+
+        @media (max-width: 640px) {
+            .error-card {
+                padding: 40px 20px;
+            }
+            .error-actions {
+                flex-direction: column;
+            }
+            .error-actions .btn {
+                width: 100%;
+            }
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="/id/" class="brand">
+                <div class="brand-logo-wrap">
+                    <svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient: Deep Royal Emerald / Companion Forest -->
+    <linearGradient id="pgBg" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+
+    <!-- Radiant Mint-Sage Ambient Glow -->
+    <radialGradient id="pgGlow" cx="420" cy="340" r="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6EE7B7" stop-opacity="0.45"/>
+      <stop offset="45%" stop-color="#34D399" stop-opacity="0.18"/>
+      <stop offset="85%" stop-color="#047857" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Edge Vignette -->
+    <radialGradient id="pgVignette" cx="512" cy="512" r="740" gradientUnits="userSpaceOnUse">
+      <stop offset="65%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.32"/>
+    </radialGradient>
+
+    <!-- 24K Polished Gold Pet Crest / Liontin Jejak Kaki Emas -->
+    <linearGradient id="pgGold" x1="512" y1="200" x2="512" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="85%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+
+    <!-- Crisp Ivory White / Pego Chest White -->
+    <linearGradient id="pgWhite" x1="512" y1="180" x2="512" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0FDF4"/>
+    </linearGradient>
+
+    <!-- Sage Green Bandana Collar Accent -->
+    <linearGradient id="pgSage" x1="300" y1="200" x2="724" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="50%" stop-color="#5B7F5A"/>
+      <stop offset="100%" stop-color="#3E5A3D"/>
+    </linearGradient>
+
+    <!-- Warm Corgi Fur Accent -->
+    <linearGradient id="pgWarm" x1="300" y1="200" x2="724" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#D4A373"/>
+      <stop offset="100%" stop-color="#A16207"/>
+    </linearGradient>
+
+    <!-- Inner Shield Inset (Emerald Night) -->
+    <linearGradient id="pgDeepEmerald" x1="512" y1="260" x2="512" y2="780" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="pgShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="28" stdDeviation="30" flood-color="#021C16" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+    <filter id="pawShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#022C22" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Top Gloss Sheen -->
+    <linearGradient id="pgSheen" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="pgClip"><rect width="1024" height="1024" rx="0"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#pgClip)">
+    <!-- Background Plates -->
+    <rect width="1024" height="1024" fill="url(#pgBg)"/>
+    <rect width="1024" height="1024" fill="url(#pgGlow)"/>
+    <rect width="1024" height="1024" fill="url(#pgVignette)"/>
+
+    <!-- ==================== HERO PET CARE CREST & GOLDEN PAW MEDAL ==================== -->
+    <g filter="url(#pgShadow)">
+      <!-- Corgi Companion Rounded Ears Silhouette at the top of crest -->
+      <!-- Left Corgi Ear -->
+      <path d="M 330 290 C 270 190 330 110 400 160 C 440 190 440 260 410 320 Z" 
+            fill="url(#pgWarm)"/>
+      <path d="M 346 270 C 304 200 344 146 390 180 C 418 202 418 250 398 290 Z" 
+            fill="url(#pgWhite)" opacity="0.4"/>
+
+      <!-- Right Corgi Ear -->
+      <path d="M 694 290 C 754 190 694 110 624 160 C 584 190 584 260 614 320 Z" 
+            fill="url(#pgWarm)"/>
+      <path d="M 678 270 C 720 200 680 146 634 180 C 606 202 606 250 626 290 Z" 
+            fill="url(#pgWhite)" opacity="0.4"/>
+
+      <!-- Outer Protective Care Shield / Medal Frame -->
+      <path d="M 512 210 Q 750 210 750 430 C 750 640 512 830 512 830 C 512 830 274 640 274 430 Q 274 210 512 210 Z" 
+            fill="url(#pgGold)"/>
+
+      <!-- Shield Inner Deep Field -->
+      <path d="M 512 238 Q 722 238 722 436 C 722 626 512 798 512 798 C 512 798 302 626 302 436 Q 302 238 512 238 Z" 
+            fill="url(#pgDeepEmerald)"/>
+
+      <!-- Sage Green Bandana Collar Arch across top -->
+      <path d="M 314 340 Q 512 400 710 340 L 718 388 Q 512 452 306 388 Z" 
+            fill="url(#pgSage)"/>
+      <circle cx="512" cy="414" r="16" fill="url(#pgGold)"/>
+    </g>
+
+    <!-- ==================== HERO GOLDEN PAW EMBLEM (CENTER) ==================== -->
+    <g filter="url(#pawShadow)">
+      <!-- 4 Rounded Toe Pads -->
+      <!-- Toe 1 (Far Left) -->
+      <ellipse cx="396" cy="466" rx="34" ry="46" transform="rotate(-24 396 466)" fill="url(#pgGold)"/>
+      <!-- Toe 2 (Center Left) -->
+      <ellipse cx="468" cy="426" rx="36" ry="50" transform="rotate(-8 468 426)" fill="url(#pgGold)"/>
+      <!-- Toe 3 (Center Right) -->
+      <ellipse cx="556" cy="426" rx="36" ry="50" transform="rotate(8 556 426)" fill="url(#pgGold)"/>
+      <!-- Toe 4 (Far Right) -->
+      <ellipse cx="628" cy="466" rx="34" ry="46" transform="rotate(24 628 466)" fill="url(#pgGold)"/>
+
+      <!-- Central Main Palm Pad (Heart-Curved Paw Base) -->
+      <path d="M 512 524 C 440 524 390 564 390 626 C 390 682 434 722 512 722 C 590 722 634 682 634 626 C 634 564 584 524 512 524 Z" 
+            fill="url(#pgGold)"/>
+
+      <!-- Embedded Veterinary Care Cross in Center of Main Pad -->
+      <path d="M 494 572 L 530 572 L 530 608 L 566 608 L 566 644 L 530 644 L 530 680 L 494 680 L 494 644 L 458 644 L 458 608 L 494 608 Z" 
+            fill="url(#pgWhite)"/>
+
+      <!-- Inner Pad Highlight Specular -->
+      <circle cx="440" cy="570" r="12" fill="#FFFFFF" opacity="0.6"/>
+      <circle cx="472" cy="406" r="8" fill="#FFFFFF" opacity="0.7"/>
+      <circle cx="552" cy="406" r="8" fill="#FFFFFF" opacity="0.7"/>
+    </g>
+
+    <!-- Milestone Care Sparkles -->
+    <g transform="translate(240, 310)">
+      <path d="M 0 -36 Q 0 0 36 0 Q 0 0 0 36 Q 0 0 -36 0 Q 0 0 0 -36 Z" fill="#FEF08A"/>
+    </g>
+    <g transform="translate(784, 310)">
+      <path d="M 0 -36 Q 0 0 36 0 Q 0 0 0 36 Q 0 0 -36 0 Q 0 0 0 -36 Z" fill="#FEF08A"/>
+    </g>
+
+    <!-- Top Gloss Sheen -->
+    <rect width="1024" height="340" fill="url(#pgSheen)"/>
+  </g>
+</svg>
+
+                </div>
+                <span class="brand-name">PetGo</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/id/" class="nav-link">🇮🇩 Indonesia</a>
+                <a href="/en/" class="nav-link">🇺🇸 English</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="error-main">
+        <div class="error-card">
+            <div class="error-badge">
+                <span>⚠️</span> 404 Error • Page Not Found
+            </div>
+            <div class="error-code">404</div>
+            <h1 class="error-title">Halaman Tidak Ditemukan</h1>
+            <p class="error-desc">
+                Halaman yang Anda tuju mungkin salah ketik, telah dipindahkan, atau tidak lagi tersedia.<br>
+                <em style="color: var(--text-muted); font-size: 13px;">The page you requested could not be found or may have been moved.</em>
+            </p>
+
+            <div class="error-actions">
+                <a href="/id/" class="btn btn-primary" id="btn-home">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Kembali ke Beranda
+                </a>
+                <a href="/en/" class="btn btn-secondary">
+                    View English Version
+                </a>
+                <a href="/id/#features" class="btn btn-secondary">
+                    Fitur Aplikasi
+                </a>
+                <a href="/id/blog/" class="btn btn-secondary">Artikel Blog</a>
+            </div>
+
+            <div class="error-divider">
+                <span>Atau Pasang Aplikasi</span>
+            </div>
+
+            <div class="store-quick-links">
+                <a href="https://play.google.com/store/apps/details?id=id.faishal.petgo&utm_source=faishal.id&utm_medium=404&utm_campaign=store_referral" class="store-btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 512 512" class="store-icon" width="22" height="22">
+                <path fill="#f57c00" d="M12 28.5L248 264.5L12 500.5C9.5 498 8 493 8 485.5V54.5C8 47 9.5 42 12 28.5Z"/>
+                <path fill="#ffb74d" d="M374 138.5L248 264.5L12 28.5C16.5 24 23 23 30.5 27.5L374 138.5Z"/>
+                <path fill="#f57c00" d="M374 390.5L30.5 497.5C23 502 16.5 501 12 496.5L248 264.5L374 390.5Z"/>
+                <path fill="#ffa726" d="M500 221.5L403.5 166.5L374 138.5L248 264.5L374 390.5L403.5 362.5L500 307.5C508 303 512 293 512 285.5C512 278 508 268 500 221.5Z"/>
+            </svg>
+            <div class="store-btn-text">
+                <span>Dapatkan di</span>
+                <strong>Google Play</strong>
+            </div>
+        </a>
+                <a href="https://www.amazon.com/dp/B0HPS6PPV9" class="store-btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 512 512" class="store-icon" width="22" height="22" fill="#FF9900">
+                <path d="M312.4 344c-28.2 21.3-70.6 32.7-106.1 32.7-49.8 0-94.8-18.4-128.7-49.2-3.8-3.4-3.8-9.1 0-12.5 7.6-6.8 16.4-13.7 25.1-19.8 3.8-2.7 8.4-2.7 12.2.8 26.6 24.3 60.1 38.8 95.9 38.8 27.4 0 58.7-8.4 81.5-24.3 4.6-3 10.7-.8 13.7 3.8 3.8 5.3 8.4 11.4 12.2 16.7 3 4.6 2.3 10.7-1.5 13.7zM337.5 315.1c-3.8-5.3-19-2.3-38.1 4.6-5.3 1.5-6.1-3-1.5-6.1 16-10.7 42.6-7.6 45.7-3.8 3.8 4.6.8 31.2-14.5 42.6-4.6 3.4-8.4.8-6.1-3.8 7.6-15.2 18.2-33.5 14.5-33.5zM279.7 137.6c-48.7 3.8-84.5 32.7-84.5 83.7 0 51 32.7 75.3 75.3 75.3 35.8 0 57.8-19 66.2-32.7l3 19.8c1.5 7.6 6.8 12.2 14.5 12.2h28.2c7.6 0 12.9-6.1 11.4-13.7l-26.6-140.7c-2.3-12.9-10.7-19.8-23.6-20.5-23.6-1.5-45.7-3.4-63.9-3.4zm10.7 131.6c-24.3 0-41.9-14.5-41.9-38.8 0-25.1 19-39.6 44.9-42.6 15.2-1.5 28.2-1.5 36.5 0l11.4 63.9c-12.2 11.4-29.7 17.5-50.9 17.5z"/>
+            </svg>
+            <div class="store-btn-text">
+                <span>Dapatkan di</span>
+                <strong>Amazon Appstore</strong>
+            </div>
+        </a>
+                <div class="store-btn disabled" id="app-store-btn">
+                    <svg viewBox="0 0 512 512" class="store-icon" width="22" height="22" fill="currentColor">
+                        <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-91.9-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-14.9 69.5-34.3z"/>
+                    </svg>
+                    <div class="store-btn-text">
+                        <span>Segera Hadir di</span>
+                        <strong>App Store</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 faishal.id. Hak cipta dilindungi undang-undang.</p>
+            <div class="footer-links">
+                <a href="https://faishal.id" class="footer-link">faishal.id Hub</a>
+                <a href="/id/" class="footer-link">Beranda</a>
+                <a href="/id/privacy.html" class="footer-link">Kebijakan Privasi</a>
+                <a href="/id/terms.html" class="footer-link">Syarat &amp; Ketentuan</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Automatic locale detection for smart recovery
+        (function() {
+            try {
+                var path = window.location.pathname || '';
+                if (path.indexOf('/en/') === 0) {
+                    var btn = document.getElementById('btn-home');
+                    if (btn) {
+                        btn.href = '/en/';
+                        btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Back to Home';
+                    }
+                }
+            } catch(e) {}
+        })();
+    </script>
+</body>
+</html>

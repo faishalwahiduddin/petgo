@@ -12,271 +12,329 @@ class AppLocalizationsJv extends AppLocalizations {
   String get appTitle => 'PetGo';
 
   @override
-  String get navPets => 'Pets';
+  String get appTagline => 'Profil kewan, jadwal rumatan & cathetan padinan';
 
   @override
-  String get navCare => 'Care';
+  String get navPets => 'Kewan';
 
   @override
-  String get navDaily => 'Daily';
+  String get navCare => 'Ngrumat';
 
   @override
-  String get navDocs => 'Docs';
+  String get navDaily => 'Padinan';
 
   @override
-  String get navSettings => 'Settings';
+  String get navDocs => 'Layang';
+
+  @override
+  String get navSettings => 'Pangaturan';
 
   @override
   String get onboardingHeadline => 'PetGo';
 
   @override
   String get onboardingDescription =>
-      'Manage pet profiles, vaccine/deworm schedules, vet visits, and daily care offline on your device.\n\nNo account. Data stays local.';
+      'Ngatur profil kewan, jadwal vaksin lan tamba cacing, kunjungan menyang dhokter kewan, lan cathetan padinan — kabeh offline ing piranti panjenengan.\n\nTanpa akun. Data ora tau metu saka piranti.';
 
   @override
-  String get onboardingContinue => 'I understand — continue';
+  String get onboardingContinue => 'Ngerti — terasna';
 
   @override
-  String get homeActivePet => 'Active pet';
+  String get onbSkip => 'Liwati';
 
   @override
-  String get homeNoPets => 'No pets yet. Add a profile first.';
+  String get onbNext => 'Terusake';
 
   @override
-  String get homeDueSoon => 'Due / soon';
+  String get onbGetStarted => 'Wiwiti saiki';
 
   @override
-  String get homeNoDue => 'Nothing urgent.';
+  String get onbSlide1Title => 'Profil kewan';
 
   @override
-  String get homeAllPets => 'All pets';
+  String get onbSlide1Sub => 'Asu, kucing, lan liya-liyane';
 
   @override
-  String get actionAddPet => 'Add pet';
+  String get onbSlide1Badge => '100% offline lan ora dilacak';
 
   @override
-  String get actionAddSchedule => 'Add schedule';
+  String get onbSlide2Title => 'Jadwal rumatan';
 
   @override
-  String get actionAddVet => 'Log vet visit';
+  String get onbSlide2Sub => 'Vaksin, tamba cacing, kutu, lan rawat wulu';
 
   @override
-  String get actionAddWeight => 'Log weight';
+  String get onbSlide2Badge => 'Pangeling lokal';
 
   @override
-  String get actionAddDoc => 'Add document';
+  String get onbSlide3Title => 'Cathetan padinan';
 
   @override
-  String get actionSave => 'Save';
+  String get onbSlide3Sub => 'Mangan, mlaku-mlaku, lan kothak pasir';
 
   @override
-  String get actionCancel => 'Cancel';
+  String get onbSlide3Badge => 'Ora ana iklan lan ora perlu akun';
 
   @override
-  String get speciesDog => 'Dog';
+  String get onbSlide4Title => 'Layang lokal';
 
   @override
-  String get speciesCat => 'Cat';
+  String get onbSlide4Sub => 'Kertu vaksin lan resep disimpen rapi';
 
   @override
-  String get speciesBird => 'Bird';
+  String get onbSlide4Badge => 'Data ing piranti';
 
   @override
-  String get speciesRabbit => 'Rabbit';
+  String get onbPrivacyHeadline => 'Privasi lan offline kajaga';
 
   @override
-  String get speciesOther => 'Other';
+  String get onbPrivacyDetail =>
+      'Kabeh data disimpen kanthi aman ing piranti panjenengan, ora ana pelacak.';
 
   @override
-  String get fieldPetName => 'Name';
+  String get loadingLabel => 'Ngemot…';
 
   @override
-  String get fieldSpecies => 'Species';
+  String get homeActivePet => 'Kewan aktif';
 
   @override
-  String get fieldBreed => 'Breed';
+  String get homeNoPets => 'Durung ana kewan. Tambahake profil dhisik.';
 
   @override
-  String get fieldWeightKg => 'Weight (kg)';
+  String get homeDueSoon => 'Wis wayahe & enggal';
 
   @override
-  String get fieldTitle => 'Title';
+  String get homeNoDue => 'Ora ana jadwal sing meksa.';
 
   @override
-  String get fieldIntervalMonths => 'Interval (months)';
+  String get homeAllPets => 'Kabeh kewan';
 
   @override
-  String get fieldClinic => 'Clinic';
+  String get actionAddPet => 'Nambah kewan';
 
   @override
-  String get fieldMedication => 'Medication';
+  String get actionAddSchedule => 'Nambah jadwal';
 
   @override
-  String get careSchedulesTitle => 'Care schedules';
+  String get actionAddVet => 'Nyathet dhokter';
 
   @override
-  String get vetLogsTitle => 'Vet & meds';
+  String get actionAddWeight => 'Nyathet bobot';
 
   @override
-  String get careEmptySchedules => 'No schedules yet.';
+  String get actionAddDoc => 'Nambah layang';
 
   @override
-  String get careEmptyVet => 'No vet logs yet.';
+  String get actionSave => 'Simpen';
 
   @override
-  String get careVaccine => 'Vaccine';
+  String get actionCancel => 'Ora sida';
 
   @override
-  String get careDeworm => 'Deworm';
+  String get speciesDog => 'Asu';
 
   @override
-  String get careFlea => 'Flea';
+  String get speciesCat => 'Kucing';
 
   @override
-  String get careGrooming => 'Grooming';
+  String get speciesBird => 'Manuk';
 
   @override
-  String get careOther => 'Other';
+  String get speciesRabbit => 'Terwelu';
+
+  @override
+  String get speciesOther => 'Liyane';
+
+  @override
+  String get fieldPetName => 'Jeneng';
+
+  @override
+  String get fieldSpecies => 'Jinis';
+
+  @override
+  String get fieldBreed => 'Turunan';
+
+  @override
+  String get fieldWeightKg => 'Bobot (kg)';
+
+  @override
+  String get fieldTitle => 'Judhul';
+
+  @override
+  String get fieldIntervalMonths => 'Sela wektu (sasi)';
+
+  @override
+  String get fieldClinic => 'Panggonan dhokter';
+
+  @override
+  String get fieldMedication => 'Tamba';
+
+  @override
+  String get careSchedulesTitle => 'Jadwal rumatan';
+
+  @override
+  String get vetLogsTitle => 'Kunjungan lan tamba';
+
+  @override
+  String get careEmptySchedules => 'Durung ana jadwal.';
+
+  @override
+  String get careEmptyVet => 'Durung ana cathetan dhokter.';
+
+  @override
+  String get careVaccine => 'Vaksin';
+
+  @override
+  String get careDeworm => 'Tamba cacing';
+
+  @override
+  String get careFlea => 'Kutu & caplak';
+
+  @override
+  String get careGrooming => 'Rawat wulu';
+
+  @override
+  String get careOther => 'Liyane';
 
   @override
   String everyMonths(int months) {
-    return 'every $months mo';
+    return 'saben $months sasi';
   }
 
   @override
   String daysRemaining(int days) {
-    return '$days days left';
+    return '$days dina maneh';
   }
 
   @override
-  String get urgencyOverdue => 'Overdue';
+  String get urgencyOverdue => 'Keliwat';
 
   @override
-  String get dailyQuickAdd => 'Quick log';
+  String get dailyQuickAdd => 'Cathet cepet';
 
   @override
-  String get dailyTimeline => 'Timeline';
+  String get dailyTimeline => 'Garis wektu';
 
   @override
-  String get dailyEmpty => 'No daily logs yet.';
+  String get dailyEmpty => 'Durung ana cathetan padinan.';
 
   @override
-  String get dailyFeed => 'Feed';
+  String get dailyFeed => 'Mangan';
 
   @override
-  String get dailyWalk => 'Walk';
+  String get dailyWalk => 'Mlaku-mlaku';
 
   @override
-  String get dailyLitter => 'Litter';
+  String get dailyLitter => 'Kothak pasir';
 
   @override
-  String get dailyOther => 'Other';
+  String get dailyOther => 'Liyane';
 
   @override
-  String get weightHistory => 'Weight history';
+  String get weightHistory => 'Riwayat bobot';
 
   @override
-  String get docsEmpty => 'No documents yet.';
+  String get docsEmpty => 'Durung ana layang.';
 
   @override
-  String get docVaccineCard => 'Vaccine card';
+  String get docVaccineCard => 'Kertu vaksin';
 
   @override
-  String get docPrescription => 'Prescription';
+  String get docPrescription => 'Resep dhokter';
 
   @override
-  String get docInsurance => 'Insurance';
+  String get docInsurance => 'Asuransi kewan';
 
   @override
-  String get docOther => 'Other';
+  String get docOther => 'Liyane';
 
   @override
-  String get settingsLanguage => 'Language';
+  String get settingsLanguage => 'Basa';
 
   @override
-  String get settingsPets => 'Pet profiles';
+  String get settingsPets => 'Profil kewan';
 
   @override
-  String get settingsBackup => 'Backup';
+  String get settingsBackup => 'Simpenan';
 
   @override
-  String get settingsVersion => 'Version';
+  String get settingsVersion => 'Versi';
 
   @override
-  String get tileExportBackup => 'Export backup';
+  String get tileExportBackup => 'Metuake simpenan';
 
   @override
-  String get tileImportBackup => 'Import backup';
+  String get tileImportBackup => 'Mlebuake simpenan';
 
   @override
-  String get snackbarImportSuccess => 'Backup imported';
+  String get snackbarImportSuccess => 'Simpenan kasil dilebokake';
 
   @override
-  String get errorPetNameRequired => 'Pet name needs at least 2 characters';
+  String get errorPetNameRequired => 'Jeneng kewan paling sithik 2 aksara';
 
   @override
-  String get errorPetNameTooLong => 'Pet name is too long';
+  String get errorPetNameTooLong => 'Jeneng kewan kebangeten dawa';
 
   @override
-  String get errorWeightInvalid => 'Invalid weight';
+  String get errorWeightInvalid => 'Bobot ora bener';
 
   @override
-  String get errorMinOnePet => 'Keep at least one pet profile';
+  String get errorMinOnePet => 'Kudu ana paling sithik siji profil kewan';
 
   @override
-  String get errorTitleRequired => 'Title is required';
+  String get errorTitleRequired => 'Judhul kudu diisi';
 
   @override
-  String get errorIntervalRequired => 'Interval must be at least 1 month';
+  String get errorIntervalRequired => 'Sela wektu paling sithik 1 sasi';
 
   @override
-  String get errorBackupNotPetGo => 'File is not a PetGo backup';
+  String get errorBackupNotPetGo => 'Layang iki dudu simpenan PetGo';
 
   @override
-  String get actionEditPet => 'Edit pet';
+  String get actionEditPet => 'Owahi kewan';
 
   @override
-  String get actionMarkDone => 'Mark done';
+  String get actionMarkDone => 'Tandhani rampung';
 
   @override
-  String get actionEditSchedule => 'Edit schedule';
+  String get actionEditSchedule => 'Owahi jadwal';
 
   @override
-  String get actionEditVet => 'Edit vet visit';
+  String get actionEditVet => 'Owahi kunjungan dhokter';
 
   @override
-  String get actionEditDoc => 'Edit document';
+  String get actionEditDoc => 'Owahi layang';
 
   @override
-  String get actionAttachFile => 'Attach file';
+  String get actionAttachFile => 'Lampirake layang';
 
   @override
-  String get fieldOptional => 'Optional';
+  String get fieldOptional => 'Ora wajib';
 
   @override
-  String get fieldDateOfBirth => 'Date of birth';
+  String get fieldDateOfBirth => 'Tanggal lair';
 
   @override
-  String get fieldLastDone => 'Last done';
+  String get fieldLastDone => 'Pungkasan ditindakake';
 
   @override
-  String get fieldCost => 'Cost';
+  String get fieldCost => 'Ragad';
 
   @override
-  String get fieldNotes => 'Notes';
+  String get fieldNotes => 'Cathetan';
 
   @override
-  String get fieldDate => 'Date';
+  String get fieldDate => 'Tanggal';
 
   @override
-  String get fieldExpires => 'Expires';
+  String get fieldExpires => 'Entek wektune';
 
   @override
-  String get docHasFile => 'File attached';
+  String get docHasFile => 'Layang wis dilampirake';
 
   @override
-  String get settingsReminders => 'Care reminders';
+  String get settingsReminders => 'Pangeling rumatan';
 
   @override
-  String get settingsRemindersSubtitle => 'Notify before schedules are due';
+  String get settingsRemindersSubtitle => 'Kabarake sadurunge jadwal wayahe';
 }

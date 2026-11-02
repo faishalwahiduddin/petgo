@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "petgo-2026-panduan-yang-masih-relevan",
-    "en": "petgo-2026-still-relevant-guide",
-    "ar": "petgo-10",
-    "jv": "pandhuan-petgo-petgo-10",
-    "su": "pituduh-petgo-petgo-10",
-    "zh": "petgo-petgo-实用指南-10",
-    "ja": "petgopetgo-ガイド-10"
+    "id": "catatan-kunjungan-vet-untuk-pemula-mulai-dari-mana",
+    "en": "vet-visit-log-for-beginners-where-to-start",
+    "ar": "sjlat-zyara-altbyb-albytry-llmbtdiyn-mn-ayn-tbda",
+    "jv": "catatan-kunjungan-vet-kanggo-pamula-wiwit-saka-ngendi",
+    "su": "catatan-kunjungan-vet-pikeun-pamula-mimitian-ti-mana",
+    "zh": "chong-wu-jiu-zhen-ji-lu-ru-men-cong-na-li-kai-shi",
+    "ja": "doubutsubyouin-no-kiroku-nyuumon-dokokara-hajime-ruka"
   },
   "titles": {
-    "id": "PetGo 2026: Panduan yang Masih Relevan",
-    "en": "PetGo 2026: Still-Relevant Guide",
-    "ar": "PetGo — دليل PetGo",
-    "jv": "Pandhuan: PetGo 2026: Panduan yang Masih Relevan",
-    "su": "Pituduh: PetGo 2026: Panduan yang Masih Relevan",
-    "zh": "PetGo · PetGo 实用指南",
-    "ja": "PetGo｜PetGo ガイド"
+    "id": "catatan kunjungan vet untuk pemula: mulai dari mana",
+    "en": "vet visit log for beginners: where to start",
+    "ar": "سجلات زيارة الطبيب البيطري للمبتدئين: من أين تبدأ",
+    "jv": "catatan kunjungan vet kanggo pamula: wiwit saka ngendi",
+    "su": "catatan kunjungan vet pikeun pamula: mimitian ti mana",
+    "zh": "宠物就诊记录入门：从哪里开始",
+    "ja": "動物病院の記録入門：どこから始めるか"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Panduan pemula catatan kunjungan vet: mulai dari mana, arti praktis istilahnya, versi paling kecil yang bisa dicoba hari ini, dan penyimpanan di perangkat.",
+    "en": "A beginner's guide to the vet visit log: where to start, what the terms mean in practice, the smallest version to try today, and on-device storage.",
+    "ar": "دليل المبتدئين إلى سجلات زيارة الطبيب البيطري: من أين تبدأ، والمعنى العملي للمصطلحات، وأصغر نسخة تجربها اليوم، وحفظها على الجهاز.",
+    "ja": "入門編、どこから始めるか。動物病院の記録の用語の実践的な意味、今日試せる最小バージョン、端末保存の仕組みを解説。",
+    "zh": "新手指南：从哪里开始宠物就诊记录，术语的实际含义，今天就能试的最小版本，以及设备端存储。",
+    "jv": "Pandhuan pamula catatan kunjungan vet: wiwit saka ngendi, tegesé istilah ing praktik, versi paling cilik sing bisa dicoba dina iki, lan panyimpanan ing piranti.",
+    "su": "Panduan pamula catatan kunjungan vet: mimitian ti mana, hartina istilah dina prakték, versi paling leutik nu bisa dicoba poé ieu, jeung panyimpenan dina alat."
+  }
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "dashboard-minimal-untuk-catatan-kunjungan-vet-praktis",
-    "en": "minimal-dashboard-for-catatan-kunjungan-vet-practical",
-    "ar": "catatan-kunjungan-vet-16",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-16",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-16",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-16",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-16"
+    "id": "cara-mengukur-catatan-kunjungan-vet-tanpa-angka-palsu-bagian-3",
+    "en": "measuring-vet-visit-log-without-fake-numbers-part-3",
+    "ar": "qyas-sjlat-zyara-altbyb-albytry-dwn-arqam-whmya-aljz-3",
+    "jv": "ngukur-catatan-kunjungan-vet-tanpa-angka-goroh-bagian-3",
+    "su": "ngukur-catatan-kunjungan-vet-tanpa-angka-bohong-bagian-3",
+    "zh": "ru-he-heng-liang-chong-wu-jiu-zhen-ji-lu-er-bu-kao-gu-ji-di-3-pian",
+    "ja": "suisoku-ni-tayora-zu-doubutsubyouin-no-kiroku-wo-hakaru-dai-3-kai"
   },
   "titles": {
-    "id": "Dashboard Minimal untuk catatan kunjungan vet",
-    "en": "Minimal Dashboard for catatan kunjungan vet (Practical)",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Dashboard Minimal untuk catatan kunjungan vet",
-    "su": "Pituduh: Dashboard Minimal untuk catatan kunjungan vet",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "Cara mengukur catatan kunjungan vet tanpa angka palsu · bagian 3",
+    "en": "Measuring vet visit log without fake numbers · part 3",
+    "ar": "قياس سجلات زيارة الطبيب البيطري دون أرقام وهمية · الجزء 3",
+    "jv": "Ngukur catatan kunjungan vet tanpa angka goroh · bagian 3",
+    "su": "Ngukur catatan kunjungan vet tanpa angka bohong · bagian 3",
+    "zh": "如何衡量宠物就诊记录而不靠估计 · 第3篇",
+    "ja": "推測に頼らず動物病院の記録を測る · 第3回"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Bagian ketiga tentang mengukur catatan kunjungan vet tanpa angka palsu: tinjauan mingguan, data di perangkat, dan langkah setelah ada jeda.",
+    "en": "Part 3 on measuring the vet visit log without fake numbers: the weekly review, data on the device, and steps to take after a pause.",
+    "ar": "الجزء الثالث حول قياس سجلات زيارة الطبيب البيطري دون أرقام وهمية: المراجعة الأسبوعية، والبيانات على الجهاز، وخطوات بعد التوقف.",
+    "ja": "推測に頼らず動物病院の記録を測る第3回。毎週の見直し、端末に保存されるデータ、中断後の対応をまとめます。",
+    "zh": "用真实的数字衡量宠物就诊记录（第三篇）：每周回顾、设备上的数据，以及停顿后的步骤。",
+    "jv": "Bagéan katelu bab ngukur catatan kunjungan vet tanpa angka goroh: tinjauan saben minggu, data ing piranti, lan langkah sawisé ana jeda.",
+    "su": "Bagian katilu ngeunaan ngukur catatan kunjungan vet tanpa angka bohong: tinjauan unggal minggu, data dina alat, jeung léngkah sanggeus jeda."
+  }
 }

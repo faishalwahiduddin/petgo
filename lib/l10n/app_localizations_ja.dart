@@ -12,271 +12,328 @@ class AppLocalizationsJa extends AppLocalizations {
   String get appTitle => 'PetGo';
 
   @override
-  String get navPets => 'Pets';
+  String get appTagline => 'ペットの記録・ケア予定・毎日のログ';
 
   @override
-  String get navCare => 'Care';
+  String get navPets => 'ペット';
 
   @override
-  String get navDaily => 'Daily';
+  String get navCare => 'ケア';
 
   @override
-  String get navDocs => 'Docs';
+  String get navDaily => '毎日';
 
   @override
-  String get navSettings => 'Settings';
+  String get navDocs => '書類';
+
+  @override
+  String get navSettings => '設定';
 
   @override
   String get onboardingHeadline => 'PetGo';
 
   @override
   String get onboardingDescription =>
-      'Manage pet profiles, vaccine/deworm schedules, vet visits, and daily care offline on your device.\n\nNo account. Data stays local.';
+      'ペットのプロフィール、ワクチンや駆虫の予定、通院の記録、毎日のケアを端末内でオフライン管理できます。\n\nアカウント不要。データは端末内に保存されます。';
 
   @override
-  String get onboardingContinue => 'I understand — continue';
+  String get onboardingContinue => '了解しました — 続ける';
 
   @override
-  String get homeActivePet => 'Active pet';
+  String get onbSkip => 'スキップ';
 
   @override
-  String get homeNoPets => 'No pets yet. Add a profile first.';
+  String get onbNext => '次へ';
 
   @override
-  String get homeDueSoon => 'Due / soon';
+  String get onbGetStarted => 'はじめる';
 
   @override
-  String get homeNoDue => 'Nothing urgent.';
+  String get onbSlide1Title => 'ペットのプロフィール';
 
   @override
-  String get homeAllPets => 'All pets';
+  String get onbSlide1Sub => '犬、猫、その他の動物';
 
   @override
-  String get actionAddPet => 'Add pet';
+  String get onbSlide1Badge => '100% オフライン＆プライベート';
 
   @override
-  String get actionAddSchedule => 'Add schedule';
+  String get onbSlide2Title => 'ケアの予定';
 
   @override
-  String get actionAddVet => 'Log vet visit';
+  String get onbSlide2Sub => 'ワクチン、駆虫、ノミ、トリミング';
 
   @override
-  String get actionAddWeight => 'Log weight';
+  String get onbSlide2Badge => '端末内リマインダー';
 
   @override
-  String get actionAddDoc => 'Add document';
+  String get onbSlide3Title => '毎日の記録';
 
   @override
-  String get actionSave => 'Save';
+  String get onbSlide3Sub => 'ごはん、散歩、トイレ';
 
   @override
-  String get actionCancel => 'Cancel';
+  String get onbSlide3Badge => '広告なし・アカウント不要';
 
   @override
-  String get speciesDog => 'Dog';
+  String get onbSlide4Title => '端末内の書類';
 
   @override
-  String get speciesCat => 'Cat';
+  String get onbSlide4Sub => 'ワクチン証明書や処方箋をまとめて';
 
   @override
-  String get speciesBird => 'Bird';
+  String get onbSlide4Badge => 'データは端末内に';
 
   @override
-  String get speciesRabbit => 'Rabbit';
+  String get onbPrivacyHeadline => 'プライバシーとオフライン';
 
   @override
-  String get speciesOther => 'Other';
+  String get onbPrivacyDetail => 'すべてのデータは端末内に安全に保存され、トラッカーはありません。';
 
   @override
-  String get fieldPetName => 'Name';
+  String get loadingLabel => '読み込み中…';
 
   @override
-  String get fieldSpecies => 'Species';
+  String get homeActivePet => '選択中のペット';
 
   @override
-  String get fieldBreed => 'Breed';
+  String get homeNoPets => 'まだペットがいません。先にプロフィールを追加してください。';
 
   @override
-  String get fieldWeightKg => 'Weight (kg)';
+  String get homeDueSoon => '期限間近';
 
   @override
-  String get fieldTitle => 'Title';
+  String get homeNoDue => '急ぎの予定はありません。';
 
   @override
-  String get fieldIntervalMonths => 'Interval (months)';
+  String get homeAllPets => 'すべてのペット';
 
   @override
-  String get fieldClinic => 'Clinic';
+  String get actionAddPet => 'ペットを追加';
 
   @override
-  String get fieldMedication => 'Medication';
+  String get actionAddSchedule => '予定を追加';
 
   @override
-  String get careSchedulesTitle => 'Care schedules';
+  String get actionAddVet => '通院を記録';
 
   @override
-  String get vetLogsTitle => 'Vet & meds';
+  String get actionAddWeight => '体重を記録';
 
   @override
-  String get careEmptySchedules => 'No schedules yet.';
+  String get actionAddDoc => '書類を追加';
 
   @override
-  String get careEmptyVet => 'No vet logs yet.';
+  String get actionSave => '保存';
 
   @override
-  String get careVaccine => 'Vaccine';
+  String get actionCancel => 'キャンセル';
 
   @override
-  String get careDeworm => 'Deworm';
+  String get speciesDog => '犬';
 
   @override
-  String get careFlea => 'Flea';
+  String get speciesCat => '猫';
 
   @override
-  String get careGrooming => 'Grooming';
+  String get speciesBird => '鳥';
 
   @override
-  String get careOther => 'Other';
+  String get speciesRabbit => 'うさぎ';
+
+  @override
+  String get speciesOther => 'その他';
+
+  @override
+  String get fieldPetName => '名前';
+
+  @override
+  String get fieldSpecies => '種類';
+
+  @override
+  String get fieldBreed => '品種';
+
+  @override
+  String get fieldWeightKg => '体重（kg）';
+
+  @override
+  String get fieldTitle => 'タイトル';
+
+  @override
+  String get fieldIntervalMonths => '間隔（か月）';
+
+  @override
+  String get fieldClinic => '動物病院';
+
+  @override
+  String get fieldMedication => '薬';
+
+  @override
+  String get careSchedulesTitle => 'ケアの予定';
+
+  @override
+  String get vetLogsTitle => '通院と投薬';
+
+  @override
+  String get careEmptySchedules => '予定はまだありません。';
+
+  @override
+  String get careEmptyVet => '通院の記録はまだありません。';
+
+  @override
+  String get careVaccine => 'ワクチン';
+
+  @override
+  String get careDeworm => '駆虫';
+
+  @override
+  String get careFlea => 'ノミ';
+
+  @override
+  String get careGrooming => 'トリミング';
+
+  @override
+  String get careOther => 'その他';
 
   @override
   String everyMonths(int months) {
-    return 'every $months mo';
+    return '$monthsか月ごと';
   }
 
   @override
   String daysRemaining(int days) {
-    return '$days days left';
+    return 'あと$days日';
   }
 
   @override
-  String get urgencyOverdue => 'Overdue';
+  String get urgencyOverdue => '期限切れ';
 
   @override
-  String get dailyQuickAdd => 'Quick log';
+  String get dailyQuickAdd => 'クイック記録';
 
   @override
-  String get dailyTimeline => 'Timeline';
+  String get dailyTimeline => 'タイムライン';
 
   @override
-  String get dailyEmpty => 'No daily logs yet.';
+  String get dailyEmpty => '毎日の記録はまだありません。';
 
   @override
-  String get dailyFeed => 'Feed';
+  String get dailyFeed => 'ごはん';
 
   @override
-  String get dailyWalk => 'Walk';
+  String get dailyWalk => '散歩';
 
   @override
-  String get dailyLitter => 'Litter';
+  String get dailyLitter => 'トイレ';
 
   @override
-  String get dailyOther => 'Other';
+  String get dailyOther => 'その他';
 
   @override
-  String get weightHistory => 'Weight history';
+  String get weightHistory => '体重の履歴';
 
   @override
-  String get docsEmpty => 'No documents yet.';
+  String get docsEmpty => '書類はまだありません。';
 
   @override
-  String get docVaccineCard => 'Vaccine card';
+  String get docVaccineCard => 'ワクチン証明書';
 
   @override
-  String get docPrescription => 'Prescription';
+  String get docPrescription => '処方箋';
 
   @override
-  String get docInsurance => 'Insurance';
+  String get docInsurance => '保険';
 
   @override
-  String get docOther => 'Other';
+  String get docOther => 'その他';
 
   @override
-  String get settingsLanguage => 'Language';
+  String get settingsLanguage => '言語';
 
   @override
-  String get settingsPets => 'Pet profiles';
+  String get settingsPets => 'ペットのプロフィール';
 
   @override
-  String get settingsBackup => 'Backup';
+  String get settingsBackup => 'バックアップ';
 
   @override
-  String get settingsVersion => 'Version';
+  String get settingsVersion => 'バージョン';
 
   @override
-  String get tileExportBackup => 'Export backup';
+  String get tileExportBackup => 'バックアップを書き出す';
 
   @override
-  String get tileImportBackup => 'Import backup';
+  String get tileImportBackup => 'バックアップを読み込む';
 
   @override
-  String get snackbarImportSuccess => 'Backup imported';
+  String get snackbarImportSuccess => 'バックアップを読み込みました';
 
   @override
-  String get errorPetNameRequired => 'Pet name needs at least 2 characters';
+  String get errorPetNameRequired => 'ペットの名前は2文字以上で入力してください';
 
   @override
-  String get errorPetNameTooLong => 'Pet name is too long';
+  String get errorPetNameTooLong => 'ペットの名前が長すぎます';
 
   @override
-  String get errorWeightInvalid => 'Invalid weight';
+  String get errorWeightInvalid => '体重が正しくありません';
 
   @override
-  String get errorMinOnePet => 'Keep at least one pet profile';
+  String get errorMinOnePet => 'ペットのプロフィールを1件以上残してください';
 
   @override
-  String get errorTitleRequired => 'Title is required';
+  String get errorTitleRequired => 'タイトルを入力してください';
 
   @override
-  String get errorIntervalRequired => 'Interval must be at least 1 month';
+  String get errorIntervalRequired => '間隔は1か月以上にしてください';
 
   @override
-  String get errorBackupNotPetGo => 'File is not a PetGo backup';
+  String get errorBackupNotPetGo => 'PetGoのバックアップファイルではありません';
 
   @override
-  String get actionEditPet => 'Edit pet';
+  String get actionEditPet => 'ペットを編集';
 
   @override
-  String get actionMarkDone => 'Mark done';
+  String get actionMarkDone => '完了にする';
 
   @override
-  String get actionEditSchedule => 'Edit schedule';
+  String get actionEditSchedule => '予定を編集';
 
   @override
-  String get actionEditVet => 'Edit vet visit';
+  String get actionEditVet => '通院記録を編集';
 
   @override
-  String get actionEditDoc => 'Edit document';
+  String get actionEditDoc => '書類を編集';
 
   @override
-  String get actionAttachFile => 'Attach file';
+  String get actionAttachFile => 'ファイルを添付';
 
   @override
-  String get fieldOptional => 'Optional';
+  String get fieldOptional => '任意';
 
   @override
-  String get fieldDateOfBirth => 'Date of birth';
+  String get fieldDateOfBirth => '生年月日';
 
   @override
-  String get fieldLastDone => 'Last done';
+  String get fieldLastDone => '前回の実施日';
 
   @override
-  String get fieldCost => 'Cost';
+  String get fieldCost => '費用';
 
   @override
-  String get fieldNotes => 'Notes';
+  String get fieldNotes => 'メモ';
 
   @override
-  String get fieldDate => 'Date';
+  String get fieldDate => '日付';
 
   @override
-  String get fieldExpires => 'Expires';
+  String get fieldExpires => '有効期限';
 
   @override
-  String get docHasFile => 'File attached';
+  String get docHasFile => 'ファイル添付済み';
 
   @override
-  String get settingsReminders => 'Care reminders';
+  String get settingsReminders => 'ケアのリマインダー';
 
   @override
-  String get settingsRemindersSubtitle => 'Notify before schedules are due';
+  String get settingsRemindersSubtitle => '予定の期限前に通知します';
 }

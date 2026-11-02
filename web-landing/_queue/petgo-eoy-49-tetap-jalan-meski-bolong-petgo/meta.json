@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "tetap-jalan-meski-bolong-petgo",
-    "en": "keep-going-after-missing-petgo",
-    "ar": "petgo-13",
-    "jv": "pandhuan-petgo-petgo-13",
-    "su": "pituduh-petgo-petgo-13",
-    "zh": "petgo-petgo-实用指南-13",
-    "ja": "petgopetgo-ガイド-13"
+    "id": "catatan-kunjungan-vet-macet-perbaiki-friksi-dulu",
+    "en": "vet-visit-log-stuck-fix-the-friction-first",
+    "ar": "sjlat-zyara-altbyb-albytry-mtwqf-qll-alahtkak-awla",
+    "jv": "catatan-kunjungan-vet-macet-ngurangi-alangan-dhisik",
+    "su": "catatan-kunjungan-vet-macet-kurangan-halangan-heula",
+    "zh": "chong-wu-jiu-zhen-ji-lu-ka-zhu-le-xian-jian-shao-mo-ca",
+    "ja": "doubutsubyouin-no-kiroku-ga-toma-ttara-mazu-masatsu-wo-hera-su"
   },
   "titles": {
-    "id": "Tetap Jalan meski Bolong PetGo",
-    "en": "Keep Going After Missing PetGo",
-    "ar": "PetGo — دليل PetGo",
-    "jv": "Pandhuan: Tetap Jalan meski Bolong PetGo",
-    "su": "Pituduh: Tetap Jalan meski Bolong PetGo",
-    "zh": "PetGo · PetGo 实用指南",
-    "ja": "PetGo｜PetGo ガイド"
+    "id": "catatan kunjungan vet macet? Perbaiki friksi dulu",
+    "en": "vet visit log stuck? Fix the friction first",
+    "ar": "سجلات زيارة الطبيب البيطري متوقف؟ قلّل الاحتكاك أولاً",
+    "jv": "catatan kunjungan vet macet? Ngurangi alangan dhisik",
+    "su": "catatan kunjungan vet macét? Kurangan halangan heula",
+    "zh": "宠物就诊记录卡住了？先减少摩擦",
+    "ja": "動物病院の記録が止まったら、まず摩擦を減らす"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Catatan kunjungan vet yang macet: kenali dulu gesekan yang membuat berhenti, kecilkan ke versi paling kecil, lalu lanjutkan setelah bolong.",
+    "en": "A stalled vet visit log: first spot the friction that makes it stop, shrink it to the smallest version, then keep going after a gap.",
+    "ar": "سجلات زيارة الطبيب البيطري المتوقفة: حدّد أولاً الاحتكاك الذي يوقف التسجيل، واختصر إلى أصغر نسخة، ثم واصل بعد أي فجوة.",
+    "ja": "止まったら、まず摩擦を減らす。動物病院の記録が途切れる原因を探し、最小バージョンへ縮め、空白後に続けます。",
+    "zh": "宠物就诊记录卡住时：先找出导致停止的摩擦，缩减为最小版本，中断后继续坚持，并保持每周回顾。",
+    "jv": "Macet ing catatan kunjungan vet: golèkana dhisik gesekan sing nggawé mandheg, cilikna dadi versi paling cilik, banjur terusake sawisé bolong.",
+    "su": "Macet dina catatan kunjungan vet: pikeun heula kenalan gesekan nu nyieun eureun, leutikkeun ka versi paling leutik, teras teruskeun sanggeus bolong."
+  }
 }

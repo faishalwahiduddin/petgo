@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "cara-menamai-kategori-profil-hewan-peliharaan-mingguan",
-    "en": "how-to-name-profil-hewan-peliharaan-categories",
-    "ar": "profil-hewan-peliharaan-10",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-10",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-10",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-10",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-10"
+    "id": "profil-hewan-peliharaan-secara-mendalam-tanpa-muter-muter",
+    "en": "pet-profile-explained-without-the-runaround",
+    "ar": "mlf-alhywan-alalyf-bshrh-mbashr-bla-lf",
+    "jv": "profil-hewan-peliharaan-kanthi-jero-tanpa-mubeng-mubeng",
+    "su": "profil-hewan-peliharaan-diwincik-tanpa-muter-muter",
+    "zh": "chong-wu-dang-an-shen-ru-jiang-qing-chu",
+    "ja": "petto-no-purofiiru-wo-toomawari-sezuni-shin-hori"
   },
   "titles": {
-    "id": "Cara Menamai Kategori profil hewan peliharaan",
-    "en": "How to Name profil hewan peliharaan Categories — Offline First",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Cara Menamai Kategori profil hewan peliharaan",
-    "su": "Pituduh: Cara Menamai Kategori profil hewan peliharaan",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan secara mendalam tanpa muter-muter",
+    "en": "pet profile, explained without the runaround",
+    "ar": "ملف الحيوان الأليف بشرح مباشر بلا لفّ",
+    "jv": "profil hewan peliharaan kanthi jero tanpa mubeng-mubeng",
+    "su": "profil hewan peliharaan diwincik tanpa muter-muter",
+    "zh": "宠物档案深入讲清楚",
+    "ja": "ペットのプロフィールを遠回りせずに深掘り"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Pembahasan profil hewan peliharaan tanpa basa-basi: arti praktisnya, versi paling kecil, dan bagian penyimpanan di perangkat yang perlu Anda pahami.",
+    "en": "The pet profile covered without fluff: what it means in practice, the smallest version, and the on-device storage details you need to understand.",
+    "ar": "ملف الحيوان الأليف مشروح دون دوران: معناه العملي، وأصغر نسخة، وتفاصيل الحفظ على الجهاز التي ينبغي أن تفهمها.",
+    "ja": "ペットのプロフィールを遠回りせずに深掘り。実践での意味、最小バージョン、端末保存について知っておくべき点を紹介。",
+    "zh": "不绕弯子地讲解宠物档案：实际意义、最小版本，以及需要理解的设备端存储细节，帮助快速上手。",
+    "jv": "Pembahasan profil hewan peliharaan tanpa basa-basi: tegesé ing praktik, versi paling cilik, lan bagéan panyimpanan ing piranti sing kudu kowé pahami.",
+    "su": "Pedaran profil hewan peliharaan tanpa muter-muter: hartina dina prakték, versi paling leutik, jeung bagian panyimpenan dina alat nu perlu dipahami."
+  }
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "contoh-minggu-sibuk-tetap-catatan-kunjungan-vet-2026",
-    "en": "busy-week-example-still-doing-catatan-kunjungan-vet",
-    "ar": "catatan-kunjungan-vet-14",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-14",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-14",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-14",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-14"
+    "id": "catatan-kunjungan-vet-untuk-satu-rumah",
+    "en": "vet-visit-log-for-the-whole-household",
+    "ar": "sjlat-zyara-altbyb-albytry-lkl-afrad-almnzl",
+    "jv": "catatan-kunjungan-vet-kanggo-sakulawarga",
+    "su": "catatan-kunjungan-vet-pikeun-sakulawarga",
+    "zh": "quan-jia-yi-qi-yong-de-chong-wu-jiu-zhen-ji-lu",
+    "ja": "kazoku-minnade-tsukau-doubutsubyouin-no-kiroku"
   },
   "titles": {
-    "id": "Contoh Minggu Sibuk tetap catatan kunjungan vet",
-    "en": "Busy-Week Example Still Doing catatan kunjungan vet",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Contoh Minggu Sibuk tetap catatan kunjungan vet",
-    "su": "Pituduh: Contoh Minggu Sibuk tetap catatan kunjungan vet",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet untuk satu rumah",
+    "en": "vet visit log for the whole household",
+    "ar": "سجلات زيارة الطبيب البيطري لكل أفراد المنزل",
+    "jv": "catatan kunjungan vet kanggo sakulawarga",
+    "su": "catatan kunjungan vet pikeun sakulawarga",
+    "zh": "全家一起用的宠物就诊记录",
+    "ja": "家族みんなで使う動物病院の記録"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Catatan kunjungan vet untuk satu rumah, dengan ritme tinjauan mingguan, data di perangkat, dan langkah melanjutkan setelah ada jeda.",
+    "en": "Vet visit log for a single household, with a weekly review rhythm, data stored on the device, and how to pick up again after a break.",
+    "ar": "تنظيم سجلات زيارة الطبيب البيطري لكل أفراد المنزل، مع إيقاع مراجعة أسبوعية، وبيانات محفوظة على الجهاز، وكيفية العودة بعد فترة توقف.",
+    "ja": "家族みんなで使う動物病院の記録。毎週の見直しのリズム、端末に保存されるデータ、中断後に戻る方法を解説します。",
+    "zh": "一个家庭共用的宠物就诊记录：每周回顾的节奏、保存在设备上的数据，以及中断后如何接续。",
+    "jv": "Catatan kunjungan vet kanggo sakulawarga, karo ritme tinjauan saben minggu, data ing piranti, lan carané bali sawisé ana jeda.",
+    "su": "Catatan kunjungan vet pikeun sakumah, kalawan ritme tinjauan unggal minggu, data dina alat, jeung cara balik deui sanggeus aya jeda."
+  }
 }

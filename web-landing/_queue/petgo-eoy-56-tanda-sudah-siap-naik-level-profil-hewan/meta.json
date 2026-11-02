@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "tanda-sudah-siap-naik-level-profil-hewan-peliharaan-praktis",
-    "en": "signs-you-re-ready-to-level-up-profil-hewan-peliharaan-practical",
-    "ar": "profil-hewan-peliharaan-14",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-14",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-14",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-14",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-14"
+    "id": "profil-hewan-peliharaan-memutuskan-tanpa-overthinking",
+    "en": "pet-profile-deciding-without-overthinking",
+    "ar": "mlf-alhywan-alalyf-qrar-bla-tfkyr-zaid",
+    "jv": "profil-hewan-peliharaan-mutusake-tanpa-mikir-kebangeten",
+    "su": "profil-hewan-peliharaan-mutuskeun-tanpa-mikir-kaleuleuwihi",
+    "zh": "chong-wu-dang-an-bu-bi-jiu-jie-de-xuan-ze-fang-fa",
+    "ja": "petto-no-purofiiru-kangae-sugizuni-kime-ru"
   },
   "titles": {
-    "id": "Tanda Sudah Siap Naik Level profil hewan peliharaan",
-    "en": "Signs You&#x27;re Ready to Level Up profil hewan peliharaan (Practical",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Tanda Sudah Siap Naik Level profil hewan peliharaan",
-    "su": "Pituduh: Tanda Sudah Siap Naik Level profil hewan peliharaan",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan: memutuskan tanpa overthinking",
+    "en": "pet profile: deciding without overthinking",
+    "ar": "ملف الحيوان الأليف: قرار بلا تفكير زائد",
+    "jv": "profil hewan peliharaan: mutusaké tanpa mikir kebangeten",
+    "su": "profil hewan peliharaan: mutuskeun tanpa mikir kaleuleuwihi",
+    "zh": "宠物档案：不必纠结的选择方法",
+    "ja": "ペットのプロフィール：考えすぎずに決める"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Cara memilih profil hewan peliharaan tanpa overthinking, ditinjau dari alasan kebiasaan putus, penyimpanan di perangkat, dan ritme tinjauan mingguan.",
+    "en": "How to choose a pet profile without overthinking it, judged by why routines break, storage on the device, and the rhythm of the weekly check.",
+    "ar": "كيف تختار ملف الحيوان الأليف دون تفكير زائد، بالنظر إلى أسباب انقطاع العادة، وحفظ البيانات على الجهاز، وإيقاع المراجعة الأسبوعية.",
+    "ja": "考えすぎずに選ぶペットのプロフィール。習慣が続かない理由、端末保存、毎週の確認のリズムで判断する方法。",
+    "zh": "不过度纠结地选择宠物档案：依据习惯中断的原因、设备存储和每周检查的节奏来判断，少走弯路。",
+    "jv": "Carané milih profil hewan peliharaan tanpa mikir kebangeten, dideleng saka sebab kebiasan mandheg, panyimpanan ing piranti, lan ritme tinjauan saben minggu.",
+    "su": "Cara milih profil hewan peliharaan tanpa loba pikir, dilihat tina alesan kabiasaan putus, panyimpenan dina alat, jeung ritme tinjauan unggal minggu."
+  }
 }

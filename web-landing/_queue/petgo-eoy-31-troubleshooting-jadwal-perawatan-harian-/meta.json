@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "troubleshooting-jadwal-perawatan-harian-yang-macet",
-    "en": "troubleshooting-stuck-jadwal-perawatan-harian-habits",
-    "ar": "jadwal-perawatan-harian-8",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-8",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-8",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-8",
-    "ja": "petgojadwal-perawatan-harian-ガイド-8"
+    "id": "jadwal-perawatan-harian-macet-perbaiki-friksi-dulu",
+    "en": "daily-care-schedule-stuck-fix-the-friction-first",
+    "ar": "jdwl-alraaya-alywmy-mtwqf-qll-alahtkak-awla",
+    "jv": "jadwal-perawatan-harian-macet-ngurangi-alangan-dhisik",
+    "su": "jadwal-perawatan-harian-macet-kurangan-halangan-heula",
+    "zh": "mei-ri-zhao-hu-shi-jian-biao-ka-zhu-le-xian-jian-shao-mo-ca",
+    "ja": "mainichi-no-kea-yotei-ga-toma-ttara-mazu-masatsu-wo-hera-su"
   },
   "titles": {
-    "id": "Troubleshooting jadwal perawatan harian yang Macet",
-    "en": "Troubleshooting Stuck jadwal perawatan harian Habits",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Troubleshooting jadwal perawatan harian yang Macet",
-    "su": "Pituduh: Troubleshooting jadwal perawatan harian yang Macet",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian macet? Perbaiki friksi dulu",
+    "en": "daily care schedule stuck? Fix the friction first",
+    "ar": "جدول الرعاية اليومي متوقف؟ قلّل الاحتكاك أولاً",
+    "jv": "jadwal perawatan harian macet? Ngurangi alangan dhisik",
+    "su": "jadwal perawatan harian macét? Kurangan halangan heula",
+    "zh": "每日照护时间表卡住了？先减少摩擦",
+    "ja": "毎日のケア予定が止まったら、まず摩擦を減らす"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Jadwal perawatan harian yang macet: cari dulu hambatan yang membuat catatan mudah putus, kecilkan ke versi paling kecil, lalu lanjut setelah bolong.",
+    "en": "A stalled daily care schedule: first find the friction that makes entries drop off, shrink it to the smallest version, then resume after a gap.",
+    "ar": "حين يتوقف جدول الرعاية اليومي: ابحث أولاً عن الاحتكاك الذي يُسقط التسجيلات، واختصره إلى أصغر نسخة، ثم استأنف بعد أي انقطاع.",
+    "ja": "毎日のケア予定が止まったときは、まず摩擦を減らす。記録が途切れる原因を探し、最小バージョンへ縮め、空白後に再開。",
+    "zh": "每日照护时间表卡住时：先找出让记录中断的摩擦，缩减为最小版本，再在空档后继续，循序渐进。",
+    "jv": "Jadwal perawatan harian sing macet: golèkana dhisik alangan sing gawé catatan gampang ilang, cilikna dadi versi paling cilik, banjur terusake sawisé bolong.",
+    "su": "Jadwal perawatan harian nu macet: neangan heula hambatan nu nyababkeun catatan eureun, leutikkeun ka versi paling leutik, teras neruskeun sanggeus bolong."
+  }
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "kualitas-data-jadwal-perawatan-harian-vs-kuantitas-offline",
-    "en": "jadwal-perawatan-harian-data-quality-vs-quantity",
-    "ar": "jadwal-perawatan-harian-12",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-12",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-12",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-12",
-    "ja": "petgojadwal-perawatan-harian-ガイド-12"
+    "id": "jadwal-perawatan-harian-yang-datanya-bisa-dipercaya",
+    "en": "daily-care-schedule-whose-records-you-can-trust",
+    "ar": "jdwl-alraaya-alywmy-bsjlat-mwthwqa",
+    "jv": "jadwal-perawatan-harian-sing-dhatae-bisa-dipercaya",
+    "su": "jadwal-perawatan-harian-anu-datana-bisa-dipercaya",
+    "zh": "ji-lu-ke-xin-de-mei-ri-zhao-hu-shi-jian-biao",
+    "ja": "kiroku-wo-shinrai-dekiru-mainichi-no-kea-yotei"
   },
   "titles": {
-    "id": "Kualitas Data jadwal perawatan harian vs Kuantitas",
-    "en": "jadwal perawatan harian Data Quality vs Quantity",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Kualitas Data jadwal perawatan harian vs Kuantitas",
-    "su": "Pituduh: Kualitas Data jadwal perawatan harian vs Kuantitas",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian yang datanya bisa dipercaya",
+    "en": "daily care schedule whose records you can trust",
+    "ar": "جدول الرعاية اليومي بسجلات موثوقة",
+    "jv": "jadwal perawatan harian sing dhataé bisa dipercaya",
+    "su": "jadwal perawatan harian anu datana bisa dipercaya",
+    "zh": "记录可信的每日照护时间表",
+    "ja": "記録を信頼できる毎日のケア予定"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Cara menjaga jadwal perawatan harian yang datanya bisa dipercaya: kenapa catatan sering putus, mulai dari versi paling kecil, dan mencatat lagi setelah bolong.",
+    "en": "How to keep a daily care schedule whose records you can trust: why entries drop off, starting small, and logging again after a gap.",
+    "ar": "كيف تحافظ على جدول الرعاية اليومي بسجلات موثوقة: لماذا تتراجع التسجيلات، وابدأ بأصغر نسخة، وعد إلى التسجيل بعد أي انقطاع.",
+    "ja": "記録を信頼できる毎日のケア予定。記録が途切れやすい理由、最小バージョンからの始め方、空白後の再記録を解説。",
+    "zh": "如何让每日照护时间表的记录值得信赖：为何记录容易中断，从最小版本起步，以及中断后再次记录。",
+    "jv": "Carané njaga jadwal perawatan harian sing datané bisa dipercaya: kenapa cathetan kerep kelangan, wiwit saka versi paling cilik, lan nyathet maneh sawisé bolong.",
+    "su": "Cara ngajaga jadwal perawatan harian nu datana bisa dipercaya: naha catetan sering putus, mimitian ti versi paling leutik, jeung nyatet deui sanggeus bolong."
+  }
 }

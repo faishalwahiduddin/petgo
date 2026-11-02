@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "pindah-perangkat-tanpa-hilang-catatan-kunjungan-vet-2026",
-    "en": "move-devices-without-losing-catatan-kunjungan-vet",
-    "ar": "catatan-kunjungan-vet-11",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-11",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-11",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-11",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-11"
+    "id": "cara-mengukur-catatan-kunjungan-vet-tanpa-angka-palsu",
+    "en": "measuring-vet-visit-log-without-fake-numbers",
+    "ar": "qyas-sjlat-zyara-altbyb-albytry-dwn-arqam-whmya",
+    "jv": "ngukur-catatan-kunjungan-vet-tanpa-angka-goroh",
+    "su": "ngukur-catatan-kunjungan-vet-tanpa-angka-bohong",
+    "zh": "ru-he-heng-liang-chong-wu-jiu-zhen-ji-lu-er-bu-kao-gu-ji",
+    "ja": "suisoku-ni-tayora-zu-doubutsubyouin-no-kiroku-wo-hakaru"
   },
   "titles": {
-    "id": "Pindah Perangkat tanpa Hilang catatan kunjungan vet",
-    "en": "Move Devices Without Losing catatan kunjungan vet",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Pindah Perangkat tanpa Hilang catatan kunjungan vet",
-    "su": "Pituduh: Pindah Perangkat tanpa Hilang catatan kunjungan vet",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "Cara mengukur catatan kunjungan vet tanpa angka palsu",
+    "en": "Measuring vet visit log without fake numbers",
+    "ar": "قياس سجلات زيارة الطبيب البيطري دون أرقام وهمية",
+    "jv": "Ngukur catatan kunjungan vet tanpa angka goroh",
+    "su": "Ngukur catatan kunjungan vet tanpa angka bohong",
+    "zh": "如何衡量宠物就诊记录而不靠估计",
+    "ja": "推測に頼らず動物病院の記録を測る"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Mengukur catatan kunjungan vet dengan angka yang jujur: meninjau tiap minggu, membaca data yang tersimpan di perangkat, dan menyikapi hari yang terlewat.",
+    "en": "Measuring the vet visit log with honest numbers: a weekly review, reading the data stored on the device, and handling days that were missed.",
+    "ar": "قياس سجلات زيارة الطبيب البيطري بأرقام صادقة: مراجعة أسبوعية، وقراءة البيانات المحفوظة على الجهاز، والتعامل مع الأيام التي فاتت.",
+    "ja": "推測に頼らず動物病院の記録を測る。毎週の見直し、端末に保存された記録の読み方、抜けた日への向き合い方を扱います。",
+    "zh": "用诚实的数字衡量宠物就诊记录：每周回顾、读取保存在设备上的数据，以及如何应对漏记的日子。",
+    "jv": "Ngukur catatan kunjungan vet nganggo angka sing jujur: tinjauan saben minggu, maca data sing kasimpen ing piranti, lan nanggapi dina sing kelangan.",
+    "su": "Ngukur catatan kunjungan vet ku angka nu jujur: tinjauan unggal minggu, maca data nu disimpen dina alat, jeung nanganan poé nu kaliwat."
+  }
 }

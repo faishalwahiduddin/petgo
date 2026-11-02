@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "dasar-dasar-profil-hewan-peliharaan-yang-tidak-kedaluwarsa-mingguan",
-    "en": "evergreen-basics-of-profil-hewan-peliharaan",
-    "ar": "profil-hewan-peliharaan-19",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-19",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-19",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-19",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-19"
+    "id": "profil-hewan-peliharaan-panduan-yang-tetap-relevan",
+    "en": "pet-profile-a-guide-that-stays-useful",
+    "ar": "mlf-alhywan-alalyf-dlyl-ybqa-mfyda",
+    "jv": "profil-hewan-peliharaan-pandhuan-sing-tetep-migunani",
+    "su": "profil-hewan-peliharaan-pituduh-anu-tetep-mangpaat",
+    "zh": "chong-wu-dang-an-chang-qi-you-xiao-de-zhi-nan",
+    "ja": "petto-no-purofiiru-nagaku-tsukae-ru-gaido"
   },
   "titles": {
-    "id": "Dasar-Dasar profil hewan peliharaan yang Tidak Kedaluwarsa",
-    "en": "Evergreen Basics of profil hewan peliharaan — Offline First",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Dasar-Dasar profil hewan peliharaan yang Tidak Kedaluwarsa",
-    "su": "Pituduh: Dasar-Dasar profil hewan peliharaan yang Tidak Kedaluwarsa",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan: panduan yang tetap relevan",
+    "en": "pet profile: a guide that stays useful",
+    "ar": "ملف الحيوان الأليف: دليل يبقى مفيداً",
+    "jv": "profil hewan peliharaan: pandhuan sing tetep migunani",
+    "su": "profil hewan peliharaan: pituduh anu tetep mangpaat",
+    "zh": "宠物档案：长期有效的指南",
+    "ja": "ペットのプロフィール：長く使えるガイド"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Pegangan profil hewan peliharaan yang tetap berguna lama: arti praktisnya, versi paling kecil untuk memulai, dan data di perangkat.",
+    "en": "A pet profile guide that stays useful over time: what it means in practice, the smallest version as a starting point, and on-device data.",
+    "ar": "دليل ملف الحيوان الأليف الذي يبقى مفيداً مع الوقت: معناه العملي، وأصغر نسخة كنقطة بداية، والبيانات المحفوظة على الجهاز.",
+    "ja": "ペットのプロフィール：長く使えるガイド。実践での意味、出発点となる最小バージョン、端末に保存されるデータ。",
+    "zh": "长期有用的宠物档案指南：实际意义、作为起点的最小版本，以及保存在设备上的数据，随时参考。",
+    "jv": "Pegangan profil hewan peliharaan sing tetep migunani suwé: tegesé ing praktik, versi paling cilik kanggo miwiti, lan data ing piranti.",
+    "su": "Pandoman profil hewan peliharaan nu tetep mangpaat, hartina dina prakték, versi paling leutik salaku titik mimiti, jeung data nu disimpen dina alat."
+  }
 }

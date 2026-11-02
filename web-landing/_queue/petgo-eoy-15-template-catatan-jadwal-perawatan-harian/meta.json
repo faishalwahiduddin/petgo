@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "template-catatan-jadwal-perawatan-harian-siap-pakai-harian",
-    "en": "ready-to-use-jadwal-perawatan-harian-log-template",
-    "ar": "jadwal-perawatan-harian-4",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-4",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-4",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-4",
-    "ja": "petgojadwal-perawatan-harian-ガイド-4"
+    "id": "template-jadwal-perawatan-harian-siap-pakai",
+    "en": "a-ready-to-use-daily-care-schedule-template",
+    "ar": "qalb-jdwl-alraaya-alywmy-jahz-llastkhdam",
+    "jv": "templat-jadwal-perawatan-harian-siap-dipigunakake",
+    "su": "citakan-jadwal-perawatan-harian-siap-dipake",
+    "zh": "mei-ri-zhao-hu-shi-jian-biao-mu-ban-ke-zhi-jie-tao-yong",
+    "ja": "sugu-tsukae-ru-mainichi-no-kea-yotei-tenpureeto"
   },
   "titles": {
-    "id": "Template Catatan jadwal perawatan harian Siap Pakai",
-    "en": "Ready-to-Use jadwal perawatan harian Log Template",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Template Catatan jadwal perawatan harian Siap Pakai",
-    "su": "Pituduh: Template Catatan jadwal perawatan harian Siap Pakai",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "Template jadwal perawatan harian siap pakai",
+    "en": "A ready-to-use daily care schedule template",
+    "ar": "قالب جدول الرعاية اليومي جاهز للاستخدام",
+    "jv": "Templat jadwal perawatan harian siap dipigunakaké",
+    "su": "Citakan jadwal perawatan harian siap dipaké",
+    "zh": "每日照护时间表模板（可直接套用）",
+    "ja": "すぐ使える毎日のケア予定テンプレート"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Templat jadwal perawatan harian siap dipakai, dengan versi paling kecil untuk memulai, patokan kapan menjalankannya, dan bagian tinjauan mingguan.",
+    "en": "A ready-to-use daily care schedule template with the smallest version to begin, a guide for when to run it, and a weekly check section.",
+    "ar": "قالب جاهز لجدول الرعاية اليومي يتضمن أصغر نسخة للبدء، وتوجيهاً حول وقت التشغيل، وقسماً للمراجعة الأسبوعية، يمكنك استخدامه مباشرة.",
+    "ja": "すぐ使える毎日のケア予定テンプレート。最小バージョンで始め、実行タイミングの目安と週次の確認欄を備えています。",
+    "zh": "可直接套用的每日照护时间表模板，包含入门用的最小版本、执行时间参考以及每周回顾部分。",
+    "jv": "Templat jadwal perawatan harian siap dipigunakaké, kalebu versi paling cilik kanggo miwiti, pathokan kapan dijalanké, lan bagéan tinjauan saben minggu.",
+    "su": "Citakan jadwal perawatan harian nu siap dipaké, kaasup versi paling leutik pikeun mimitian, patokan iraha dilaksanakeun, jeung bagian tinjauan mingguan."
+  }
 }

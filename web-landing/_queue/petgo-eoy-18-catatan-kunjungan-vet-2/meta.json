@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "catatan-kunjungan-vet-2",
-    "en": "catatan-kunjungan-vet",
-    "ar": "catatan-kunjungan-vet-5",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-5",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-5",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-5",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-5"
+    "id": "catatan-kunjungan-vet-dan-aplikasi-lain-di-ponsel-anda",
+    "en": "vet-visit-log-and-the-other-apps-on-your-phone",
+    "ar": "sjlat-zyara-altbyb-albytry-wttbyqat-hatfk-alakhra",
+    "jv": "catatan-kunjungan-vet-lan-aplikasi-liya-ing-hp",
+    "su": "catatan-kunjungan-vet-jeung-aplikasi-sejen-dina-hp",
+    "zh": "chong-wu-jiu-zhen-ji-lu-yu-shou-ji-shang-de-qi-ta-ying-yong",
+    "ja": "doubutsubyouin-no-kiroku-to-sumaho-no-hokano-apuri"
   },
   "titles": {
-    "id": "FAQ catatan kunjungan vet: jawaban singkat yang dipakai",
-    "en": "catatan kunjungan vet — Practical Q&amp;A",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: FAQ catatan kunjungan vet: jawaban singkat yang dipakai",
-    "su": "Pituduh: FAQ catatan kunjungan vet: jawaban singkat yang dipakai",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet dan aplikasi lain di ponsel Anda",
+    "en": "vet visit log and the other apps on your phone",
+    "ar": "سجلات زيارة الطبيب البيطري وتطبيقات هاتفك الأخرى",
+    "jv": "catatan kunjungan vet lan aplikasi liya ing HP",
+    "su": "catatan kunjungan vet jeung aplikasi séjén dina HP",
+    "zh": "宠物就诊记录与手机上的其他应用",
+    "ja": "動物病院の記録とスマホの他のアプリ"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Cara catatan kunjungan vet berjalan berdampingan dengan aplikasi lain di ponsel Anda, arti praktisnya, versi paling kecil, dan penyimpanan di perangkat.",
+    "en": "How a vet visit log can run alongside the other apps on your phone, what it means in practice, the smallest version, and storage on the device.",
+    "ar": "كيف تعمل سجلات زيارة الطبيب البيطري جنباً إلى جنب مع التطبيقات الأخرى في هاتفك، ومعناها العملي، وأصغر نسخة، وحفظ البيانات على الجهاز.",
+    "ja": "スマホの他のアプリと一緒に使う動物病院の記録。実践での意味、最小バージョン、端末への保存を扱います。",
+    "zh": "宠物就诊记录如何与手机上的其他应用并行使用，说明它的实际意义、最小版本和设备端存储。",
+    "jv": "Carané catatan kunjungan vet bisa mlaku bareng aplikasi liyané ing HP, tegesé ing praktik, versi paling cilik, lan panyimpanan ing piranti.",
+    "su": "Kumaha catatan kunjungan vet bisa jalan babarengan jeung aplikasi séjén dina HP anjeun, hartina dina prakték, versi paling leutik, jeung panyimpenan dina alat."
+  }
 }

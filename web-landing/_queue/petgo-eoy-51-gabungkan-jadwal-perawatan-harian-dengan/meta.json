@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "gabungkan-jadwal-perawatan-harian-dengan-kebiasaan-lain-harian",
-    "en": "stack-jadwal-perawatan-harian-with-other-habits",
-    "ar": "jadwal-perawatan-harian-13",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-13",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-13",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-13",
-    "ja": "petgojadwal-perawatan-harian-ガイド-13"
+    "id": "jadwal-perawatan-harian-dan-aplikasi-lain-di-ponsel-anda",
+    "en": "daily-care-schedule-and-the-other-apps-on-your-phone",
+    "ar": "jdwl-alraaya-alywmy-wttbyqat-hatfk-alakhra",
+    "jv": "jadwal-perawatan-harian-lan-aplikasi-liya-ing-hp",
+    "su": "jadwal-perawatan-harian-jeung-aplikasi-sejen-dina-hp",
+    "zh": "mei-ri-zhao-hu-shi-jian-biao-yu-shou-ji-shang-de-qi-ta-ying-yong",
+    "ja": "mainichi-no-kea-yotei-to-sumaho-no-hokano-apuri"
   },
   "titles": {
-    "id": "Gabungkan jadwal perawatan harian dengan Kebiasaan Lain",
-    "en": "Stack jadwal perawatan harian with Other Habits",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Gabungkan jadwal perawatan harian dengan Kebiasaan Lain",
-    "su": "Pituduh: Gabungkan jadwal perawatan harian dengan Kebiasaan Lain",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "jadwal perawatan harian dan aplikasi lain di ponsel Anda",
+    "en": "daily care schedule and the other apps on your phone",
+    "ar": "جدول الرعاية اليومي وتطبيقات هاتفك الأخرى",
+    "jv": "jadwal perawatan harian lan aplikasi liya ing HP",
+    "su": "jadwal perawatan harian jeung aplikasi séjén dina HP",
+    "zh": "每日照护时间表与手机上的其他应用",
+    "ja": "毎日のケア予定とスマホの他のアプリ"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Bagaimana jadwal perawatan harian berjalan bersama aplikasi lain di ponsel Anda, arti praktisnya, versi paling kecil, dan penyimpanan di perangkat.",
+    "en": "How the daily care schedule works alongside the other apps on your phone, what it means in practice, the smallest version, and on-device storage.",
+    "ar": "جدول الرعاية اليومي وتطبيقات هاتفك الأخرى: كيف يعملان معاً، والمعنى العملي للجدول، وأصغر نسخة، وحفظ البيانات على الجهاز.",
+    "ja": "毎日のケア予定とスマホの他のアプリの組み合わせ。実践での意味、最小バージョン、端末への保存を解説します。",
+    "zh": "每日照护时间表如何与手机上的其他应用协同，它的实际意义、最小版本和设备端存储，一并讲清楚。",
+    "jv": "Carané jadwal perawatan harian mlaku bareng aplikasi liyané ing HP kowé: tegesé ing praktik, versi paling cilik, lan panyimpanan ing piranti.",
+    "su": "Kumaha jadwal perawatan harian jalan babarengan jeung aplikasi séjén dina HP anjeun, hartina dina prakték, versi paling leutik, jeung panyimpenan dina alat."
+  }
 }

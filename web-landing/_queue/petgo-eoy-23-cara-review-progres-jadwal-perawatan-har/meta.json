@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "cara-review-progres-jadwal-perawatan-harian-tiap-minggu-offline",
-    "en": "how-to-review-jadwal-perawatan-harian-progress-weekly",
-    "ar": "jadwal-perawatan-harian-6",
-    "jv": "pandhuan-jadwal-perawatan-harian-petgo-6",
-    "su": "pituduh-jadwal-perawatan-harian-petgo-6",
-    "zh": "petgo-jadwal-perawatan-harian-实用指南-6",
-    "ja": "petgojadwal-perawatan-harian-ガイド-6"
+    "id": "cara-meninjau-jadwal-perawatan-harian-tiap-minggu",
+    "en": "how-to-review-daily-care-schedule-every-week",
+    "ar": "kyf-traja-jdwl-alraaya-alywmy-asbwaya",
+    "jv": "kepriye-ninjau-jadwal-perawatan-harian-saben-minggu",
+    "su": "kumaha-ninjau-jadwal-perawatan-harian-unggal-minggu",
+    "zh": "mei-zhou-ru-he-fu-pan-mei-ri-zhao-hu-shi-jian-biao",
+    "ja": "maishuu-mainichi-no-kea-yotei-wo-minaosu-houhou"
   },
   "titles": {
-    "id": "Cara Review Progres jadwal perawatan harian Tiap Minggu",
-    "en": "How to Review jadwal perawatan harian Progress Weekly",
-    "ar": "jadwal perawatan harian — دليل PetGo",
-    "jv": "Pandhuan: Cara Review Progres jadwal perawatan harian Tiap Minggu",
-    "su": "Pituduh: Cara Review Progres jadwal perawatan harian Tiap Minggu",
-    "zh": "PetGo · jadwal perawatan harian 实用指南",
-    "ja": "PetGo｜jadwal perawatan harian ガイド"
+    "id": "Cara meninjau jadwal perawatan harian tiap minggu",
+    "en": "How to review daily care schedule every week",
+    "ar": "كيف تراجع جدول الرعاية اليومي أسبوعياً",
+    "jv": "Kepriyé ninjau jadwal perawatan harian saben minggu",
+    "su": "Kumaha ninjau jadwal perawatan harian unggal minggu",
+    "zh": "每周如何复盘每日照护时间表",
+    "ja": "毎週毎日のケア予定を見直す方法"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Langkah meninjau jadwal perawatan harian setiap minggu, memeriksa catatan yang tersimpan di perangkat, dan cara kembali ke rutinitas setelah hari terlewat.",
+    "en": "How to review a daily care schedule every week, check the entries stored on your device, and get back into the routine after a missed day.",
+    "ar": "كيف تراجع جدول الرعاية اليومي أسبوعياً، وتتحقق من السجلات المحفوظة على جهازك، وتعود إلى الروتين بعد يوم فائت دون ضغط.",
+    "ja": "毎週見直す手順。毎日のケア予定の記録の確認と、飛んだ日の後に通常の流れへ戻す方法を解説します。",
+    "zh": "每周如何回顾每日照护时间表：检查保存在设备上的记录，以及漏掉一天之后如何回到日常节奏。",
+    "jv": "Langkah mriksa jadwal perawatan harian saben minggu, mriksa cathetan sing kasimpen ing piranti, lan carané bali menyang rutinitas sawisé dina sing kelangan.",
+    "su": "Léngkah ninjau jadwal perawatan harian unggal minggu, meriksa catetan nu disimpen dina alat, jeung cara balik ka rutinitas sanggeus poé nu kaliwat."
+  }
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "alur-kerja-catatan-kunjungan-vet-dari-a-sampai-z-praktis",
-    "en": "catatan-kunjungan-vet-workflow-a-to-z-practical",
-    "ar": "catatan-kunjungan-vet-4",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-4",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-4",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-4",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-4"
+    "id": "catatan-kunjungan-vet-saat-waktu-cuma-sedikit",
+    "en": "vet-visit-log-when-you-barely-have-time",
+    "ar": "sjlat-zyara-altbyb-albytry-hyn-la-ybqa-wqt",
+    "jv": "catatan-kunjungan-vet-nalika-wektune-mung-sithik",
+    "su": "catatan-kunjungan-vet-nalika-waktu-ukur-saeutik",
+    "zh": "shi-jian-hen-shao-shi-zen-me-zuo-chong-wu-jiu-zhen-ji-lu",
+    "ja": "jikan-gahotondonai-nichi-no-doubutsubyouin-no-kiroku"
   },
   "titles": {
-    "id": "Alur Kerja catatan kunjungan vet dari A sampai Z",
-    "en": "catatan kunjungan vet Workflow A to Z (Practical)",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Alur Kerja catatan kunjungan vet dari A sampai Z",
-    "su": "Pituduh: Alur Kerja catatan kunjungan vet dari A sampai Z",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet saat waktu cuma sedikit",
+    "en": "vet visit log when you barely have time",
+    "ar": "سجلات زيارة الطبيب البيطري حين لا يبقى وقت",
+    "jv": "catatan kunjungan vet nalika wektuné mung sithik",
+    "su": "catatan kunjungan vet nalika waktu ukur saeutik",
+    "zh": "时间很少时怎么做宠物就诊记录",
+    "ja": "時間がほとんどない日の動物病院の記録"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Catatan kunjungan vet untuk hari ketika waktu hampir tidak ada: versi paling kecil yang cukup dikerjakan, waktu yang tepat, dan tinjauan mingguan singkat.",
+    "en": "Vet visit log for days when there is almost no time: the smallest version you can finish, the right moment to log, and a short weekly review.",
+    "ar": "سجلات زيارة الطبيب البيطري في الأيام التي يكاد لا يبقى فيها وقت: أصغر نسخة يمكن إنجازها، والوقت المناسب للتسجيل، ومراجعة أسبوعية قصيرة.",
+    "ja": "ほとんど時間がない日の動物病院の記録。やり切れる最小バージョン、記録の適切なタイミング、短い週次の見直しを紹介。",
+    "zh": "几乎没有时间的日子里如何记录宠物就诊：可以完成的最小版本、合适的记录时机和简短的每周回顾。",
+    "jv": "Catatan kunjungan vet kanggo dina nalika wektu meh ora ana: versi paling cilik sing isa rampung, wektu sing pas, lan tinjauan saben minggu sing cendhak.",
+    "su": "Catatan kunjungan vet pikeun poé nu waktuna ampir taya: versi paling leutik nu bisa rengse, waktu nu pas, jeung tinjauan mingguan nu pondok."
+  }
 }

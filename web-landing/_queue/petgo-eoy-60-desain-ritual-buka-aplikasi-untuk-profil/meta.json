@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "desain-ritual-buka-aplikasi-untuk-profil-hewan-peliharaan-2026",
-    "en": "app-open-ritual-design-for-profil-hewan-peliharaan",
-    "ar": "profil-hewan-peliharaan-15",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-15",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-15",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-15",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-15"
+    "id": "profil-hewan-peliharaan-yang-tidak-bikin-malas-membuka-app",
+    "en": "pet-profile-that-does-not-feel-like-a-chore-to-open",
+    "ar": "mlf-alhywan-alalyf-la-ythql-fthh",
+    "jv": "profil-hewan-peliharaan-sing-ora-males-dibukak",
+    "su": "profil-hewan-peliharaan-anu-teu-hoream-dibuka",
+    "zh": "da-kai-bu-fei-jin-de-chong-wu-dang-an",
+    "ja": "hiraku-noga-okkuu-ninaranai-petto-no-purofiiru"
   },
   "titles": {
-    "id": "Desain Ritual Buka Aplikasi untuk profil hewan peliharaan",
-    "en": "App-Open Ritual Design for profil hewan peliharaan",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Desain Ritual Buka Aplikasi untuk profil hewan peliharaan",
-    "su": "Pituduh: Desain Ritual Buka Aplikasi untuk profil hewan peliharaan",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan yang tidak bikin malas membuka app",
+    "en": "pet profile that does not feel like a chore to open",
+    "ar": "ملف الحيوان الأليف لا يثقل فتحه",
+    "jv": "profil hewan peliharaan sing ora males dibukak",
+    "su": "profil hewan peliharaan anu teu hoream dibuka",
+    "zh": "打开不费劲的宠物档案",
+    "ja": "開くのが億劫にならないペットのプロフィール"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Profil hewan peliharaan yang ringan dibuka setiap hari: alasan kebiasaan putus, versi paling kecil, dan cara kembali mengisi setelah ada jeda.",
+    "en": "A pet profile that is easy to open every day: why routines break, the smallest version to use, and how to fill it in again after a pause.",
+    "ar": "ملف الحيوان الأليف الذي يُفتح كل يوم دون عناء: أسباب توقف العادة، وأصغر نسخة للاستخدام، وطريقة العودة إلى التعبئة بعد توقف.",
+    "ja": "毎日開きやすいペットのプロフィール。習慣が途切れる理由、最小バージョン、一時中断後に記入を再開する方法を解説。",
+    "zh": "每天都容易打开的宠物档案：习惯中断的原因、最小版本，以及停顿后如何重新填写，循序渐进。",
+    "jv": "Profil hewan peliharaan sing gampang dibukak saben dina: sebab kebiasan mandheg, versi paling cilik, lan carané ngisi maneh sawisé ana jeda.",
+    "su": "Profil hewan peliharaan nu gampang dibuka unggal poé: alesan kabiasaan putus, versi paling leutik, jeung cara ngeusi deui sanggeus aya jeda."
+  }
 }

@@ -67,7 +67,7 @@ class CareScreen extends ConsumerWidget {
           const SizedBox(height: 8),
           if (schedules.isEmpty)
             Text(l10n.careEmptySchedules,
-                style: const TextStyle(color: AppColors.inkSoft))
+                style: TextStyle(color: context.textSecondary))
           else
             ...schedules.map(
               (s) => Card(
@@ -77,9 +77,10 @@ class CareScreen extends ConsumerWidget {
                   subtitle: Text(
                     '${_kindLabel(l10n, s.kind)} · ${l10n.everyMonths(s.intervalMonths)}',
                   ),
-                  trailing: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.end,
+                  // Countdown + action share one horizontal row: stacking them
+                  // in a Column overflowed the 72dp tile by 9px.
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
                         s.daysRemaining <= 0
@@ -95,14 +96,16 @@ class CareScreen extends ConsumerWidget {
                           fontSize: 12,
                         ),
                       ),
-                      TextButton(
+                      const SizedBox(width: 2),
+                      IconButton(
+                        tooltip: l10n.actionMarkDone,
+                        icon: const Icon(Icons.check_circle_outline),
                         onPressed: () async {
                           await ref
                               .read(careSchedulesProvider.notifier)
                               .markDone(s.id);
                           await _resyncReminders(ref);
                         },
-                        child: Text(l10n.actionMarkDone),
                       ),
                     ],
                   ),
@@ -127,7 +130,7 @@ class CareScreen extends ConsumerWidget {
           const SizedBox(height: 8),
           if (vetLogs.isEmpty)
             Text(l10n.careEmptyVet,
-                style: const TextStyle(color: AppColors.inkSoft))
+                style: TextStyle(color: context.textSecondary))
           else
             ...vetLogs.map(
               (v) => Card(
@@ -206,12 +209,14 @@ class CareScreen extends ConsumerWidget {
                       : l10n.actionEditSchedule,
                   style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 18),
                 ),
+                const SizedBox(height: 12),
                 TextFormField(
                   controller: titleCtrl,
                   decoration: InputDecoration(labelText: l10n.fieldTitle),
                   validator: (v) =>
                       (v == null || v.trim().isEmpty) ? l10n.errorTitleRequired : null,
                 ),
+                const SizedBox(height: 12),
                 DropdownButtonFormField<CareKind>(
                   // ignore: deprecated_member_use
                   value: kind,
@@ -227,6 +232,7 @@ class CareScreen extends ConsumerWidget {
                     if (v != null) setModal(() => kind = v);
                   },
                 ),
+                const SizedBox(height: 12),
                 TextFormField(
                   controller: monthsCtrl,
                   keyboardType: TextInputType.number,
@@ -238,6 +244,7 @@ class CareScreen extends ConsumerWidget {
                     return null;
                   },
                 ),
+                const SizedBox(height: 12),
                 ListTile(
                   contentPadding: EdgeInsets.zero,
                   title: Text(l10n.fieldLastDone),
@@ -258,6 +265,7 @@ class CareScreen extends ConsumerWidget {
                     }
                   },
                 ),
+                const SizedBox(height: 16),
                 FilledButton(
                   onPressed: () {
                     if (formKey.currentState!.validate()) {
@@ -344,24 +352,29 @@ class CareScreen extends ConsumerWidget {
                         ? l10n.errorTitleRequired
                         : null,
                   ),
+                  const SizedBox(height: 12),
                   TextFormField(
                     controller: clinicCtrl,
                     decoration: InputDecoration(labelText: l10n.fieldClinic),
                   ),
+                  const SizedBox(height: 12),
                   TextFormField(
                     controller: medCtrl,
                     decoration: InputDecoration(labelText: l10n.fieldMedication),
                   ),
+                  const SizedBox(height: 12),
                   TextFormField(
                     controller: costCtrl,
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(labelText: l10n.fieldCost),
                   ),
+                  const SizedBox(height: 12),
                   TextFormField(
                     controller: notesCtrl,
                     maxLines: 2,
                     decoration: InputDecoration(labelText: l10n.fieldNotes),
                   ),
+                  const SizedBox(height: 12),
                   ListTile(
                     contentPadding: EdgeInsets.zero,
                     title: Text(l10n.fieldDate),
@@ -382,6 +395,7 @@ class CareScreen extends ConsumerWidget {
                       }
                     },
                   ),
+                  const SizedBox(height: 16),
                   FilledButton(
                     onPressed: () {
                       if (formKey.currentState!.validate()) {

@@ -9,7 +9,10 @@ import '../../features/home/home_screen.dart';
 import '../../features/onboarding/onboarding_page.dart';
 import '../../features/settings/settings_screen.dart';
 import '../../features/shell/navigation_shell.dart';
+import '../../l10n/app_localizations.dart';
 import '../providers/app_providers.dart';
+import '../ui/fleet_app_config.dart';
+import '../ui/fleet_onboarding_screen.dart';
 import '../ui/fleet_splash_screen.dart';
 
 final _rootKey = GlobalKey<NavigatorState>(debugLabel: 'root');
@@ -36,6 +39,13 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         path: '/onboarding',
         parentNavigatorKey: _rootKey,
         builder: (context, state) => const OnboardingPage(),
+      ),
+      GoRoute(
+        path: '/fleet-onboarding',
+        parentNavigatorKey: _rootKey,
+        builder: (context, state) => FleetOnboardingScreen(
+          config: FleetAppConfig.localized(AppLocalizations.of(context)!),
+        ),
       ),
       StatefulShellRoute.indexedStack(
         builder: (context, state, navigationShell) {

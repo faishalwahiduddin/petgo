@@ -1,0 +1,85 @@
+{
+  "title": "catatan kunjungan vet untuk pengguna di Indonesia",
+  "description": "Catatan kunjungan vet untuk pengguna di Indonesia: versi paling kecil yang bisa dimulai, waktu yang pas untuk mencatat, dan tinjauan mingguan sederhana.",
+  "badge": "keluarga · offline",
+  "answer": "Di grup keluarga tiga orang menanyakan catatan kunjungan vet, dan tidak ada jawaban yang sama. PetGo menyimpan catatan kunjungan vet di perangkat, jadi datanya tetap terbuka tanpa kuota dan tanpa akun.",
+  "toc": [
+    "Versi paling kecil",
+    "Kapan menjalankannya",
+    "Tinjauan mingguan"
+  ],
+  "sections": [
+    {
+      "h2": "Versi paling kecil",
+      "p": "Satu baris per anggota: status, tanggal, satu hal yang perlu ditindak.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Kapan menjalankannya",
+      "p": "Isi saat makan malam atau ketika grup keluarga sudah ramai.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Tinjauan mingguan",
+      "p": "Sekali seminggu, lihat bagian mana yang paling sering bolong, lalu kecilkan target—bukan menambah semangat.",
+      "h3": null,
+      "p3": null
+    }
+  ],
+  "table": {
+    "caption": "Kerangka catatan kunjungan vet",
+    "headers": [
+      "Langkah",
+      "Isi minimal",
+      "Selesai bila"
+    ],
+    "rows": [
+      [
+        "Baris anggota",
+        "status + tanggal",
+        "bisa ditinjau"
+      ],
+      [
+        "Penanda",
+        "posisi terakhir",
+        "bisa dilanjut besok"
+      ],
+      [
+        "Evaluasi minggu",
+        "satu penyesuaian",
+        "diterapkan Senin"
+      ]
+    ]
+  },
+  "list": [
+    "Tetapkan satu waktu tetap, bukan “kapan sempat”.",
+    "Buka PetGo saat waktu itu tiba, bukan nanti malam.",
+    "Catat satu hambatan, bukan alasan panjang.",
+    "Cadangkan data sebelum ganti ponsel."
+  ],
+  "faqs": [
+    [
+      "Apakah catatan kunjungan vet bisa dibuka offline?",
+      "Ya. PetGo menyimpan semuanya di perangkat, jadi tidak butuh kuota."
+    ],
+    [
+      "Perlu akun dulu?",
+      "Tidak. Mulai tanpa login; cadangkan data secara berkala."
+    ],
+    [
+      "Mulai dari mana?",
+      "Dari bagian terpendek. Tambah cakupan hanya setelah dua minggu stabil."
+    ],
+    [
+      "Kalau bolong beberapa hari?",
+      "Jangan hapus riwayat. Lanjut dari bagian terakhir dan catat satu hambatan."
+    ]
+  ],
+  "cta": [
+    "Mulai catatan kunjungan vet hari ini",
+    "Buka PetGo"
+  ],
+  "slug": "berapa-lama-ideal-untuk-petgo-harian"
+}

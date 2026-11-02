@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "profil-hewan-peliharaan-saat-travel-tanpa-internet-praktis",
-    "en": "profil-hewan-peliharaan-while-traveling-offline-practical",
-    "ar": "profil-hewan-peliharaan-17",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-17",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-17",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-17",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-17"
+    "id": "profil-hewan-peliharaan-full-offline-apa-yang-tetap-jalan",
+    "en": "pet-profile-fully-offline-what-still-works",
+    "ar": "mlf-alhywan-alalyf-bla-atsal-tmama-ma-ybqa-yaml",
+    "jv": "profil-hewan-peliharaan-full-offline-apa-sing-tetep-mlaku",
+    "su": "profil-hewan-peliharaan-full-offline-naon-anu-tetep-jalan",
+    "zh": "chong-wu-dang-an-wan-quan-li-xian-na-xie-gong-neng-hai-neng-yong",
+    "ja": "petto-no-purofiiru-kanzen-ofurain-nani-ga-ugoku-ka"
   },
   "titles": {
-    "id": "profil hewan peliharaan full offline: uji & checklist",
-    "en": "profil hewan peliharaan While Traveling Offline (Practical)",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: profil hewan peliharaan full offline: uji & checklist",
-    "su": "Pituduh: profil hewan peliharaan full offline: uji & checklist",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan full offline: apa yang tetap jalan",
+    "en": "pet profile fully offline: what still works",
+    "ar": "ملف الحيوان الأليف بلا اتصال تماماً: ما يبقى يعمل",
+    "jv": "profil hewan peliharaan full offline: apa sing tetep mlaku",
+    "su": "profil hewan peliharaan full offline: naon anu tetep jalan",
+    "zh": "宠物档案完全离线：哪些功能还能用",
+    "ja": "ペットのプロフィール完全オフライン：何が動くか"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Profil hewan peliharaan sepenuhnya offline: apa yang tetap bisa dipakai tanpa koneksi, data di perangkat, tinjauan mingguan, dan langkah setelah ada jeda.",
+    "en": "Pet profile fully offline: what you can still use without a connection, data on the device, the weekly check, and steps after a break.",
+    "ar": "ملف الحيوان الأليف بلا اتصال تماماً: ما يمكن الاستمرار في استخدامه دون شبكة، والبيانات على الجهاز، والمراجعة الأسبوعية.",
+    "ja": "完全オフラインで使うペットのプロフィール。接続なしで使い続けられる機能、端末のデータ、毎週の確認を説明。",
+    "zh": "宠物档案完全离线：断网时仍能使用的内容，设备上的数据，每周检查，以及停顿后的步骤。",
+    "jv": "Profil hewan peliharaan full offline: apa sing tetep bisa dipigunakaké tanpa sambungan, data ing piranti, tinjauan saben minggu, lan langkah sawisé jeda.",
+    "su": "Profil hewan peliharaan full offline: naon nu tetep bisa dipaké tanpa sambungan, data dina alat, tinjauan unggal minggu, jeung léngkah sanggeus jeda."
+  }
 }

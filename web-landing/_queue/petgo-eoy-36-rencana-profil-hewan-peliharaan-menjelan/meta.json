@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "rencana-profil-hewan-peliharaan-menjelang-2027-2026",
-    "en": "profil-hewan-peliharaan-plan-heading-into-2027",
-    "ar": "profil-hewan-peliharaan-9",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-9",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-9",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-9",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-9"
+    "id": "profil-hewan-peliharaan-di-musim-paling-ramai",
+    "en": "pet-profile-in-the-busiest-season",
+    "ar": "mlf-alhywan-alalyf-fy-akthr-almwasm-anshghala",
+    "jv": "profil-hewan-peliharaan-ing-mangsa-paling-rame",
+    "su": "profil-hewan-peliharaan-dina-usum-pangsibukna",
+    "zh": "zui-mang-de-ji-jie-li-de-chong-wu-dang-an",
+    "ja": "ichiban-isogashii-jiki-no-petto-no-purofiiru"
   },
   "titles": {
-    "id": "Rencana profil hewan peliharaan Menjelang 2027",
-    "en": "profil hewan peliharaan Plan Heading into 2027",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Rencana profil hewan peliharaan Menjelang 2027",
-    "su": "Pituduh: Rencana profil hewan peliharaan Menjelang 2027",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan di musim paling ramai",
+    "en": "pet profile in the busiest season",
+    "ar": "ملف الحيوان الأليف في أكثر المواسم انشغالاً",
+    "jv": "profil hewan peliharaan ing mangsa paling rame",
+    "su": "profil hewan peliharaan dina usum pangsibukna",
+    "zh": "最忙的季节里的宠物档案",
+    "ja": "いちばん忙しい時期のペットのプロフィール"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Profil hewan peliharaan saat musim paling ramai: versi paling kecil yang tetap bisa diisi, kapan menjalankannya, dan tinjauan mingguan untuk mengecek pembaruan.",
+    "en": "Pet profile in the busiest season: the smallest version you can still fill in, when to run it, and a weekly check of what needs updating.",
+    "ar": "ملف الحيوان الأليف في أكثر المواسم انشغالاً: أصغر نسخة يمكن تعبئتها، ووقت التشغيل، ومراجعة أسبوعية تبيّن ما يحتاج إلى تحديث.",
+    "ja": "最も忙しい時期のペットのプロフィール。記入できる最小バージョン、実行タイミング、更新が必要な点を確かめる週次の確認。",
+    "zh": "最忙季节的宠物档案：仍可填写的最小版本、执行时机，以及每周检查哪些内容需要更新。",
+    "jv": "Profil hewan peliharaan ing mangsa paling rame: versi paling cilik sing tetep bisa diisi, kapan dijalanké, lan tinjauan saben minggu kanggo mriksa pembaruan.",
+    "su": "Profil hewan peliharaan dina usum pangsibukna: versi paling leutik nu tetep bisa diisi, iraha dilaksanakeun, jeung tinjauan mingguan."
+  }
 }

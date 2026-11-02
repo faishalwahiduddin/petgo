@@ -76,6 +76,9 @@
   const stage = document.getElementById('stage');
   const slides = C.slides[lang] || [];
   const previewScale = 0.3;
+  // White type on a bright brand fails 4.5:1; darken those washes.
+  const lightBrand = whiteContrast(C.palette.primary) < 4.5;
+  const veryLight = relLum(C.palette.primary) > 0.55;
 
   // Native Android tablet raws for Play sizes; iPad keeps raw-tablet/.
   const primaryRaw = size === '7' ? 'raw-android-tablet7'
@@ -84,9 +87,12 @@
 
   // Optional per-app art module (window.STORE_ART) — same contract as index.html.
   const A = window.STORE_ART || null;
+  if (veryLight) root.style.setProperty('--on-primary', '#14161A');
+  else if (A && A.generic && lightBrand) root.style.setProperty('--on-primary', '#FFFFFF');
   const hasPano = !!(A && A.panoramaSvg);
   const segs = slides.length || 4;
   const langClass = lang === 'ja-JP' ? ' cjk-ja' : lang === 'zh-CN' ? ' cjk-zh' : '';
+  const POSES = ['welcome', 'explaining', 'pointing', 'celebrating'];
 
   slides.forEach(function (s, i) {
     const seg = (isRTL && hasPano && A.rtlReverse !== false) ? (segs - 1 - i) : i;
@@ -96,7 +102,7 @@
     cell.style.height = (S.h * previewScale) + 'px';
     cell.innerHTML =
       '<span class="label">' + (i + 1) + '.png · ' + S.label + '</span>' +
-      '<div class="tablet-slide' + (isRTL ? ' rtl' : '') + langClass + (hasPano ? ' has-art' : '') + '" id="tslide-' + (i + 1) + '" style="width:' + S.w + 'px;height:' + S.h + 'px">' +
+      '<div class="tablet-slide' + (isRTL ? ' rtl' : '') + langClass + (hasPano ? ' has-art' : '') + (veryLight ? ' light' : (lightBrand ? ' darken' : '')) + '" id="tslide-' + (i + 1) + '" style="width:' + S.w + 'px;height:' + S.h + 'px">' +
         (hasPano ? '<div class="pano" style="--seg:' + seg + ';--segs:' + segs + '">' + panoSvg(A) + '</div>' : '') +
         '<div class="copy">' +
           '<div class="headline">' + esc(s.headline) + '</div>' +
@@ -115,16 +121,22 @@
             '</div>' +
           '</div>' +
         '</div>' +
+        (A && A.generic ? '<img class="mascot-png" src="../../../assets/mascot/hero-pose-' + POSES[i % POSES.length] + '.png" alt="" onerror="this.style.display=\'none\'">' : '') +
         mascotHtml(A, i) +
         '<div class="brand">' +
           '<img src="' + C.iconUrl + '" alt="" onerror="this.style.display=\'none\'">' +
-          '<div class="wm"><div class="n">' + esc(C.name) + '</div><div class="u">' + esc(C.subdomain) + '</div></div>' +
+          '<div class="wm"><div class="n">' + esc(C.name) + '</div></div>' +
         '</div>' +
       '</div>';
     const slideEl = cell.querySelector('.tablet-slide');
     if (A && A.theme) {
-      if (A.theme.bg) slideEl.style.background = A.theme.bg;
+      if (A.theme.bg) {
+        slideEl.style.background = A.generic
+          ? (veryLight ? lightWash() : (lightBrand ? darkWash() : A.theme.bg))
+          : A.theme.bg;
+      }
       if (A.theme.ink) slideEl.style.color = A.theme.ink;
+      else if (A.generic && veryLight) slideEl.style.color = '#14161A';
     }
     stage.appendChild(cell);
   });
@@ -196,6 +208,21 @@
   };
 
   function esc(t) { return String(t == null ? '' : t).replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
+
+  function relLum(hex) {
+    const h = String(hex || '#000').replace('#', '');
+    const n = h.length === 3 ? h.split('').map(function (c) { return c + c; }).join('') : h;
+    const rgb = [0, 2, 4].map(function (i) { return parseInt(n.substr(i, 2), 16) / 255; });
+    const lin = rgb.map(function (c) { return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); });
+    return 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2];
+  }
+  function whiteContrast(hex) { return 1.05 / (relLum(hex) + 0.05); }
+  function lightWash() {
+    return 'linear-gradient(160deg, #FFFDF4 0%, color-mix(in srgb, var(--primary) 22%, #FFFDF4) 100%)';
+  }
+  function darkWash() {
+    return 'linear-gradient(160deg, color-mix(in srgb, var(--primary) 58%, #0B0D11) 0%, color-mix(in srgb, var(--dark) 78%, #0B0D11) 100%)';
+  }
 })();
 </script>
 </body>

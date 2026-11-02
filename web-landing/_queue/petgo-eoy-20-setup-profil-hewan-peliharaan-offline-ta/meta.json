@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "setup-profil-hewan-peliharaan-offline-tanpa-kuota-praktis",
-    "en": "set-up-offline-profil-hewan-peliharaan-without-data-practical",
-    "ar": "profil-hewan-peliharaan-5",
-    "jv": "pandhuan-profil-hewan-peliharaan-petgo-5",
-    "su": "pituduh-profil-hewan-peliharaan-petgo-5",
-    "zh": "petgo-profil-hewan-peliharaan-实用指南-5",
-    "ja": "petgoprofil-hewan-peliharaan-ガイド-5"
+    "id": "profil-hewan-peliharaan-untuk-pengguna-di-indonesia",
+    "en": "pet-profile-for-readers-in-indonesia",
+    "ar": "mlf-alhywan-alalyf-lqra-indwnysya",
+    "jv": "profil-hewan-peliharaan-kanggo-pangguna-ing-indonesia",
+    "su": "profil-hewan-peliharaan-pikeun-pamake-di-indonesia",
+    "zh": "gei-yin-du-ni-xi-ya-du-zhe-de-chong-wu-dang-an",
+    "ja": "indoneshia-no-dokusha-notameno-petto-no-purofiiru"
   },
   "titles": {
-    "id": "Setup profil hewan peliharaan Offline tanpa Kuota",
-    "en": "Set Up Offline profil hewan peliharaan Without Data (Practical)",
-    "ar": "profil hewan peliharaan — دليل PetGo",
-    "jv": "Pandhuan: Setup profil hewan peliharaan Offline tanpa Kuota",
-    "su": "Pituduh: Setup profil hewan peliharaan Offline tanpa Kuota",
-    "zh": "PetGo · profil hewan peliharaan 实用指南",
-    "ja": "PetGo｜profil hewan peliharaan ガイド"
+    "id": "profil hewan peliharaan untuk pengguna di Indonesia",
+    "en": "pet profile for readers in Indonesia",
+    "ar": "ملف الحيوان الأليف لقرّاء إندونيسيا",
+    "jv": "profil hewan peliharaan kanggo pangguna ing Indonesia",
+    "su": "profil hewan peliharaan pikeun pamaké di Indonésia",
+    "zh": "给印度尼西亚读者的宠物档案",
+    "ja": "インドネシアの読者のためのペットのプロフィール"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Profil hewan peliharaan untuk pengguna di Indonesia, dimulai dari versi paling kecil, waktu yang pas untuk mengisinya, dan cara meninjau datanya tiap minggu.",
+    "en": "A pet profile for readers in Indonesia, starting from the smallest version, the right time to fill it in, and how to review the data every week.",
+    "ar": "ملف الحيوان الأليف للقرّاء في إندونيسيا: ابدأ بأصغر نسخة، واختر الوقت المناسب للتعبئة، وراجع البيانات كل أسبوع لتبقى مرتبة.",
+    "ja": "インドネシアの読者向けのペットのプロフィール。最小バージョンから始め、記入に適したタイミングと週ごとの見直し方を紹介。",
+    "zh": "面向印度尼西亚读者的宠物档案：从最小版本开始，说明填写的合适时机，以及每周如何回顾数据。",
+    "jv": "Profil hewan peliharaan kanggo pangguna ing Indonesia, diwiwiti saka versi paling cilik, wektu sing pas kanggo ngisi, lan carané mriksa data saben minggu.",
+    "su": "Profil hewan peliharaan pikeun pamaké di Indonésia, dimimitian ti versi paling leutik, waktu nu pas pikeun ngeusian, jeung cara ninjau datana unggal minggu."
+  }
 }

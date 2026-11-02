@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "petgo-untuk-orang-sibuk-harian",
-    "en": "petgo-for-busy-people",
-    "ar": "petgo-3",
-    "jv": "pandhuan-petgo-petgo-3",
-    "su": "pituduh-petgo-petgo-3",
-    "zh": "petgo-petgo-实用指南-3",
-    "ja": "petgopetgo-ガイド-3"
+    "id": "catatan-kunjungan-vet-untuk-orang-yang-waktunya-sempit",
+    "en": "vet-visit-log-for-people-with-no-spare-time",
+    "ar": "sjlat-zyara-altbyb-albytry-lmn-la-ymlk-wqta",
+    "jv": "catatan-kunjungan-vet-kanggo-sing-wektune-sempit",
+    "su": "catatan-kunjungan-vet-pikeun-anu-waktosna-heureut",
+    "zh": "shi-jian-hen-shao-de-ren-zen-me-zuo-chong-wu-jiu-zhen-ji-lu",
+    "ja": "jikan-ganai-nin-notameno-doubutsubyouin-no-kiroku"
   },
   "titles": {
-    "id": "PetGo untuk Orang Sibuk",
-    "en": "PetGo for Busy People",
-    "ar": "PetGo — دليل PetGo",
-    "jv": "Pandhuan: PetGo untuk Orang Sibuk",
-    "su": "Pituduh: PetGo untuk Orang Sibuk",
-    "zh": "PetGo · PetGo 实用指南",
-    "ja": "PetGo｜PetGo ガイド"
+    "id": "catatan kunjungan vet untuk orang yang waktunya sempit",
+    "en": "vet visit log for people with no spare time",
+    "ar": "سجلات زيارة الطبيب البيطري لمن لا يملك وقتاً",
+    "jv": "catatan kunjungan vet kanggo sing wektuné sempit",
+    "su": "catatan kunjungan vet pikeun anu waktosna heureut",
+    "zh": "时间很少的人怎么做宠物就诊记录",
+    "ja": "時間がない人のための動物病院の記録"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Cara mencatat kunjungan vet saat waktu sangat terbatas: pilih waktu yang realistis, mulai dari versi paling kecil, dan lanjut lagi setelah ada hari terlewat.",
+    "en": "How to keep a vet visit log when time is very tight: pick a realistic moment, start from the smallest version, and pick up again after a missed day.",
+    "ar": "كيف تحافظ على سجلات زيارة الطبيب البيطري حين يضيق الوقت: اختر توقيتاً واقعياً، وابدأ بأصغر نسخة، وعُد إلى المتابعة بعد يوم فائت.",
+    "ja": "時間がない日でも動物病院の記録を続けるコツ。現実的な時間を選び、最小バージョンから始め、空いた日の戻し方も紹介。",
+    "zh": "时间很少时如何记录宠物就诊：选择现实的时间点，从最小版本开始，漏记一天后也能继续。",
+    "jv": "Carané nyathet catatan kunjungan vet nalika wektu kepepet: pilih wektu sing realistis, wiwit saka versi paling cilik, lan terusake sawisé dina sing kelangan.",
+    "su": "Cara nyatet catatan kunjungan vet lamun waktu pisan sempit: pilih waktu nu realistis, mimitian ti versi paling leutik, jeung terusna sanggeus poé nu kaliwat."
+  }
 }

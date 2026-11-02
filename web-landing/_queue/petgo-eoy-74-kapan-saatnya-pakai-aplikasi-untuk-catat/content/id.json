@@ -1,0 +1,85 @@
+{
+  "title": "catatan kunjungan vet: yang perlu dicek sebelum memilih",
+  "description": "Hal-hal yang perlu dicek sebelum memilih cara mencatat kunjungan vet: alasan kebiasaan mudah putus, data di perangkat, dan tinjauan mingguan.",
+  "badge": "keluarga · offline",
+  "answer": "Di grup keluarga tiga orang menanyakan catatan kunjungan vet, dan tidak ada jawaban yang sama. PetGo menyimpan catatan kunjungan vet di perangkat, jadi datanya tetap terbuka tanpa kuota dan tanpa akun.",
+  "toc": [
+    "Kenapa mudah putus",
+    "Tersimpan di perangkat",
+    "Tinjauan mingguan"
+  ],
+  "sections": [
+    {
+      "h2": "Kenapa mudah putus",
+      "p": "Di grup keluarga tiga orang menanyakan catatan kunjungan vet, dan tidak ada jawaban yang sama.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Tersimpan di perangkat",
+      "p": "PetGo menyimpan catatan kunjungan vet di perangkat, jadi datanya tetap terbuka tanpa kuota dan tanpa akun.",
+      "h3": null,
+      "p3": null
+    },
+    {
+      "h2": "Tinjauan mingguan",
+      "p": "Sekali seminggu, lihat bagian mana yang paling sering bolong, lalu kecilkan target—bukan menambah semangat.",
+      "h3": null,
+      "p3": null
+    }
+  ],
+  "table": {
+    "caption": "Kerangka catatan kunjungan vet",
+    "headers": [
+      "Langkah",
+      "Isi minimal",
+      "Selesai bila"
+    ],
+    "rows": [
+      [
+        "Baris anggota",
+        "status + tanggal",
+        "bisa ditinjau"
+      ],
+      [
+        "Penanda",
+        "posisi terakhir",
+        "bisa dilanjut besok"
+      ],
+      [
+        "Evaluasi minggu",
+        "satu penyesuaian",
+        "diterapkan Senin"
+      ]
+    ]
+  },
+  "list": [
+    "Tetapkan satu waktu tetap, bukan “kapan sempat”.",
+    "Buka PetGo saat waktu itu tiba, bukan nanti malam.",
+    "Catat satu hambatan, bukan alasan panjang.",
+    "Cadangkan data sebelum ganti ponsel."
+  ],
+  "faqs": [
+    [
+      "Apakah catatan kunjungan vet bisa dibuka offline?",
+      "Ya. PetGo menyimpan semuanya di perangkat, jadi tidak butuh kuota."
+    ],
+    [
+      "Perlu akun dulu?",
+      "Tidak. Mulai tanpa login; cadangkan data secara berkala."
+    ],
+    [
+      "Mulai dari mana?",
+      "Dari bagian terpendek. Tambah cakupan hanya setelah dua minggu stabil."
+    ],
+    [
+      "Kalau bolong beberapa hari?",
+      "Jangan hapus riwayat. Lanjut dari bagian terakhir dan catat satu hambatan."
+    ]
+  ],
+  "cta": [
+    "Mulai catatan kunjungan vet hari ini",
+    "Buka PetGo"
+  ],
+  "slug": "kapan-saatnya-pakai-aplikasi-untuk-catatan-kunjungan-vet-praktis"
+}

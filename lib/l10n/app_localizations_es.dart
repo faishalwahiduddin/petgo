@@ -12,271 +12,331 @@ class AppLocalizationsEs extends AppLocalizations {
   String get appTitle => 'PetGo';
 
   @override
-  String get navPets => 'Pets';
+  String get appTagline =>
+      'Perfiles de mascotas, planes de cuidado y registros diarios';
 
   @override
-  String get navCare => 'Care';
+  String get navPets => 'Mascotas';
 
   @override
-  String get navDaily => 'Daily';
+  String get navCare => 'Cuidados';
 
   @override
-  String get navDocs => 'Docs';
+  String get navDaily => 'Diario';
 
   @override
-  String get navSettings => 'Settings';
+  String get navDocs => 'Documentos';
+
+  @override
+  String get navSettings => 'Ajustes';
 
   @override
   String get onboardingHeadline => 'PetGo';
 
   @override
   String get onboardingDescription =>
-      'Manage pet profiles, vaccine/deworm schedules, vet visits, and daily care offline on your device.\n\nNo account. Data stays local.';
+      'Gestiona los perfiles de tus mascotas, los calendarios de vacunas y desparasitación, las visitas al veterinario y el cuidado diario, todo sin conexión en tu dispositivo.\n\nSin cuenta. Los datos se quedan en tu dispositivo.';
 
   @override
-  String get onboardingContinue => 'I understand — continue';
+  String get onboardingContinue => 'Entendido — continuar';
 
   @override
-  String get homeActivePet => 'Active pet';
+  String get onbSkip => 'Omitir';
 
   @override
-  String get homeNoPets => 'No pets yet. Add a profile first.';
+  String get onbNext => 'Siguiente';
 
   @override
-  String get homeDueSoon => 'Due / soon';
+  String get onbGetStarted => 'Empezar';
 
   @override
-  String get homeNoDue => 'Nothing urgent.';
+  String get onbSlide1Title => 'Perfiles de mascotas';
 
   @override
-  String get homeAllPets => 'All pets';
+  String get onbSlide1Sub => 'Perros, gatos y más';
 
   @override
-  String get actionAddPet => 'Add pet';
+  String get onbSlide1Badge => '100 % sin conexión y privado';
 
   @override
-  String get actionAddSchedule => 'Add schedule';
+  String get onbSlide2Title => 'Planes de cuidado';
 
   @override
-  String get actionAddVet => 'Log vet visit';
+  String get onbSlide2Sub => 'Vacunas, desparasitación, pulgas y peluquería';
 
   @override
-  String get actionAddWeight => 'Log weight';
+  String get onbSlide2Badge => 'Recordatorios locales';
 
   @override
-  String get actionAddDoc => 'Add document';
+  String get onbSlide3Title => 'Registro diario';
 
   @override
-  String get actionSave => 'Save';
+  String get onbSlide3Sub => 'Comida, paseos y arenero';
 
   @override
-  String get actionCancel => 'Cancel';
+  String get onbSlide3Badge => 'Sin anuncios y sin cuenta';
 
   @override
-  String get speciesDog => 'Dog';
+  String get onbSlide4Title => 'Documentos locales';
 
   @override
-  String get speciesCat => 'Cat';
+  String get onbSlide4Sub => 'Cartillas de vacunas y recetas ordenadas';
 
   @override
-  String get speciesBird => 'Bird';
+  String get onbSlide4Badge => 'Datos en tu dispositivo';
 
   @override
-  String get speciesRabbit => 'Rabbit';
+  String get onbPrivacyHeadline => 'Privacidad y sin conexión';
 
   @override
-  String get speciesOther => 'Other';
+  String get onbPrivacyDetail =>
+      'Todos tus datos se guardan de forma segura en tu dispositivo, sin rastreadores.';
 
   @override
-  String get fieldPetName => 'Name';
+  String get loadingLabel => 'Cargando…';
 
   @override
-  String get fieldSpecies => 'Species';
+  String get homeActivePet => 'Mascota activa';
 
   @override
-  String get fieldBreed => 'Breed';
+  String get homeNoPets => 'Aún no hay mascotas. Añade un perfil primero.';
 
   @override
-  String get fieldWeightKg => 'Weight (kg)';
+  String get homeDueSoon => 'Próximo y pendiente';
 
   @override
-  String get fieldTitle => 'Title';
+  String get homeNoDue => 'Nada urgente.';
 
   @override
-  String get fieldIntervalMonths => 'Interval (months)';
+  String get homeAllPets => 'Todas las mascotas';
 
   @override
-  String get fieldClinic => 'Clinic';
+  String get actionAddPet => 'Añadir mascota';
 
   @override
-  String get fieldMedication => 'Medication';
+  String get actionAddSchedule => 'Añadir plan';
 
   @override
-  String get careSchedulesTitle => 'Care schedules';
+  String get actionAddVet => 'Registrar visita';
 
   @override
-  String get vetLogsTitle => 'Vet & meds';
+  String get actionAddWeight => 'Registrar peso';
 
   @override
-  String get careEmptySchedules => 'No schedules yet.';
+  String get actionAddDoc => 'Añadir documento';
 
   @override
-  String get careEmptyVet => 'No vet logs yet.';
+  String get actionSave => 'Guardar';
 
   @override
-  String get careVaccine => 'Vaccine';
+  String get actionCancel => 'Cancelar';
 
   @override
-  String get careDeworm => 'Deworm';
+  String get speciesDog => 'Perro';
 
   @override
-  String get careFlea => 'Flea';
+  String get speciesCat => 'Gato';
 
   @override
-  String get careGrooming => 'Grooming';
+  String get speciesBird => 'Pájaro';
 
   @override
-  String get careOther => 'Other';
+  String get speciesRabbit => 'Conejo';
+
+  @override
+  String get speciesOther => 'Otro';
+
+  @override
+  String get fieldPetName => 'Nombre';
+
+  @override
+  String get fieldSpecies => 'Especie';
+
+  @override
+  String get fieldBreed => 'Raza';
+
+  @override
+  String get fieldWeightKg => 'Peso (kg)';
+
+  @override
+  String get fieldTitle => 'Título';
+
+  @override
+  String get fieldIntervalMonths => 'Intervalo (meses)';
+
+  @override
+  String get fieldClinic => 'Clínica';
+
+  @override
+  String get fieldMedication => 'Medicamento';
+
+  @override
+  String get careSchedulesTitle => 'Planes de cuidado';
+
+  @override
+  String get vetLogsTitle => 'Visitas y medicación';
+
+  @override
+  String get careEmptySchedules => 'Aún no hay planes.';
+
+  @override
+  String get careEmptyVet => 'Aún no hay visitas registradas.';
+
+  @override
+  String get careVaccine => 'Vacuna';
+
+  @override
+  String get careDeworm => 'Desparasitación';
+
+  @override
+  String get careFlea => 'Pulgas';
+
+  @override
+  String get careGrooming => 'Peluquería';
+
+  @override
+  String get careOther => 'Otro';
 
   @override
   String everyMonths(int months) {
-    return 'every $months mo';
+    return 'cada $months meses';
   }
 
   @override
   String daysRemaining(int days) {
-    return '$days days left';
+    return 'quedan $days días';
   }
 
   @override
-  String get urgencyOverdue => 'Overdue';
+  String get urgencyOverdue => 'Atrasado';
 
   @override
-  String get dailyQuickAdd => 'Quick log';
+  String get dailyQuickAdd => 'Registro rápido';
 
   @override
-  String get dailyTimeline => 'Timeline';
+  String get dailyTimeline => 'Cronología';
 
   @override
-  String get dailyEmpty => 'No daily logs yet.';
+  String get dailyEmpty => 'Aún no hay registros diarios.';
 
   @override
-  String get dailyFeed => 'Feed';
+  String get dailyFeed => 'Comida';
 
   @override
-  String get dailyWalk => 'Walk';
+  String get dailyWalk => 'Paseo';
 
   @override
-  String get dailyLitter => 'Litter';
+  String get dailyLitter => 'Arenero';
 
   @override
-  String get dailyOther => 'Other';
+  String get dailyOther => 'Otro';
 
   @override
-  String get weightHistory => 'Weight history';
+  String get weightHistory => 'Historial de peso';
 
   @override
-  String get docsEmpty => 'No documents yet.';
+  String get docsEmpty => 'Aún no hay documentos.';
 
   @override
-  String get docVaccineCard => 'Vaccine card';
+  String get docVaccineCard => 'Cartilla de vacunas';
 
   @override
-  String get docPrescription => 'Prescription';
+  String get docPrescription => 'Receta';
 
   @override
-  String get docInsurance => 'Insurance';
+  String get docInsurance => 'Seguro';
 
   @override
-  String get docOther => 'Other';
+  String get docOther => 'Otro';
 
   @override
-  String get settingsLanguage => 'Language';
+  String get settingsLanguage => 'Idioma';
 
   @override
-  String get settingsPets => 'Pet profiles';
+  String get settingsPets => 'Perfiles de mascotas';
 
   @override
-  String get settingsBackup => 'Backup';
+  String get settingsBackup => 'Copia de seguridad';
 
   @override
-  String get settingsVersion => 'Version';
+  String get settingsVersion => 'Versión';
 
   @override
-  String get tileExportBackup => 'Export backup';
+  String get tileExportBackup => 'Exportar copia';
 
   @override
-  String get tileImportBackup => 'Import backup';
+  String get tileImportBackup => 'Importar copia';
 
   @override
-  String get snackbarImportSuccess => 'Backup imported';
+  String get snackbarImportSuccess => 'Copia importada';
 
   @override
-  String get errorPetNameRequired => 'Pet name needs at least 2 characters';
+  String get errorPetNameRequired =>
+      'El nombre debe tener al menos 2 caracteres';
 
   @override
-  String get errorPetNameTooLong => 'Pet name is too long';
+  String get errorPetNameTooLong => 'El nombre es demasiado largo';
 
   @override
-  String get errorWeightInvalid => 'Invalid weight';
+  String get errorWeightInvalid => 'Peso no válido';
 
   @override
-  String get errorMinOnePet => 'Keep at least one pet profile';
+  String get errorMinOnePet => 'Conserva al menos un perfil de mascota';
 
   @override
-  String get errorTitleRequired => 'Title is required';
+  String get errorTitleRequired => 'El título es obligatorio';
 
   @override
-  String get errorIntervalRequired => 'Interval must be at least 1 month';
+  String get errorIntervalRequired => 'El intervalo debe ser de al menos 1 mes';
 
   @override
-  String get errorBackupNotPetGo => 'File is not a PetGo backup';
+  String get errorBackupNotPetGo => 'El archivo no es una copia de PetGo';
 
   @override
-  String get actionEditPet => 'Edit pet';
+  String get actionEditPet => 'Editar mascota';
 
   @override
-  String get actionMarkDone => 'Mark done';
+  String get actionMarkDone => 'Marcar como hecho';
 
   @override
-  String get actionEditSchedule => 'Edit schedule';
+  String get actionEditSchedule => 'Editar plan';
 
   @override
-  String get actionEditVet => 'Edit vet visit';
+  String get actionEditVet => 'Editar visita';
 
   @override
-  String get actionEditDoc => 'Edit document';
+  String get actionEditDoc => 'Editar documento';
 
   @override
-  String get actionAttachFile => 'Attach file';
+  String get actionAttachFile => 'Adjuntar archivo';
 
   @override
-  String get fieldOptional => 'Optional';
+  String get fieldOptional => 'Opcional';
 
   @override
-  String get fieldDateOfBirth => 'Date of birth';
+  String get fieldDateOfBirth => 'Fecha de nacimiento';
 
   @override
-  String get fieldLastDone => 'Last done';
+  String get fieldLastDone => 'Última vez';
 
   @override
-  String get fieldCost => 'Cost';
+  String get fieldCost => 'Coste';
 
   @override
-  String get fieldNotes => 'Notes';
+  String get fieldNotes => 'Notas';
 
   @override
-  String get fieldDate => 'Date';
+  String get fieldDate => 'Fecha';
 
   @override
-  String get fieldExpires => 'Expires';
+  String get fieldExpires => 'Caduca';
 
   @override
-  String get docHasFile => 'File attached';
+  String get docHasFile => 'Archivo adjunto';
 
   @override
-  String get settingsReminders => 'Care reminders';
+  String get settingsReminders => 'Recordatorios de cuidado';
 
   @override
-  String get settingsRemindersSubtitle => 'Notify before schedules are due';
+  String get settingsRemindersSubtitle => 'Avisar antes de que venza cada plan';
 }

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "catatan-kunjungan-vet-di-chat-group-vs-tracker-khusus-mingguan",
-    "en": "catatan-kunjungan-vet-in-chat-groups-vs-dedicated-tracker",
-    "ar": "catatan-kunjungan-vet-9",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-9",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-9",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-9",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-9"
+    "id": "catatan-kunjungan-vet-chat-keluarga-vs-catatan-rapi",
+    "en": "vet-visit-log-family-chat-vs-a-tidy-log",
+    "ar": "sjlat-zyara-altbyb-albytry-mhadtha-alaaila-am-sjl-mrtb",
+    "jv": "catatan-kunjungan-vet-grup-kulawarga-utawa-cathetan-rapi",
+    "su": "catatan-kunjungan-vet-grup-kulawarga-atawa-catetan-rapih",
+    "zh": "chong-wu-jiu-zhen-ji-lu-jia-ting-qun-liao-yu-zheng-qi-ji-lu",
+    "ja": "doubutsubyouin-no-kiroku-kazoku-chatto-to-totonotsu-ta-kiroku"
   },
   "titles": {
-    "id": "catatan kunjungan vet: panduan praktis di PetGo",
-    "en": "catatan kunjungan vet in Chat Groups vs Dedicated Tracker — Offline Fi",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: catatan kunjungan vet: panduan praktis di PetGo",
-    "su": "Pituduh: catatan kunjungan vet: panduan praktis di PetGo",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet: chat keluarga vs catatan rapi",
+    "en": "vet visit log: family chat vs a tidy log",
+    "ar": "سجلات زيارة الطبيب البيطري: محادثة العائلة أم سجل مرتّب",
+    "jv": "catatan kunjungan vet: grup kulawarga utawa cathetan rapi",
+    "su": "catatan kunjungan vet: grup kulawarga atawa catetan rapih",
+    "zh": "宠物就诊记录：家庭群聊与整齐记录",
+    "ja": "動物病院の記録：家族チャットと整った記録"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Kenapa catatan kunjungan vet di chat keluarga cepat tenggelam dibanding catatan yang rapi, serta cara menyimpannya di perangkat dan meninjaunya tiap minggu.",
+    "en": "Why a vet visit log in a family chat sinks out of sight next to a tidy log, with how to store it on the device and review it each week.",
+    "ar": "لماذا تضيع سجلات زيارة الطبيب البيطري في محادثة العائلة مقارنة بسجل منظم؟ مع طريقة حفظها على الجهاز ومراجعتها كل أسبوع.",
+    "ja": "整った記録と家族のチャットを比べる。途切れる理由、端末保存、週次確認を動物病院の記録の観点で解説。",
+    "zh": "宠物就诊记录放在家庭群聊里为何容易被淹没，相比之下整齐的记录有何优势，并说明保存和回顾方法。",
+    "jv": "Kenapa catatan kunjungan vet ing grup kulawarga gampang kelelep dibandhingké karo cathetan sing rapi, lan carané nyimpen ing piranti lan mriksa saben minggu.",
+    "su": "Naha catatan kunjungan vet dina obrolan kulawarga gampang kakeunaan, dibandingkeun jeung catetan nu rapih, jeung cara nyimpen sarta ninjau unggal minggu."
+  }
 }

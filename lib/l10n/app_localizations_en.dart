@@ -12,6 +12,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appTitle => 'PetGo';
 
   @override
+  String get appTagline => 'Pet profiles, care schedules & daily logs';
+
+  @override
   String get navPets => 'Pets';
 
   @override
@@ -31,10 +34,65 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get onboardingDescription =>
-      'Manage pet profiles, vaccine/deworm schedules, vet visits, and daily care offline on your device.\n\nNo account. Data stays local.';
+      'Track pet profiles, vaccine and deworming schedules, vet visits, and daily care — all offline.\n\nNo account. Your data never leaves your device.';
 
   @override
-  String get onboardingContinue => 'I understand — continue';
+  String get onboardingContinue => 'Got it — continue';
+
+  @override
+  String get onbSkip => 'Skip';
+
+  @override
+  String get onbNext => 'Next';
+
+  @override
+  String get onbGetStarted => 'Get started';
+
+  @override
+  String get onbSlide1Title => 'Pet profiles';
+
+  @override
+  String get onbSlide1Sub => 'Dogs, cats, and more';
+
+  @override
+  String get onbSlide1Badge => '100% offline & private';
+
+  @override
+  String get onbSlide2Title => 'Care schedules';
+
+  @override
+  String get onbSlide2Sub => 'Vaccines, deworming, fleas, and grooming';
+
+  @override
+  String get onbSlide2Badge => 'Local reminders';
+
+  @override
+  String get onbSlide3Title => 'Daily log';
+
+  @override
+  String get onbSlide3Sub => 'Meals, walks, and litter';
+
+  @override
+  String get onbSlide3Badge => 'No ads, no account';
+
+  @override
+  String get onbSlide4Title => 'Local documents';
+
+  @override
+  String get onbSlide4Sub => 'Vaccine cards and prescriptions, kept tidy';
+
+  @override
+  String get onbSlide4Badge => 'Data on your device';
+
+  @override
+  String get onbPrivacyHeadline => 'Private & offline';
+
+  @override
+  String get onbPrivacyDetail =>
+      'Everything stays safely on your device — no trackers, no cloud.';
+
+  @override
+  String get loadingLabel => 'Loading…';
 
   @override
   String get homeActivePet => 'Active pet';
@@ -43,7 +101,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeNoPets => 'No pets yet. Add a profile first.';
 
   @override
-  String get homeDueSoon => 'Due / soon';
+  String get homeDueSoon => 'Due soon';
 
   @override
   String get homeNoDue => 'Nothing urgent.';
@@ -127,10 +185,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get careVaccine => 'Vaccine';
 
   @override
-  String get careDeworm => 'Deworm';
+  String get careDeworm => 'Deworming';
 
   @override
-  String get careFlea => 'Flea';
+  String get careFlea => 'Fleas & ticks';
 
   @override
   String get careGrooming => 'Grooming';
@@ -161,7 +219,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dailyEmpty => 'No daily logs yet.';
 
   @override
-  String get dailyFeed => 'Feed';
+  String get dailyFeed => 'Meal';
 
   @override
   String get dailyWalk => 'Walk';
@@ -230,7 +288,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get errorIntervalRequired => 'Interval must be at least 1 month';
 
   @override
-  String get errorBackupNotPetGo => 'File is not a PetGo backup';
+  String get errorBackupNotPetGo => 'This file isn\'t a PetGo backup';
 
   @override
   String get actionEditPet => 'Edit pet';
@@ -278,5 +336,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsReminders => 'Care reminders';
 
   @override
-  String get settingsRemindersSubtitle => 'Notify before schedules are due';
+  String get settingsRemindersSubtitle =>
+      'Notify you before schedules fall due';
 }

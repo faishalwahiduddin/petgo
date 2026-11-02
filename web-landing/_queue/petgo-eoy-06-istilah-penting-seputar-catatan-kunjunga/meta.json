@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "istilah-penting-seputar-catatan-kunjungan-vet-2026",
-    "en": "key-terms-around-catatan-kunjungan-vet",
-    "ar": "catatan-kunjungan-vet-2",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-2",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-2",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-2",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-2"
+    "id": "catatan-kunjungan-vet-di-2026-apa-yang-berubah",
+    "en": "vet-visit-log-in-2026-what-changed",
+    "ar": "sjlat-zyara-altbyb-albytry-fy-2026-ma-aldhy-tghyr",
+    "jv": "catatan-kunjungan-vet-ing-2026-apa-sing-owah",
+    "su": "catatan-kunjungan-vet-taun-2026-naon-anu-robah",
+    "zh": "2026-nian-de-chong-wu-jiu-zhen-ji-lu-you-shen-me-bian-hua",
+    "ja": "2026-nen-no-doubutsubyouin-no-kiroku-nani-ga-kawa-ttaka"
   },
   "titles": {
-    "id": "Istilah Penting seputar catatan kunjungan vet",
-    "en": "Key Terms Around catatan kunjungan vet",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Istilah Penting seputar catatan kunjungan vet",
-    "su": "Pituduh: Istilah Penting seputar catatan kunjungan vet",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet di 2026: apa yang berubah",
+    "en": "vet visit log in 2026: what changed",
+    "ar": "سجلات زيارة الطبيب البيطري في 2026: ما الذي تغيّر",
+    "jv": "catatan kunjungan vet ing 2026: apa sing owah",
+    "su": "catatan kunjungan vet taun 2026: naon anu robah",
+    "zh": "2026 年的宠物就诊记录：有什么变化",
+    "ja": "2026年の動物病院の記録：何が変わったか"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Melihat apa yang berubah pada catatan kunjungan vet di 2026, disertai arti praktisnya, versi paling kecil, dan cara datanya tersimpan di perangkat.",
+    "en": "Looking at what has changed in the vet visit log in 2026, with what it means in practice, the smallest version, and where the data is stored.",
+    "ar": "نظرة على ما تغيّر في سجلات زيارة الطبيب البيطري خلال 2026، مع معناها العملي وأصغر نسخة يمكن البدء بها وموضع حفظ البيانات.",
+    "ja": "2026年に動物病院の記録がどう変わったかを整理。実践での意味、最小バージョン、データの保存先を確認します。",
+    "zh": "回顾2026年宠物就诊记录的变化，说明它的实际意义、最小版本和数据保存位置，帮你快速了解现状。",
+    "jv": "Ndeleng apa sing owah ing catatan kunjungan vet ing 2026, lengkap karo tegesé ing praktik, versi paling cilik, lan panggonan nyimpen datané.",
+    "su": "Nempo naon nu robah dina catatan kunjungan vet taun 2026, kaasup hartina dina prakték, versi paling leutik, jeung tempat nyimpen datana."
+  }
 }

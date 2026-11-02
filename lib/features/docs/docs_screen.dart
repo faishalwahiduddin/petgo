@@ -35,7 +35,7 @@ class DocsScreen extends ConsumerWidget {
           ? Center(
               child: Text(
                 l10n.docsEmpty,
-                style: const TextStyle(color: AppColors.inkSoft),
+                style: TextStyle(color: context.textSecondary),
               ),
             )
           : ListView.separated(
@@ -108,6 +108,7 @@ class DocsScreen extends ConsumerWidget {
                   existing == null ? l10n.actionAddDoc : l10n.actionEditDoc,
                   style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 18),
                 ),
+                const SizedBox(height: 12),
                 TextFormField(
                   controller: titleCtrl,
                   decoration: InputDecoration(labelText: l10n.fieldTitle),
@@ -115,6 +116,7 @@ class DocsScreen extends ConsumerWidget {
                       ? l10n.errorTitleRequired
                       : null,
                 ),
+                const SizedBox(height: 12),
                 DropdownButtonFormField<DocKind>(
                   // ignore: deprecated_member_use
                   value: kind,
@@ -130,6 +132,7 @@ class DocsScreen extends ConsumerWidget {
                     if (v != null) setModal(() => kind = v);
                   },
                 ),
+                const SizedBox(height: 12),
                 ListTile(
                   contentPadding: EdgeInsets.zero,
                   title: Text(l10n.fieldExpires),
@@ -152,6 +155,7 @@ class DocsScreen extends ConsumerWidget {
                     }
                   },
                 ),
+                const SizedBox(height: 8),
                 OutlinedButton.icon(
                   onPressed: () async {
                     final picked = await FilePicker.pickFiles();

@@ -107,7 +107,7 @@ class HomeScreen extends ConsumerWidget {
           ),
           const SizedBox(height: 8),
           if (due.isEmpty)
-            Text(l10n.homeNoDue, style: const TextStyle(color: AppColors.inkSoft))
+            Text(l10n.homeNoDue, style: TextStyle(color: context.textSecondary))
           else
             ...due.map(
               (s) => Card(

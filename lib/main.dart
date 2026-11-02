@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'core/a11y/text_scale.dart';
@@ -77,7 +78,22 @@ class _PetGoAppState extends ConsumerState<PetGoApp>
       darkTheme: AppTheme.darkTheme,
       themeMode: themeMode,
       routerConfig: router,
-      builder: (context, child) => AppTextScale(child: child!),
+      // App-bar-less screens (splash, consent gate, fleet onboarding) carry no
+      // AppBar annotation, so the status-bar glyphs are pinned here to match
+      // the active app theme instead of the OS theme.
+      builder: (context, child) {
+        final isDark = Theme.of(context).brightness == Brightness.dark;
+        return AnnotatedRegion<SystemUiOverlayStyle>(
+          value: SystemUiOverlayStyle(
+            statusBarColor: Colors.transparent,
+            statusBarIconBrightness:
+                isDark ? Brightness.light : Brightness.dark,
+            statusBarBrightness:
+                isDark ? Brightness.dark : Brightness.light,
+          ),
+          child: AppTextScale(child: child!),
+        );
+      },
       localizationsDelegates: const [
         AppLocalizations.delegate,
         FallbackMaterialLocalizationsDelegate(),

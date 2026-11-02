@@ -12,271 +12,328 @@ class AppLocalizationsZh extends AppLocalizations {
   String get appTitle => 'PetGo';
 
   @override
-  String get navPets => 'Pets';
+  String get appTagline => '宠物档案、护理计划与每日记录';
 
   @override
-  String get navCare => 'Care';
+  String get navPets => '宠物';
 
   @override
-  String get navDaily => 'Daily';
+  String get navCare => '护理';
 
   @override
-  String get navDocs => 'Docs';
+  String get navDaily => '日常';
 
   @override
-  String get navSettings => 'Settings';
+  String get navDocs => '文档';
+
+  @override
+  String get navSettings => '设置';
 
   @override
   String get onboardingHeadline => 'PetGo';
 
   @override
   String get onboardingDescription =>
-      'Manage pet profiles, vaccine/deworm schedules, vet visits, and daily care offline on your device.\n\nNo account. Data stays local.';
+      '在设备上离线管理宠物档案、疫苗与驱虫计划、就诊记录以及日常护理。\n\n无需账号，数据只保存在本地。';
 
   @override
-  String get onboardingContinue => 'I understand — continue';
+  String get onboardingContinue => '我已了解 — 继续';
 
   @override
-  String get homeActivePet => 'Active pet';
+  String get onbSkip => '跳过';
 
   @override
-  String get homeNoPets => 'No pets yet. Add a profile first.';
+  String get onbNext => '下一步';
 
   @override
-  String get homeDueSoon => 'Due / soon';
+  String get onbGetStarted => '开始使用';
 
   @override
-  String get homeNoDue => 'Nothing urgent.';
+  String get onbSlide1Title => '宠物档案';
 
   @override
-  String get homeAllPets => 'All pets';
+  String get onbSlide1Sub => '狗狗、猫咪和更多';
 
   @override
-  String get actionAddPet => 'Add pet';
+  String get onbSlide1Badge => '100% 离线与私密';
 
   @override
-  String get actionAddSchedule => 'Add schedule';
+  String get onbSlide2Title => '护理计划';
 
   @override
-  String get actionAddVet => 'Log vet visit';
+  String get onbSlide2Sub => '疫苗、驱虫、跳蚤和美容';
 
   @override
-  String get actionAddWeight => 'Log weight';
+  String get onbSlide2Badge => '本地提醒';
 
   @override
-  String get actionAddDoc => 'Add document';
+  String get onbSlide3Title => '每日记录';
 
   @override
-  String get actionSave => 'Save';
+  String get onbSlide3Sub => '喂食、散步和猫砂';
 
   @override
-  String get actionCancel => 'Cancel';
+  String get onbSlide3Badge => '无广告，无需账号';
 
   @override
-  String get speciesDog => 'Dog';
+  String get onbSlide4Title => '本地文档';
 
   @override
-  String get speciesCat => 'Cat';
+  String get onbSlide4Sub => '疫苗卡和处方，整理有序';
 
   @override
-  String get speciesBird => 'Bird';
+  String get onbSlide4Badge => '数据保存在设备上';
 
   @override
-  String get speciesRabbit => 'Rabbit';
+  String get onbPrivacyHeadline => '隐私与离线保障';
 
   @override
-  String get speciesOther => 'Other';
+  String get onbPrivacyDetail => '所有数据都安全保存在你的设备上，没有追踪器。';
 
   @override
-  String get fieldPetName => 'Name';
+  String get loadingLabel => '正在加载…';
 
   @override
-  String get fieldSpecies => 'Species';
+  String get homeActivePet => '当前宠物';
 
   @override
-  String get fieldBreed => 'Breed';
+  String get homeNoPets => '还没有宠物，请先添加档案。';
 
   @override
-  String get fieldWeightKg => 'Weight (kg)';
+  String get homeDueSoon => '即将到期';
 
   @override
-  String get fieldTitle => 'Title';
+  String get homeNoDue => '暂无紧急事项。';
 
   @override
-  String get fieldIntervalMonths => 'Interval (months)';
+  String get homeAllPets => '全部宠物';
 
   @override
-  String get fieldClinic => 'Clinic';
+  String get actionAddPet => '添加宠物';
 
   @override
-  String get fieldMedication => 'Medication';
+  String get actionAddSchedule => '添加计划';
 
   @override
-  String get careSchedulesTitle => 'Care schedules';
+  String get actionAddVet => '记录就诊';
 
   @override
-  String get vetLogsTitle => 'Vet & meds';
+  String get actionAddWeight => '记录体重';
 
   @override
-  String get careEmptySchedules => 'No schedules yet.';
+  String get actionAddDoc => '添加文档';
 
   @override
-  String get careEmptyVet => 'No vet logs yet.';
+  String get actionSave => '保存';
 
   @override
-  String get careVaccine => 'Vaccine';
+  String get actionCancel => '取消';
 
   @override
-  String get careDeworm => 'Deworm';
+  String get speciesDog => '狗';
 
   @override
-  String get careFlea => 'Flea';
+  String get speciesCat => '猫';
 
   @override
-  String get careGrooming => 'Grooming';
+  String get speciesBird => '鸟';
 
   @override
-  String get careOther => 'Other';
+  String get speciesRabbit => '兔';
+
+  @override
+  String get speciesOther => '其他';
+
+  @override
+  String get fieldPetName => '名称';
+
+  @override
+  String get fieldSpecies => '物种';
+
+  @override
+  String get fieldBreed => '品种';
+
+  @override
+  String get fieldWeightKg => '体重（kg）';
+
+  @override
+  String get fieldTitle => '标题';
+
+  @override
+  String get fieldIntervalMonths => '间隔（月）';
+
+  @override
+  String get fieldClinic => '诊所';
+
+  @override
+  String get fieldMedication => '药物';
+
+  @override
+  String get careSchedulesTitle => '护理计划';
+
+  @override
+  String get vetLogsTitle => '就诊与用药';
+
+  @override
+  String get careEmptySchedules => '还没有计划。';
+
+  @override
+  String get careEmptyVet => '还没有就诊记录。';
+
+  @override
+  String get careVaccine => '疫苗';
+
+  @override
+  String get careDeworm => '驱虫';
+
+  @override
+  String get careFlea => '跳蚤';
+
+  @override
+  String get careGrooming => '美容';
+
+  @override
+  String get careOther => '其他';
 
   @override
   String everyMonths(int months) {
-    return 'every $months mo';
+    return '每 $months 个月';
   }
 
   @override
   String daysRemaining(int days) {
-    return '$days days left';
+    return '还剩 $days 天';
   }
 
   @override
-  String get urgencyOverdue => 'Overdue';
+  String get urgencyOverdue => '已逾期';
 
   @override
-  String get dailyQuickAdd => 'Quick log';
+  String get dailyQuickAdd => '快速记录';
 
   @override
-  String get dailyTimeline => 'Timeline';
+  String get dailyTimeline => '时间线';
 
   @override
-  String get dailyEmpty => 'No daily logs yet.';
+  String get dailyEmpty => '还没有每日记录。';
 
   @override
-  String get dailyFeed => 'Feed';
+  String get dailyFeed => '喂食';
 
   @override
-  String get dailyWalk => 'Walk';
+  String get dailyWalk => '散步';
 
   @override
-  String get dailyLitter => 'Litter';
+  String get dailyLitter => '猫砂';
 
   @override
-  String get dailyOther => 'Other';
+  String get dailyOther => '其他';
 
   @override
-  String get weightHistory => 'Weight history';
+  String get weightHistory => '体重记录';
 
   @override
-  String get docsEmpty => 'No documents yet.';
+  String get docsEmpty => '还没有文档。';
 
   @override
-  String get docVaccineCard => 'Vaccine card';
+  String get docVaccineCard => '疫苗卡';
 
   @override
-  String get docPrescription => 'Prescription';
+  String get docPrescription => '处方';
 
   @override
-  String get docInsurance => 'Insurance';
+  String get docInsurance => '保险';
 
   @override
-  String get docOther => 'Other';
+  String get docOther => '其他';
 
   @override
-  String get settingsLanguage => 'Language';
+  String get settingsLanguage => '语言';
 
   @override
-  String get settingsPets => 'Pet profiles';
+  String get settingsPets => '宠物档案';
 
   @override
-  String get settingsBackup => 'Backup';
+  String get settingsBackup => '备份';
 
   @override
-  String get settingsVersion => 'Version';
+  String get settingsVersion => '版本';
 
   @override
-  String get tileExportBackup => 'Export backup';
+  String get tileExportBackup => '导出备份';
 
   @override
-  String get tileImportBackup => 'Import backup';
+  String get tileImportBackup => '导入备份';
 
   @override
-  String get snackbarImportSuccess => 'Backup imported';
+  String get snackbarImportSuccess => '备份已导入';
 
   @override
-  String get errorPetNameRequired => 'Pet name needs at least 2 characters';
+  String get errorPetNameRequired => '宠物名称至少需要 2 个字符';
 
   @override
-  String get errorPetNameTooLong => 'Pet name is too long';
+  String get errorPetNameTooLong => '宠物名称过长';
 
   @override
-  String get errorWeightInvalid => 'Invalid weight';
+  String get errorWeightInvalid => '体重无效';
 
   @override
-  String get errorMinOnePet => 'Keep at least one pet profile';
+  String get errorMinOnePet => '至少保留一个宠物档案';
 
   @override
-  String get errorTitleRequired => 'Title is required';
+  String get errorTitleRequired => '请填写标题';
 
   @override
-  String get errorIntervalRequired => 'Interval must be at least 1 month';
+  String get errorIntervalRequired => '间隔至少 1 个月';
 
   @override
-  String get errorBackupNotPetGo => 'File is not a PetGo backup';
+  String get errorBackupNotPetGo => '该文件不是 PetGo 备份';
 
   @override
-  String get actionEditPet => 'Edit pet';
+  String get actionEditPet => '编辑宠物';
 
   @override
-  String get actionMarkDone => 'Mark done';
+  String get actionMarkDone => '标记完成';
 
   @override
-  String get actionEditSchedule => 'Edit schedule';
+  String get actionEditSchedule => '编辑计划';
 
   @override
-  String get actionEditVet => 'Edit vet visit';
+  String get actionEditVet => '编辑就诊记录';
 
   @override
-  String get actionEditDoc => 'Edit document';
+  String get actionEditDoc => '编辑文档';
 
   @override
-  String get actionAttachFile => 'Attach file';
+  String get actionAttachFile => '附加文件';
 
   @override
-  String get fieldOptional => 'Optional';
+  String get fieldOptional => '选填';
 
   @override
-  String get fieldDateOfBirth => 'Date of birth';
+  String get fieldDateOfBirth => '出生日期';
 
   @override
-  String get fieldLastDone => 'Last done';
+  String get fieldLastDone => '上次完成';
 
   @override
-  String get fieldCost => 'Cost';
+  String get fieldCost => '费用';
 
   @override
-  String get fieldNotes => 'Notes';
+  String get fieldNotes => '备注';
 
   @override
-  String get fieldDate => 'Date';
+  String get fieldDate => '日期';
 
   @override
-  String get fieldExpires => 'Expires';
+  String get fieldExpires => '到期';
 
   @override
-  String get docHasFile => 'File attached';
+  String get docHasFile => '已附文件';
 
   @override
-  String get settingsReminders => 'Care reminders';
+  String get settingsReminders => '护理提醒';
 
   @override
-  String get settingsRemindersSubtitle => 'Notify before schedules are due';
+  String get settingsRemindersSubtitle => '在计划到期前提醒你';
 }

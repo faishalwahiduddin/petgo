@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../../l10n/app_localizations.dart';
 import 'fleet_app_config.dart';
 
 /// Emil Kowalski style micro-settle splash screen.
@@ -127,6 +128,7 @@ class _FleetSplashScreenState extends State<FleetSplashScreen>
   @override
   Widget build(BuildContext context) {
     final config = FleetAppConfig.current;
+    final l10n = AppLocalizations.of(context)!;
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final primaryColor = config.primaryColor;
 
@@ -207,9 +209,18 @@ class _FleetSplashScreenState extends State<FleetSplashScreen>
                             ),
                           ),
                           padding: const EdgeInsets.all(18),
+                          // Explicit box: an unsized Image inside the padded
+                          // container painted nothing (empty logo plate).
                           child: Image.asset(
                             'assets/icon/icon.png',
+                            width: 60,
+                            height: 60,
+                            // Downsample on decode: the source art is 1024²
+                            // (~1.1 MB) and full-res decoding left the plate
+                            // empty on a cold start.
+                            cacheWidth: 180,
                             fit: BoxFit.contain,
+                            filterQuality: FilterQuality.medium,
                             errorBuilder: (context, error, stackTrace) {
                               return Icon(
                                 config.fallbackIcon,
@@ -233,7 +244,7 @@ class _FleetSplashScreenState extends State<FleetSplashScreen>
                       child: Column(
                         children: [
                           Text(
-                            config.appName,
+                            l10n.appTitle,
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 24,
@@ -244,7 +255,7 @@ class _FleetSplashScreenState extends State<FleetSplashScreen>
                           ),
                           const SizedBox(height: 8),
                           Text(
-                            config.tagline,
+                            l10n.appTagline,
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 14,

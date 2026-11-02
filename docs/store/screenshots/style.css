@@ -11,8 +11,8 @@
    so headless capture stays deterministic for ar/ja/zh wherever fonts ship locally. */
 @font-face { font-family: 'AmiriLocal'; src: url('../../assets/fonts/Amiri-Regular.ttf'); font-weight: 400; }
 @font-face { font-family: 'AmiriLocal'; src: url('../../assets/fonts/Amiri-Bold.ttf'); font-weight: 700; }
-@font-face { font-family: 'NotoJPLocal'; src: url('../../assets/fonts/NotoSansJP-VF.ttf'); }
-@font-face { font-family: 'NotoSCLocal'; src: url('../../assets/fonts/NotoSansSC-VF.ttf'); }
+@font-face { font-family: 'NotoJPLocal'; src: url('../../assets/fonts/NotoSansJP-VF.ttf'); font-weight: 100 900; }
+@font-face { font-family: 'NotoSCLocal'; src: url('../../assets/fonts/NotoSansSC-VF.ttf'); font-weight: 100 900; }
 
 :root {
   --primary: #2E7D32;
@@ -254,3 +254,178 @@ body.full .stage { gap: 2px; }
 /* tablet preview scaling (cell dims set inline by tablet.html) */
 .cell .tablet-slide { transform: scale(var(--preview-scale)); transform-origin: top left; }
 body.full .cell .tablet-slide { transform: none; }
+
+/* ============================================================
+   v2 store-asset polish
+   - bright brands get a darkened wash so white type keeps 4.5:1
+   - feature graphic gains dot-grid texture + the app mascot
+   ============================================================ */
+.slide.darken,
+.tablet-slide.darken {
+  background: linear-gradient(160deg,
+    color-mix(in srgb, var(--primary) 58%, #0B0D11) 0%,
+    color-mix(in srgb, var(--dark) 78%, #0B0D11) 100%);
+}
+.feature.darken {
+  background: linear-gradient(120deg,
+    color-mix(in srgb, var(--primary) 58%, #0B0D11) 0%,
+    color-mix(in srgb, var(--dark) 78%, #0B0D11) 100%);
+}
+
+.feature { padding: 0 64px; gap: 30px; }
+.feature::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(rgba(255,255,255,.12) 1.2px, transparent 1.2px);
+  background-size: 20px 20px; opacity: .5;
+}
+.feature .fg-icon { width: 150px; height: 150px; border-radius: 34px; z-index: 3; }
+.feature .fg-text { max-width: 390px; z-index: 3; }
+.feature .fg-text .n { font-size: 56px; line-height: 1.02; letter-spacing: -1.2px; }
+.feature .fg-text .t { font-size: 27px; line-height: 1.35; margin-top: 8px; }
+.feature .fg-mascot {
+  position: absolute; right: 20px; bottom: 4px; width: 290px; height: 290px;
+  object-fit: contain; z-index: 2; pointer-events: none;
+  filter: drop-shadow(0 22px 44px rgba(0,0,0,.30));
+}
+.feature.rtl .fg-mascot { right: auto; left: 20px; transform: scaleX(-1); }
+
+
+/* ============================================================
+   v3 — cream surface for very bright brands + generic mascot
+   ============================================================ */
+.slide.light,
+.tablet-slide.light {
+  background: linear-gradient(160deg,
+    #FFFDF4 0%,
+    color-mix(in srgb, var(--primary) 22%, #FFFDF4) 100%);
+  color: #14161A;
+}
+.feature.light {
+  background: linear-gradient(120deg,
+    #FFFDF4 0%,
+    color-mix(in srgb, var(--primary) 22%, #FFFDF4) 100%);
+  color: #14161A;
+}
+.feature.light::before {
+  background-image: radial-gradient(rgba(0,0,0,.10) 1.2px, transparent 1.2px);
+}
+.feature.light::after { opacity: .10; }
+.slide.light::before, .slide.light::after,
+.tablet-slide.light::before, .tablet-slide.light::after { opacity: .10; }
+
+.slide .mascot-png {
+  position: absolute; left: 1.5cqw; bottom: 7cqh; width: 24cqw; height: auto;
+  z-index: 1; pointer-events: none;
+  filter: drop-shadow(0 1.4cqw 3cqw rgba(0,0,0,.28));
+}
+.slide.rtl .mascot-png { left: auto; right: 1.5cqw; transform: scaleX(-1); }
+.tablet-slide .mascot-png {
+  position: absolute; left: 2cqw; bottom: 8cqh; width: 22cqw; height: auto;
+  z-index: 1; pointer-events: none;
+  filter: drop-shadow(0 1.4cqw 3cqw rgba(0,0,0,.28));
+}
+.tablet-slide.rtl .mascot-png { left: auto; right: 2cqw; transform: scaleX(-1); }
+
+/* ============================================================
+   v4 — screenshot-first device sizing
+   The 57.4cqw phone frame left the app UI at ~1/3 of the slide.
+   Phone: 72cqw, closer-to-16:9 frame. Tablet: 88cqw.
+   ============================================================ */
+.slide { padding: 3.5cqh 7cqw 0; }
+.slide .copy { max-width: 88cqw; }
+.slide .headline { font-size: 6.0cqw; }
+.slide .subtext { font-size: 2.7cqw; margin-top: 1.0cqh; }
+.slide .device { margin-top: 1.8cqh; width: 72cqw; aspect-ratio: 620 / 1180; }
+
+.tablet-slide { padding: 5.5cqh 6cqw 0; }
+.tablet-slide .headline { font-size: 5.4cqw; }
+.tablet-slide .subtext { font-size: 2.6cqw; margin-top: 1.2cqw; }
+.tablet-device { margin-top: 3cqh; width: min(88cqw, 58cqh); height: min(112cqw, 78cqh); }
+
+/* v5 — match the phone frame to the 1080×1920 raw so the UI is not side-cropped */
+.slide .device { width: 78cqw; aspect-ratio: 620 / 1080; margin-top: 1.6cqh; }
+
+/* ============================================================
+   v6 — Android frame, bigger brand chip, device fills the slide
+   ============================================================ */
+.slide .device {
+  width: auto;
+  height: min(74cqh, 150cqw);
+  aspect-ratio: 620 / 1080;
+  margin-top: 1.6cqh;
+  border-radius: 4.6cqw;
+  flex: 0 0 auto;
+}
+.slide .device .cam {
+  position: absolute; top: 1.15cqh; left: 50%; transform: translateX(-50%);
+  width: 2.4cqw; height: 2.4cqw; border-radius: 50%;
+  background: #050506; z-index: 3;
+  box-shadow: inset 0 0 0 0.28cqw rgba(255,255,255,.07);
+}
+.slide .brand { bottom: 2.2cqh; gap: 2.2cqw; }
+.slide .brand img { width: 8.6cqw; height: 8.6cqw; border-radius: 2.2cqw; }
+.slide .brand .wm .n { font-size: 4.2cqw; }
+
+.tablet-device {
+  height: min(72cqh, 108cqw);
+  width: min(88cqw, 58cqh);
+  border-radius: 3.2cqw;
+}
+.tablet-slide .brand { bottom: 3cqh; gap: 2.2cqw; }
+.tablet-slide .brand img { width: 8cqw; height: 8cqw; border-radius: 2cqw; }
+.tablet-slide .brand .wm .n { font-size: 4cqw; }
+
+/* ============================================================
+   v7 — remove slide side padding: container-query units were
+   measured from the padded content box, shrinking every element.
+   ============================================================ */
+.slide { padding: 3.5cqh 0 0; }
+.tablet-slide { padding: 5cqh 0 0; }
+.slide .device { height: min(80cqh, 160cqw); }
+
+/* ============================================================
+   v8 — platform-correct bezels + bigger bottom brand
+   Play / Android: punch-hole. iPhone: Dynamic Island + rounder frame.
+   The raw status bar is cropped so an iOS-captured locale cannot show
+   two cameras at once.
+   ============================================================ */
+.device .notch { display: none; }
+.slide.ios .device { border-radius: 9cqw; }
+.slide.ios .device .cam { display: none; }
+.slide.ios .device .notch {
+  display: block; position: absolute; top: 1.1cqh; left: 50%;
+  transform: translateX(-50%); width: 11cqw; height: 3.1cqh;
+  border-radius: 999px; background: #050506; z-index: 3;
+}
+.slide .device .screen img {
+  transform: translateY(-3.4%) scale(1.08);
+  transform-origin: top center;
+}
+.slide .brand img { width: 10cqw; height: 10cqw; border-radius: 2.6cqw; }
+.slide .brand .wm .n { font-size: 4.8cqw; }
+.tablet-slide .brand img { width: 9cqw; height: 9cqw; border-radius: 2.2cqw; }
+.tablet-slide .brand .wm .n { font-size: 4.4cqw; }
+
+/* v9 — crop the raw status bar/notch harder so an iOS-captured locale
+   cannot leave a second camera behind the Android punch-hole. */
+.slide .device .screen img { transform: translateY(-5.8%) scale(1.1); }
+
+/* v10 — Play crops the raw status bar hard (some locales were captured on
+   iOS and still carry a notch); iPhone keeps the header below the island. */
+.slide .device .screen img { transform: translateY(-8%) scale(1.12); }
+.slide.ios .device .screen img { transform: translateY(-3.4%) scale(1.08); }
+
+/* v11 — detect an iOS-captured raw and use the iPhone bezel for that slide */
+.slide .device .screen img { transform: translateY(-3.4%) scale(1.08); }
+.slide.ios .device,
+.slide.ios-raw .device { border-radius: 9cqw; }
+.slide.ios .device .cam,
+.slide.ios-raw .device .cam { display: none; }
+.slide.ios .device .notch,
+.slide.ios-raw .device .notch {
+  display: block; position: absolute; top: 1.1cqh; left: 50%;
+  transform: translateX(-50%); width: 11cqw; height: 3.1cqh;
+  border-radius: 999px; background: #050506; z-index: 3;
+}
+.slide.ios .device .screen img,
+.slide.ios-raw .device .screen img { transform: translateY(-3.4%) scale(1.08); }

@@ -6,25 +6,25 @@
     <description>Blog PetGo</description>
     <language>en</language>
     <item>
+      <title>Vet Visit Notes Ready to Bring</title>
+      <link>https://petgo.faishal.id/en/blog/vet-visit-notes-ready-to-bring/</link>
+      <guid isPermaLink="true">https://petgo.faishal.id/en/blog/vet-visit-notes-ready-to-bring/</guid>
+      <description>Organize vaccines, diagnoses, and visit costs so vet history does not vanish.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Pet Profiles in One Place</title>
       <link>https://petgo.faishal.id/en/blog/pet-profiles-in-one-place/</link>
-      <guid>https://petgo.faishal.id/en/blog/pet-profiles-in-one-place/</guid>
-      <pubDate>Tue, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://petgo.faishal.id/en/blog/pet-profiles-in-one-place/</guid>
       <description>Store species, age, weight, and special notes per pet in PetGo.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Consistent Daily Care Schedules</title>
       <link>https://petgo.faishal.id/en/blog/consistent-daily-care-schedules/</link>
-      <guid>https://petgo.faishal.id/en/blog/consistent-daily-care-schedules/</guid>
-      <pubDate>Tue, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://petgo.faishal.id/en/blog/consistent-daily-care-schedules/</guid>
       <description>Schedule food, walks, meds, and grooming with reminders in PetGo.</description>
-    </item>
-    <item>
-      <title>Vet Visit Notes Ready to Bring</title>
-      <link>https://petgo.faishal.id/en/blog/vet-visit-notes-ready-to-bring/</link>
-      <guid>https://petgo.faishal.id/en/blog/vet-visit-notes-ready-to-bring/</guid>
-      <pubDate>Tue, 14 Oct 2026 00:00:00 +0000</pubDate>
-      <description>Organize vaccines, diagnoses, and visit costs so vet history does not vanish.</description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>

@@ -8,22 +8,31 @@
   "banner_ready": false,
   "seo": true,
   "slugs": {
-    "id": "update-terbaru-soal-catatan-kunjungan-vet-praktis",
-    "en": "latest-practical-update-on-catatan-kunjungan-vet-practical",
-    "ar": "catatan-kunjungan-vet-10",
-    "jv": "pandhuan-catatan-kunjungan-vet-petgo-10",
-    "su": "pituduh-catatan-kunjungan-vet-petgo-10",
-    "zh": "petgo-catatan-kunjungan-vet-实用指南-10",
-    "ja": "petgocatatan-kunjungan-vet-ガイド-10"
+    "id": "catatan-kunjungan-vet-panduan-yang-tetap-relevan",
+    "en": "vet-visit-log-a-guide-that-stays-useful",
+    "ar": "sjlat-zyara-altbyb-albytry-dlyl-ybqa-mfyda",
+    "jv": "catatan-kunjungan-vet-pandhuan-sing-tetep-migunani",
+    "su": "catatan-kunjungan-vet-pituduh-anu-tetep-mangpaat",
+    "zh": "chong-wu-jiu-zhen-ji-lu-chang-qi-you-xiao-de-zhi-nan",
+    "ja": "doubutsubyouin-no-kiroku-nagaku-tsukae-ru-gaido"
   },
   "titles": {
-    "id": "Update Terbaru Soal catatan kunjungan vet",
-    "en": "Latest Practical Update on catatan kunjungan vet (Practical)",
-    "ar": "catatan kunjungan vet — دليل PetGo",
-    "jv": "Pandhuan: Update Terbaru Soal catatan kunjungan vet",
-    "su": "Pituduh: Update Terbaru Soal catatan kunjungan vet",
-    "zh": "PetGo · catatan kunjungan vet 实用指南",
-    "ja": "PetGo｜catatan kunjungan vet ガイド"
+    "id": "catatan kunjungan vet: panduan yang tetap relevan",
+    "en": "vet visit log: a guide that stays useful",
+    "ar": "سجلات زيارة الطبيب البيطري: دليل يبقى مفيداً",
+    "jv": "catatan kunjungan vet: pandhuan sing tetep migunani",
+    "su": "catatan kunjungan vet: pituduh anu tetep mangpaat",
+    "zh": "宠物就诊记录：长期有效的指南",
+    "ja": "動物病院の記録：長く使えるガイド"
   },
-  "quality_pass": "article-writing+edit-article+marketing-psychology-v2"
+  "quality_pass": "editorial-v3",
+  "descriptions": {
+    "id": "Panduan catatan kunjungan vet yang tetap berguna: arti praktisnya, versi paling kecil sebagai titik awal, dan alasan data tetap tersimpan di perangkat Anda.",
+    "en": "A vet visit log guide that stays useful: what it means in practice, the smallest version as a starting point, and why data stays on your device.",
+    "ar": "دليل يبقى مفيداً حول سجلات زيارة الطبيب البيطري: معناها العملي، وأصغر نسخة كنقطة بداية، وسبب بقاء البيانات محفوظة على جهازك.",
+    "ja": "役立ち続ける動物病院の記録ガイド。実践での意味、出発点となる最小バージョン、データが端末に残る理由を説明します。",
+    "zh": "长期有用的宠物就诊记录指南：实际意义、作为起点的最小版本，以及数据留在设备上的原因。",
+    "jv": "Pandhuan catatan kunjungan vet sing tetep migunani: tegesé ing praktik, versi paling cilik minangka wiwitan, lan sebab data tetep kasimpen ing piranti kowé.",
+    "su": "Panduan catatan kunjungan vet nu tetep mangpaat: hartina dina prakték, versi paling leutik salaku titik mimiti, jeung data disimpen dina alat anjeun."
+  }
 }
