@@ -1,1 +1,1 @@
-PetGo: Pet Manager
+PetGo: Pet Health & Care Log

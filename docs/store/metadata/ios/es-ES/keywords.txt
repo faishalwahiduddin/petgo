@@ -1,1 +1,1 @@
-mascotas,veterinario,vacuna,perro,gato,peso,paseo,cuidados
+perro,gato,desparasitar,pulgas,garrapatas,peluquería,pipeta,veterinaria,conejo,clínica,diario

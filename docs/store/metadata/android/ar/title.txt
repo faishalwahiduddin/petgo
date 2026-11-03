@@ -1,1 +1,1 @@
-PetGo: Pet Manager
+PetGo: سجل صحة حيوانك الأليف

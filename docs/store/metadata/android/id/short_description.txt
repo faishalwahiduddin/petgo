@@ -1,1 +1,1 @@
-Profil hewan, jadwal perawatan, vet, dan log harian — offline.
+Jadwal vaksin, obat cacing, kunjungan dokter hewan, dan berat anabul. Offline.

@@ -1,1 +1,1 @@
-pet,vet,vaccine,dog,cat
+shot,dog,cat,deworm,flea,tick,grooming,weight,medical,diary,puppy,kitten,rabbit,bird,medication

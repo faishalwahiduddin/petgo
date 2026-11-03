@@ -1,3 +1,39 @@
-PetGo mengelola hewan peliharaan Anda: profil, jadwal vaksin/cacing/flea/grooming, kunjungan vet, log makan/jalan/litter, riwayat berat, dan dokumen lokal. 100% offline.
+PetGo adalah catatan kesehatan dan perawatan anabul: kucing, anjing, burung, kelinci, atau hewan peliharaan lainnya. Jadwal vaksin, obat cacing, kunjungan ke dokter hewan, berat badan, dan rutinitas harian tersimpan rapi di HP kamu.
 
-Bagian dari armada faishal.id.
+Cocok buat kamu yang sering lupa kapan terakhir anabul divaksin dan harus scroll galeri atau chat untuk mencarinya. Tanpa akun, tanpa iklan.
+
+Profil hewan
+• Tambah semua anabul: nama, jenis, ras, tanggal lahir, berat, dan foto.
+• Ganti hewan aktif sekali ketuk, atau lihat semua hewan sekaligus.
+
+Jadwal perawatan
+• Vaksin, obat cacing, obat kutu dan caplak, grooming, atau jadwal buatan sendiri yang berulang tiap beberapa bulan.
+• Ketuk "Tandai selesai", PetGo mencatat tanggalnya dan menggeser jatuh tempo berikutnya.
+• Beranda menampilkan jadwal yang sudah lewat dan yang jatuh tempo dalam 14 hari.
+• Pengingat lokal (opsional) saat jadwal jatuh tempo.
+
+Kunjungan dokter hewan dan obat
+• Catat tiap kunjungan: tanggal, klinik, obat, biaya, dan catatan.
+• Urutan terbaru di atas, jadi riwayat terakhir langsung kelihatan saat ditanya dokter.
+
+Log harian dan berat badan
+• Catat cepat makan, jalan-jalan, litter box, dan perawatan lain dalam satu timeline.
+• Catat timbangan dan lihat riwayat berat; profil hewan ikut diperbarui.
+
+Dokumen
+• Simpan kartu vaksin, resep, polis asuransi, dan dokumen lain lengkap dengan masa berlaku.
+• Lampirkan file atau fotonya, jadi siap ditunjukkan di klinik.
+
+Data tetap di HP kamu
+• Bisa dipakai offline penuh. Tanpa daftar akun, tanpa pelacak.
+• Ekspor file cadangan dan impor lagi di HP baru.
+• 8 bahasa, termasuk Jawa dan Sunda.
+
+Kenapa PetGo
+Banyak aplikasi hewan meminta akun, menghubungkan ke klinik tertentu, atau berlangganan. PetGo cukup jadi buku catatan pribadi yang sederhana: kamu isi yang penting, PetGo kasih tahu apa yang perlu dilakukan berikutnya.
+
+PetGo adalah alat pencatat pribadi, bukan pengganti saran dokter hewan. Untuk vaksin, obat, dan pengobatan, selalu ikuti arahan dokter hewan kamu.
+
+Unduh PetGo dan tambahkan anabul pertamamu dalam waktu kurang dari semenit.
+
+Bagian dari aplikasi faishal.id.

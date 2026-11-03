@@ -1,3 +1,39 @@
-PetGo gestiona a tus mascotas: perfiles, calendarios de vacunas, desparasitación, antipulgas y peluquería, visitas al veterinario, registros de comida, paseos y arenero, historial de peso y documentos locales. 100 % sin conexión.
+PetGo es una cartilla de salud y cuidados para tu perro, gato, pájaro, conejo o cualquier otra mascota. Guarda en el móvil las fechas de vacunas y desparasitación, las visitas al veterinario, el peso y los cuidados del día a día.
 
-Forma parte de la familia faishal.id.
+Pensado para quien acaba buscando en la galería o en los chats cuándo fue la última vacuna. Sin cuenta y sin anuncios.
+
+Perfiles de mascotas
+• Añade cada mascota con nombre, especie, raza, fecha de nacimiento, peso y foto.
+• Cambia de mascota activa con un toque o ve todas a la vez.
+
+Calendario de cuidados
+• Vacunas, desparasitación, pulgas y garrapatas, peluquería o una tarea tuya que se repite cada pocos meses.
+• Pulsa «Hecho» y PetGo guarda la fecha y calcula la siguiente.
+• La pantalla de inicio muestra lo que está vencido y lo que toca en los próximos 14 días.
+• Avisos locales opcionales cuando vence un cuidado.
+
+Veterinario y medicación
+• Apunta cada visita con fecha, clínica, medicación, coste y notas.
+• Lo más reciente arriba, para tenerlo a mano cuando el veterinario pregunte.
+
+Diario y peso
+• Registro rápido de comidas, paseos, arenero y otros cuidados en una cronología.
+• Anota el peso y consulta el historial completo; el perfil se actualiza solo.
+
+Documentos
+• Guarda la cartilla de vacunación, recetas, el seguro y otros papeles con su fecha de caducidad.
+• Adjunta el archivo o la foto para llevarlo listo a la clínica.
+
+Tus datos, en tu móvil
+• Funciona sin conexión. Sin registro y sin rastreadores.
+• Exporta una copia de seguridad en archivo e impórtala en un móvil nuevo.
+• 8 idiomas.
+
+Por qué PetGo
+Muchas apps de mascotas te piden cuenta, vincularte a una clínica o pagar una suscripción. PetGo es una cartilla privada y sencilla: apuntas lo importante y te dice qué toca después.
+
+PetGo es un registro personal, no consejo veterinario. Sigue siempre las indicaciones de tu veterinario sobre vacunas, medicamentos y tratamientos.
+
+Descarga PetGo y añade a tu primera mascota en menos de un minuto.
+
+Forma parte de las apps de faishal.id.

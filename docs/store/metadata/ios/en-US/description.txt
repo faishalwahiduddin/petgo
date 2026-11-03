@@ -1,3 +1,39 @@
-PetGo manages your pets: profiles, vaccine/deworm/flea/grooming schedules, vet visits, feed/walk/litter logs, weight history, and local documents. 100% offline.
+PetGo is a pet health and care log for dogs, cats, birds, rabbits and other pets. Keep vaccine and deworming dates, vet visits, weight and daily care in one place, right on your phone.
 
-Part of the faishal.id suite.
+No more digging through photos and chats to find the last shot. No account, no ads.
+
+Pet profiles
+• Add every pet with name, species, breed, date of birth, weight and photo.
+• Switch the active pet in one tap, or look at all pets together.
+
+Care schedules
+• Vaccines, deworming, flea and tick treatments, grooming or your own task, repeating every few months.
+• Tap "Mark done" and PetGo saves the date and moves the next due date forward.
+• The home screen shows what is overdue and what is due in the next 14 days.
+• Optional local reminders when a schedule falls due.
+
+Vet visits and meds
+• Log each visit with date, clinic, medication, cost and notes.
+• Newest first, so the last visit is on top.
+
+Daily log and weight
+• Quick log for meals, walks, litter and other care, shown on a timeline.
+• Log weight and see the full weight history; the pet profile updates itself.
+
+Documents
+• Keep vaccine cards, prescriptions, insurance papers and more, with an expiry date.
+• Attach the file or photo so it is ready at the clinic.
+
+Your data, your phone
+• Works fully offline. No sign-up, no trackers.
+• Export a backup file and import it on a new phone.
+• 8 languages.
+
+Why PetGo
+Many pet apps want an account, a linked clinic or a subscription. PetGo is a plain, private record book that tells you what is due next.
+
+PetGo is a personal log, not veterinary advice. Always follow your vet's guidance on vaccines, medicine and treatment.
+
+Download PetGo and add your first pet in under a minute.
+
+Part of the faishal.id apps.

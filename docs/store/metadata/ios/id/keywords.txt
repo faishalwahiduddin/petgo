@@ -1,1 +1,1 @@
-pet,vet,vaccine,dog,cat
+anabul,hewan peliharaan,dokter hewan,vet,kutu,grooming,berat badan,kelinci,burung,resep,klinik,ras

@@ -1,1 +1,1 @@
-PetGo: Pet Manager
+PetGo: 宠物健康记录·疫苗驱虫
