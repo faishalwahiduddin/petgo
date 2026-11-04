@@ -4,7 +4,7 @@
 > files are the split, tool-ready copies of this content.
 > ⚠️ **Non-English drafts (ar, ja-JP, zh-CN, es-ES) need a native-speaker review before publishing.**
 
-- **Package:** `id.faishal.petgo` · **Version:** 1.0.0+1 · **Category:** Lifestyle
+- **Package:** `id.faishal.petgo` · **Version:** 1.0.10+11 · **Category:** Lifestyle
 
 ---
 
@@ -64,7 +64,7 @@ Bagian dari aplikasi faishal.id.
 
 </details>
 
-**Release notes** — versionCode 1 (40/500)
+**Release notes** — versionCode 11 (40/500)
 
 > Rilis awal dengan aset toko multibahasa.
 
@@ -137,7 +137,7 @@ Part of the faishal.id apps.
 
 </details>
 
-**Release notes** — versionCode 1 (47/500)
+**Release notes** — versionCode 11 (47/500)
 
 > Initial release with multi-locale store assets.
 
@@ -210,20 +210,20 @@ PetGo أداة تسجيل شخصية وليس بديلًا عن نصيحة ال�
 
 </details>
 
-**Release notes** — versionCode 1 (47/500)
+**Release notes** — versionCode 11 (47/500)
 
 > Initial release with multi-locale store assets.
 
 **Tagline** (feature graphic)
 
-> Pet profiles, care schedules, vet visits & daily logs — offline.
+> ملفات الحيوانات الأليفة، مواعيد الرعاية، زيارات البيطري — دون اتصال.
 
 **Screenshot captions**
 
-1. **Profiles** — Dogs, cats, and more
-2. **Schedules** — Vaccines & care
-3. **Daily** — Feed, walk, litter
-4. **Docs** — Local vaccine cards
+1. **الملفات الشخصية** — الكلاب والقطط ومختلف الحيوانات
+2. **جداول المواعيد** — التطعيمات والرعاية الدورية
+3. **الروتين اليومي** — الطعام والتمشية والنظافة
+4. **الوثائق الطبية** — بطاقات اللقاح المحفوظة محليًا
 
 ---
 
@@ -283,20 +283,20 @@ faishal.id アプリシリーズのひとつです。
 
 </details>
 
-**Release notes** — versionCode 1 (47/500)
+**Release notes** — versionCode 11 (47/500)
 
 > Initial release with multi-locale store assets.
 
 **Tagline** (feature graphic)
 
-> Pet profiles, care schedules, vet visits & daily logs — offline.
+> ペットの健康管理、ケア予定、動物病院の記録 — 完全オフライン。
 
 **Screenshot captions**
 
-1. **Profiles** — Dogs, cats, and more
-2. **Schedules** — Vaccines & care
-3. **Daily** — Feed, walk, litter
-4. **Docs** — Local vaccine cards
+1. **ペットプロファイル** — 犬・猫・小動物をまとめて管理
+2. **予定カレンダー** — ワクチン接種や健康診断の管理
+3. **日々の記録** — ごはん・散歩・お世話のログ
+4. **健康ドキュメント** — ワクチン接種証明を端末保存
 
 ---
 
@@ -356,20 +356,20 @@ faishal.id 系列应用之一。
 
 </details>
 
-**Release notes** — versionCode 1 (47/500)
+**Release notes** — versionCode 11 (47/500)
 
 > Initial release with multi-locale store assets.
 
 **Tagline** (feature graphic)
 
-> Pet profiles, care schedules, vet visits & daily logs — offline.
+> 爱宠档案、护理作息日程、就医记录与每日活动——离线可用。
 
 **Screenshot captions**
 
-1. **Profiles** — Dogs, cats, and more
-2. **Schedules** — Vaccines & care
-3. **Daily** — Feed, walk, litter
-4. **Docs** — Local vaccine cards
+1. **爱宠档案** — 猫咪、狗狗与其他宠物管理
+2. **养护日程** — 疫苗驱虫与洗澡护理提醒
+3. **每日动态** — 喂食、遛狗与如厕健康打卡
+4. **健康病历** — 本地存储疫苗本与就诊单据
 
 ---
 
@@ -429,18 +429,18 @@ Forma parte de las apps de faishal.id.
 
 </details>
 
-**Release notes** — versionCode 1 (47/500)
+**Release notes** — versionCode 11 (47/500)
 
 > Initial release with multi-locale store assets.
 
 **Tagline** (feature graphic)
 
-> Pet profiles, care schedules, vet visits & daily logs — offline.
+> Perfil de mascotas, calendarios de cuidados, veterinario y registro diario sin conexión.
 
 **Screenshot captions**
 
-1. **Profiles** — Dogs, cats, and more
-2. **Schedules** — Vaccines & care
-3. **Daily** — Feed, walk, litter
-4. **Docs** — Local vaccine cards
+1. **Perfiles** — Perros, gatos y otras mascotas
+2. **Calendarios** — Vacunas y revisiones periódicas
+3. **Día a día** — Comida, paseos e higiene
+4. **Documentos** — Cartilla de vacunación local
 

@@ -90,6 +90,7 @@
   const POSES = ['welcome', 'explaining', 'pointing', 'celebrating'];
   // Locales on the Play canvas always get the Android bezel; iPhone bezel is reserved for iphone69
   const iosRaw = size === 'iphone69';
+  const primaryRaw = size === 'iphone69' ? 'raw-ios' : 'raw';
 
   slides.forEach(function (s, i) {
     // In ar the Play carousel is displayed right-to-left, so reverse the
@@ -110,7 +111,7 @@
         '<div class="device size-' + size + '">' +
           '<div class="cam"></div><div class="notch"></div>' +
           '<div class="screen">' +
-            '<img src="raw/' + lang + '/' + (i + 1) + '.png" alt="" ' +
+            '<img src="' + primaryRaw + '/' + lang + '/' + (i + 1) + '.png" alt="" data-primary="' + primaryRaw + '" ' +
                  'onerror="rawPhoneFallback(this, \'' + lang + '\', ' + (i + 1) + ');">' +
             '<div class="placeholder" style="display:none">' +
               '<div class="ph-icon"><img src="' + C.iconUrl + '" alt="" onerror="this.parentNode.textContent=\'📱\'"></div>' +
@@ -139,8 +140,13 @@
     stage.appendChild(cell);
   });
 
-  // Prefer raw/<locale>/<n>.png; fall back to legacy raw/<n>.png (shared UI).
+  // Prefer raw-ios/<locale>/<n>.png for iphone69, raw/<locale>/<n>.png for play; fall back gracefully.
   window.rawPhoneFallback = function (img, locale, n) {
+    if (img.dataset.primary === 'raw-ios' && !img.dataset.fbIos) {
+      img.dataset.fbIos = '1';
+      img.src = 'raw/' + locale + '/' + n + '.png';
+      return;
+    }
     if (!img.dataset.fb) {
       img.dataset.fb = '1';
       img.src = 'raw/' + n + '.png';

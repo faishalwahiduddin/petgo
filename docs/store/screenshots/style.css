@@ -373,13 +373,12 @@ body.full .cell .tablet-slide { transform: none; }
   box-shadow: 0 3.7cqw 7.4cqw rgba(0,0,0,.35), inset 0 0 0 0.28cqw rgba(255,255,255,.08);
   flex: 0 0 auto;
 }
-.slide .device .cam {
-  position: absolute; top: 1.15cqh; left: 50%; transform: translateX(-50%);
-  width: 2.2cqw; height: 2.2cqw; border-radius: 50%;
-  background: #050506; z-index: 3;
-  box-shadow: inset 0 0 0 0.28cqw rgba(255,255,255,.07);
+.device .cam,
+.device .notch,
+.slide .device .cam,
+.slide .device .notch {
+  display: none !important;
 }
-.device .notch { display: none; }
 .slide.size-iphone69 .device,
 .slide.ios .device,
 .slide.ios-raw .device {
@@ -387,14 +386,10 @@ body.full .cell .tablet-slide { transform: none; }
 }
 .slide.size-iphone69 .device .cam,
 .slide.ios .device .cam,
-.slide.ios-raw .device .cam { display: none; }
+.slide.ios-raw .device .cam,
 .slide.size-iphone69 .device .notch,
 .slide.ios .device .notch,
-.slide.ios-raw .device .notch {
-  display: block; position: absolute; top: 1.1cqh; left: 50%;
-  transform: translateX(-50%); width: 11cqw; height: 3.1cqh;
-  border-radius: 999px; background: #050506; z-index: 3;
-}
+.slide.ios-raw .device .notch { display: none; }
 
 .slide .device .screen {
   height: 100%;

@@ -17,4 +17,4 @@ Values for Play Console → Store settings / Store presence / Main store listing
 | Target age | 13+ / Everyone |
 | App access | All features available without login |
 | Package name | `id.faishal.petgo` |
-| Version | 1.0.0 (code 1) |
+| Version | 1.0.10 (code 11) |
