@@ -11,7 +11,7 @@
   }
   window.STORE_ART = {
     generic: false,
-    theme: { bg: 'linear-gradient(180deg, #3E5A3D 0%, #293D28 55%, #162215 100%)', ink: '#FAF7F2' },
+    theme: { bg: 'linear-gradient(160deg, #3E5A3D 0%, #293D28 55%, #162215 100%)', ink: '#FAF7F2' },
     panoramaSvg:
       '<svg viewBox="0 0 4320 1920" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">' +
         paws +
