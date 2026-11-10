@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../constants/app_constants.dart';
+import '../demo/store_demo.dart';
 import '../models/pet.dart';
 import '../utils/backup_codec.dart';
 
@@ -17,11 +18,13 @@ class LocalStorageService {
   static Future<LocalStorageService> init() async {
     final prefs = await SharedPreferences.getInstance();
     final service = LocalStorageService(prefs);
-    service.seedInitialIfEmpty();
+    await StoreDemoSeeder.seedIfNeeded(service);
+    service.seedInitialIfEmpty(seedLang(service));
     return service;
   }
 
-  void seedInitialIfEmpty() {
+  void seedInitialIfEmpty([String lang = 'id']) {
+    String txt(String k) => kDefaultSeedText[k]!.of(lang);
     if (_prefs.containsKey(AppConstants.keyPets)) return;
     final pets = [Pet.sampleDog(), Pet.sampleCat()];
     savePets(pets);
@@ -31,7 +34,7 @@ class LocalStorageService {
       CareSchedule(
         id: 'sch-1',
         petId: pets.first.id,
-        title: 'Vaksin rabies',
+        title: txt('rabies'),
         kind: CareKind.vaccine,
         intervalMonths: 12,
         lastDoneAt: now.subtract(const Duration(days: 300)),
@@ -39,7 +42,7 @@ class LocalStorageService {
       CareSchedule(
         id: 'sch-2',
         petId: pets.first.id,
-        title: 'Obat cacing',
+        title: txt('deworm'),
         kind: CareKind.deworm,
         intervalMonths: 3,
         lastDoneAt: now.subtract(const Duration(days: 70)),
@@ -51,7 +54,7 @@ class LocalStorageService {
         petId: pets.first.id,
         date: now.subtract(const Duration(hours: 4)),
         kind: DailyCareKind.feed,
-        notes: 'Pagi',
+        notes: txt('feed'),
       ),
       DailyCareLog(
         id: 'd2',
@@ -64,7 +67,7 @@ class LocalStorageService {
       PetDocument(
         id: 'doc-1',
         petId: pets.first.id,
-        title: 'Kartu vaksin',
+        title: txt('card'),
         kind: DocKind.vaccineCard,
       ),
     ]);

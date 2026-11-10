@@ -3,6 +3,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/data/latest_all.dart' as tzdata;
 import 'package:timezone/timezone.dart' as tz;
 
+import '../demo/store_demo.dart';
 import '../models/pet.dart';
 
 class CareReminderService {
@@ -17,7 +18,11 @@ class CareReminderService {
     try {
       tzdata.initializeTimeZones();
       const android = AndroidInitializationSettings('@mipmap/ic_launcher');
-      const ios = DarwinInitializationSettings();
+      const ios = DarwinInitializationSettings(
+        requestAlertPermission: !kStoreDemo,
+        requestBadgePermission: !kStoreDemo,
+        requestSoundPermission: !kStoreDemo,
+      );
       await _plugin.initialize(
         settings: const InitializationSettings(android: android, iOS: ios),
       );
