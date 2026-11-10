@@ -6,6 +6,9 @@ import '../storage/local_storage_service.dart';
 /// Enabled by store screenshot captures: `--dart-define=STORE_DEMO=true`.
 const bool kStoreDemo = bool.fromEnvironment('STORE_DEMO');
 
+/// Language forced for the seed + UI during store captures (`--dart-define=STORE_DEMO_LOCALE=en`).
+const String kStoreDemoLocale = String.fromEnvironment('STORE_DEMO_LOCALE');
+
 const _kSeeded = 'store_demo_seeded';
 const _langs = {'id', 'en', 'ar', 'ja', 'zh', 'es'};
 
@@ -13,7 +16,7 @@ const _langs = {'id', 'en', 'ar', 'ja', 'zh', 'es'};
 /// languages without seed text (jv, su) fall back to Indonesian.
 String seedLang(LocalStorageService s) {
   final code =
-      s.prefs.getString('locale') ?? ui.PlatformDispatcher.instance.locale.languageCode;
+      (kStoreDemoLocale.isNotEmpty ? kStoreDemoLocale : s.prefs.getString('locale')) ?? ui.PlatformDispatcher.instance.locale.languageCode;
   return _langs.contains(code) ? code : 'id';
 }
 
