@@ -29,32 +29,25 @@ class HomeScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.appTitle)),
-      floatingActionButton: Padding(
-        // Lift above the shell's glass nav bar (extendBody) so it stays tappable.
-        padding: const EdgeInsets.only(bottom: kShellNavBarHeight),
-        child: FloatingActionButton.extended(
-          onPressed: () => _showPetEditor(context, ref),
-          icon: const Icon(Icons.add),
-          label: Text(l10n.actionAddPet),
-        ),
-      ),
       body: ListView(
-        // Clear the FAB (56) and its margin above the nav bar.
-        padding: const EdgeInsets.fromLTRB(
-          16,
-          16,
-          16,
-          kShellNavBarHeight +
-              kFloatingActionButtonMargin +
-              56 +
-              kFloatingActionButtonMargin,
-        ),
+        padding: const EdgeInsets.fromLTRB(16, 16, 16, kShellNavBarHeight + 16),
         children: [
-          Text(
-            l10n.homeActivePet,
-            style: Theme.of(
-              context,
-            ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  l10n.homeActivePet,
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+              TextButton.icon(
+                onPressed: () => _showPetEditor(context, ref),
+                icon: const Icon(Icons.add),
+                label: Text(l10n.actionAddPet),
+              ),
+            ],
           ),
           const SizedBox(height: 8),
           if (pets.isEmpty)
