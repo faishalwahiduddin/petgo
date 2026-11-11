@@ -31,110 +31,164 @@ window.STORE_CONFIG = {
   "slides": {
     "id": [
       {
-        "headline": "Profil",
-        "subtext": "Anjing, kucing, dan lainnya"
+        "headline": "Kesehatan anabul,\ntak lagi terlupa",
+        "subtext": "Vaksin, dokter hewan, berat badan",
+        "layout": "hero"
       },
       {
-        "headline": "Jadwal",
-        "subtext": "Vaksin & perawatan"
+        "headline": "Tak ada lagi\nlupa jadwal vaksin",
+        "subtext": "Ketuk selesai, jadwal berikut diatur",
+        "layout": "offset-right"
       },
       {
-        "headline": "Harian",
-        "subtext": "Makan, jalan, litter"
+        "headline": "Catat makan & jalan\ndalam dua ketukan",
+        "subtext": "Satu timeline untuk rutinitas harian",
+        "layout": "zoom"
       },
       {
-        "headline": "Dokumen",
-        "subtext": "Kartu vaksin lokal"
+        "headline": "Kartu vaksin selalu\nada di saku",
+        "subtext": "Resep dan polis asuransi tersimpan",
+        "layout": "offset-left"
+      },
+      {
+        "headline": "Ganti HP,\ndata tetap ikut",
+        "subtext": "Ekspor cadangan, impor di mana saja",
+        "layout": "duo"
       }
     ],
     "en-US": [
       {
-        "headline": "Profiles",
-        "subtext": "Dogs, cats, and more"
+        "headline": "Your pet's health,\nnever forgotten",
+        "subtext": "Vaccines, vet visits and weight",
+        "layout": "hero"
       },
       {
-        "headline": "Schedules",
-        "subtext": "Vaccines & care"
+        "headline": "Never miss a\nvaccine again",
+        "subtext": "Tap done, next date is set",
+        "layout": "offset-right"
       },
       {
-        "headline": "Daily",
-        "subtext": "Feed, walk, litter"
+        "headline": "Log meals and walks\nin two taps",
+        "subtext": "One timeline for daily care",
+        "layout": "zoom"
       },
       {
-        "headline": "Docs",
-        "subtext": "Local vaccine cards"
+        "headline": "Vaccine card always\nin your pocket",
+        "subtext": "Prescriptions and insurance saved",
+        "layout": "offset-left"
+      },
+      {
+        "headline": "New phone,\nrecords still with you",
+        "subtext": "Export a backup, restore anywhere",
+        "layout": "duo"
       }
     ],
     "ar": [
       {
-        "headline": "الملفات الشخصية",
-        "subtext": "الكلاب والقطط ومختلف الحيوانات"
+        "headline": "صحة حيوانك الأليف\nلا تُنسى أبدًا",
+        "subtext": "التطعيمات والبيطري والوزن",
+        "layout": "hero"
       },
       {
-        "headline": "جداول المواعيد",
-        "subtext": "التطعيمات والرعاية الدورية"
+        "headline": "لن يفوتك موعد\nالتطعيم بعد اليوم",
+        "subtext": "اضغط تم ليُضبط الموعد التالي",
+        "layout": "offset-right"
       },
       {
-        "headline": "الروتين اليومي",
-        "subtext": "الطعام والتمشية والنظافة"
+        "headline": "سجّل الوجبات والنزهات\nبلمستين",
+        "subtext": "جدول زمني واحد للرعاية اليومية",
+        "layout": "zoom"
       },
       {
-        "headline": "الوثائق الطبية",
-        "subtext": "بطاقات اللقاح المحفوظة محليًا"
+        "headline": "بطاقة التطعيم\nدائمًا في جيبك",
+        "subtext": "الوصفات ووثائق التأمين محفوظة",
+        "layout": "offset-left"
+      },
+      {
+        "headline": "هاتف جديد\nوسجلاتك معك",
+        "subtext": "صدّر نسخة احتياطية واستعدها",
+        "layout": "duo"
       }
     ],
     "ja-JP": [
       {
-        "headline": "ペットプロファイル",
-        "subtext": "犬・猫・小動物をまとめて管理"
+        "headline": "ペットの健康管理\nもう忘れない",
+        "subtext": "ワクチン・通院・体重を記録",
+        "layout": "hero"
       },
       {
-        "headline": "予定カレンダー",
-        "subtext": "ワクチン接種や健康診断の管理"
+        "headline": "ワクチンの予定を\nもう忘れない",
+        "subtext": "完了を押すと次回日を自動設定",
+        "layout": "offset-right"
       },
       {
-        "headline": "日々の記録",
-        "subtext": "ごはん・散歩・お世話のログ"
+        "headline": "ごはんも散歩も\n2タップで記録",
+        "subtext": "毎日のお世話を1つの履歴に",
+        "layout": "zoom"
       },
       {
-        "headline": "健康ドキュメント",
-        "subtext": "ワクチン接種証明を端末保存"
+        "headline": "ワクチン証明が\nいつも手元に",
+        "subtext": "処方箋や保険証券も保存",
+        "layout": "offset-left"
+      },
+      {
+        "headline": "機種変更しても\n記録はそのまま",
+        "subtext": "バックアップを書き出して復元",
+        "layout": "duo"
       }
     ],
     "zh-CN": [
       {
-        "headline": "爱宠档案",
-        "subtext": "猫咪、狗狗与其他宠物管理"
+        "headline": "爱宠的健康\n再也不会漏掉",
+        "subtext": "疫苗、看诊与体重记录",
+        "layout": "hero"
       },
       {
-        "headline": "养护日程",
-        "subtext": "疫苗驱虫与洗澡护理提醒"
+        "headline": "再也不会\n错过疫苗",
+        "subtext": "点完成，下次日期自动更新",
+        "layout": "offset-right"
       },
       {
-        "headline": "每日动态",
-        "subtext": "喂食、遛狗与如厕健康打卡"
+        "headline": "喂食和遛弯\n两下点击就记好",
+        "subtext": "日常照护汇总在一条时间线",
+        "layout": "zoom"
       },
       {
-        "headline": "健康病历",
-        "subtext": "本地存储疫苗本与就诊单据"
+        "headline": "疫苗本\n随时带在身上",
+        "subtext": "处方和保险单也能保存",
+        "layout": "offset-left"
+      },
+      {
+        "headline": "换手机\n记录照样带走",
+        "subtext": "导出备份，随处恢复",
+        "layout": "duo"
       }
     ],
     "es-ES": [
       {
-        "headline": "Perfiles",
-        "subtext": "Perros, gatos y otras mascotas"
+        "headline": "La salud de tu mascota,\nsin olvidos",
+        "subtext": "Vacunas, veterinario y peso",
+        "layout": "hero"
       },
       {
-        "headline": "Calendarios",
-        "subtext": "Vacunas y revisiones periódicas"
+        "headline": "Que no se te pase\nninguna vacuna",
+        "subtext": "Marca hecho y se fija la siguiente",
+        "layout": "offset-right"
       },
       {
-        "headline": "Día a día",
-        "subtext": "Comida, paseos e higiene"
+        "headline": "Anota comidas y paseos\nen dos toques",
+        "subtext": "Una línea de tiempo diaria",
+        "layout": "zoom"
       },
       {
-        "headline": "Documentos",
-        "subtext": "Cartilla de vacunación local"
+        "headline": "La cartilla de vacunas\nsiempre contigo",
+        "subtext": "Recetas y pólizas guardadas",
+        "layout": "offset-left"
+      },
+      {
+        "headline": "Cambias de móvil,\nlos datos te siguen",
+        "subtext": "Exporta la copia y restáurala",
+        "layout": "duo"
       }
     ]
   }
