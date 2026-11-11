@@ -59,7 +59,9 @@ List<String> findBrokenWords(RenderObject root) {
     }
     if (o is RenderParagraph && o.hasSize) {
       final text = o.text.toPlainText();
-      for (final m in RegExp(r'\S{2,}').allMatches(text)) {
+      // Hyphens, dashes and slashes are legitimate break points (transliteration
+      // like "Al-Qur'an"), so measure the pieces between them, not the whole token.
+      for (final m in RegExp(r'[^\s\-\u2010-\u2014/]{2,}').allMatches(text)) {
         if (_cjk.hasMatch(m[0]!)) continue;
         final boxes = o.getBoxesForSelection(
             TextSelection(baseOffset: m.start, extentOffset: m.end));

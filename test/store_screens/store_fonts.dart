@@ -44,7 +44,9 @@ Map<String, List<String>> get _families => {
       'StoreJP': ['$_fleet/NotoSansJP-VF.ttf'],
       'StoreSC': ['$_fleet/NotoSansSC-VF.ttf'],
       'StoreEmoji_ios': ['$_sys/Apple Color Emoji.ttc'],
-      'StoreEmoji_android': ['$_fleet/NotoColorEmoji.ttf'],
+      // NotoColorEmoji is CBDT bitmap, which the test renderer cannot draw
+      // (renders tofu). Apple Color Emoji (sbix) renders; glyph style differs.
+      'StoreEmoji_android': ['$_sys/Apple Color Emoji.ttc'],
       'MaterialIcons': ['$_material/MaterialIcons-Regular.otf'],
     };
 

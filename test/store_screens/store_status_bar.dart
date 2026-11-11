@@ -1,5 +1,6 @@
 // GENERATED COPY of tools/gen-store-scaffold/flutter_harness/lib/ - edit there,
 // then re-run install-harness.sh.
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 /// Target capture geometry (matches the real-device raws).
@@ -30,14 +31,29 @@ class StoreDevice {
 
 /// Paints the app plus a fixed 9:41 status bar and home indicator on top,
 /// like simctl status_bar override / Android SystemUI demo mode.
+/// Glyph colors for the status bar and home indicator. The render loop first
+/// paints with [StoreBarStyle.hidden], samples the app background behind the
+/// bars, then picks light or dark glyphs (like the OS does per app).
+class StoreBarStyle {
+  const StoreBarStyle(this.top, this.bottom);
+  final Color? top; // null = not painted
+  final Color? bottom;
+  static const hidden = StoreBarStyle(null, null);
+}
+
 class StoreStatusBarFrame extends StatelessWidget {
-  const StoreStatusBarFrame({super.key, required this.device, required this.child});
+  const StoreStatusBarFrame(
+      {super.key, required this.device, required this.child, required this.style});
 
   final StoreDevice device;
   final Widget child;
+  final ValueListenable<StoreBarStyle> style;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) => ValueListenableBuilder<StoreBarStyle>(
+      valueListenable: style, builder: (context, s, _) => _frame(s));
+
+  Widget _frame(StoreBarStyle s) {
     final ios = device.platform == TargetPlatform.iOS;
     return Directionality(
       textDirection: TextDirection.ltr,
@@ -48,9 +64,11 @@ class StoreStatusBarFrame extends StatelessWidget {
           left: 0,
           right: 0,
           height: device.topInset,
-          child: IgnorePointer(child: ios ? const _IosBar() : const _AndroidBar()),
+          child: s.top == null
+              ? const SizedBox.shrink()
+              : IgnorePointer(child: ios ? _IosBar(s.top!) : _AndroidBar(s.top!)),
         ),
-        Positioned(
+        if (s.bottom != null) Positioned(
           bottom: ios ? 8 : 10,
           left: 0,
           right: 0,
@@ -59,7 +77,7 @@ class StoreStatusBarFrame extends StatelessWidget {
               width: ios ? 144 : 108,
               height: ios ? 5 : 4,
               decoration: BoxDecoration(
-                color: ios ? Colors.black : const Color(0xFF202124),
+                color: s.bottom,
                 borderRadius: BorderRadius.circular(3),
               ),
             ),
@@ -71,7 +89,8 @@ class StoreStatusBarFrame extends StatelessWidget {
 }
 
 class _IosBar extends StatelessWidget {
-  const _IosBar();
+  const _IosBar(this.color);
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -92,7 +111,7 @@ class _IosBar extends StatelessWidget {
           ),
         ),
       ),
-      const Positioned(
+      Positioned(
         left: 0,
         width: 150,
         top: 17,
@@ -102,7 +121,7 @@ class _IosBar extends StatelessWidget {
                   fontFamily: 'CupertinoSystemText',
                   fontSize: 17,
                   fontWeight: FontWeight.w600,
-                  color: Colors.black)),
+                  color: color)),
         ),
       ),
       Positioned(
@@ -110,21 +129,21 @@ class _IosBar extends StatelessWidget {
         width: 150,
         top: 20,
         child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-          const _SignalBars(),
+          _SignalBars(color),
           const SizedBox(width: 6),
-          const Icon(Icons.wifi, size: 18, color: Colors.black),
+          Icon(Icons.wifi, size: 18, color: color),
           const SizedBox(width: 6),
           Container(
             width: 26,
             height: 13,
             padding: const EdgeInsets.all(1.5),
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.black45),
+              border: Border.all(color: color.withValues(alpha: 0.45)),
               borderRadius: BorderRadius.circular(4),
             ),
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: color,
                 borderRadius: BorderRadius.circular(2.5),
               ),
             ),
@@ -136,7 +155,8 @@ class _IosBar extends StatelessWidget {
 }
 
 class _SignalBars extends StatelessWidget {
-  const _SignalBars();
+  const _SignalBars(this.color);
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -146,7 +166,7 @@ class _SignalBars extends StatelessWidget {
           width: 3,
           height: h,
           decoration: BoxDecoration(
-            color: Colors.black,
+            color: color,
             borderRadius: BorderRadius.circular(1),
           ),
         ),
@@ -157,12 +177,12 @@ class _SignalBars extends StatelessWidget {
 }
 
 class _AndroidBar extends StatelessWidget {
-  const _AndroidBar();
+  const _AndroidBar(this.color);
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
-    const color = Color(0xFF444746);
-    return const Padding(
+    return Padding(
       padding: EdgeInsets.symmetric(horizontal: 16),
       child: Row(children: [
         Text('9:41',
