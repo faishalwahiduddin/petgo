@@ -573,8 +573,8 @@ body.full .cell .tablet-slide { transform: none; }
 :is(.slide, .tablet-slide).lay-offset-right { --side: 1; }
 :is(.slide, .tablet-slide).lay-offset-left  { --side: -1; }
 :is(.slide, .tablet-slide):is(.lay-offset-left, .lay-offset-right) :is(.device, .tablet-device) {
-  height: 60cqh; margin-top: 3cqh;
-  transform: translateX(calc(var(--side) * var(--flip) * 11cqw)) translateY(3cqh) rotate(calc(var(--side) * var(--flip) * 4deg));
+  height: 70cqh; margin-top: 3cqh;
+  transform: translateX(calc(var(--side) * var(--flip) * 9cqw)) translateY(6cqh) rotate(calc(var(--side) * var(--flip) * 4deg));
 }
 :is(.slide, .tablet-slide):is(.lay-offset-left, .lay-offset-right) .copy {
   max-width: 88cqw; align-self: flex-start; margin-left: 6cqw;
@@ -608,11 +608,11 @@ body.full .cell .tablet-slide { transform: none; }
 /* ---- duo: front device + smaller tilted device peeking out behind ---- */
 :is(.slide, .tablet-slide).lay-duo :is(.device, .tablet-device):not(.back) {
   height: 70cqh; margin-top: 3cqh;
-  transform: translateX(calc(var(--flip) * 8cqw)) translateY(3cqh);
+  transform: translateX(calc(var(--flip) * 7cqw)) translateY(5cqh);
 }
 :is(.slide, .tablet-slide).lay-duo :is(.device, .tablet-device).back {
-  position: absolute; z-index: 1; margin: 0; top: 27cqh; left: 2cqw;
-  height: 58cqh; transform: rotate(calc(var(--flip) * -7deg));
+  position: absolute; z-index: 1; margin: 0; top: 26cqh; left: 2cqw;
+  height: 60cqh; transform: rotate(calc(var(--flip) * -7deg));
   filter: brightness(.8) saturate(.9);
   box-shadow: 0 2cqw 5cqw rgba(0,0,0,.4), inset 0 0 0 0.28cqw rgba(255,255,255,.08);
 }

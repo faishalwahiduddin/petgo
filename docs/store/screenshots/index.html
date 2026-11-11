@@ -97,7 +97,7 @@
   // ---- Optional per-slide layout variants (opt-in; slides without `layout` render exactly as before) ----
   // slide = {headline, subtext, layout?, secondary?, zoom?}
   //   layout: 'hero' | 'offset-left' | 'offset-right' | 'zoom' | 'duo'
-  //   secondary: 1-based raw index for the back device in 'duo' (default: same raw as the front)
+  //   secondary: 1-based raw index for the back device in 'duo' (default: previous slide's raw, next for slide 1; never the front's own raw)
   //   zoom: {x, y, scale, cx?, cy?, size?} screen-percent coords of the focus point (x,y), magnification
   //         (default 2.2), lens centre (cx,cy; default auto) and lens diameter (size, % of screen width, default 48)
   const LAYOUTS = { 'hero': 1, 'offset-left': 1, 'offset-right': 1, 'zoom': 1, 'duo': 1 };
@@ -120,7 +120,9 @@
       '</div></div>';
   }
   function backDeviceHtml(s, i, devCls, fb) {
-    const n = Number(s.secondary) > 0 ? Math.round(Number(s.secondary)) : (i + 1);
+    let n = Number(s.secondary) > 0 ? Math.round(Number(s.secondary)) : 0;
+    // Back device must never repeat the front screen: default to the previous raw (next for slide 1).
+    if (!n || n === i + 1) n = i > 0 ? i : Math.min(2, slides.length);
     return '<div class="' + devCls + ' back size-' + size + '"><div class="screen">' +
       '<img src="' + primaryRaw + '/' + lang + '/' + n + '.png" alt="" data-primary="' + primaryRaw + '" ' +
            'onerror="' + fb + '(this, \'' + lang + '\', ' + n + ');">' +
