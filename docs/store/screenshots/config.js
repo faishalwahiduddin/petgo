@@ -32,12 +32,12 @@ window.STORE_CONFIG = {
     "id": [
       {
         "headline": "Kesehatan anabul,\ntak lagi terlupa",
-        "subtext": "Vaksin, dokter hewan, berat badan",
+        "subtext": "Pengingat jadwal untuk tiap hewan",
         "layout": "hero"
       },
       {
-        "headline": "Tak ada lagi\nlupa jadwal vaksin",
-        "subtext": "Ketuk selesai, jadwal berikut diatur",
+        "headline": "Tak ada jadwal\nperawatan terlewat",
+        "subtext": "Vaksin, obat cacing, grooming",
         "layout": "offset-right"
       },
       {
@@ -49,22 +49,17 @@ window.STORE_CONFIG = {
         "headline": "Kartu vaksin selalu\nada di saku",
         "subtext": "Resep dan polis asuransi tersimpan",
         "layout": "offset-left"
-      },
-      {
-        "headline": "Ganti HP,\ndata tetap ikut",
-        "subtext": "Ekspor cadangan, impor di mana saja",
-        "layout": "duo"
       }
     ],
     "en-US": [
       {
         "headline": "Your pet's health,\nnever forgotten",
-        "subtext": "Vaccines, vet visits and weight",
+        "subtext": "Due-soon reminders for every pet",
         "layout": "hero"
       },
       {
-        "headline": "Never miss a\nvaccine again",
-        "subtext": "Tap done, next date is set",
+        "headline": "Never miss a\ncare date again",
+        "subtext": "Vaccines, deworming, grooming",
         "layout": "offset-right"
       },
       {
@@ -76,22 +71,17 @@ window.STORE_CONFIG = {
         "headline": "Vaccine card always\nin your pocket",
         "subtext": "Prescriptions and insurance saved",
         "layout": "offset-left"
-      },
-      {
-        "headline": "New phone,\nrecords still with you",
-        "subtext": "Export a backup, restore anywhere",
-        "layout": "duo"
       }
     ],
     "ar": [
       {
         "headline": "صحة حيوانك الأليف\nلا تُنسى أبدًا",
-        "subtext": "التطعيمات والبيطري والوزن",
+        "subtext": "تذكيرات المواعيد القادمة لكل حيوان",
         "layout": "hero"
       },
       {
-        "headline": "لن يفوتك موعد\nالتطعيم بعد اليوم",
-        "subtext": "اضغط تم ليُضبط الموعد التالي",
+        "headline": "لا تفوّت موعد\nرعاية بعد اليوم",
+        "subtext": "التطعيمات والديدان والتنظيف",
         "layout": "offset-right"
       },
       {
@@ -103,22 +93,17 @@ window.STORE_CONFIG = {
         "headline": "بطاقة التطعيم\nدائمًا في جيبك",
         "subtext": "الوصفات ووثائق التأمين محفوظة",
         "layout": "offset-left"
-      },
-      {
-        "headline": "هاتف جديد\nوسجلاتك معك",
-        "subtext": "صدّر نسخة احتياطية واستعدها",
-        "layout": "duo"
       }
     ],
     "ja-JP": [
       {
         "headline": "ペットの健康管理\nもう忘れない",
-        "subtext": "ワクチン・通院・体重を記録",
+        "subtext": "ペットごとの予定リマインダー",
         "layout": "hero"
       },
       {
-        "headline": "ワクチンの予定を\nもう忘れない",
-        "subtext": "完了を押すと次回日を自動設定",
+        "headline": "お世話の予定を\nもう忘れない",
+        "subtext": "ワクチン・駆虫・トリミング",
         "layout": "offset-right"
       },
       {
@@ -130,22 +115,17 @@ window.STORE_CONFIG = {
         "headline": "ワクチン証明が\nいつも手元に",
         "subtext": "処方箋や保険証券も保存",
         "layout": "offset-left"
-      },
-      {
-        "headline": "機種変更しても\n記録はそのまま",
-        "subtext": "バックアップを書き出して復元",
-        "layout": "duo"
       }
     ],
     "zh-CN": [
       {
         "headline": "爱宠的健康\n再也不会漏掉",
-        "subtext": "疫苗、看诊与体重记录",
+        "subtext": "每只宠物的到期提醒",
         "layout": "hero"
       },
       {
-        "headline": "再也不会\n错过疫苗",
-        "subtext": "点完成，下次日期自动更新",
+        "headline": "再也不会\n错过护理日",
+        "subtext": "疫苗、驱虫、美容",
         "layout": "offset-right"
       },
       {
@@ -157,22 +137,17 @@ window.STORE_CONFIG = {
         "headline": "疫苗本\n随时带在身上",
         "subtext": "处方和保险单也能保存",
         "layout": "offset-left"
-      },
-      {
-        "headline": "换手机\n记录照样带走",
-        "subtext": "导出备份，随处恢复",
-        "layout": "duo"
       }
     ],
     "es-ES": [
       {
         "headline": "La salud de tu mascota,\nsin olvidos",
-        "subtext": "Vacunas, veterinario y peso",
+        "subtext": "Avisos de próximos cuidados por mascota",
         "layout": "hero"
       },
       {
-        "headline": "Que no se te pase\nninguna vacuna",
-        "subtext": "Marca hecho y se fija la siguiente",
+        "headline": "No pierdas ninguna\nfecha de cuidado",
+        "subtext": "Vacunas, desparasitación y peluquería",
         "layout": "offset-right"
       },
       {
@@ -184,11 +159,6 @@ window.STORE_CONFIG = {
         "headline": "La cartilla de vacunas\nsiempre contigo",
         "subtext": "Recetas y pólizas guardadas",
         "layout": "offset-left"
-      },
-      {
-        "headline": "Cambias de móvil,\nlos datos te siguen",
-        "subtext": "Exporta la copia y restáurala",
-        "layout": "duo"
       }
     ]
   }
