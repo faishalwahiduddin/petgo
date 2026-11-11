@@ -5,6 +5,9 @@ import 'package:petgo/l10n/app_localizations.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
+import '../../core/providers/locale_provider.dart';
+import '../../core/providers/timezone_provider.dart';
+import '../../core/utils/pet_format.dart';
 
 class DailyScreen extends ConsumerWidget {
   const DailyScreen({super.key});
@@ -13,6 +16,8 @@ class DailyScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
     final pet = ref.watch(activePetProvider);
+    final loc = ref.watch(timezoneLocationProvider);
+    final code = ref.watch(localeProvider).languageCode;
     final logs = ref
         .watch(dailyLogsProvider)
         .where((e) => pet != null && e.petId == pet.id)
@@ -87,7 +92,7 @@ class DailyScreen extends ConsumerWidget {
                     child: ListTile(
                       leading: Icon(_icon(e.kind), color: AppColors.primary),
                       title: Text(_dailyLabel(l10n, e.kind)),
-                      subtitle: Text(_formatWhen(e.date.toLocal())),
+                      subtitle: Text(PetFormat.dateTime(e.date, loc, code)),
                       onLongPress: () =>
                           ref.read(dailyLogsProvider.notifier).remove(e.id),
                     ),
@@ -107,7 +112,7 @@ class DailyScreen extends ConsumerWidget {
                   (w) => ListTile(
                     title: Text('${w.weightKg.toStringAsFixed(1)} kg'),
                     subtitle: Text(
-                      w.date.toLocal().toString().split('.').first,
+                      PetFormat.dateTime(w.date, loc, code),
                     ),
                     trailing: IconButton(
                       icon: const Icon(Icons.delete_outline),
@@ -120,19 +125,6 @@ class DailyScreen extends ConsumerWidget {
         ],
       ),
     );
-  }
-
-  /// Timeline stamp: time only for today, date + time for older entries.
-  /// Raw `DateTime.toString()` leaked microseconds into the row.
-  String _formatWhen(DateTime d) {
-    final now = DateTime.now();
-    final hh = d.hour.toString().padLeft(2, '0');
-    final mm = d.minute.toString().padLeft(2, '0');
-    final sameDay = d.year == now.year && d.month == now.month && d.day == now.day;
-    if (sameDay) return '$hh:$mm';
-    final mo = d.month.toString().padLeft(2, '0');
-    final dd = d.day.toString().padLeft(2, '0');
-    return '${d.year}-$mo-$dd · $hh:$mm';
   }
 
   IconData _icon(DailyCareKind k) => switch (k) {
