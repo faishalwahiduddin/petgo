@@ -102,13 +102,13 @@ Future<void> _loadAppFonts() async {
 /// script/emoji fallback chain.
 class StoreTextStyle {
   StoreTextStyle(StoreDevice device, String lang)
-      : family = 'StoreDefault_${device.name}',
+      : family = 'StoreDefault_${device.fontKey}',
         fallback = List.unmodifiable([
           if (lang == 'zh') 'StoreSC',
           'StoreJP',
           if (lang != 'zh') 'StoreSC',
-          'StoreArabic_${device.name}',
-          'StoreEmoji_${device.name}',
+          'StoreArabic_${device.fontKey}',
+          'StoreEmoji_${device.fontKey}',
         ]);
 
   final String family;

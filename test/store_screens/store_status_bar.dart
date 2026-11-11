@@ -26,7 +26,24 @@ class StoreDevice {
   static const android = StoreDevice._('android', 'raw',
       TargetPlatform.android, Size(1080 / 2.625, 1920 / 2.625), 2.625, 24, 24);
 
-  static const all = [ios, android];
+  /// iPad 13" (M4/M5) slot: 1032x1376 pt @2 = 2064x2752 px. Top 24, home 20.
+  static const ipad = StoreDevice._(
+      'ipad', 'raw-tablet', TargetPlatform.iOS, Size(1032, 1376), 2, 24, 20);
+
+  /// Android 7" slot: 600x960 dp @2 = 1200x1920 px.
+  static const tablet7 = StoreDevice._('tablet7', 'raw-android-tablet7',
+      TargetPlatform.android, Size(600, 960), 2, 24, 24);
+
+  /// Android 10" slot: 800x1280 dp @2 = 1600x2560 px.
+  static const tablet10 = StoreDevice._('tablet10', 'raw-android-tablet10',
+      TargetPlatform.android, Size(800, 1280), 2, 24, 24);
+
+  static const all = [ios, android, ipad, tablet7, tablet10];
+
+  bool get isIpad => name == 'ipad';
+
+  /// Font registration key: tablets share their platform's phone fonts.
+  String get fontKey => platform == TargetPlatform.iOS ? 'ios' : 'android';
 }
 
 /// Paints the app plus a fixed 9:41 status bar and home indicator on top,
@@ -66,15 +83,19 @@ class StoreStatusBarFrame extends StatelessWidget {
           height: device.topInset,
           child: s.top == null
               ? const SizedBox.shrink()
-              : IgnorePointer(child: ios ? _IosBar(s.top!) : _AndroidBar(s.top!)),
+              : IgnorePointer(child: device.isIpad
+                  ? _IpadBar(s.top!)
+                  : ios
+                      ? _IosBar(s.top!)
+                      : _AndroidBar(s.top!)),
         ),
         if (s.bottom != null) Positioned(
-          bottom: ios ? 8 : 10,
+          bottom: device.isIpad ? 7 : ios ? 8 : 10,
           left: 0,
           right: 0,
           child: Center(
             child: Container(
-              width: ios ? 144 : 108,
+              width: device.isIpad ? 315 : ios ? 144 : 108,
               height: ios ? 5 : 4,
               decoration: BoxDecoration(
                 color: s.bottom,
@@ -151,6 +172,48 @@ class _IosBar extends StatelessWidget {
         ]),
       ),
     ]);
+  }
+}
+
+/// iPad status bar: time + date left, wifi/percent/battery right, no island.
+class _IpadBar extends StatelessWidget {
+  const _IpadBar(this.color);
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) {
+    final style = TextStyle(
+        fontFamily: 'CupertinoSystemText',
+        fontSize: 13,
+        fontWeight: FontWeight.w600,
+        color: color);
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(26, 0, 26, 0),
+      child: Row(children: [
+        // Time only: a hard-coded date would be English in every locale.
+        Text('9:41', style: style),
+        const Spacer(),
+        Icon(Icons.wifi, size: 16, color: color),
+        const SizedBox(width: 6),
+        Text('100%', style: style),
+        const SizedBox(width: 6),
+        Container(
+          width: 25,
+          height: 12,
+          padding: const EdgeInsets.all(1.5),
+          decoration: BoxDecoration(
+            border: Border.all(color: color.withValues(alpha: 0.45)),
+            borderRadius: BorderRadius.circular(4),
+          ),
+          child: Container(
+            decoration: BoxDecoration(
+              color: color,
+              borderRadius: BorderRadius.circular(2.5),
+            ),
+          ),
+        ),
+      ]),
+    );
   }
 }
 
