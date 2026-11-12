@@ -1,6 +1,6 @@
 # PetGo
 
-> Kelola profil hewan, jadwal perawatan harian, dan kunjungan vet dalam satu aplikasi offline yang privat.
+> Jadwal vaksin, obat cacing, kunjungan dokter hewan, dan berat anabul. Offline.
 
 PetGo is a free app in the faishal.id fleet. Offline-first product; this marketing site may use optional consent-gated analytics.
 
@@ -12,7 +12,6 @@ PetGo is a free app in the faishal.id fleet. Offline-first product; this marketi
 - Terms: https://petgo.faishal.id/id/terms.html
 - Pricing: https://petgo.faishal.id/pricing.md
 - Publisher: https://faishal.id
-- Google Play: https://play.google.com/store/apps/details?id=id.faishal.petgo
 
 ## Blog posts
 
