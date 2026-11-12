@@ -1,28 +1,91 @@
 <!doctype html>
 <html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mengelola jadwal perawatan — BAST petgo</title><style>:root{--bg:#fff;--fg:#1d1d1f;--mut:#6e6e73;--card:#f5f5f7;--line:#e5e5ea;--acc:#0a66ff;--ok:#1a7f37;--bad:#c62828}
-@media (prefers-color-scheme:dark){:root{--bg:#111113;--fg:#f2f2f7;--mut:#a1a1aa;--card:#1c1c1f;--line:#2c2c30;--acc:#5b9bff;--ok:#4ade80;--bad:#f87171}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif}
-main{max-width:860px;margin:0 auto;padding:32px 16px 64px}a{color:var(--acc)}h1{font-size:28px;line-height:1.25;margin:8px 0 12px}
-.crumb{font-size:13px;color:var(--mut)}.ids{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.ids span{font:12px ui-monospace,monospace;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:2px 8px}
-blockquote{margin:16px 0;padding:12px 16px;border-left:3px solid var(--acc);background:var(--card);border-radius:0 8px 8px 0}
-video{width:100%;border-radius:12px;border:1px solid var(--line);background:#000;margin:8px 0 24px}
-.step{border:1px solid var(--line);border-radius:12px;padding:16px;margin:16px 0;cursor:pointer}.step:hover{border-color:var(--acc)}
-.step h2{font-size:18px;margin:0 0 6px}.step .t{float:right;font:12px ui-monospace,monospace;color:var(--mut)}.step img{width:100%;border-radius:8px;border:1px solid var(--line);margin-top:10px}
-table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-.pass{color:var(--ok)}.fail{color:var(--bad)}code{font-size:13px}</style></head>
-<body><main>
+<script>if (window.top !== window.self) document.documentElement.classList.add('ou-framed')</script>
+<title>Mengelola jadwal perawatan — BASTP petgo</title><style>/* Ops UI (light only): spec ~/ops/system/tools/ops-dash/design/README.md. Fonts via local() only: no network. */
+@font-face{font-family:"Archivo";src:local("Archivo");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Instrument Sans";src:local("Instrument Sans");font-weight:400 700;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:local("IBM Plex Mono");font-weight:400;font-display:swap}
+:root{color-scheme:light;--ou-bg:#fff;--ou-paper:#faf8f5;--ou-sunken:#f3f0eb;--ou-ink:#1c1b1f;--ou-ink-2:#3a383f;--ou-muted:#6b6872;--ou-faint:#736f79;--ou-line:#ece8e2;--ou-line-strong:#dcd6ce;--ou-hover:rgba(28,27,31,.045);--ou-accent:#b04d12;--ou-accent-hover:#963f0d;--ou-accent-raw:#e8722a;--ou-accent-soft:#fcede3;--ou-focus:0 0 0 3px rgba(232,114,42,.28);--ou-ok:#1f7a4d;--ou-ok-soft:#e7f3ec;--ou-warn:#8a5a00;--ou-warn-soft:#fbf1dc;--ou-bad:#b3261e;--ou-bad-soft:#fbe9e7;--ou-font-display:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--ou-font-body:"Instrument Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--ou-font-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--ou-bg);color:var(--ou-ink);font:14px/1.55 var(--ou-font-body);-webkit-font-smoothing:antialiased}
+a{color:var(--ou-accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:2px}
+:focus-visible{outline:none;box-shadow:var(--ou-focus);border-radius:4px}
+h1{font:650 28px/1.2 var(--ou-font-display);letter-spacing:-.015em;margin:6px 0 10px}
+h2{font:600 15px/1.3 var(--ou-font-body);margin:0 0 10px}
+h3{font:600 14px/1.35 var(--ou-font-body);margin:0 0 4px}
+code{font-family:var(--ou-font-mono);font-size:.88em;background:var(--ou-sunken);padding:1px 5px;border-radius:4px}
+main{max-width:960px;margin:0 auto;padding:40px 32px 72px}
+html.ou-framed main{padding-top:24px}
+.crumb{font:12px var(--ou-font-mono);color:var(--ou-faint)}.crumb a{color:var(--ou-muted)}
+.mut{color:var(--ou-muted);font-size:12.5px}
+.sec-head{display:flex;align-items:baseline;gap:8px;margin:36px 0 10px}.sec-head h2{margin:0}.sec-head .cnt{color:var(--ou-faint);font-size:12.5px;font-variant-numeric:tabular-nums}
+.callout{padding:12px 14px;border-radius:6px;background:var(--ou-paper);color:var(--ou-ink-2);margin:12px 0;max-width:76ch}.callout.warn{background:var(--ou-warn-soft);color:var(--ou-warn)}
+.props{display:grid;grid-template-columns:140px minmax(0,1fr);gap:2px 12px;margin:14px 0 4px}.props dt{color:var(--ou-muted);padding:4px 0}.props dd{margin:0;padding:3px 0;min-width:0;overflow-wrap:anywhere;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:4px;height:20px;padding:0 7px;border-radius:4px;font:500 11.5px/1 var(--ou-font-body);background:var(--ou-sunken);color:var(--ou-ink-2);white-space:nowrap}
+.badge.ok{background:var(--ou-ok-soft);color:var(--ou-ok)}.badge.bad{background:var(--ou-bad-soft);color:var(--ou-bad)}.badge.warn{background:var(--ou-warn-soft);color:var(--ou-warn)}.badge.acc{background:var(--ou-accent-soft);color:var(--ou-accent)}
+.badge.mono{font-family:var(--ou-font-mono);font-size:11px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ou-faint);flex:none;display:inline-block}.ok>.dot{background:var(--ou-ok)}.bad>.dot{background:var(--ou-bad)}.warn>.dot{background:#c98a00}
+.todo{color:var(--ou-muted)}
+.kpi{display:grid;gap:1px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));background:var(--ou-line);border:1px solid var(--ou-line);border-radius:10px;overflow:hidden;margin:20px 0}
+.kpi div{background:var(--ou-bg);padding:12px 16px;color:var(--ou-muted);font-size:12.5px}.kpi b{display:block;font:600 22px/1.15 var(--ou-font-display);font-variant-numeric:tabular-nums;color:var(--ou-ink);margin-bottom:2px}.kpi b.fail{background:none;color:var(--ou-bad)}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.sticky{position:sticky;top:0;background:rgba(255,255,255,.92);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px);padding:10px 0;z-index:5;border-bottom:1px solid var(--ou-line);margin:20px 0 8px}
+input[type=search],select{font:inherit;font-size:13px;height:32px;padding:0 10px;border:1px solid var(--ou-line-strong);border-radius:6px;background:var(--ou-bg);color:var(--ou-ink)}
+input[type=search]{flex:1 1 260px}
+input[type=search]:focus,select:focus{outline:none;border-color:var(--ou-accent-raw);box-shadow:var(--ou-focus)}
+.group{margin:24px 0 8px;font:600 15px var(--ou-font-body)}.group .mut{color:var(--ou-faint);font-weight:400}
+#list{border:1px solid var(--ou-line);border-radius:10px;overflow:hidden}#list h2.group{margin:0;padding:10px 14px 6px;background:var(--ou-paper);border-top:1px solid var(--ou-line)}#list h2.group:first-child{border-top:0}
+.card{display:grid;grid-template-columns:72px 1fr;gap:14px;padding:10px 14px;border-top:1px solid var(--ou-line);align-items:start}.card:first-child{border-top:0}.card:hover{background:var(--ou-hover)}
+.card img,.card .noimg{width:72px;height:48px;object-fit:cover;object-position:top;border-radius:4px;border:1px solid var(--ou-line);background:var(--ou-paper)}
+.card h3{margin:0;font-size:14px}.card h3 a{color:var(--ou-ink)}.card h3 a:hover{color:var(--ou-accent)}.card h3 .id{font:12px var(--ou-font-mono);color:var(--ou-faint);margin-left:6px;font-weight:400}.card h3 code{background:none;padding:0;color:var(--ou-faint)}
+.card p{margin:4px 0 0;display:flex;flex-wrap:wrap;gap:4px;align-items:center;font-size:12.5px;color:var(--ou-muted)}
+.chip{display:inline-flex;align-items:center;height:20px;padding:0 7px;border-radius:4px;font-size:11.5px;font-weight:500;background:var(--ou-sunken);color:var(--ou-ink-2)}.chip.role{background:var(--ou-accent-soft);color:var(--ou-accent)}.chip.role.warn{background:var(--ou-warn-soft);color:var(--ou-warn)}
+a.chip:hover{text-decoration:none;background:var(--ou-line)}
+.hit{font-size:12.5px;color:var(--ou-muted);margin-top:4px}.hit mark{background:#fde9a8;color:var(--ou-ink);border-radius:2px}
+.badge.pass,.badge.fail,.badge.todo{background:var(--ou-sunken)}.badge.pass{background:var(--ou-ok-soft);color:var(--ou-ok)}.badge.fail{background:var(--ou-bad-soft);color:var(--ou-bad)}.badge.todo{color:var(--ou-muted)}
+.warnbox{background:var(--ou-warn-soft);color:var(--ou-warn);border-radius:6px;padding:10px 14px;margin:12px 0}
+.tabs{display:flex;flex-wrap:wrap;gap:2px;border-bottom:1px solid var(--ou-line);margin:20px 0 16px}.tab{font:500 14px var(--ou-font-body);height:34px;padding:0 12px;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;color:var(--ou-muted);cursor:pointer}.tab:hover{color:var(--ou-ink)}.tab.on{color:var(--ou-ink);border-bottom-color:var(--ou-accent)}
+.pane{display:none}.pane.on{display:block}
+video{display:block;width:auto;height:auto;max-width:100%;max-height:72vh;border-radius:10px;border:1px solid var(--ou-line);background:var(--ou-paper);margin:8px 0 16px}
+ol.steps{list-style:none;padding:0;margin:12px 0}.step{display:grid;grid-template-columns:28px 1fr;column-gap:12px;border:1px solid var(--ou-line);border-radius:10px;padding:16px;margin:12px 0;cursor:pointer;background:var(--ou-bg)}.step:hover{border-color:var(--ou-line-strong)}.step[hidden]{display:none}
+.step .n{width:28px;height:28px;border-radius:50%;background:var(--ou-accent-soft);color:var(--ou-accent);font:600 13px/28px var(--ou-font-body);text-align:center;font-variant-numeric:tabular-nums}
+.step .body{min-width:0}.step h3{font-size:15px;margin:3px 0 4px}.step .t{float:right;font:11.5px var(--ou-font-mono);color:var(--ou-faint)}.step .txt{color:var(--ou-ink-2)}
+.step img{display:block;max-width:100%;height:auto;border-radius:6px;border:1px solid var(--ou-line);margin-top:12px;background:var(--ou-paper)}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+.tblwrap{border:1px solid var(--ou-line);border-radius:10px;overflow:auto;margin:8px 0}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--ou-line);vertical-align:top}tr:last-child td{border-bottom:0}
+th{font-weight:500;color:var(--ou-muted);background:var(--ou-paper)}tbody tr:hover td{background:var(--ou-hover)}
+td code{background:none;padding:0;color:var(--ou-faint);white-space:nowrap}
+.sign{margin-top:48px;border-top:1px solid var(--ou-line);padding-top:8px}.sign p{max-width:76ch}.sig{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin:32px 0}.sig .line{border-bottom:1px solid var(--ou-ink);height:64px}
+.btn,.sign button{font:500 12.5px var(--ou-font-body);height:30px;padding:0 12px;border-radius:6px;border:1px solid var(--ou-accent);background:var(--ou-accent);color:#fff;cursor:pointer}.sign button:hover{background:var(--ou-accent-hover)}
+@media (max-width:640px){main{padding:24px 16px 56px}.props{grid-template-columns:100px minmax(0,1fr)}.sig{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+@media print{body{background:#fff}main{max-width:none;padding:0}.sticky,.row,#list,#count,.kpi,.find,.sign button,.callout.intro,video{display:none}.tab{display:none}.tab.on{display:inline-block;border-bottom:2px solid var(--ou-ink);color:var(--ou-ink)}.step{break-inside:avoid}.sign{border:0;margin:0;break-before:page}.sign tr,.sig{break-inside:avoid}th{position:static}a{color:inherit}}</style></head>
+<body><main class="ou-page">
 <!-- generated by trace-graph — do not edit; run node ~/projects/scripts/trace-graph/bast.mjs . -->
-<div class="crumb"><a href="index.html">BAST petgo</a> · BAST-FLOW-CAR-01</div>
+<div class="crumb"><a href="index.html">BASTP petgo</a> / FLOW-CAR-01</div>
 <h1>Mengelola jadwal perawatan</h1>
-<div class="ids"><span>FLOW-CAR-01</span><span>ROL-001</span><span>MOD-002</span><span>EP-002</span><span>US-002</span><span>FR-002</span></div>
-<blockquote>Pemilik melihat jadwal vaksin/obat cacing beserta sisa hari, menandai selesai, dan menambah jadwal baru.</blockquote>
-<video id="v" controls preload="metadata" src="../flows/FLOW-CAR-01/video.mp4"></video>
-<section class="step" data-t="8.6"><span class="t">8.6 s</span><h2>Langkah 1: Buka Perawatan</h2><div>Ketuk tab <strong>Perawatan</strong>: setiap jadwal menampilkan interval dan sisa hari menuju jatuh tempo.</div><img loading="lazy" alt="Buka Perawatan" src="../flows/FLOW-CAR-01/step-01.png"></section>
-<section class="step" data-t="10.7"><span class="t">10.7 s</span><h2>Langkah 2: Tandai selesai</h2><div>Ketuk <strong>Tandai selesai</strong> setelah perawatan dilakukan; tanggal hari ini tercatat dan jatuh tempo berikutnya dihitung ulang.</div><img loading="lazy" alt="Tandai selesai" src="../flows/FLOW-CAR-01/step-02.png"></section>
-<section class="step" data-t="14.4"><span class="t">14.4 s</span><h2>Langkah 3: Tambah jadwal</h2><div>Ketuk <strong>Tambah jadwal</strong>, isi <strong>Judul</strong>, jenis, dan <strong>Interval (bulan)</strong> (minimal 1).</div><img loading="lazy" alt="Tambah jadwal" src="../flows/FLOW-CAR-01/step-03.png"></section>
-<section class="step" data-t="16.7"><span class="t">16.7 s</span><h2>Langkah 4: Jadwal tersimpan</h2><div>Ketuk <strong>Simpan</strong>. Jadwal baru masuk ke daftar perawatan.</div><img loading="lazy" alt="Jadwal tersimpan" src="../flows/FLOW-CAR-01/step-04.png"></section>
-<h2>Hasil uji</h2><table><tr><th>TC</th><th>Jenis</th><th>Lapis</th><th>Skenario</th><th>Hasil</th></tr><tr><td><code>FLOW-CAR-01-T01</code></td><td>positive</td><td>unit</td><td>tandai selesai mencatat tanggal aktual dan menggeser jatuh tempo</td><td class="pass">pass</td></tr><tr><td><code>FLOW-CAR-01-T02</code></td><td>negative</td><td>unit</td><td>jadwal tanpa judul atau interval &lt; 1 bulan ditolak</td><td class="pass">pass</td></tr><tr><td><code>FLOW-CAR-01-T03</code></td><td>edge</td><td>unit</td><td>batas urgensi: jatuh tempo hari ini terlewat, H-14 segera, H-15 aman</td><td class="pass">pass</td></tr><tr><td><code>FLOW-CAR-01-T04</code></td><td>corner</td><td>unit</td><td>interval melewati akhir tahun dan akhir bulan dijepit ke tanggal terakhir</td><td class="pass">pass</td></tr></table>
-<p class="crumb">Direkam terhadap <code>flutter build web (lokal)</code> oleh <code>FLOW-CAR-01-T01</code>.</p>
-<script>const v=document.getElementById("v");document.querySelectorAll(".step").forEach(s=>s.addEventListener("click",()=>{if(v){v.currentTime=+s.dataset.t;v.play()}}))</script>
-</main></body></html>
+<dl class="props"><dt>Role</dt><dd><span class="chip role">USR</span></dd>
+<dt>Modul</dt><dd><span class="chip">CAR</span></dd>
+<dt>Kebutuhan</dt><dd><span class="chip" title="Jadwal perawatan (judul wajib, interval ≥ 1 bulan) dengan status aman/segera (≤ 14 hari)/terlewat; tandai selesai mencatat tanggal hari ini.">FR-002</span></dd>
+
+</dl>
+
+
+<section class="pane on" data-pane="0">
+<div class="callout intro">Pemilik melihat jadwal vaksin/obat cacing beserta sisa hari, menandai selesai, dan menambah jadwal baru.</div>
+<video controls preload="metadata" src="../flows/FLOW-CAR-01/video.mp4"></video>
+<input class="find" type="search" placeholder="Cari langkah…" aria-label="Cari langkah">
+<ol class="steps"><li class="step" data-t="8.6" data-q="buka perawatan ketuk tab perawatan: setiap jadwal menampilkan interval dan sisa hari menuju jatuh tempo."><span class="n">1</span><div class="body"><span class="t">8.6 s</span><h3>Langkah 1: Buka Perawatan</h3><div class="txt">Ketuk tab <strong>Perawatan</strong>: setiap jadwal menampilkan interval dan sisa hari menuju jatuh tempo.</div><img loading="lazy" alt="Buka Perawatan" src="../flows/FLOW-CAR-01/step-01.png"></div></li><li class="step" data-t="10.7" data-q="tandai selesai ketuk tandai selesai setelah perawatan dilakukan; tanggal hari ini tercatat dan jatuh tempo berikutnya dihitung ulang."><span class="n">2</span><div class="body"><span class="t">10.7 s</span><h3>Langkah 2: Tandai selesai</h3><div class="txt">Ketuk <strong>Tandai selesai</strong> setelah perawatan dilakukan; tanggal hari ini tercatat dan jatuh tempo berikutnya dihitung ulang.</div><img loading="lazy" alt="Tandai selesai" src="../flows/FLOW-CAR-01/step-02.png"></div></li><li class="step" data-t="14.4" data-q="tambah jadwal ketuk tambah jadwal, isi judul, jenis, dan interval (bulan) (minimal 1)."><span class="n">3</span><div class="body"><span class="t">14.4 s</span><h3>Langkah 3: Tambah jadwal</h3><div class="txt">Ketuk <strong>Tambah jadwal</strong>, isi <strong>Judul</strong>, jenis, dan <strong>Interval (bulan)</strong> (minimal 1).</div><img loading="lazy" alt="Tambah jadwal" src="../flows/FLOW-CAR-01/step-03.png"></div></li><li class="step" data-t="16.7" data-q="jadwal tersimpan ketuk simpan. jadwal baru masuk ke daftar perawatan."><span class="n">4</span><div class="body"><span class="t">16.7 s</span><h3>Langkah 4: Jadwal tersimpan</h3><div class="txt">Ketuk <strong>Simpan</strong>. Jadwal baru masuk ke daftar perawatan.</div><img loading="lazy" alt="Jadwal tersimpan" src="../flows/FLOW-CAR-01/step-04.png"></div></li></ol>
+<p class="mut">Direkam terhadap <code>flutter build web (lokal)</code> oleh <code>FLOW-CAR-01-T01</code> sebagai <strong>USR</strong>.</p>
+</section>
+<div class="sec-head"><h2>Hasil uji (4/4 lulus)</h2></div>
+<div class="row"><input id="tcq" type="search" placeholder="Cari test case…" aria-label="Cari test case"><select id="tck" aria-label="Jenis"><option value="">Semua jenis</option><option>positive</option><option>negative</option><option>edge</option><option>corner</option></select><select id="tcr" aria-label="Hasil"><option value="">Semua hasil</option><option value="pass">lulus</option><option value="fail">gagal</option><option value="todo">belum dijalankan</option></select></div>
+<div class="tblwrap"><table id="tct"><thead><tr><th>TC</th><th>Jenis</th><th>Lapis</th><th>Skenario</th><th>Hasil</th></tr></thead><tbody><tr data-k="positive" data-r="pass" data-q="flow-car-01-t01 tandai selesai mencatat tanggal aktual dan menggeser jatuh tempo"><td><code>FLOW-CAR-01-T01</code></td><td>positive</td><td>unit</td><td>tandai selesai mencatat tanggal aktual dan menggeser jatuh tempo</td><td><span class="badge ok"><span class="dot"></span>pass</span></td></tr><tr data-k="negative" data-r="pass" data-q="flow-car-01-t02 jadwal tanpa judul atau interval &lt; 1 bulan ditolak"><td><code>FLOW-CAR-01-T02</code></td><td>negative</td><td>unit</td><td>jadwal tanpa judul atau interval &lt; 1 bulan ditolak</td><td><span class="badge ok"><span class="dot"></span>pass</span></td></tr><tr data-k="edge" data-r="pass" data-q="flow-car-01-t03 batas urgensi: jatuh tempo hari ini terlewat, h-14 segera, h-15 aman"><td><code>FLOW-CAR-01-T03</code></td><td>edge</td><td>unit</td><td>batas urgensi: jatuh tempo hari ini terlewat, H-14 segera, H-15 aman</td><td><span class="badge ok"><span class="dot"></span>pass</span></td></tr><tr data-k="corner" data-r="pass" data-q="flow-car-01-t04 interval melewati akhir tahun dan akhir bulan dijepit ke tanggal terakhir"><td><code>FLOW-CAR-01-T04</code></td><td>corner</td><td>unit</td><td>interval melewati akhir tahun dan akhir bulan dijepit ke tanggal terakhir</td><td><span class="badge ok"><span class="dot"></span>pass</span></td></tr></tbody></table></div>
+</main><script>(()=>{
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("on",x===t));document.querySelectorAll(".pane").forEach(p=>{const on=p.dataset.pane===t.dataset.tab;p.classList.toggle("on",on);if(!on)p.querySelector("video")?.pause();});}));
+document.querySelectorAll(".pane").forEach(p=>{const v=p.querySelector("video");p.querySelectorAll(".step").forEach(s=>s.addEventListener("click",()=>{if(v){v.currentTime=+s.dataset.t;v.play();}}));
+const f=p.querySelector(".find");f&&f.addEventListener("input",()=>{const w=f.value.toLowerCase().split(/\s+/).filter(Boolean);p.querySelectorAll(".step").forEach(s=>s.hidden=!w.every(x=>s.dataset.q.includes(x)));});});
+const tq=document.getElementById("tcq"),tk=document.getElementById("tck"),tr=document.getElementById("tcr");
+const filt=()=>{const w=tq.value.toLowerCase().split(/\s+/).filter(Boolean);document.querySelectorAll("#tct tbody tr").forEach(r=>r.hidden=!(w.every(x=>r.dataset.q.includes(x))&&(!tk.value||r.dataset.k===tk.value)&&(!tr.value||r.dataset.r===tr.value)));};
+[tq,tk,tr].forEach(e=>e&&e.addEventListener("input",filt));})();</script></body></html>
