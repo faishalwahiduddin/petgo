@@ -4,11 +4,13 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:intl/intl.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
+import '../../core/utils/app_timezone.dart';
 import '../shell/navigation_shell.dart' show kShellNavBarHeight;
 
 class HomeScreen extends ConsumerWidget {
@@ -27,24 +29,25 @@ class HomeScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.appTitle)),
-      floatingActionButton: Padding(
-        // Lift above the shell's glass nav bar (extendBody) so it stays tappable.
-        padding: const EdgeInsets.only(bottom: kShellNavBarHeight),
-        child: FloatingActionButton.extended(
-          onPressed: () => _showPetEditor(context, ref),
-          icon: const Icon(Icons.add),
-          label: Text(l10n.actionAddPet),
-        ),
-      ),
       body: ListView(
-        padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
+        padding: const EdgeInsets.fromLTRB(16, 16, 16, kShellNavBarHeight + 16),
         children: [
-          Text(
-            l10n.homeActivePet,
-            style: Theme.of(context)
-                .textTheme
-                .titleMedium
-                ?.copyWith(fontWeight: FontWeight.w700),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  l10n.homeActivePet,
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+              TextButton.icon(
+                onPressed: () => _showPetEditor(context, ref),
+                icon: const Icon(Icons.add),
+                label: Text(l10n.actionAddPet),
+              ),
+            ],
           ),
           const SizedBox(height: 8),
           if (pets.isEmpty)
@@ -57,7 +60,9 @@ class HomeScreen extends ConsumerWidget {
                   .map(
                     (p) => DropdownMenuItem(
                       value: p.id,
-                      child: Text('${p.name} · ${_speciesLabel(l10n, p.species)}'),
+                      child: Text(
+                        '${p.name} · ${_speciesLabel(l10n, p.species)}',
+                      ),
                     ),
                   )
                   .toList(),
@@ -86,7 +91,7 @@ class HomeScreen extends ConsumerWidget {
                     if (active.weightKg != null)
                       '${active.weightKg!.toStringAsFixed(1)} kg',
                     if (active.dateOfBirth != null)
-                      _formatDob(active.dateOfBirth!),
+                      _formatDob(context, active.dateOfBirth!),
                   ].join(' · '),
                 ),
                 trailing: IconButton(
@@ -100,10 +105,9 @@ class HomeScreen extends ConsumerWidget {
           const SizedBox(height: 20),
           Text(
             l10n.homeDueSoon,
-            style: Theme.of(context)
-                .textTheme
-                .titleMedium
-                ?.copyWith(fontWeight: FontWeight.w700),
+            style: Theme.of(
+              context,
+            ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 8),
           if (due.isEmpty)
@@ -133,10 +137,9 @@ class HomeScreen extends ConsumerWidget {
           const SizedBox(height: 20),
           Text(
             l10n.homeAllPets,
-            style: Theme.of(context)
-                .textTheme
-                .titleMedium
-                ?.copyWith(fontWeight: FontWeight.w700),
+            style: Theme.of(
+              context,
+            ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 8),
           ...pets.map(
@@ -151,8 +154,7 @@ class HomeScreen extends ConsumerWidget {
                     ref.read(activePetIdProvider.notifier).setActiveId(p.id),
                 trailing: IconButton(
                   icon: const Icon(Icons.edit_outlined, size: 20),
-                  onPressed: () =>
-                      _showPetEditor(context, ref, existing: p),
+                  onPressed: () => _showPetEditor(context, ref, existing: p),
                 ),
               ),
             ),
@@ -162,18 +164,20 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
-  String _formatDob(DateTime d) {
+  String _formatDob(BuildContext context, DateTime d) {
     final local = d.toLocal();
-    return '${local.year}-${local.month.toString().padLeft(2, '0')}-${local.day.toString().padLeft(2, '0')}';
+    return DateFormat.yMMMd(
+      AppTimeZone.intlLocale(Localizations.localeOf(context).languageCode),
+    ).format(DateTime(local.year, local.month, local.day));
   }
 
   String _speciesLabel(AppLocalizations l10n, PetSpecies s) => switch (s) {
-        PetSpecies.dog => l10n.speciesDog,
-        PetSpecies.cat => l10n.speciesCat,
-        PetSpecies.bird => l10n.speciesBird,
-        PetSpecies.rabbit => l10n.speciesRabbit,
-        PetSpecies.other => l10n.speciesOther,
-      };
+    PetSpecies.dog => l10n.speciesDog,
+    PetSpecies.cat => l10n.speciesCat,
+    PetSpecies.bird => l10n.speciesBird,
+    PetSpecies.rabbit => l10n.speciesRabbit,
+    PetSpecies.other => l10n.speciesOther,
+  };
 
   Future<void> _showPetEditor(
     BuildContext context,
@@ -238,16 +242,20 @@ class HomeScreen extends ConsumerWidget {
                                 },
                           child: CircleAvatar(
                             radius: 36,
-                            backgroundColor:
-                                AppColors.primary.withValues(alpha: 0.15),
-                            backgroundImage: (!kIsWeb &&
+                            backgroundColor: AppColors.primary.withValues(
+                              alpha: 0.15,
+                            ),
+                            backgroundImage:
+                                (!kIsWeb &&
                                     photoPath != null &&
                                     File(photoPath!).existsSync())
                                 ? FileImage(File(photoPath!))
                                 : null,
                             child: (photoPath == null)
-                                ? const Icon(Icons.camera_alt_outlined,
-                                    color: AppColors.primary)
+                                ? const Icon(
+                                    Icons.camera_alt_outlined,
+                                    color: AppColors.primary,
+                                  )
                                 : null,
                           ),
                         ),
@@ -255,8 +263,9 @@ class HomeScreen extends ConsumerWidget {
                       const SizedBox(height: 12),
                       TextFormField(
                         controller: nameCtrl,
-                        decoration:
-                            InputDecoration(labelText: l10n.fieldPetName),
+                        decoration: InputDecoration(
+                          labelText: l10n.fieldPetName,
+                        ),
                         validator: (v) {
                           if (v == null || v.trim().length < 2) {
                             return l10n.errorPetNameRequired;
@@ -279,8 +288,9 @@ class HomeScreen extends ConsumerWidget {
                         onChanged: (v) {
                           if (v != null) setModal(() => species = v);
                         },
-                        decoration:
-                            InputDecoration(labelText: l10n.fieldSpecies),
+                        decoration: InputDecoration(
+                          labelText: l10n.fieldSpecies,
+                        ),
                       ),
                       const SizedBox(height: 8),
                       TextFormField(
@@ -293,8 +303,9 @@ class HomeScreen extends ConsumerWidget {
                         keyboardType: const TextInputType.numberWithOptions(
                           decimal: true,
                         ),
-                        decoration:
-                            InputDecoration(labelText: l10n.fieldWeightKg),
+                        decoration: InputDecoration(
+                          labelText: l10n.fieldWeightKg,
+                        ),
                         validator: (v) {
                           if (v == null || v.trim().isEmpty) return null;
                           final w = double.tryParse(v.trim());
@@ -310,7 +321,7 @@ class HomeScreen extends ConsumerWidget {
                         subtitle: Text(
                           dob == null
                               ? l10n.fieldOptional
-                              : _formatDob(dob!),
+                              : _formatDob(context, dob!),
                         ),
                         trailing: const Icon(Icons.cake_outlined),
                         onTap: () async {
@@ -352,9 +363,12 @@ class HomeScreen extends ConsumerWidget {
     );
     if (ok != true || !context.mounted) return;
     final weight = double.tryParse(weightCtrl.text.trim());
-    final err = await ref.read(petsProvider.notifier).upsert(
+    final err = await ref
+        .read(petsProvider.notifier)
+        .upsert(
           Pet(
-            id: existing?.id ??
+            id:
+                existing?.id ??
                 DateTime.now().microsecondsSinceEpoch.toString(),
             name: nameCtrl.text.trim(),
             species: species,
@@ -367,18 +381,18 @@ class HomeScreen extends ConsumerWidget {
         );
     if (!context.mounted) return;
     if (err != null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(_mapErr(l10n, err))),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(_mapErr(l10n, err))));
     }
   }
 
   String _mapErr(AppLocalizations l10n, String code) => switch (code) {
-        'errorPetNameRequired' => l10n.errorPetNameRequired,
-        'errorPetNameTooLong' => l10n.errorPetNameTooLong,
-        'errorWeightInvalid' => l10n.errorWeightInvalid,
-        _ => code,
-      };
+    'errorPetNameRequired' => l10n.errorPetNameRequired,
+    'errorPetNameTooLong' => l10n.errorPetNameTooLong,
+    'errorWeightInvalid' => l10n.errorWeightInvalid,
+    _ => code,
+  };
 }
 
 class _PetAvatar extends StatelessWidget {

@@ -1792,3 +1792,68 @@ body {
 }
 
 
+
+
+/* Anchor Deep Linking & Smooth Navigation (:target) */
+:target {
+    scroll-margin-top: 88px;
+    animation: target-pulse 1.8s ease-out;
+}
+@keyframes target-pulse {
+    0% {
+        background-color: rgba(var(--accent-rgb, 245, 158, 11), 0.25);
+        border-radius: 6px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+/* Heading Anchor Jump Links */
+.heading-anchor-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.heading-anchor {
+    opacity: 0;
+    color: var(--accent, #3b82f6);
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: normal;
+    padding: 0 4px;
+    transition: opacity 0.2s ease;
+}
+.heading-anchor-wrap:hover .heading-anchor,
+.heading-anchor:focus {
+    opacity: 1;
+}
+
+/* Hierarchical Nested TOC */
+.toc-list, .toc-sublist {
+    margin: 8px 0;
+}
+.toc-sublist {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Conversion CTA & Sister Apps */
+.badge-trust {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: rgba(var(--accent-rgb, 245, 158, 11), 0.15);
+    color: var(--accent, #f59e0b);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    letter-spacing: 0.02em;
+}
+.sister-apps {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--glass-border, rgba(255, 255, 255, 0.08));
+}
+

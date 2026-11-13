@@ -6,6 +6,9 @@ import 'package:petgo/l10n/app_localizations.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
+import '../../core/providers/locale_provider.dart';
+import '../../core/providers/timezone_provider.dart';
+import '../../core/utils/pet_format.dart';
 import '../shell/navigation_shell.dart' show kShellNavBarHeight;
 
 class DocsScreen extends ConsumerWidget {
@@ -15,6 +18,8 @@ class DocsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
     final pet = ref.watch(activePetProvider);
+    final loc = ref.watch(timezoneLocationProvider);
+    final code = ref.watch(localeProvider).languageCode;
     final docs = ref
         .watch(documentsProvider)
         .where((d) => pet != null && d.petId == pet.id)
@@ -39,7 +44,16 @@ class DocsScreen extends ConsumerWidget {
               ),
             )
           : ListView.separated(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
+              // Clear the FAB (56) and its margin above the nav bar.
+              padding: const EdgeInsets.fromLTRB(
+                16,
+                16,
+                16,
+                kShellNavBarHeight +
+                    kFloatingActionButtonMargin +
+                    56 +
+                    kFloatingActionButtonMargin,
+              ),
               itemCount: docs.length,
               separatorBuilder: (_, _) => const SizedBox(height: 8),
               itemBuilder: (context, i) {
@@ -53,7 +67,7 @@ class DocsScreen extends ConsumerWidget {
                       [
                         _docLabel(l10n, d.kind),
                         if (d.expiresAt != null)
-                          '${l10n.fieldExpires}: ${d.expiresAt!.toLocal().toString().split(' ').first}',
+                          '${l10n.fieldExpires}: ${PetFormat.date(d.expiresAt!, loc, code)}',
                         if (d.filePath != null) l10n.docHasFile,
                       ].join(' · '),
                     ),

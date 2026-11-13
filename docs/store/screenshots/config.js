@@ -31,110 +31,134 @@ window.STORE_CONFIG = {
   "slides": {
     "id": [
       {
-        "headline": "Profil",
-        "subtext": "Anjing, kucing, dan lainnya"
+        "headline": "Kesehatan anabul,\ntak lagi terlupa",
+        "subtext": "Pengingat jadwal untuk tiap hewan",
+        "layout": "hero"
       },
       {
-        "headline": "Jadwal",
-        "subtext": "Vaksin & perawatan"
+        "headline": "Tak ada jadwal\nperawatan terlewat",
+        "subtext": "Vaksin, obat cacing, grooming",
+        "layout": "offset-right"
       },
       {
-        "headline": "Harian",
-        "subtext": "Makan, jalan, litter"
+        "headline": "Catat makan & jalan\ndalam dua ketukan",
+        "subtext": "Satu timeline untuk rutinitas harian",
+        "layout": "zoom"
       },
       {
-        "headline": "Dokumen",
-        "subtext": "Kartu vaksin lokal"
+        "headline": "Kartu vaksin selalu\nada di saku",
+        "subtext": "Resep dan polis asuransi tersimpan",
+        "layout": "offset-left"
       }
     ],
     "en-US": [
       {
-        "headline": "Profiles",
-        "subtext": "Dogs, cats, and more"
+        "headline": "Your pet's health,\nnever forgotten",
+        "subtext": "Due-soon reminders for every pet",
+        "layout": "hero"
       },
       {
-        "headline": "Schedules",
-        "subtext": "Vaccines & care"
+        "headline": "Never miss a\ncare date again",
+        "subtext": "Vaccines, deworming, grooming",
+        "layout": "offset-right"
       },
       {
-        "headline": "Daily",
-        "subtext": "Feed, walk, litter"
+        "headline": "Log meals and walks\nin two taps",
+        "subtext": "One timeline for daily care",
+        "layout": "zoom"
       },
       {
-        "headline": "Docs",
-        "subtext": "Local vaccine cards"
+        "headline": "Vaccine card always\nin your pocket",
+        "subtext": "Prescriptions and insurance saved",
+        "layout": "offset-left"
       }
     ],
     "ar": [
       {
-        "headline": "الملفات الشخصية",
-        "subtext": "الكلاب والقطط ومختلف الحيوانات"
+        "headline": "صحة حيوانك الأليف\nلا تُنسى أبدًا",
+        "subtext": "تذكيرات المواعيد القادمة لكل حيوان",
+        "layout": "hero"
       },
       {
-        "headline": "جداول المواعيد",
-        "subtext": "التطعيمات والرعاية الدورية"
+        "headline": "لا تفوّت موعد\nرعاية بعد اليوم",
+        "subtext": "التطعيمات والديدان والتنظيف",
+        "layout": "offset-right"
       },
       {
-        "headline": "الروتين اليومي",
-        "subtext": "الطعام والتمشية والنظافة"
+        "headline": "سجّل الوجبات والنزهات\nبلمستين",
+        "subtext": "جدول زمني واحد للرعاية اليومية",
+        "layout": "zoom"
       },
       {
-        "headline": "الوثائق الطبية",
-        "subtext": "بطاقات اللقاح المحفوظة محليًا"
+        "headline": "بطاقة التطعيم\nدائمًا في جيبك",
+        "subtext": "الوصفات ووثائق التأمين محفوظة",
+        "layout": "offset-left"
       }
     ],
     "ja-JP": [
       {
-        "headline": "ペットプロファイル",
-        "subtext": "犬・猫・小動物をまとめて管理"
+        "headline": "ペットの健康管理\nもう忘れない",
+        "subtext": "ペットごとの予定リマインダー",
+        "layout": "hero"
       },
       {
-        "headline": "予定カレンダー",
-        "subtext": "ワクチン接種や健康診断の管理"
+        "headline": "お世話の予定を\nもう忘れない",
+        "subtext": "ワクチン・駆虫・トリミング",
+        "layout": "offset-right"
       },
       {
-        "headline": "日々の記録",
-        "subtext": "ごはん・散歩・お世話のログ"
+        "headline": "ごはんも散歩も\n2タップで記録",
+        "subtext": "毎日のお世話を1つの履歴に",
+        "layout": "zoom"
       },
       {
-        "headline": "健康ドキュメント",
-        "subtext": "ワクチン接種証明を端末保存"
+        "headline": "ワクチン証明が\nいつも手元に",
+        "subtext": "処方箋や保険証券も保存",
+        "layout": "offset-left"
       }
     ],
     "zh-CN": [
       {
-        "headline": "爱宠档案",
-        "subtext": "猫咪、狗狗与其他宠物管理"
+        "headline": "爱宠的健康\n再也不会漏掉",
+        "subtext": "每只宠物的到期提醒",
+        "layout": "hero"
       },
       {
-        "headline": "养护日程",
-        "subtext": "疫苗驱虫与洗澡护理提醒"
+        "headline": "再也不会\n错过护理日",
+        "subtext": "疫苗、驱虫、美容",
+        "layout": "offset-right"
       },
       {
-        "headline": "每日动态",
-        "subtext": "喂食、遛狗与如厕健康打卡"
+        "headline": "喂食和遛弯\n两下点击就记好",
+        "subtext": "日常照护汇总在一条时间线",
+        "layout": "zoom"
       },
       {
-        "headline": "健康病历",
-        "subtext": "本地存储疫苗本与就诊单据"
+        "headline": "疫苗本\n随时带在身上",
+        "subtext": "处方和保险单也能保存",
+        "layout": "offset-left"
       }
     ],
     "es-ES": [
       {
-        "headline": "Perfiles",
-        "subtext": "Perros, gatos y otras mascotas"
+        "headline": "La salud de tu mascota,\nsin olvidos",
+        "subtext": "Avisos de próximos cuidados por mascota",
+        "layout": "hero"
       },
       {
-        "headline": "Calendarios",
-        "subtext": "Vacunas y revisiones periódicas"
+        "headline": "No pierdas ninguna\nfecha de cuidado",
+        "subtext": "Vacunas, desparasitación y peluquería",
+        "layout": "offset-right"
       },
       {
-        "headline": "Día a día",
-        "subtext": "Comida, paseos e higiene"
+        "headline": "Anota comidas y paseos\nen dos toques",
+        "subtext": "Una línea de tiempo diaria",
+        "layout": "zoom"
       },
       {
-        "headline": "Documentos",
-        "subtext": "Cartilla de vacunación local"
+        "headline": "La cartilla de vacunas\nsiempre contigo",
+        "subtext": "Recetas y pólizas guardadas",
+        "layout": "offset-left"
       }
     ]
   }
