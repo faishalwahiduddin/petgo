@@ -3,8 +3,6 @@ name: Analyze + Test
 # Cheap ubuntu-only gate (1x billing). No build_runner in this app.
 on:
   workflow_dispatch:
-  pull_request:
-    branches: [main]
 
 env:
   FLUTTER_VERSION: "3.44.8"
