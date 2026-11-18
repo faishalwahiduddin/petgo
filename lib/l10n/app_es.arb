@@ -121,5 +121,13 @@
   "fieldExpires": "Caduca",
   "docHasFile": "Archivo adjunto",
   "settingsReminders": "Recordatorios de cuidado",
-  "settingsRemindersSubtitle": "Avisar antes de que venza cada plan"
+  "settingsRemindersSubtitle": "Avisar antes de que venza cada plan",
+  "commercialContactTitle": "Uso comercial",
+  "commercialContactDesc": "¿Necesitas una licencia comercial, marca blanca o personalización? Ponte en contacto.",
+  "acquireAppTitle": "Adquirir esta app",
+  "acquireAppDesc": "¿Te interesa adquirir esta app, incluido el código fuente y los recursos? Hablemos.",
+  "contactEmailCopied": "Dirección de correo copiada: contact@faishal.id",
+  "licenseUsageTitle": "Licencia de Uso",
+  "licenseUsageNotice": "Gratis para uso personal y sin fines de lucro.",
+  "licenseBadgeText": "Personal y Sin Fines de Lucro"
 }

@@ -339,4 +339,32 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get settingsRemindersSubtitle => 'Avisar antes de que venza cada plan';
+
+  @override
+  String get commercialContactTitle => 'Uso comercial';
+
+  @override
+  String get commercialContactDesc =>
+      '¿Necesitas una licencia comercial, marca blanca o personalización? Ponte en contacto.';
+
+  @override
+  String get acquireAppTitle => 'Adquirir esta app';
+
+  @override
+  String get acquireAppDesc =>
+      '¿Te interesa adquirir esta app, incluido el código fuente y los recursos? Hablemos.';
+
+  @override
+  String get contactEmailCopied =>
+      'Dirección de correo copiada: contact@faishal.id';
+
+  @override
+  String get licenseUsageTitle => 'Licencia de Uso';
+
+  @override
+  String get licenseUsageNotice =>
+      'Gratis para uso personal y sin fines de lucro.';
+
+  @override
+  String get licenseBadgeText => 'Personal y Sin Fines de Lucro';
 }

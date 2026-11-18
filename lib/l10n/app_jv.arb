@@ -121,5 +121,13 @@
   "fieldExpires": "Entek wektune",
   "docHasFile": "Layang wis dilampirake",
   "settingsReminders": "Pangeling rumatan",
-  "settingsRemindersSubtitle": "Kabarake sadurunge jadwal wayahe"
+  "settingsRemindersSubtitle": "Kabarake sadurunge jadwal wayahe",
+  "commercialContactTitle": "Panggunaan komersial",
+  "commercialContactDesc": "Butuh lisensi komersial, white-label, utawa kustomisasi? Hubungi kula.",
+  "acquireAppTitle": "Akuisisi aplikasi iki",
+  "acquireAppDesc": "Kepengin ngakuisisi aplikasi iki sakliyane source code lan asete? Ayo rembugan.",
+  "contactEmailCopied": "Alamat email wis disalin: contact@faishal.id",
+  "licenseUsageTitle": "Lisensi Panganggo",
+  "licenseUsageNotice": "Bebas dienggo kanggo kaperluan pribadi lan non-profit.",
+  "licenseBadgeText": "Pribadi & Non-Profit"
 }

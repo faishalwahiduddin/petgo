@@ -8,6 +8,8 @@ import '../../core/providers/app_providers.dart';
 import '../../core/providers/locale_provider.dart';
 import '../../core/services/care_reminder_service.dart';
 import '../../core/utils/backup_file_io.dart';
+import 'commercial_contact_cards.dart';
+import '../../core/constants/contact_constants.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
@@ -158,6 +160,10 @@ class SettingsScreen extends ConsumerWidget {
               );
             },
           ),
+          const SizedBox(height: 10),
+          const UsageLicenseCard(),
+          const SizedBox(height: 10),
+          CommercialContactCards(appName: kAppBrandName),
           const SizedBox(height: 24),
           FutureBuilder<PackageInfo>(
             future: PackageInfo.fromPlatform(),

@@ -121,5 +121,13 @@
   "fieldExpires": "Bérés waktuna",
   "docHasFile": "Surat geus dilampirkeun",
   "settingsReminders": "Panginget miara",
-  "settingsRemindersSubtitle": "Béjakeun saméméh jadwal wayahna"
+  "settingsRemindersSubtitle": "Béjakeun saméméh jadwal wayahna",
+  "commercialContactTitle": "Pamakéan komérsial",
+  "commercialContactDesc": "Peryogi lisénsi komérsial, white-label, atawa kustomisasi? Hubungi kami.",
+  "acquireAppTitle": "Akuisisi aplikasi ieu",
+  "acquireAppDesc": "Resep ngaakuisisi aplikasi ieu sarta source code jeung asetna? Hayu urang obrolkeun.",
+  "contactEmailCopied": "Alamat surélék disalin: contact@faishal.id",
+  "licenseUsageTitle": "Lisensi Pamakean",
+  "licenseUsageNotice": "Bébas dianggo pikeun kaperluan pribadi jeung non-profit.",
+  "licenseBadgeText": "Pribadi & Non-Profit"
 }

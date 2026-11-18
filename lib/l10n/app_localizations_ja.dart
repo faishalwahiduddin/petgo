@@ -336,4 +336,29 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get settingsRemindersSubtitle => '予定の期限前に通知します';
+
+  @override
+  String get commercialContactTitle => '商用利用';
+
+  @override
+  String get commercialContactDesc =>
+      '商用ライセンス、ホワイトレーベル、カスタマイズが必要ですか？お問い合わせください。';
+
+  @override
+  String get acquireAppTitle => 'このアプリの買収';
+
+  @override
+  String get acquireAppDesc => 'ソースコードやアセットを含め、このアプリの買収にご関心がありますか？お気軽にご相談ください。';
+
+  @override
+  String get contactEmailCopied => 'メールアドレスをコピーしました: contact@faishal.id';
+
+  @override
+  String get licenseUsageTitle => '利用ライセンス';
+
+  @override
+  String get licenseUsageNotice => '個人および非営利目的での利用は無料です。';
+
+  @override
+  String get licenseBadgeText => '個人・非営利';
 }

@@ -121,5 +121,13 @@
   "fieldExpires": "ينتهي في",
   "docHasFile": "ملف مرفق",
   "settingsReminders": "تذكيرات الرعاية",
-  "settingsRemindersSubtitle": "أشعرك قبل حلول المواعيد"
+  "settingsRemindersSubtitle": "أشعرك قبل حلول المواعيد",
+  "commercialContactTitle": "الاستخدام التجاري",
+  "commercialContactDesc": "هل تحتاج إلى ترخيص تجاري أو علامة بيضاء أو تخصيص؟ تواصل معنا.",
+  "acquireAppTitle": "اقتناء هذا التطبيق",
+  "acquireAppDesc": "هل ترغب في اقتناء هذا التطبيق بما في ذلك الشيفرة المصدرية والأصول؟ لنتحدث.",
+  "contactEmailCopied": "تم نسخ عنوان البريد الإلكتروني: contact@faishal.id",
+  "licenseUsageTitle": "ترخيص الاستخدام",
+  "licenseUsageNotice": "مجاني للاستخدام الشخصي وغير الربحي.",
+  "licenseBadgeText": "شخصي وغير ربحي"
 }

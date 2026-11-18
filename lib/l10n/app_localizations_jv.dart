@@ -337,4 +337,32 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get settingsRemindersSubtitle => 'Kabarake sadurunge jadwal wayahe';
+
+  @override
+  String get commercialContactTitle => 'Panggunaan komersial';
+
+  @override
+  String get commercialContactDesc =>
+      'Butuh lisensi komersial, white-label, utawa kustomisasi? Hubungi kula.';
+
+  @override
+  String get acquireAppTitle => 'Akuisisi aplikasi iki';
+
+  @override
+  String get acquireAppDesc =>
+      'Kepengin ngakuisisi aplikasi iki sakliyane source code lan asete? Ayo rembugan.';
+
+  @override
+  String get contactEmailCopied =>
+      'Alamat email wis disalin: contact@faishal.id';
+
+  @override
+  String get licenseUsageTitle => 'Lisensi Panganggo';
+
+  @override
+  String get licenseUsageNotice =>
+      'Bebas dienggo kanggo kaperluan pribadi lan non-profit.';
+
+  @override
+  String get licenseBadgeText => 'Pribadi & Non-Profit';
 }

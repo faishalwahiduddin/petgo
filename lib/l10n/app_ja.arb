@@ -121,5 +121,13 @@
   "fieldExpires": "有効期限",
   "docHasFile": "ファイル添付済み",
   "settingsReminders": "ケアのリマインダー",
-  "settingsRemindersSubtitle": "予定の期限前に通知します"
+  "settingsRemindersSubtitle": "予定の期限前に通知します",
+  "commercialContactTitle": "商用利用",
+  "commercialContactDesc": "商用ライセンス、ホワイトレーベル、カスタマイズが必要ですか？お問い合わせください。",
+  "acquireAppTitle": "このアプリの買収",
+  "acquireAppDesc": "ソースコードやアセットを含め、このアプリの買収にご関心がありますか？お気軽にご相談ください。",
+  "contactEmailCopied": "メールアドレスをコピーしました: contact@faishal.id",
+  "licenseUsageTitle": "利用ライセンス",
+  "licenseUsageNotice": "個人および非営利目的での利用は無料です。",
+  "licenseBadgeText": "個人・非営利"
 }

@@ -337,4 +337,31 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get settingsRemindersSubtitle => 'Béjakeun saméméh jadwal wayahna';
+
+  @override
+  String get commercialContactTitle => 'Pamakéan komérsial';
+
+  @override
+  String get commercialContactDesc =>
+      'Peryogi lisénsi komérsial, white-label, atawa kustomisasi? Hubungi kami.';
+
+  @override
+  String get acquireAppTitle => 'Akuisisi aplikasi ieu';
+
+  @override
+  String get acquireAppDesc =>
+      'Resep ngaakuisisi aplikasi ieu sarta source code jeung asetna? Hayu urang obrolkeun.';
+
+  @override
+  String get contactEmailCopied => 'Alamat surélék disalin: contact@faishal.id';
+
+  @override
+  String get licenseUsageTitle => 'Lisensi Pamakean';
+
+  @override
+  String get licenseUsageNotice =>
+      'Bébas dianggo pikeun kaperluan pribadi jeung non-profit.';
+
+  @override
+  String get licenseBadgeText => 'Pribadi & Non-Profit';
 }

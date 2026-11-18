@@ -121,5 +121,37 @@
   "fieldExpires": "Expires",
   "docHasFile": "File attached",
   "settingsReminders": "Care reminders",
-  "settingsRemindersSubtitle": "Notify you before schedules fall due"
+  "settingsRemindersSubtitle": "Notify you before schedules fall due",
+  "commercialContactTitle": "Commercial use",
+  "@commercialContactTitle": {
+    "description": "Title of the commercial use contact card in Settings"
+  },
+  "commercialContactDesc": "Need a commercial license, white-label, or customization? Get in touch.",
+  "@commercialContactDesc": {
+    "description": "Description of the commercial use contact card"
+  },
+  "acquireAppTitle": "Acquire this app",
+  "@acquireAppTitle": {
+    "description": "Title of the app acquisition contact card in Settings"
+  },
+  "acquireAppDesc": "Interested in acquiring this app, including source code and assets? Let's talk.",
+  "@acquireAppDesc": {
+    "description": "Description of the app acquisition contact card"
+  },
+  "contactEmailCopied": "Email address copied: contact@faishal.id",
+  "@contactEmailCopied": {
+    "description": "Snackbar shown when the contact email is copied because no mail app could be opened"
+  },
+  "licenseUsageTitle": "Usage License",
+  "@licenseUsageTitle": {
+    "description": "Title of the usage license card in Settings"
+  },
+  "licenseUsageNotice": "Free for personal and non-profit use.",
+  "@licenseUsageNotice": {
+    "description": "Usage license notice text"
+  },
+  "licenseBadgeText": "Personal & Non-Profit",
+  "@licenseBadgeText": {
+    "description": "Badge text of the usage license card"
+  }
 }

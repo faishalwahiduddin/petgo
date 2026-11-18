@@ -121,5 +121,37 @@
   "fieldExpires": "Kedaluwarsa",
   "docHasFile": "Berkas terlampir",
   "settingsReminders": "Pengingat perawatan",
-  "settingsRemindersSubtitle": "Beritahu sebelum jadwal jatuh tempo"
+  "settingsRemindersSubtitle": "Beritahu sebelum jadwal jatuh tempo",
+  "commercialContactTitle": "Penggunaan komersial",
+  "@commercialContactTitle": {
+    "description": "Title of the commercial use contact card in Settings"
+  },
+  "commercialContactDesc": "Butuh lisensi komersial, white-label, atau kustomisasi? Hubungi kami.",
+  "@commercialContactDesc": {
+    "description": "Description of the commercial use contact card"
+  },
+  "acquireAppTitle": "Akuisisi aplikasi ini",
+  "@acquireAppTitle": {
+    "description": "Title of the app acquisition contact card in Settings"
+  },
+  "acquireAppDesc": "Tertarik mengakuisisi aplikasi ini beserta source code dan asetnya? Mari bicara.",
+  "@acquireAppDesc": {
+    "description": "Description of the app acquisition contact card"
+  },
+  "contactEmailCopied": "Alamat email disalin: contact@faishal.id",
+  "@contactEmailCopied": {
+    "description": "Snackbar shown when the contact email is copied because no mail app could be opened"
+  },
+  "licenseUsageTitle": "Lisensi Penggunaan",
+  "@licenseUsageTitle": {
+    "description": "Title of the usage license card in Settings"
+  },
+  "licenseUsageNotice": "Bebas digunakan untuk keperluan personal dan non-profit.",
+  "@licenseUsageNotice": {
+    "description": "Usage license notice text"
+  },
+  "licenseBadgeText": "Personal & Non-Profit",
+  "@licenseBadgeText": {
+    "description": "Badge text of the usage license card"
+  }
 }
