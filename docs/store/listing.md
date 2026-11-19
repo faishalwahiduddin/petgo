@@ -10,13 +10,13 @@
 
 ## Bahasa Indonesia (`id`)
 
-**Title** (30/30)
+**Title** (28/30)
 
-> PetGo: Catatan Kucing & Anjing
+> PetGo: Buku Kesehatan Anabul
 
-**Short description** (78/80)
+**Short description** (79/80)
 
-> Jadwal vaksin, obat cacing, kunjungan dokter hewan, dan berat anabul. Offline.
+> Buku kesehatan anabul: jadwal vaksin, obat cacing, dokter hewan, & berat badan.
 
 **Full description** (2097/4000)
 
@@ -85,11 +85,11 @@ Bagian dari aplikasi faishal.id.
 
 **Title** (28/30)
 
-> PetGo: Pet Health & Care Log
+> PetGo: Pet Health & Vaccines
 
-**Short description** (74/80)
+**Short description** (77/80)
 
-> Vaccines, deworming, vet visits and weight for every dog and cat. Offline.
+> Pet health passport: log vaccines, deworming, vet visits, and weight offline.
 
 **Full description** (1708/4000)
 
