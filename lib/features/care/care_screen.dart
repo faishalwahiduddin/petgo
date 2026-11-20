@@ -4,6 +4,7 @@ import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
 import '../../core/ui/fleet_sheet.dart';
+import '../../core/ui/app_states.dart';
 import '../../core/theme/app_numeric.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
@@ -60,9 +61,15 @@ class CareScreen extends ConsumerWidget {
           ),
           const SizedBox(height: 8),
           if (schedules.isEmpty)
-            Text(
-              l10n.careEmptySchedules,
-              style: TextStyle(color: context.textSecondary),
+            AppEmpty(
+              dense: true,
+              icon: Icons.schedule,
+              title: l10n.careEmptySchedules,
+              actionLabel: pet == null ? null : l10n.actionAddSchedule,
+              onAction: pet == null
+                  ? null
+                  : () => _editSchedule(context, ref, pet),
+              actionColor: AppColors.primary,
             )
           else
             ...schedules.map(
@@ -135,9 +142,13 @@ class CareScreen extends ConsumerWidget {
           ),
           const SizedBox(height: 8),
           if (vetLogs.isEmpty)
-            Text(
-              l10n.careEmptyVet,
-              style: TextStyle(color: context.textSecondary),
+            AppEmpty(
+              dense: true,
+              icon: Icons.local_hospital_outlined,
+              title: l10n.careEmptyVet,
+              actionLabel: pet == null ? null : l10n.actionAddVet,
+              onAction: pet == null ? null : () => _editVet(context, ref, pet),
+              actionColor: AppColors.primary,
             )
           else
             ...vetLogs.map(

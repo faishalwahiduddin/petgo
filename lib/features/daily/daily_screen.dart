@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
+import '../../core/ui/app_states.dart';
 import '../../core/theme/app_numeric.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
@@ -84,8 +85,7 @@ class DailyScreen extends ConsumerWidget {
           ),
           const SizedBox(height: 8),
           if (logs.isEmpty)
-            Text(l10n.dailyEmpty,
-                style: TextStyle(color: context.textSecondary))
+            AppEmpty(dense: true, icon: Icons.history, title: l10n.dailyEmpty)
           else
             ...logs.take(30).map(
                   (e) => Card(

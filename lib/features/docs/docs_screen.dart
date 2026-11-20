@@ -5,6 +5,7 @@ import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
 import '../../core/ui/fleet_sheet.dart';
+import '../../core/ui/app_states.dart';
 import '../../core/theme/app_numeric.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
@@ -39,11 +40,12 @@ class DocsScreen extends ConsumerWidget {
         ),
       ),
       body: docs.isEmpty
-          ? Center(
-              child: Text(
-                l10n.docsEmpty,
-                style: TextStyle(color: context.textSecondary),
-              ),
+          ? AppEmpty(
+              icon: Icons.description_outlined,
+              title: l10n.docsEmpty,
+              actionLabel: pet == null ? null : l10n.actionAddDoc,
+              onAction: pet == null ? null : () => _editDoc(context, ref, pet),
+              actionColor: AppColors.primary,
             )
           : ListView.separated(
               // Clear the FAB (56) and its margin above the nav bar.
