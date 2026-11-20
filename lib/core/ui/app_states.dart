@@ -136,7 +136,9 @@ class AppLoading extends StatelessWidget {
                 visible,
                 textAlign: TextAlign.center,
                 style: _text(context, 14, null,
-                    CupertinoColors.secondaryLabel.resolveFrom(context)),
+                    CupertinoColors.label
+                        .resolveFrom(context)
+                        .withValues(alpha: 0.72)),
               ),
             ],
           ],
@@ -203,8 +205,12 @@ class AppEmpty extends StatelessWidget {
               const SizedBox(height: _kSm),
               Text(message!,
                   textAlign: TextAlign.center,
+                  // label @72% (not secondaryLabel @60%, which is ~3.5:1 on white,
+                  // below AA): ~10:1 in light and dark.
                   style: _text(context, 14, null,
-                      CupertinoColors.secondaryLabel.resolveFrom(context))),
+                      CupertinoColors.label
+                          .resolveFrom(context)
+                          .withValues(alpha: 0.72))),
             ],
             if (actionLabel != null && onAction != null) ...[
               SizedBox(height: gap),
