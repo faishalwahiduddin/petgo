@@ -7,7 +7,8 @@ import '../motion/spring_draggable.dart';
 
 /// Spring-dismissible modal sheet — Apple fluid sheet + Emil interruptibility.
 ///
-/// CANONICAL — copy via `tools/sync_apple_primitives.py`.
+/// CANONICAL — source: `tools/faishal-id-fleet/canonical/ui/spring_sheet.dart`.
+/// Needs sibling `../motion/app_spring.dart` + `../motion/spring_draggable.dart`.
 ///
 /// Use instead of bare [showCupertinoModalPopup] / [showModalBottomSheet] when
 /// the sheet should track the finger, rubber-band, and flick-dismiss with
@@ -52,9 +53,9 @@ class SpringSheetScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (AppSpring.reduceMotion(context)) {
-      return child;
-    }
+    // Keep the drag even with reduce-motion on: SpringDraggable snaps instead
+    // of springing then, but the swipe-to-dismiss gesture must not disappear
+    // (users with animations off could not close sheets by swiping).
     return SpringDraggable(
       detents: [0, dismissOffset],
       spring: AppSpring.sheet,

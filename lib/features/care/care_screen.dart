@@ -65,11 +65,6 @@ class CareScreen extends ConsumerWidget {
               dense: true,
               icon: Icons.schedule,
               title: l10n.careEmptySchedules,
-              actionLabel: pet == null ? null : l10n.actionAddSchedule,
-              onAction: pet == null
-                  ? null
-                  : () => _editSchedule(context, ref, pet),
-              actionColor: AppColors.primary,
             )
           else
             ...schedules.map(
@@ -146,9 +141,6 @@ class CareScreen extends ConsumerWidget {
               dense: true,
               icon: Icons.local_hospital_outlined,
               title: l10n.careEmptyVet,
-              actionLabel: pet == null ? null : l10n.actionAddVet,
-              onAction: pet == null ? null : () => _editVet(context, ref, pet),
-              actionColor: AppColors.primary,
             )
           else
             ...vetLogs.map(

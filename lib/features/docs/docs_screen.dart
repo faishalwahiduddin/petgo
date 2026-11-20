@@ -43,9 +43,6 @@ class DocsScreen extends ConsumerWidget {
           ? AppEmpty(
               icon: Icons.description_outlined,
               title: l10n.docsEmpty,
-              actionLabel: pet == null ? null : l10n.actionAddDoc,
-              onAction: pet == null ? null : () => _editDoc(context, ref, pet),
-              actionColor: AppColors.primary,
             )
           : ListView.separated(
               // Clear the FAB (56) and its margin above the nav bar.
