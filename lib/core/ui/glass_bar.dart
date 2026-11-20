@@ -6,7 +6,7 @@ import 'package:flutter/cupertino.dart';
 /// content.
 ///
 /// CANONICAL FILE -- source of truth lives at
-/// `docs/apple-design/canonical/lib/core/ui/glass_bar.dart`.
+/// `tools/faishal-id-fleet/canonical/ui/glass_bar.dart`.
 ///
 /// Every hand-rolled bottom nav in this suite is an opaque `DecoratedBox` in a
 /// `Column`, which consumes a fixed strip of the screen. Content never passes
@@ -70,12 +70,21 @@ class GlassBar extends StatelessWidget {
     final solid = media?.highContrast ?? false;
 
     final base = color ?? theme.barBackgroundColor;
-    final fill = solid ? base.withValues(alpha: 1.0) : base.withValues(alpha: opacity);
+    final fill =
+        solid ? base.withValues(alpha: 1.0) : base.withValues(alpha: opacity);
 
     final hairline = CupertinoColors.separator.resolveFrom(context);
     final border = switch (borderSide) {
-      BarBorderSide.top => Border(top: BorderSide(color: hairline, width: 0.0)),
-      BarBorderSide.bottom => Border(bottom: BorderSide(color: hairline, width: 0.0)),
+      // A non-uniform Border cannot be combined with a borderRadius (Flutter
+      // asserts), so a rounded bar gets a uniform hairline instead.
+      BarBorderSide.top =>
+        borderRadius == null
+            ? Border(top: BorderSide(color: hairline, width: 0.0))
+            : Border.all(color: hairline, width: 0.0),
+      BarBorderSide.bottom =>
+        borderRadius == null
+            ? Border(bottom: BorderSide(color: hairline, width: 0.0))
+            : Border.all(color: hairline, width: 0.0),
       BarBorderSide.none => null,
     };
 

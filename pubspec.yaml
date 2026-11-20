@@ -2,7 +2,7 @@ name: petgo
 description: "PetGo — Pet manager: profiles, care schedules, vet visits, daily care. Offline-first."
 publish_to: 'none'
 
-version: 1.1.1+14
+version: 1.1.2+15
 environment:
   sdk: ^3.12.2
 

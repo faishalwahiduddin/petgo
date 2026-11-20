@@ -1,11 +1,12 @@
+import 'dart:async';
+
 import 'package:flutter/widgets.dart';
 
-import '../motion/app_spring.dart';
 import '../theme/app_motion.dart';
 
 /// Cascading list entrance — Emil Kowalski stagger (30–80ms steps).
 ///
-/// CANONICAL — copy via `tools/sync_apple_primitives.py`.
+/// CANONICAL — source: `tools/faishal-id-fleet/canonical/ui/stagger_fade_in.dart`.
 ///
 /// Decorative only: never blocks interaction. Reduced motion → instant show.
 ///
@@ -54,6 +55,11 @@ class _StaggerFadeInState extends State<StaggerFadeIn>
   late final Animation<double> _opacity;
   late final Animation<Offset> _offset;
 
+  /// Pending stagger delay. Held so [dispose] can cancel it: a bare
+  /// `Future.delayed` outlives the element and trips the test binding's
+  /// "Timer is still pending" invariant.
+  Timer? _delay;
+
   @override
   void initState() {
     super.initState();
@@ -66,12 +72,17 @@ class _StaggerFadeInState extends State<StaggerFadeIn>
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
-      if (AppSpring.reduceMotion(context)) {
+      // Reduced motion: show instantly (same signal AppMotion.resolve uses).
+      if (MediaQuery.maybeOf(context)?.disableAnimations ?? false) {
         _controller.value = 1;
         return;
       }
-      final i = widget.index.clamp(0, widget.maxIndex);
-      Future<void>.delayed(widget.step * i, () {
+      final delay = widget.step * widget.index.clamp(0, widget.maxIndex);
+      if (delay <= Duration.zero) {
+        _controller.forward();
+        return;
+      }
+      _delay = Timer(delay, () {
         if (mounted) _controller.forward();
       });
     });
@@ -79,6 +90,8 @@ class _StaggerFadeInState extends State<StaggerFadeIn>
 
   @override
   void dispose() {
+    _delay?.cancel();
+    _delay = null;
     _controller.dispose();
     super.dispose();
   }
@@ -87,13 +100,11 @@ class _StaggerFadeInState extends State<StaggerFadeIn>
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: _controller,
-      builder: (context, child) => Opacity(
-        opacity: _opacity.value,
-        child: Transform.translate(
-          offset: _offset.value,
-          child: child,
-        ),
-      ),
+      builder:
+          (context, child) => Opacity(
+            opacity: _opacity.value,
+            child: Transform.translate(offset: _offset.value, child: child),
+          ),
       child: widget.child,
     );
   }
