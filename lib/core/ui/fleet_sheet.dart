@@ -15,7 +15,8 @@ import 'spring_sheet.dart';
 /// and this sheet supplies them itself:
 ///  * a [Material] ancestor (TextField, ListTile, InkWell need one);
 ///  * surface colour + top-rounded shape (theme `bottomSheetTheme` fallback);
-///  * bottom safe area and keyboard inset (`viewInsets`), so forms stay visible;
+///  * bottom safe area (skipped when [backgroundColor] is fully transparent,
+///    i.e. the body draws its own card) and keyboard inset (`viewInsets`);
 ///  * a max height (90% when [isScrollControlled], else 9/16, like Material).
 ///
 /// Scrollable content keeps scrolling: drags that start inside a scroll view go
@@ -91,6 +92,10 @@ class FleetSheetSurface extends StatelessWidget {
             clipBehavior: Clip.antiAlias,
             child: SafeArea(
               top: false,
+              // Transparent surface = the body draws its own card; let it reach
+              // the bottom edge (as with showModalBottomSheet) instead of
+              // leaving a see-through strip above the home indicator.
+              bottom: color.a > 0,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
