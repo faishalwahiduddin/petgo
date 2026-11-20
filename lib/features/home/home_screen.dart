@@ -8,6 +8,7 @@ import 'package:intl/intl.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
+import '../../core/ui/fleet_sheet.dart';
 import '../../core/theme/app_numeric.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
@@ -198,7 +199,7 @@ class HomeScreen extends ConsumerWidget {
     String? photoPath = existing?.photoPath;
     final formKey = GlobalKey<FormState>();
 
-    final ok = await showModalBottomSheet<bool>(
+    final ok = await showFleetSheet<bool>(
       context: context,
       useRootNavigator: true,
       isScrollControlled: true,
@@ -208,7 +209,7 @@ class HomeScreen extends ConsumerWidget {
             left: 16,
             right: 16,
             top: 16,
-            bottom: MediaQuery.of(ctx).viewInsets.bottom + 16,
+            bottom: 16,
           ),
           child: StatefulBuilder(
             builder: (context, setModal) {

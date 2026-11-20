@@ -4,6 +4,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
+import '../../core/ui/fleet_sheet.dart';
 import '../../core/providers/app_providers.dart';
 import '../../core/providers/locale_provider.dart';
 import '../../core/services/care_reminder_service.dart';
@@ -30,7 +31,7 @@ class SettingsScreen extends ConsumerWidget {
             title: Text(l10n.settingsLanguage),
             subtitle: Text(_languageLabel(locale)),
             onTap: () async {
-              final picked = await showModalBottomSheet<Locale>(
+              final picked = await showFleetSheet<Locale>(
                 context: context,
                 useRootNavigator: true,
                 builder: (ctx) => SafeArea(

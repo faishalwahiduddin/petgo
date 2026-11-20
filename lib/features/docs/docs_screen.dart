@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
+import '../../core/ui/fleet_sheet.dart';
 import '../../core/theme/app_numeric.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
@@ -102,7 +103,7 @@ class DocsScreen extends ConsumerWidget {
     DateTime? expires = existing?.expiresAt;
     String? filePath = existing?.filePath;
     final formKey = GlobalKey<FormState>();
-    final ok = await showModalBottomSheet<bool>(
+    final ok = await showFleetSheet<bool>(
       context: context,
       useRootNavigator: true,
       isScrollControlled: true,
@@ -111,7 +112,7 @@ class DocsScreen extends ConsumerWidget {
           left: 16,
           right: 16,
           top: 16,
-          bottom: MediaQuery.of(ctx).viewInsets.bottom + 16,
+          bottom: 16,
         ),
         child: StatefulBuilder(
           builder: (context, setModal) => Form(
