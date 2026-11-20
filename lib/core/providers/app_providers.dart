@@ -258,8 +258,26 @@ class WeightLogsNotifier extends Notifier<List<WeightLog>> {
   }
 
   Future<void> remove(String id) async {
+    final target = state.where((e) => e.id == id).firstOrNull;
     state = state.where((e) => e.id != id).toList();
     await ref.read(localStorageServiceProvider).saveWeightLogs(state);
+    if (target != null) {
+      final pet = ref
+          .read(petsProvider)
+          .where((p) => p.id == target.petId)
+          .firstOrNull;
+      if (pet != null) {
+        final remaining = state.where((e) => e.petId == pet.id).toList()
+          ..sort((a, b) => b.date.compareTo(a.date));
+        final newWeight =
+            remaining.isNotEmpty ? remaining.first.weightKg : null;
+        await ref.read(petsProvider.notifier).upsert(
+              newWeight != null
+                  ? pet.copyWith(weightKg: newWeight)
+                  : pet.copyWith(clearWeight: true),
+            );
+      }
+    }
   }
 
   void reload() =>

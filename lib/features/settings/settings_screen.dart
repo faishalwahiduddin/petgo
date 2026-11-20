@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:petgo/l10n/app_localizations.dart';
@@ -7,6 +8,7 @@ import '../../core/constants/app_colors.dart';
 import '../../core/ui/fleet_sheet.dart';
 import '../../core/providers/app_providers.dart';
 import '../../core/providers/locale_provider.dart';
+import '../../core/providers/theme_provider.dart';
 import '../../core/services/care_reminder_service.dart';
 import '../../core/utils/backup_file_io.dart';
 import 'commercial_contact_cards.dart';
@@ -19,6 +21,7 @@ class SettingsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
     final locale = ref.watch(localeProvider);
+    final themeMode = ref.watch(themeModeProvider);
     final pets = ref.watch(petsProvider);
 
     return Scaffold(
@@ -77,6 +80,50 @@ class SettingsScreen extends ConsumerWidget {
               }
             },
           ),
+          ListTile(
+            leading: const Icon(Icons.palette_outlined, color: AppColors.primary),
+            title: Text(l10n.settingsTheme),
+            subtitle: Text(_themeLabel(l10n, themeMode)),
+            onTap: () async {
+              final picked = await showFleetSheet<ThemeMode>(
+                context: context,
+                useRootNavigator: true,
+                builder: (ctx) => SafeArea(
+                  top: false,
+                  child: ListView(
+                    shrinkWrap: true,
+                    padding: const EdgeInsets.only(bottom: 8),
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
+                        child: Text(
+                          l10n.settingsTheme,
+                          style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
+                      for (final m in [ThemeMode.system, ThemeMode.light, ThemeMode.dark])
+                        ListTile(
+                          title: Text(_themeLabel(l10n, m)),
+                          trailing: m == themeMode
+                              ? Icon(
+                                  Icons.check,
+                                  color: Theme.of(ctx).colorScheme.primary,
+                                )
+                              : null,
+                          selected: m == themeMode,
+                          onTap: () => Navigator.pop(ctx, m),
+                        ),
+                    ],
+                  ),
+                ),
+              );
+              if (picked != null) {
+                await ref.read(themeModeProvider.notifier).setThemeMode(picked);
+              }
+            },
+          ),
           const Divider(),
           Text(
             l10n.settingsPets,
@@ -88,18 +135,74 @@ class SettingsScreen extends ConsumerWidget {
           ...pets.map(
             (p) => ListTile(
               title: Text(p.name),
-              trailing: IconButton(
-                icon: const Icon(Icons.delete_outline),
-                onPressed: () async {
-                  final err =
-                      await ref.read(petsProvider.notifier).remove(p.id);
-                  if (!context.mounted) return;
-                  if (err != null) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text(l10n.errorMinOnePet)),
+              trailing: SizedBox(
+                width: 48,
+                height: 48,
+                child: IconButton(
+                  icon: const Icon(Icons.delete_outline),
+                  tooltip: l10n.actionDelete,
+                  onPressed: () async {
+                    final schCount = ref
+                        .read(careSchedulesProvider)
+                        .where((s) => s.petId == p.id)
+                        .length;
+                    final vetCount = ref
+                        .read(vetLogsProvider)
+                        .where((v) => v.petId == p.id)
+                        .length;
+                    final dayCount = ref
+                        .read(dailyLogsProvider)
+                        .where((d) => d.petId == p.id)
+                        .length;
+                    final wtCount = ref
+                        .read(weightLogsProvider)
+                        .where((w) => w.petId == p.id)
+                        .length;
+                    final docCount = ref
+                        .read(documentsProvider)
+                        .where((d) => d.petId == p.id)
+                        .length;
+                    final totalCount = schCount + vetCount + dayCount + wtCount + docCount;
+
+                    final confirm = await showDialog<bool>(
+                      context: context,
+                      builder: (ctx) => AlertDialog(
+                        title: Text(l10n.dialogDeletePetTitle(p.name)),
+                        content: Text(
+                          l10n.dialogDeletePetMessage(p.name, totalCount),
+                        ),
+                        actions: [
+                          TextButton(
+                            onPressed: () => Navigator.pop(ctx, false),
+                            child: Text(l10n.actionCancel),
+                          ),
+                          FilledButton(
+                            style: FilledButton.styleFrom(
+                              backgroundColor: AppColors.danger,
+                              foregroundColor: Colors.white,
+                            ),
+                            onPressed: () => Navigator.pop(ctx, true),
+                            child: Text(l10n.actionDelete),
+                          ),
+                        ],
+                      ),
                     );
-                  }
-                },
+                    if (confirm != true || !context.mounted) return;
+                    await HapticFeedback.mediumImpact();
+                    final err =
+                        await ref.read(petsProvider.notifier).remove(p.id);
+                    if (!context.mounted) return;
+                    if (err != null) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text(l10n.errorMinOnePet)),
+                      );
+                    } else {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text(l10n.snackbarDeleted)),
+                      );
+                    }
+                  },
+                ),
               ),
             ),
           ),
@@ -109,11 +212,49 @@ class SettingsScreen extends ConsumerWidget {
             subtitle: Text(l10n.settingsRemindersSubtitle),
             value: ref.watch(remindersEnabledProvider),
             onChanged: (v) async {
-              await ref.read(remindersEnabledProvider.notifier).setEnabled(v);
-              await CareReminderService.instance.reschedule(
-                ref.read(careSchedulesProvider),
-                enabled: v,
-              );
+              if (v) {
+                final proceed = await showDialog<bool>(
+                  context: context,
+                  builder: (ctx) => AlertDialog(
+                    title: Text(l10n.notificationPermissionTitle),
+                    content: Text(l10n.notificationPermissionMessage),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(ctx, false),
+                        child: Text(l10n.actionNotNow),
+                      ),
+                      FilledButton(
+                        onPressed: () => Navigator.pop(ctx, true),
+                        child: Text(l10n.actionAllow),
+                      ),
+                    ],
+                  ),
+                );
+                if (proceed != true) return;
+                final granted =
+                    await CareReminderService.instance.requestPermission();
+                if (!context.mounted) return;
+                if (!granted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text(l10n.notificationPermissionDenied)),
+                  );
+                }
+                await ref
+                    .read(remindersEnabledProvider.notifier)
+                    .setEnabled(granted);
+                await CareReminderService.instance.reschedule(
+                  ref.read(careSchedulesProvider),
+                  enabled: granted,
+                );
+              } else {
+                await ref
+                    .read(remindersEnabledProvider.notifier)
+                    .setEnabled(false);
+                await CareReminderService.instance.reschedule(
+                  ref.read(careSchedulesProvider),
+                  enabled: false,
+                );
+              }
             },
           ),
           const Divider(),
@@ -195,5 +336,11 @@ class SettingsScreen extends ConsumerWidget {
         'ja' => '日本語',
         'es' => 'Español',
         _ => l.languageCode.toUpperCase(),
+      };
+
+  String _themeLabel(AppLocalizations l10n, ThemeMode mode) => switch (mode) {
+        ThemeMode.system => l10n.themeSystem,
+        ThemeMode.light => l10n.themeLight,
+        ThemeMode.dark => l10n.themeDark,
       };
 }

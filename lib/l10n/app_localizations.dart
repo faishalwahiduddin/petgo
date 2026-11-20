@@ -233,7 +233,7 @@ abstract class AppLocalizations {
   /// No description provided for @onbSlide3Sub.
   ///
   /// In id, this message translates to:
-  /// **'Makan, jalan, dan litter'**
+  /// **'Makan, jalan, dan kotak pasir'**
   String get onbSlide3Sub;
 
   /// No description provided for @onbSlide3Badge.
@@ -293,7 +293,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeDueSoon.
   ///
   /// In id, this message translates to:
-  /// **'Jatuh tempo & segera'**
+  /// **'Mendekati jatuh tempo'**
   String get homeDueSoon;
 
   /// No description provided for @homeNoDue.
@@ -533,7 +533,7 @@ abstract class AppLocalizations {
   /// No description provided for @dailyLitter.
   ///
   /// In id, this message translates to:
-  /// **'Litter'**
+  /// **'Pasir'**
   String get dailyLitter;
 
   /// No description provided for @dailyOther.
@@ -805,6 +805,144 @@ abstract class AppLocalizations {
   /// In id, this message translates to:
   /// **'Personal & Non-Profit'**
   String get licenseBadgeText;
+
+  /// No description provided for @dialogDeletePetTitle.
+  ///
+  /// In id, this message translates to:
+  /// **'Hapus {petName}?'**
+  String dialogDeletePetTitle(String petName);
+
+  /// No description provided for @dialogDeletePetMessage.
+  ///
+  /// In id, this message translates to:
+  /// **'Hapus {petName} dan {count} catatan terkait? Tindakan ini tidak dapat dibatalkan.'**
+  String dialogDeletePetMessage(String petName, int count);
+
+  /// No description provided for @dialogDeleteRecordTitle.
+  ///
+  /// In id, this message translates to:
+  /// **'Hapus catatan?'**
+  String get dialogDeleteRecordTitle;
+
+  /// No description provided for @dialogDeleteRecordMessage.
+  ///
+  /// In id, this message translates to:
+  /// **'Yakin ingin menghapus catatan ini?'**
+  String get dialogDeleteRecordMessage;
+
+  /// No description provided for @actionDelete.
+  ///
+  /// In id, this message translates to:
+  /// **'Hapus'**
+  String get actionDelete;
+
+  /// No description provided for @actionUndo.
+  ///
+  /// In id, this message translates to:
+  /// **'Urungkan'**
+  String get actionUndo;
+
+  /// No description provided for @snackbarDeleted.
+  ///
+  /// In id, this message translates to:
+  /// **'Dihapus'**
+  String get snackbarDeleted;
+
+  /// No description provided for @snackbarRecordDeleted.
+  ///
+  /// In id, this message translates to:
+  /// **'Catatan dihapus'**
+  String get snackbarRecordDeleted;
+
+  /// No description provided for @snackbarDailyLogDeleted.
+  ///
+  /// In id, this message translates to:
+  /// **'Log harian dihapus'**
+  String get snackbarDailyLogDeleted;
+
+  /// No description provided for @snackbarScheduleDone.
+  ///
+  /// In id, this message translates to:
+  /// **'{title} ditandai selesai'**
+  String snackbarScheduleDone(String title);
+
+  /// No description provided for @snackbarQuickLogDone.
+  ///
+  /// In id, this message translates to:
+  /// **'{label} dicatat'**
+  String snackbarQuickLogDone(String label);
+
+  /// No description provided for @snackbarSaved.
+  ///
+  /// In id, this message translates to:
+  /// **'Berhasil disimpan'**
+  String get snackbarSaved;
+
+  /// No description provided for @fieldTotalCost.
+  ///
+  /// In id, this message translates to:
+  /// **'Total biaya vet: {cost}'**
+  String fieldTotalCost(String cost);
+
+  /// No description provided for @errorCostInvalid.
+  ///
+  /// In id, this message translates to:
+  /// **'Nominal biaya tidak valid'**
+  String get errorCostInvalid;
+
+  /// No description provided for @settingsTheme.
+  ///
+  /// In id, this message translates to:
+  /// **'Tema'**
+  String get settingsTheme;
+
+  /// No description provided for @themeSystem.
+  ///
+  /// In id, this message translates to:
+  /// **'Mengikuti sistem'**
+  String get themeSystem;
+
+  /// No description provided for @themeLight.
+  ///
+  /// In id, this message translates to:
+  /// **'Terang'**
+  String get themeLight;
+
+  /// No description provided for @themeDark.
+  ///
+  /// In id, this message translates to:
+  /// **'Gelap'**
+  String get themeDark;
+
+  /// No description provided for @notificationPermissionTitle.
+  ///
+  /// In id, this message translates to:
+  /// **'Pengingat Perawatan'**
+  String get notificationPermissionTitle;
+
+  /// No description provided for @notificationPermissionMessage.
+  ///
+  /// In id, this message translates to:
+  /// **'PetGo membutuhkan izin notifikasi untuk mengingatkan jadwal vaksin dan perawatan hewan tepat waktu.'**
+  String get notificationPermissionMessage;
+
+  /// No description provided for @actionAllow.
+  ///
+  /// In id, this message translates to:
+  /// **'Izinkan'**
+  String get actionAllow;
+
+  /// No description provided for @actionNotNow.
+  ///
+  /// In id, this message translates to:
+  /// **'Nanti saja'**
+  String get actionNotNow;
+
+  /// No description provided for @notificationPermissionDenied.
+  ///
+  /// In id, this message translates to:
+  /// **'Izin notifikasi ditolak. Anda dapat mengaktifkannya di pengaturan perangkat.'**
+  String get notificationPermissionDenied;
 }
 
 class _AppLocalizationsDelegate

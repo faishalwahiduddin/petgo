@@ -364,4 +364,85 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get licenseBadgeText => 'شخصي وغير ربحي';
+
+  @override
+  String dialogDeletePetTitle(String petName) {
+    return 'حذف $petName؟';
+  }
+
+  @override
+  String dialogDeletePetMessage(String petName, int count) {
+    return 'هل تريد حذف $petName و$count من السجلات المرتبطة؟ لا يمكن التراجع عن هذا الإجراء.';
+  }
+
+  @override
+  String get dialogDeleteRecordTitle => 'حذف السجل؟';
+
+  @override
+  String get dialogDeleteRecordMessage => 'هل أنت متأكد من حذف هذا السجل؟';
+
+  @override
+  String get actionDelete => 'حذف';
+
+  @override
+  String get actionUndo => 'تراجع';
+
+  @override
+  String get snackbarDeleted => 'تم الحذف';
+
+  @override
+  String get snackbarRecordDeleted => 'تم حذف السجل';
+
+  @override
+  String get snackbarDailyLogDeleted => 'تم حذف السجل اليومي';
+
+  @override
+  String snackbarScheduleDone(String title) {
+    return 'تم تمييز $title كمكتمل';
+  }
+
+  @override
+  String snackbarQuickLogDone(String label) {
+    return 'تم تسجيل $label';
+  }
+
+  @override
+  String get snackbarSaved => 'تم الحفظ بنجاح';
+
+  @override
+  String fieldTotalCost(String cost) {
+    return 'إجمالي تكاليف البيطري: $cost';
+  }
+
+  @override
+  String get errorCostInvalid => 'قيمة التكلفة غير صالحة';
+
+  @override
+  String get settingsTheme => 'المظهر';
+
+  @override
+  String get themeSystem => 'افتراضي النظام';
+
+  @override
+  String get themeLight => 'فاتح';
+
+  @override
+  String get themeDark => 'داكن';
+
+  @override
+  String get notificationPermissionTitle => 'تذكيرات الرعاية';
+
+  @override
+  String get notificationPermissionMessage =>
+      'يحتاج PetGo إلى إذن الإشعارات لتذكيرك بمواعيد اللقاحات والرعاية في الوقت المحدد.';
+
+  @override
+  String get actionAllow => 'سماح';
+
+  @override
+  String get actionNotNow => 'ليس الآن';
+
+  @override
+  String get notificationPermissionDenied =>
+      'تم رفض إذن الإشعارات. يمكنك تفعيله في إعدادات الجهاز.';
 }

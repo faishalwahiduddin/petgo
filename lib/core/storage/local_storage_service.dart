@@ -26,10 +26,28 @@ class LocalStorageService {
   void seedInitialIfEmpty([String lang = 'id']) {
     String txt(String k) => kDefaultSeedText[k]!.of(lang);
     if (_prefs.containsKey(AppConstants.keyPets)) return;
-    final pets = [Pet.sampleDog(), Pet.sampleCat()];
+    final isId = lang == 'id' || lang == 'jv' || lang == 'su';
+    final pets = [
+      Pet.sampleDog().copyWith(breed: isId ? 'Campuran' : 'Mixed'),
+      Pet.sampleCat().copyWith(breed: isId ? 'Domestik' : 'Domestic'),
+    ];
     savePets(pets);
     saveActivePetId(pets.first.id);
     final now = DateTime.now().toUtc();
+    saveWeightLogs([
+      WeightLog(
+        id: 'w-init-dog',
+        petId: pets.first.id,
+        date: now.subtract(const Duration(days: 30)),
+        weightKg: pets.first.weightKg ?? 12.5,
+      ),
+      WeightLog(
+        id: 'w-init-cat',
+        petId: pets.last.id,
+        date: now.subtract(const Duration(days: 30)),
+        weightKg: pets.last.weightKg ?? 4.2,
+      ),
+    ]);
     saveCareSchedules([
       CareSchedule(
         id: 'sch-1',

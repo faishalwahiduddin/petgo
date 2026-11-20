@@ -33,6 +33,56 @@ class CareReminderService {
     }
   }
 
+  Future<bool> requestPermission() async {
+    if (kIsWeb) return false;
+    try {
+      switch (defaultTargetPlatform) {
+        case TargetPlatform.android:
+          final android = _plugin.resolvePlatformSpecificImplementation<
+              AndroidFlutterLocalNotificationsPlugin>();
+          return await android?.requestNotificationsPermission() ?? false;
+        case TargetPlatform.iOS:
+        case TargetPlatform.macOS:
+          final ios = _plugin.resolvePlatformSpecificImplementation<
+              IOSFlutterLocalNotificationsPlugin>();
+          return await ios?.requestPermissions(
+                alert: true,
+                badge: true,
+                sound: true,
+              ) ??
+              false;
+        default:
+          return true;
+      }
+    } catch (e) {
+      debugPrint('CareReminderService.requestPermission failed: $e');
+      return false;
+    }
+  }
+
+  Future<bool> checkPermissionStatus() async {
+    if (kIsWeb) return true;
+    try {
+      switch (defaultTargetPlatform) {
+        case TargetPlatform.android:
+          final android = _plugin.resolvePlatformSpecificImplementation<
+              AndroidFlutterLocalNotificationsPlugin>();
+          return await android?.areNotificationsEnabled() ?? true;
+        case TargetPlatform.iOS:
+        case TargetPlatform.macOS:
+          final ios = _plugin.resolvePlatformSpecificImplementation<
+              IOSFlutterLocalNotificationsPlugin>();
+          final opts = await ios?.checkPermissions();
+          return opts?.isEnabled ?? true;
+        default:
+          return true;
+      }
+    } catch (e) {
+      debugPrint('CareReminderService.checkPermissionStatus failed: $e');
+      return true;
+    }
+  }
+
   Future<void> cancelAll() async {
     if (!_ready) return;
     await _plugin.cancelAll();

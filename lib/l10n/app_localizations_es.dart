@@ -367,4 +367,86 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get licenseBadgeText => 'Personal y Sin Fines de Lucro';
+
+  @override
+  String dialogDeletePetTitle(String petName) {
+    return '¿Eliminar a $petName?';
+  }
+
+  @override
+  String dialogDeletePetMessage(String petName, int count) {
+    return '¿Eliminar a $petName y sus $count registros asociados? Esta acción no se puede deshacer.';
+  }
+
+  @override
+  String get dialogDeleteRecordTitle => '¿Eliminar registro?';
+
+  @override
+  String get dialogDeleteRecordMessage =>
+      '¿Seguro que deseas eliminar este registro?';
+
+  @override
+  String get actionDelete => 'Eliminar';
+
+  @override
+  String get actionUndo => 'Deshacer';
+
+  @override
+  String get snackbarDeleted => 'Eliminado';
+
+  @override
+  String get snackbarRecordDeleted => 'Registro eliminado';
+
+  @override
+  String get snackbarDailyLogDeleted => 'Registro diario eliminado';
+
+  @override
+  String snackbarScheduleDone(String title) {
+    return '$title marcado como completado';
+  }
+
+  @override
+  String snackbarQuickLogDone(String label) {
+    return '$label registrado';
+  }
+
+  @override
+  String get snackbarSaved => 'Guardado correctamente';
+
+  @override
+  String fieldTotalCost(String cost) {
+    return 'Costo total de veterinario: $cost';
+  }
+
+  @override
+  String get errorCostInvalid => 'Costo no válido';
+
+  @override
+  String get settingsTheme => 'Tema';
+
+  @override
+  String get themeSystem => 'Predeterminado del sistema';
+
+  @override
+  String get themeLight => 'Claro';
+
+  @override
+  String get themeDark => 'Oscuro';
+
+  @override
+  String get notificationPermissionTitle => 'Recordatorios de cuidado';
+
+  @override
+  String get notificationPermissionMessage =>
+      'PetGo necesita permiso de notificaciones para recordarte los calendarios de vacunas y cuidados a tiempo.';
+
+  @override
+  String get actionAllow => 'Permitir';
+
+  @override
+  String get actionNotNow => 'Ahora no';
+
+  @override
+  String get notificationPermissionDenied =>
+      'Permiso de notificaciones denegado. Puedes activarlo en los ajustes del dispositivo.';
 }

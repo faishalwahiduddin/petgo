@@ -70,7 +70,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get onbSlide3Title => 'Log harian';
 
   @override
-  String get onbSlide3Sub => 'Makan, jalan, dan litter';
+  String get onbSlide3Sub => 'Makan, jalan, dan kotak pasir';
 
   @override
   String get onbSlide3Badge => 'Tanpa iklan & tanpa akun';
@@ -101,7 +101,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get homeNoPets => 'Belum ada hewan. Tambahkan profil dulu.';
 
   @override
-  String get homeDueSoon => 'Jatuh tempo & segera';
+  String get homeDueSoon => 'Mendekati jatuh tempo';
 
   @override
   String get homeNoDue => 'Tidak ada jadwal mendesak.';
@@ -225,7 +225,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get dailyWalk => 'Jalan';
 
   @override
-  String get dailyLitter => 'Litter';
+  String get dailyLitter => 'Pasir';
 
   @override
   String get dailyOther => 'Lainnya';
@@ -364,4 +364,85 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get licenseBadgeText => 'Personal & Non-Profit';
+
+  @override
+  String dialogDeletePetTitle(String petName) {
+    return 'Hapus $petName?';
+  }
+
+  @override
+  String dialogDeletePetMessage(String petName, int count) {
+    return 'Hapus $petName dan $count catatan terkait? Tindakan ini tidak dapat dibatalkan.';
+  }
+
+  @override
+  String get dialogDeleteRecordTitle => 'Hapus catatan?';
+
+  @override
+  String get dialogDeleteRecordMessage => 'Yakin ingin menghapus catatan ini?';
+
+  @override
+  String get actionDelete => 'Hapus';
+
+  @override
+  String get actionUndo => 'Urungkan';
+
+  @override
+  String get snackbarDeleted => 'Dihapus';
+
+  @override
+  String get snackbarRecordDeleted => 'Catatan dihapus';
+
+  @override
+  String get snackbarDailyLogDeleted => 'Log harian dihapus';
+
+  @override
+  String snackbarScheduleDone(String title) {
+    return '$title ditandai selesai';
+  }
+
+  @override
+  String snackbarQuickLogDone(String label) {
+    return '$label dicatat';
+  }
+
+  @override
+  String get snackbarSaved => 'Berhasil disimpan';
+
+  @override
+  String fieldTotalCost(String cost) {
+    return 'Total biaya vet: $cost';
+  }
+
+  @override
+  String get errorCostInvalid => 'Nominal biaya tidak valid';
+
+  @override
+  String get settingsTheme => 'Tema';
+
+  @override
+  String get themeSystem => 'Mengikuti sistem';
+
+  @override
+  String get themeLight => 'Terang';
+
+  @override
+  String get themeDark => 'Gelap';
+
+  @override
+  String get notificationPermissionTitle => 'Pengingat Perawatan';
+
+  @override
+  String get notificationPermissionMessage =>
+      'PetGo membutuhkan izin notifikasi untuk mengingatkan jadwal vaksin dan perawatan hewan tepat waktu.';
+
+  @override
+  String get actionAllow => 'Izinkan';
+
+  @override
+  String get actionNotNow => 'Nanti saja';
+
+  @override
+  String get notificationPermissionDenied =>
+      'Izin notifikasi ditolak. Anda dapat mengaktifkannya di pengaturan perangkat.';
 }

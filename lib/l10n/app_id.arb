@@ -20,7 +20,7 @@
   "onbSlide2Sub": "Vaksin, cacing, kutu, dan grooming",
   "onbSlide2Badge": "Pengingat lokal",
   "onbSlide3Title": "Log harian",
-  "onbSlide3Sub": "Makan, jalan, dan litter",
+  "onbSlide3Sub": "Makan, jalan, dan kotak pasir",
   "onbSlide3Badge": "Tanpa iklan & tanpa akun",
   "onbSlide4Title": "Dokumen lokal",
   "onbSlide4Sub": "Kartu vaksin dan resep tersimpan rapi",
@@ -30,7 +30,7 @@
   "loadingLabel": "Memuat…",
   "homeActivePet": "Hewan aktif",
   "homeNoPets": "Belum ada hewan. Tambahkan profil dulu.",
-  "homeDueSoon": "Jatuh tempo & segera",
+  "homeDueSoon": "Mendekati jatuh tempo",
   "homeNoDue": "Tidak ada jadwal mendesak.",
   "homeAllPets": "Semua hewan",
   "actionAddPet": "Tambah hewan",
@@ -84,7 +84,7 @@
   "dailyEmpty": "Belum ada log harian.",
   "dailyFeed": "Makan",
   "dailyWalk": "Jalan",
-  "dailyLitter": "Litter",
+  "dailyLitter": "Pasir",
   "dailyOther": "Lainnya",
   "weightHistory": "Riwayat berat",
   "docsEmpty": "Belum ada dokumen.",
@@ -153,5 +153,54 @@
   "licenseBadgeText": "Personal & Non-Profit",
   "@licenseBadgeText": {
     "description": "Badge text of the usage license card"
-  }
+  },
+  "dialogDeletePetTitle": "Hapus {petName}?",
+  "@dialogDeletePetTitle": {
+    "placeholders": {
+      "petName": { "type": "String" }
+    }
+  },
+  "dialogDeletePetMessage": "Hapus {petName} dan {count} catatan terkait? Tindakan ini tidak dapat dibatalkan.",
+  "@dialogDeletePetMessage": {
+    "placeholders": {
+      "petName": { "type": "String" },
+      "count": { "type": "int" }
+    }
+  },
+  "dialogDeleteRecordTitle": "Hapus catatan?",
+  "dialogDeleteRecordMessage": "Yakin ingin menghapus catatan ini?",
+  "actionDelete": "Hapus",
+  "actionUndo": "Urungkan",
+  "snackbarDeleted": "Dihapus",
+  "snackbarRecordDeleted": "Catatan dihapus",
+  "snackbarDailyLogDeleted": "Log harian dihapus",
+  "snackbarScheduleDone": "{title} ditandai selesai",
+  "@snackbarScheduleDone": {
+    "placeholders": {
+      "title": { "type": "String" }
+    }
+  },
+  "snackbarQuickLogDone": "{label} dicatat",
+  "@snackbarQuickLogDone": {
+    "placeholders": {
+      "label": { "type": "String" }
+    }
+  },
+  "snackbarSaved": "Berhasil disimpan",
+  "fieldTotalCost": "Total biaya vet: {cost}",
+  "@fieldTotalCost": {
+    "placeholders": {
+      "cost": { "type": "String" }
+    }
+  },
+  "errorCostInvalid": "Nominal biaya tidak valid",
+  "settingsTheme": "Tema",
+  "themeSystem": "Mengikuti sistem",
+  "themeLight": "Terang",
+  "themeDark": "Gelap",
+  "notificationPermissionTitle": "Pengingat Perawatan",
+  "notificationPermissionMessage": "PetGo membutuhkan izin notifikasi untuk mengingatkan jadwal vaksin dan perawatan hewan tepat waktu.",
+  "actionAllow": "Izinkan",
+  "actionNotNow": "Nanti saja",
+  "notificationPermissionDenied": "Izin notifikasi ditolak. Anda dapat mengaktifkannya di pengaturan perangkat."
 }

@@ -361,4 +361,84 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get licenseBadgeText => '個人・非営利';
+
+  @override
+  String dialogDeletePetTitle(String petName) {
+    return '「$petName」を削除しますか？';
+  }
+
+  @override
+  String dialogDeletePetMessage(String petName, int count) {
+    return '「$petName」と関連する$count件の記録を削除しますか？この操作は元に戻せません。';
+  }
+
+  @override
+  String get dialogDeleteRecordTitle => '記録を削除しますか？';
+
+  @override
+  String get dialogDeleteRecordMessage => 'この記録を削除してもよろしいですか？';
+
+  @override
+  String get actionDelete => '削除';
+
+  @override
+  String get actionUndo => '元に戻す';
+
+  @override
+  String get snackbarDeleted => '削除しました';
+
+  @override
+  String get snackbarRecordDeleted => '記録を削除しました';
+
+  @override
+  String get snackbarDailyLogDeleted => '日課記録を削除しました';
+
+  @override
+  String snackbarScheduleDone(String title) {
+    return '「$title」を完了にしました';
+  }
+
+  @override
+  String snackbarQuickLogDone(String label) {
+    return '「$label」を記録しました';
+  }
+
+  @override
+  String get snackbarSaved => '保存しました';
+
+  @override
+  String fieldTotalCost(String cost) {
+    return '診察費合計: $cost';
+  }
+
+  @override
+  String get errorCostInvalid => '無効な金額です';
+
+  @override
+  String get settingsTheme => 'テーマ';
+
+  @override
+  String get themeSystem => '端末の設定に従う';
+
+  @override
+  String get themeLight => 'ライト';
+
+  @override
+  String get themeDark => 'ダーク';
+
+  @override
+  String get notificationPermissionTitle => 'ケアリマインダー';
+
+  @override
+  String get notificationPermissionMessage =>
+      'PetGoはワクチンやケアの予定を適時お知らせするために通知の許可が必要です。';
+
+  @override
+  String get actionAllow => '許可する';
+
+  @override
+  String get actionNotNow => '今はしない';
+
+  @override
+  String get notificationPermissionDenied => '通知の許可が拒否されました。端末の設定から有効にできます。';
 }

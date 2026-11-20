@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
 import '../../core/ui/fleet_sheet.dart';
 import '../../core/ui/app_states.dart';
+import '../../core/ui/pet_selector_chip.dart';
 import '../../core/theme/app_numeric.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
@@ -34,8 +36,20 @@ class CareScreen extends ConsumerWidget {
         .where((v) => pet != null && v.petId == pet.id)
         .toList();
 
+    final totalCost =
+        vetLogs.fold<double>(0.0, (sum, v) => sum + (v.cost ?? 0.0));
+
     return Scaffold(
-      appBar: AppBar(title: Text(l10n.navCare)),
+      appBar: AppBar(
+        title: Text(l10n.navCare),
+        actions: [
+          if (pet != null)
+            Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: PetSelectorChip(pet: pet),
+            ),
+        ],
+      ),
       body: ListView(
         // Clear the glass nav bar (extendBody).
         padding: const EdgeInsets.fromLTRB(16, 16, 16, kShellNavBarHeight + 24),
@@ -65,15 +79,20 @@ class CareScreen extends ConsumerWidget {
               dense: true,
               icon: Icons.schedule,
               title: l10n.careEmptySchedules,
+              actionLabel: pet != null ? l10n.actionAddSchedule : null,
+              onAction: pet != null ? () => _editSchedule(context, ref, pet) : null,
+              actionColor: AppColors.primary,
             )
           else
             ...schedules.map(
               (s) => Card(
                 margin: const EdgeInsets.only(bottom: 8),
                 child: ListTile(
+                  leading: Icon(_kindIcon(s.kind), color: AppColors.primary),
                   title: Text(s.title),
                   subtitle: Text(
-                    '${_kindLabel(l10n, s.kind)} · ${l10n.everyMonths(s.intervalMonths)}',
+                    '${l10n.fieldLastDone}: ${PetFormat.date(s.lastDoneAt, loc, code)} · ${l10n.everyMonths(s.intervalMonths)}',
+                    style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
                   ),
                   // Countdown + action share one horizontal row: stacking them
                   // in a Column overflowed the 72dp tile by 9px.
@@ -85,11 +104,7 @@ class CareScreen extends ConsumerWidget {
                             ? l10n.urgencyOverdue
                             : l10n.daysRemaining(s.daysRemaining),
                         style: TextStyle(
-                          color: s.urgency == ScheduleUrgency.overdue
-                              ? AppColors.danger
-                              : s.urgency == ScheduleUrgency.dueSoon
-                              ? AppColors.warning
-                              : AppColors.success,
+                          color: _urgencyColor(context, s.urgency),
                           fontWeight: FontWeight.w600,
                           fontSize: 12,
                         ).tabular,
@@ -99,19 +114,23 @@ class CareScreen extends ConsumerWidget {
                         tooltip: l10n.actionMarkDone,
                         icon: const Icon(Icons.check_circle_outline),
                         onPressed: () async {
+                          await HapticFeedback.mediumImpact();
                           await ref
                               .read(careSchedulesProvider.notifier)
                               .markDone(s.id);
                           await _resyncReminders(ref);
+                          if (!context.mounted) return;
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content:
+                                  Text(l10n.snackbarScheduleDone(s.title)),
+                            ),
+                          );
                         },
                       ),
                     ],
                   ),
                   onTap: () => _editSchedule(context, ref, pet!, existing: s),
-                  onLongPress: () async {
-                    await ref.read(careSchedulesProvider.notifier).remove(s.id);
-                    await _resyncReminders(ref);
-                  },
                 ),
               ),
             ),
@@ -119,11 +138,25 @@ class CareScreen extends ConsumerWidget {
           Row(
             children: [
               Expanded(
-                child: Text(
-                  l10n.vetLogsTitle,
-                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.w700,
-                  ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      l10n.vetLogsTitle,
+                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    if (totalCost > 0)
+                      Text(
+                        l10n.fieldTotalCost(PetFormat.rupiah(totalCost, code)),
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: context.textSecondary,
+                          fontWeight: FontWeight.w600,
+                          fontFeatures: AppNumeric.tabularFeatures,
+                        ),
+                      ),
+                  ],
                 ),
               ),
               TextButton.icon(
@@ -141,6 +174,9 @@ class CareScreen extends ConsumerWidget {
               dense: true,
               icon: Icons.local_hospital_outlined,
               title: l10n.careEmptyVet,
+              actionLabel: pet != null ? l10n.actionAddVet : null,
+              onAction: pet != null ? () => _editVet(context, ref, pet) : null,
+              actionColor: AppColors.primary,
             )
           else
             ...vetLogs.map(
@@ -158,8 +194,6 @@ class CareScreen extends ConsumerWidget {
                     style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
                   ),
                   onTap: () => _editVet(context, ref, pet!, existing: v),
-                  onLongPress: () =>
-                      ref.read(vetLogsProvider.notifier).remove(v.id),
                 ),
               ),
             ),
@@ -174,6 +208,28 @@ class CareScreen extends ConsumerWidget {
       enabled: ref.read(remindersEnabledProvider),
     );
   }
+
+  Color _urgencyColor(BuildContext context, ScheduleUrgency urgency) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    return switch (urgency) {
+      ScheduleUrgency.overdue => isDark
+          ? AppColors.urgencyOverdueDark
+          : AppColors.urgencyOverdueLight,
+      ScheduleUrgency.dueSoon => isDark
+          ? AppColors.urgencyDueSoonDark
+          : AppColors.urgencyDueSoonLight,
+      ScheduleUrgency.safe =>
+        isDark ? AppColors.urgencySafeDark : AppColors.urgencySafeLight,
+    };
+  }
+
+  IconData _kindIcon(CareKind k) => switch (k) {
+    CareKind.vaccine => Icons.vaccines_outlined,
+    CareKind.deworm => Icons.medication_outlined,
+    CareKind.flea => Icons.pest_control_outlined,
+    CareKind.grooming => Icons.content_cut_outlined,
+    CareKind.other => Icons.health_and_safety_outlined,
+  };
 
   String _kindLabel(AppLocalizations l10n, CareKind k) => switch (k) {
     CareKind.vaccine => l10n.careVaccine,
@@ -190,6 +246,8 @@ class CareScreen extends ConsumerWidget {
     CareSchedule? existing,
   }) async {
     final l10n = AppLocalizations.of(context)!;
+    final loc = ref.read(timezoneLocationProvider);
+    final code = ref.read(localeProvider).languageCode;
     final titleCtrl = TextEditingController(text: existing?.title ?? '');
     final monthsCtrl = TextEditingController(
       text: '${existing?.intervalMonths ?? 3}',
@@ -202,15 +260,11 @@ class CareScreen extends ConsumerWidget {
       useRootNavigator: true,
       isScrollControlled: true,
       builder: (ctx) => Padding(
-        padding: EdgeInsets.only(
-          left: 16,
-          right: 16,
-          top: 16,
-          bottom: 16,
-        ),
+        padding: const EdgeInsets.all(16),
         child: StatefulBuilder(
           builder: (context, setModal) => Form(
             key: formKey,
+            autovalidateMode: AutovalidateMode.onUserInteraction,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -224,7 +278,7 @@ class CareScreen extends ConsumerWidget {
                     fontSize: 18,
                   ),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 16),
                 TextFormField(
                   controller: titleCtrl,
                   decoration: InputDecoration(labelText: l10n.fieldTitle),
@@ -266,9 +320,10 @@ class CareScreen extends ConsumerWidget {
                   contentPadding: EdgeInsets.zero,
                   title: Text(l10n.fieldLastDone),
                   subtitle: Text(
-                    lastDone.toLocal().toString().split(' ').first,
+                    PetFormat.date(lastDone, loc, code),
                     style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
                   ),
+                  trailing: const Icon(Icons.calendar_today_outlined, size: 18),
                   onTap: () async {
                     final d = await showDatePicker(
                       context: ctx,
@@ -292,6 +347,53 @@ class CareScreen extends ConsumerWidget {
                   },
                   child: Text(l10n.actionSave),
                 ),
+                if (existing != null) ...[
+                  const SizedBox(height: 8),
+                  OutlinedButton.icon(
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: AppColors.danger,
+                      side: const BorderSide(color: AppColors.danger),
+                    ),
+                    icon: const Icon(Icons.delete_outline),
+                    label: Text(l10n.actionDelete),
+                    onPressed: () async {
+                      final confirm = await showDialog<bool>(
+                        context: ctx,
+                        builder: (dCtx) => AlertDialog(
+                          title: Text(l10n.dialogDeleteRecordTitle),
+                          content: Text(l10n.dialogDeleteRecordMessage),
+                          actions: [
+                            TextButton(
+                              onPressed: () => Navigator.pop(dCtx, false),
+                              child: Text(l10n.actionCancel),
+                            ),
+                            FilledButton(
+                              style: FilledButton.styleFrom(
+                                backgroundColor: AppColors.danger,
+                                foregroundColor: Colors.white,
+                              ),
+                              onPressed: () => Navigator.pop(dCtx, true),
+                              child: Text(l10n.actionDelete),
+                            ),
+                          ],
+                        ),
+                      );
+                      if (confirm != true) return;
+                      await HapticFeedback.mediumImpact();
+                      await ref
+                          .read(careSchedulesProvider.notifier)
+                          .remove(existing.id);
+                      await _resyncReminders(ref);
+                      if (!ctx.mounted) return;
+                      Navigator.pop(ctx, false);
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text(l10n.snackbarRecordDeleted)),
+                        );
+                      }
+                    },
+                  ),
+                ],
               ],
             ),
           ),
@@ -321,7 +423,12 @@ class CareScreen extends ConsumerWidget {
       ).showSnackBar(SnackBar(content: Text(l10n.errorTitleRequired)));
       return;
     }
+    await HapticFeedback.mediumImpact();
     await _resyncReminders(ref);
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text(l10n.snackbarSaved)));
   }
 
   Future<void> _editVet(
@@ -331,6 +438,8 @@ class CareScreen extends ConsumerWidget {
     VetLog? existing,
   }) async {
     final l10n = AppLocalizations.of(context)!;
+    final loc = ref.read(timezoneLocationProvider);
+    final code = ref.read(localeProvider).languageCode;
     final titleCtrl = TextEditingController(text: existing?.title ?? '');
     final clinicCtrl = TextEditingController(text: existing?.clinic ?? '');
     final medCtrl = TextEditingController(text: existing?.medication ?? '');
@@ -345,15 +454,11 @@ class CareScreen extends ConsumerWidget {
       useRootNavigator: true,
       isScrollControlled: true,
       builder: (ctx) => Padding(
-        padding: EdgeInsets.only(
-          left: 16,
-          right: 16,
-          top: 16,
-          bottom: 16,
-        ),
+        padding: const EdgeInsets.all(16),
         child: StatefulBuilder(
           builder: (context, setModal) => Form(
             key: formKey,
+            autovalidateMode: AutovalidateMode.onUserInteraction,
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -366,6 +471,7 @@ class CareScreen extends ConsumerWidget {
                       fontSize: 18,
                     ),
                   ),
+                  const SizedBox(height: 16),
                   TextFormField(
                     controller: titleCtrl,
                     decoration: InputDecoration(labelText: l10n.fieldTitle),
@@ -389,7 +495,18 @@ class CareScreen extends ConsumerWidget {
                   TextFormField(
                     controller: costCtrl,
                     keyboardType: TextInputType.number,
-                    decoration: InputDecoration(labelText: l10n.fieldCost),
+                    inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                    decoration: InputDecoration(
+                      labelText: l10n.fieldCost,
+                      prefixText: 'Rp ',
+                    ),
+                    validator: (v) {
+                      if (v == null || v.trim().isEmpty) return null;
+                      final raw = v.replaceAll(',', '.').trim();
+                      final n = double.tryParse(raw);
+                      if (n == null || n < 0) return l10n.errorCostInvalid;
+                      return null;
+                    },
                   ),
                   const SizedBox(height: 12),
                   TextFormField(
@@ -402,9 +519,10 @@ class CareScreen extends ConsumerWidget {
                     contentPadding: EdgeInsets.zero,
                     title: Text(l10n.fieldDate),
                     subtitle: Text(
-                      date.toLocal().toString().split(' ').first,
+                      PetFormat.date(date, loc, code),
                       style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
                     ),
+                    trailing: const Icon(Icons.calendar_today_outlined, size: 18),
                     onTap: () async {
                       final d = await showDatePicker(
                         context: ctx,
@@ -428,6 +546,54 @@ class CareScreen extends ConsumerWidget {
                     },
                     child: Text(l10n.actionSave),
                   ),
+                  if (existing != null) ...[
+                    const SizedBox(height: 8),
+                    OutlinedButton.icon(
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: AppColors.danger,
+                        side: const BorderSide(color: AppColors.danger),
+                      ),
+                      icon: const Icon(Icons.delete_outline),
+                      label: Text(l10n.actionDelete),
+                      onPressed: () async {
+                        final confirm = await showDialog<bool>(
+                          context: ctx,
+                          builder: (dCtx) => AlertDialog(
+                            title: Text(l10n.dialogDeleteRecordTitle),
+                            content: Text(l10n.dialogDeleteRecordMessage),
+                            actions: [
+                              TextButton(
+                                onPressed: () => Navigator.pop(dCtx, false),
+                                child: Text(l10n.actionCancel),
+                              ),
+                              FilledButton(
+                                style: FilledButton.styleFrom(
+                                  backgroundColor: AppColors.danger,
+                                  foregroundColor: Colors.white,
+                                ),
+                                onPressed: () => Navigator.pop(dCtx, true),
+                                child: Text(l10n.actionDelete),
+                              ),
+                            ],
+                          ),
+                        );
+                        if (confirm != true) return;
+                        await HapticFeedback.mediumImpact();
+                        await ref
+                            .read(vetLogsProvider.notifier)
+                            .remove(existing.id);
+                        if (!ctx.mounted) return;
+                        Navigator.pop(ctx, false);
+                        if (context.mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(l10n.snackbarRecordDeleted),
+                            ),
+                          );
+                        }
+                      },
+                    ),
+                  ],
                 ],
               ),
             ),
@@ -436,7 +602,8 @@ class CareScreen extends ConsumerWidget {
       ),
     );
     if (ok != true || !context.mounted) return;
-    final cost = double.tryParse(costCtrl.text.trim());
+    final costText = costCtrl.text.replaceAll(',', '.').trim();
+    final cost = costText.isEmpty ? null : double.tryParse(costText);
     final err = await ref
         .read(vetLogsProvider.notifier)
         .upsert(
@@ -458,6 +625,12 @@ class CareScreen extends ConsumerWidget {
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(SnackBar(content: Text(l10n.errorTitleRequired)));
+      return;
     }
+    await HapticFeedback.mediumImpact();
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text(l10n.snackbarSaved)));
   }
 }

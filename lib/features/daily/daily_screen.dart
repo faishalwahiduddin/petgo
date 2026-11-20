@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
 import '../../core/ui/app_states.dart';
+import '../../core/ui/pet_selector_chip.dart';
 import '../../core/theme/app_numeric.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
@@ -30,7 +32,16 @@ class DailyScreen extends ConsumerWidget {
         .toList();
 
     return Scaffold(
-      appBar: AppBar(title: Text(l10n.navDaily)),
+      appBar: AppBar(
+        title: Text(l10n.navDaily),
+        actions: [
+          if (pet != null)
+            Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: PetSelectorChip(pet: pet),
+            ),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
         children: [
@@ -52,20 +63,40 @@ class DailyScreen extends ConsumerWidget {
                 DailyCareKind.litter,
               ])
                 ActionChip(
-                  avatar: Icon(_icon(kind), size: 18),
-                  label: Text(_dailyLabel(l10n, kind)),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 14,
+                    vertical: 10,
+                  ),
+                  avatar: Icon(_icon(kind), size: 20),
+                  label: Text(
+                    _dailyLabel(l10n, kind),
+                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  ),
                   onPressed: pet == null
                       ? null
-                      : () => ref.read(dailyLogsProvider.notifier).add(
-                            DailyCareLog(
-                              id: DateTime.now()
-                                  .microsecondsSinceEpoch
-                                  .toString(),
-                              petId: pet.id,
-                              date: DateTime.now().toUtc(),
-                              kind: kind,
+                      : () async {
+                          await HapticFeedback.mediumImpact();
+                          await ref.read(dailyLogsProvider.notifier).add(
+                                DailyCareLog(
+                                  id: DateTime.now()
+                                      .microsecondsSinceEpoch
+                                      .toString(),
+                                  petId: pet.id,
+                                  date: DateTime.now().toUtc(),
+                                  kind: kind,
+                                ),
+                              );
+                          if (!context.mounted) return;
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                l10n.snackbarQuickLogDone(
+                                  _dailyLabel(l10n, kind),
+                                ),
+                              ),
                             ),
-                          ),
+                          );
+                        },
                 ),
             ],
           ),
@@ -97,8 +128,59 @@ class DailyScreen extends ConsumerWidget {
                         PetFormat.dateTime(e.date, loc, code),
                         style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
                       ),
-                      onLongPress: () =>
-                          ref.read(dailyLogsProvider.notifier).remove(e.id),
+                      trailing: SizedBox(
+                        width: 40,
+                        height: 40,
+                        child: IconButton(
+                          icon: const Icon(Icons.delete_outline, size: 20),
+                          tooltip: l10n.actionDelete,
+                          onPressed: () async {
+                            final confirm = await showDialog<bool>(
+                              context: context,
+                              builder: (dCtx) => AlertDialog(
+                                title: Text(l10n.dialogDeleteRecordTitle),
+                                content: Text(l10n.dialogDeleteRecordMessage),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () =>
+                                        Navigator.pop(dCtx, false),
+                                    child: Text(l10n.actionCancel),
+                                  ),
+                                  FilledButton(
+                                    style: FilledButton.styleFrom(
+                                      backgroundColor: AppColors.danger,
+                                      foregroundColor: Colors.white,
+                                    ),
+                                    onPressed: () =>
+                                        Navigator.pop(dCtx, true),
+                                    child: Text(l10n.actionDelete),
+                                  ),
+                                ],
+                              ),
+                            );
+                            if (confirm != true) return;
+                            final deleted = e;
+                            await HapticFeedback.mediumImpact();
+                            await ref
+                                .read(dailyLogsProvider.notifier)
+                                .remove(e.id);
+                            if (!context.mounted) return;
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(l10n.snackbarDailyLogDeleted),
+                                action: SnackBarAction(
+                                  label: l10n.actionUndo,
+                                  onPressed: () async {
+                                    await ref
+                                        .read(dailyLogsProvider.notifier)
+                                        .add(deleted);
+                                  },
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -122,10 +204,49 @@ class DailyScreen extends ConsumerWidget {
                       PetFormat.dateTime(w.date, loc, code),
                       style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
                     ),
-                    trailing: IconButton(
-                      icon: const Icon(Icons.delete_outline),
-                      onPressed: () =>
-                          ref.read(weightLogsProvider.notifier).remove(w.id),
+                    trailing: SizedBox(
+                      width: 40,
+                      height: 40,
+                      child: IconButton(
+                        icon: const Icon(Icons.delete_outline, size: 20),
+                        tooltip: l10n.actionDelete,
+                        onPressed: () async {
+                          final confirm = await showDialog<bool>(
+                            context: context,
+                            builder: (dCtx) => AlertDialog(
+                              title: Text(l10n.dialogDeleteRecordTitle),
+                              content: Text(l10n.dialogDeleteRecordMessage),
+                              actions: [
+                                TextButton(
+                                  onPressed: () =>
+                                      Navigator.pop(dCtx, false),
+                                  child: Text(l10n.actionCancel),
+                                ),
+                                FilledButton(
+                                  style: FilledButton.styleFrom(
+                                    backgroundColor: AppColors.danger,
+                                    foregroundColor: Colors.white,
+                                  ),
+                                  onPressed: () =>
+                                      Navigator.pop(dCtx, true),
+                                  child: Text(l10n.actionDelete),
+                                ),
+                              ],
+                            ),
+                          );
+                          if (confirm != true) return;
+                          await HapticFeedback.mediumImpact();
+                          await ref
+                              .read(weightLogsProvider.notifier)
+                              .remove(w.id);
+                          if (!context.mounted) return;
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(l10n.snackbarRecordDeleted),
+                            ),
+                          );
+                        },
+                      ),
                     ),
                   ),
                 ),
@@ -158,47 +279,69 @@ class DailyScreen extends ConsumerWidget {
     final ctrl = TextEditingController(
       text: pet.weightKg?.toStringAsFixed(1) ?? '',
     );
-    final ok = await showDialog<bool>(
+    String? inlineError;
+
+    final savedWeight = await showDialog<double>(
       context: context,
-      builder: (ctx) => AlertDialog(
-        title: Text(l10n.actionAddWeight),
-        content: TextField(
-          controller: ctrl,
-          keyboardType: const TextInputType.numberWithOptions(decimal: true),
-          decoration: InputDecoration(labelText: l10n.fieldWeightKg),
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setDialogState) => AlertDialog(
+          title: Text(l10n.actionAddWeight),
+          content: TextField(
+            controller: ctrl,
+            autofocus: true,
+            keyboardType: const TextInputType.numberWithOptions(decimal: true),
+            decoration: InputDecoration(
+              labelText: l10n.fieldWeightKg,
+              errorText: inlineError,
+            ),
+            onChanged: (_) {
+              if (inlineError != null) {
+                setDialogState(() => inlineError = null);
+              }
+            },
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: Text(l10n.actionCancel),
+            ),
+            FilledButton(
+              onPressed: () {
+                final raw = ctrl.text.replaceAll(',', '.').trim();
+                final w = double.tryParse(raw);
+                if (w == null || w <= 0 || w > 500) {
+                  setDialogState(() {
+                    inlineError = l10n.errorWeightInvalid;
+                  });
+                  return;
+                }
+                Navigator.pop(ctx, w);
+              },
+              child: Text(l10n.actionSave),
+            ),
+          ],
         ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, false),
-            child: Text(l10n.actionCancel),
-          ),
-          FilledButton(
-            onPressed: () => Navigator.pop(ctx, true),
-            child: Text(l10n.actionSave),
-          ),
-        ],
       ),
     );
-    if (ok != true || !context.mounted) return;
-    final w = double.tryParse(ctrl.text.trim());
-    if (w == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.errorWeightInvalid)),
-      );
-      return;
-    }
+    if (savedWeight == null || !context.mounted) return;
     final err = await ref.read(weightLogsProvider.notifier).add(
           WeightLog(
             id: DateTime.now().microsecondsSinceEpoch.toString(),
             petId: pet.id,
             date: DateTime.now().toUtc(),
-            weightKg: w,
+            weightKg: savedWeight,
           ),
         );
     if (!context.mounted) return;
     if (err != null) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(l10n.errorWeightInvalid)),
+      );
+    } else {
+      await HapticFeedback.mediumImpact();
+      if (!context.mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(l10n.snackbarSaved)),
       );
     }
   }

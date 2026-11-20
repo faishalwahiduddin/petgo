@@ -365,4 +365,85 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get licenseBadgeText => 'Pribadi & Non-Profit';
+
+  @override
+  String dialogDeletePetTitle(String petName) {
+    return 'Busek $petName?';
+  }
+
+  @override
+  String dialogDeletePetMessage(String petName, int count) {
+    return 'Busek $petName lan $count cathetan kagandheng? Tumindak iki ora bisa dibatalake.';
+  }
+
+  @override
+  String get dialogDeleteRecordTitle => 'Busek cathetan?';
+
+  @override
+  String get dialogDeleteRecordMessage => 'Yakin arep mbusek cathetan iki?';
+
+  @override
+  String get actionDelete => 'Busek';
+
+  @override
+  String get actionUndo => 'Batalake';
+
+  @override
+  String get snackbarDeleted => 'Dibusek';
+
+  @override
+  String get snackbarRecordDeleted => 'Cathetan dibusek';
+
+  @override
+  String get snackbarDailyLogDeleted => 'Log saben dina dibusek';
+
+  @override
+  String snackbarScheduleDone(String title) {
+    return '$title wis ditandhani rampung';
+  }
+
+  @override
+  String snackbarQuickLogDone(String label) {
+    return '$label dicathet';
+  }
+
+  @override
+  String get snackbarSaved => 'Kasil disimpen';
+
+  @override
+  String fieldTotalCost(String cost) {
+    return 'Gunggung biaya dokter: $cost';
+  }
+
+  @override
+  String get errorCostInvalid => 'Biaya ora bener';
+
+  @override
+  String get settingsTheme => 'Tema';
+
+  @override
+  String get themeSystem => 'Melu sistem';
+
+  @override
+  String get themeLight => 'Padhang';
+
+  @override
+  String get themeDark => 'Peteng';
+
+  @override
+  String get notificationPermissionTitle => 'Pangeling Pangrumatan';
+
+  @override
+  String get notificationPermissionMessage =>
+      'PetGo mbutuhake izin notifikasi kanggo ngelingake jadwal vaksin lan pangrumatan pas wektune.';
+
+  @override
+  String get actionAllow => 'Izinke';
+
+  @override
+  String get actionNotNow => 'Mengko wae';
+
+  @override
+  String get notificationPermissionDenied =>
+      'Izin notifikasi ditolak. Mangga diizini ing setelan piranti.';
 }

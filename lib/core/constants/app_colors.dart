@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const Color primary = Color(0xFF5B7F5A);
+  static const Color primary = Color(0xFF466A45);
   static const Color primaryLight = Color(0xFF7A9E78);
-  static const Color primaryDark = Color(0xFF3E5A3D);
+  static const Color primaryDark = Color(0xFF324D31);
 
   static const Color secondary = Color(0xFF2A332B);
   static const Color accent = Color(0xFFD4A373);
@@ -18,7 +18,14 @@ class AppColors {
   static const Color border = Color(0xFF334038);
   static const Color textDarkPrimary = Color(0xFFF5F7F5);
   static const Color textDarkSecondary = Color(0xFFA8B5AA);
-  static const Color textDarkMuted = Color(0xFF6F7C72);
+  static const Color textDarkMuted = Color(0xFF8A998E);
+
+  static const Color urgencyOverdueDark = Color(0xFFF87171);
+  static const Color urgencyOverdueLight = Color(0xFFDC2626);
+  static const Color urgencyDueSoonDark = Color(0xFFFBBF24);
+  static const Color urgencyDueSoonLight = Color(0xFFB45309);
+  static const Color urgencySafeDark = Color(0xFF34D399);
+  static const Color urgencySafeLight = Color(0xFF15803D);
 
   static const Color bgLight = Color(0xFFF7F4EF);
   static const Color bgLightSurface = Color(0xFFFFFFFF);
@@ -26,7 +33,7 @@ class AppColors {
   static const Color borderLight = Color(0xFFE2DBD0);
   static const Color textLightPrimary = Color(0xFF1F2A22);
   static const Color textLightSecondary = Color(0xFF5C6B5E);
-  static const Color textLightMuted = Color(0xFF8A968C);
+  static const Color textLightMuted = Color(0xFF5A695C);
 
   static const Color ink = textLightPrimary;
   static const Color inkSoft = textLightSecondary;

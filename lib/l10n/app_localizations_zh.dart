@@ -360,4 +360,83 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get licenseBadgeText => '个人与非营利';
+
+  @override
+  String dialogDeletePetTitle(String petName) {
+    return '删除 $petName？';
+  }
+
+  @override
+  String dialogDeletePetMessage(String petName, int count) {
+    return '删除 $petName 及其关联的 $count 条记录？此操作无法撤销。';
+  }
+
+  @override
+  String get dialogDeleteRecordTitle => '删除记录？';
+
+  @override
+  String get dialogDeleteRecordMessage => '确定要删除此记录吗？';
+
+  @override
+  String get actionDelete => '删除';
+
+  @override
+  String get actionUndo => '撤销';
+
+  @override
+  String get snackbarDeleted => '已删除';
+
+  @override
+  String get snackbarRecordDeleted => '记录已删除';
+
+  @override
+  String get snackbarDailyLogDeleted => '日常记录已删除';
+
+  @override
+  String snackbarScheduleDone(String title) {
+    return '$title 已标记完成';
+  }
+
+  @override
+  String snackbarQuickLogDone(String label) {
+    return '已记录 $label';
+  }
+
+  @override
+  String get snackbarSaved => '保存成功';
+
+  @override
+  String fieldTotalCost(String cost) {
+    return '诊疗总费用: $cost';
+  }
+
+  @override
+  String get errorCostInvalid => '费用金额无效';
+
+  @override
+  String get settingsTheme => '主题';
+
+  @override
+  String get themeSystem => '跟随系统';
+
+  @override
+  String get themeLight => '浅色';
+
+  @override
+  String get themeDark => '深色';
+
+  @override
+  String get notificationPermissionTitle => '护理提醒';
+
+  @override
+  String get notificationPermissionMessage => 'PetGo 需要通知权限以便准时提醒疫苗和护理日程。';
+
+  @override
+  String get actionAllow => '允许';
+
+  @override
+  String get actionNotNow => '暂不';
+
+  @override
+  String get notificationPermissionDenied => '通知权限已被拒绝。您可以在设备设置中开启。';
 }

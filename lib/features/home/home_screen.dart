@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
@@ -226,6 +227,7 @@ class HomeScreen extends ConsumerWidget {
             builder: (context, setModal) {
               return Form(
                 key: formKey,
+                autovalidateMode: AutovalidateMode.onUserInteraction,
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
@@ -240,7 +242,7 @@ class HomeScreen extends ConsumerWidget {
                           fontSize: 18,
                         ),
                       ),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 16),
                       Center(
                         child: GestureDetector(
                           onTap: kIsWeb
@@ -323,7 +325,8 @@ class HomeScreen extends ConsumerWidget {
                         ),
                         validator: (v) {
                           if (v == null || v.trim().isEmpty) return null;
-                          final w = double.tryParse(v.trim());
+                          final raw = v.replaceAll(',', '.').trim();
+                          final w = double.tryParse(raw);
                           if (w == null || w <= 0 || w > 500) {
                             return l10n.errorWeightInvalid;
                           }
@@ -378,7 +381,8 @@ class HomeScreen extends ConsumerWidget {
       },
     );
     if (ok != true || !context.mounted) return;
-    final weight = double.tryParse(weightCtrl.text.trim());
+    final weightRaw = weightCtrl.text.replaceAll(',', '.').trim();
+    final weight = weightRaw.isEmpty ? null : double.tryParse(weightRaw);
     final err = await ref
         .read(petsProvider.notifier)
         .upsert(
@@ -400,7 +404,13 @@ class HomeScreen extends ConsumerWidget {
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(SnackBar(content: Text(_mapErr(l10n, err))));
+      return;
     }
+    await HapticFeedback.mediumImpact();
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text(l10n.snackbarSaved)));
   }
 
   String _mapErr(AppLocalizations l10n, String code) => switch (code) {

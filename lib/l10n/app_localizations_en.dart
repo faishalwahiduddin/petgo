@@ -364,4 +364,86 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get licenseBadgeText => 'Personal & Non-Profit';
+
+  @override
+  String dialogDeletePetTitle(String petName) {
+    return 'Delete $petName?';
+  }
+
+  @override
+  String dialogDeletePetMessage(String petName, int count) {
+    return 'Delete $petName and $count associated records? This cannot be undone.';
+  }
+
+  @override
+  String get dialogDeleteRecordTitle => 'Delete record?';
+
+  @override
+  String get dialogDeleteRecordMessage =>
+      'Are you sure you want to delete this record?';
+
+  @override
+  String get actionDelete => 'Delete';
+
+  @override
+  String get actionUndo => 'Undo';
+
+  @override
+  String get snackbarDeleted => 'Deleted';
+
+  @override
+  String get snackbarRecordDeleted => 'Record deleted';
+
+  @override
+  String get snackbarDailyLogDeleted => 'Daily log deleted';
+
+  @override
+  String snackbarScheduleDone(String title) {
+    return '$title marked done';
+  }
+
+  @override
+  String snackbarQuickLogDone(String label) {
+    return '$label logged';
+  }
+
+  @override
+  String get snackbarSaved => 'Saved successfully';
+
+  @override
+  String fieldTotalCost(String cost) {
+    return 'Total vet cost: $cost';
+  }
+
+  @override
+  String get errorCostInvalid => 'Invalid cost amount';
+
+  @override
+  String get settingsTheme => 'Theme';
+
+  @override
+  String get themeSystem => 'System default';
+
+  @override
+  String get themeLight => 'Light';
+
+  @override
+  String get themeDark => 'Dark';
+
+  @override
+  String get notificationPermissionTitle => 'Care Reminders';
+
+  @override
+  String get notificationPermissionMessage =>
+      'PetGo needs notification permission to remind you about vaccine and care schedules on time.';
+
+  @override
+  String get actionAllow => 'Allow';
+
+  @override
+  String get actionNotNow => 'Not now';
+
+  @override
+  String get notificationPermissionDenied =>
+      'Notification permission denied. You can enable it in device settings.';
 }

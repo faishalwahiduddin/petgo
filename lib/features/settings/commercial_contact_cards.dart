@@ -119,10 +119,6 @@ class _InfoCard extends StatelessWidget {
     final accentInk = context.isDark
         ? AppColors.primaryLight
         : AppColors.primaryDark;
-    // Badge sits on a tinted fill; primaryLight is < 4.5:1 there in dark.
-    final badgeInk = context.isDark
-        ? AppColors.textDarkSecondary
-        : AppColors.primaryDark;
     final radius = BorderRadius.circular(16);
     return Semantics(
       button: onTap != null,
@@ -173,24 +169,12 @@ class _InfoCard extends StatelessWidget {
                     ),
                     if (badge != null) ...[
                       const SizedBox(width: 8),
-                      Flexible(
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 8,
-                            vertical: 3,
-                          ),
-                          decoration: BoxDecoration(
-                            color: accent.withValues(alpha: 0.12),
-                            borderRadius: BorderRadius.circular(999),
-                          ),
-                          child: Text(
-                            badge!,
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w700,
-                              color: badgeInk,
-                            ),
-                          ),
+                      Text(
+                        badge!,
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                          color: context.textSecondary,
                         ),
                       ),
                     ],

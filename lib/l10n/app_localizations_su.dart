@@ -364,4 +364,85 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get licenseBadgeText => 'Pribadi & Non-Profit';
+
+  @override
+  String dialogDeletePetTitle(String petName) {
+    return 'Hapus $petName?';
+  }
+
+  @override
+  String dialogDeletePetMessage(String petName, int count) {
+    return 'Hapus $petName sareng $count catetan patali? Peta ieu teu tiasa dibolaykeun.';
+  }
+
+  @override
+  String get dialogDeleteRecordTitle => 'Hapus catetan?';
+
+  @override
+  String get dialogDeleteRecordMessage => 'Yakin hoyong ngahapus catetan ieu?';
+
+  @override
+  String get actionDelete => 'Hapus';
+
+  @override
+  String get actionUndo => 'Bolaykeun';
+
+  @override
+  String get snackbarDeleted => 'Dihapus';
+
+  @override
+  String get snackbarRecordDeleted => 'Catetan dihapus';
+
+  @override
+  String get snackbarDailyLogDeleted => 'Log sapopoe dihapus';
+
+  @override
+  String snackbarScheduleDone(String title) {
+    return '$title parantos rengse';
+  }
+
+  @override
+  String snackbarQuickLogDone(String label) {
+    return '$label kacatet';
+  }
+
+  @override
+  String get snackbarSaved => 'Kacatet kalayan sae';
+
+  @override
+  String fieldTotalCost(String cost) {
+    return 'Total biaya vet: $cost';
+  }
+
+  @override
+  String get errorCostInvalid => 'Biaya teu luyu';
+
+  @override
+  String get settingsTheme => 'Téma';
+
+  @override
+  String get themeSystem => 'Nurutkeun sistem';
+
+  @override
+  String get themeLight => 'Caang';
+
+  @override
+  String get themeDark => 'Poek';
+
+  @override
+  String get notificationPermissionTitle => 'Panginget Parawatan';
+
+  @override
+  String get notificationPermissionMessage =>
+      'PetGo peryogi widi notifikasi kanggo ngingetan jadwal vaksin sareng parawatan pas dina waktosna.';
+
+  @override
+  String get actionAllow => 'Widian';
+
+  @override
+  String get actionNotNow => 'Engke wae';
+
+  @override
+  String get notificationPermissionDenied =>
+      'Widi notifikasi ditolak. Mangga diwidian di setelan alat.';
 }

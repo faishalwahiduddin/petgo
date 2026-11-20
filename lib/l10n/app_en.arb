@@ -153,5 +153,54 @@
   "licenseBadgeText": "Personal & Non-Profit",
   "@licenseBadgeText": {
     "description": "Badge text of the usage license card"
-  }
+  },
+  "dialogDeletePetTitle": "Delete {petName}?",
+  "@dialogDeletePetTitle": {
+    "placeholders": {
+      "petName": { "type": "String" }
+    }
+  },
+  "dialogDeletePetMessage": "Delete {petName} and {count} associated records? This cannot be undone.",
+  "@dialogDeletePetMessage": {
+    "placeholders": {
+      "petName": { "type": "String" },
+      "count": { "type": "int" }
+    }
+  },
+  "dialogDeleteRecordTitle": "Delete record?",
+  "dialogDeleteRecordMessage": "Are you sure you want to delete this record?",
+  "actionDelete": "Delete",
+  "actionUndo": "Undo",
+  "snackbarDeleted": "Deleted",
+  "snackbarRecordDeleted": "Record deleted",
+  "snackbarDailyLogDeleted": "Daily log deleted",
+  "snackbarScheduleDone": "{title} marked done",
+  "@snackbarScheduleDone": {
+    "placeholders": {
+      "title": { "type": "String" }
+    }
+  },
+  "snackbarQuickLogDone": "{label} logged",
+  "@snackbarQuickLogDone": {
+    "placeholders": {
+      "label": { "type": "String" }
+    }
+  },
+  "snackbarSaved": "Saved successfully",
+  "fieldTotalCost": "Total vet cost: {cost}",
+  "@fieldTotalCost": {
+    "placeholders": {
+      "cost": { "type": "String" }
+    }
+  },
+  "errorCostInvalid": "Invalid cost amount",
+  "settingsTheme": "Theme",
+  "themeSystem": "System default",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "notificationPermissionTitle": "Care Reminders",
+  "notificationPermissionMessage": "PetGo needs notification permission to remind you about vaccine and care schedules on time.",
+  "actionAllow": "Allow",
+  "actionNotNow": "Not now",
+  "notificationPermissionDenied": "Notification permission denied. You can enable it in device settings."
 }
