@@ -8,6 +8,7 @@ import 'package:intl/intl.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
+import '../../core/theme/app_numeric.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
 import '../../core/utils/app_timezone.dart';
@@ -93,6 +94,7 @@ class HomeScreen extends ConsumerWidget {
                     if (active.dateOfBirth != null)
                       _formatDob(context, active.dateOfBirth!),
                   ].join(' · '),
+                  style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
                 ),
                 trailing: IconButton(
                   icon: const Icon(Icons.edit_outlined),
@@ -130,6 +132,7 @@ class HomeScreen extends ConsumerWidget {
                     s.daysRemaining <= 0
                         ? l10n.urgencyOverdue
                         : l10n.daysRemaining(s.daysRemaining),
+                    style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
                   ),
                 ),
               ),
@@ -322,6 +325,7 @@ class HomeScreen extends ConsumerWidget {
                           dob == null
                               ? l10n.fieldOptional
                               : _formatDob(context, dob!),
+                          style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
                         ),
                         trailing: const Icon(Icons.cake_outlined),
                         onTap: () async {

@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
+import '../../core/theme/app_numeric.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
 import '../../core/providers/locale_provider.dart';
@@ -70,6 +71,7 @@ class DocsScreen extends ConsumerWidget {
                           '${l10n.fieldExpires}: ${PetFormat.date(d.expiresAt!, loc, code)}',
                         if (d.filePath != null) l10n.docHasFile,
                       ].join(' · '),
+                      style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
                     ),
                     onTap: () => _editDoc(context, ref, pet!, existing: d),
                     onLongPress: () =>
@@ -154,6 +156,7 @@ class DocsScreen extends ConsumerWidget {
                     expires == null
                         ? l10n.fieldOptional
                         : expires!.toLocal().toString().split(' ').first,
+                    style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
                   ),
                   onTap: () async {
                     final d = await showDatePicker(

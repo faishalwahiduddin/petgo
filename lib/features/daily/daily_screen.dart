@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
+import '../../core/theme/app_numeric.dart';
 import '../../core/models/pet.dart';
 import '../../core/providers/app_providers.dart';
 import '../../core/providers/locale_provider.dart';
@@ -92,7 +93,10 @@ class DailyScreen extends ConsumerWidget {
                     child: ListTile(
                       leading: Icon(_icon(e.kind), color: AppColors.primary),
                       title: Text(_dailyLabel(l10n, e.kind)),
-                      subtitle: Text(PetFormat.dateTime(e.date, loc, code)),
+                      subtitle: Text(
+                        PetFormat.dateTime(e.date, loc, code),
+                        style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
+                      ),
                       onLongPress: () =>
                           ref.read(dailyLogsProvider.notifier).remove(e.id),
                     ),
@@ -110,9 +114,13 @@ class DailyScreen extends ConsumerWidget {
             const SizedBox(height: 8),
             ...weights.map(
                   (w) => ListTile(
-                    title: Text('${w.weightKg.toStringAsFixed(1)} kg'),
+                    title: Text(
+                      '${w.weightKg.toStringAsFixed(1)} kg',
+                      style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
+                    ),
                     subtitle: Text(
                       PetFormat.dateTime(w.date, loc, code),
+                      style: const TextStyle(fontFeatures: AppNumeric.tabularFeatures),
                     ),
                     trailing: IconButton(
                       icon: const Icon(Icons.delete_outline),
