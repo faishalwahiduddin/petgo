@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
+import '../../core/ui/app_icon.dart';
 import '../../core/ui/glass_bar.dart';
 
 /// Height of the Material 3 [NavigationBar] drawn over tab pages (extendBody):
@@ -43,28 +44,28 @@ class NavigationShell extends StatelessWidget {
           onDestinationSelected: _onTap,
           destinations: [
             NavigationDestination(
-              icon: const Icon(Icons.pets_outlined),
-              selectedIcon: const Icon(Icons.pets),
+              icon: const AppIcon('nav_pets', size: 22),
+              selectedIcon: const AppIcon('nav_pets_active', size: 22, color: AppColors.primary),
               label: l10n.navPets,
             ),
             NavigationDestination(
-              icon: const Icon(Icons.medical_services_outlined),
-              selectedIcon: const Icon(Icons.medical_services),
+              icon: const AppIcon('nav_care', size: 22),
+              selectedIcon: const AppIcon('nav_care_active', size: 22, color: AppColors.primary),
               label: l10n.navCare,
             ),
             NavigationDestination(
-              icon: const Icon(Icons.today_outlined),
-              selectedIcon: const Icon(Icons.today),
+              icon: const AppIcon('nav_daily', size: 22),
+              selectedIcon: const AppIcon('nav_daily_active', size: 22, color: AppColors.primary),
               label: l10n.navDaily,
             ),
             NavigationDestination(
-              icon: const Icon(Icons.folder_outlined),
-              selectedIcon: const Icon(Icons.folder),
+              icon: const AppIcon('nav_docs', size: 22),
+              selectedIcon: const AppIcon('nav_docs_active', size: 22, color: AppColors.primary),
               label: l10n.navDocs,
             ),
             NavigationDestination(
-              icon: const Icon(Icons.settings_outlined),
-              selectedIcon: const Icon(Icons.settings),
+              icon: const AppIcon('nav_settings', size: 22),
+              selectedIcon: const AppIcon('nav_settings_active', size: 22, color: AppColors.primary),
               label: l10n.navSettings,
             ),
           ],

@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
+import '../../core/ui/app_icon.dart';
 import '../../core/ui/app_states.dart';
 import '../../core/ui/pet_selector_chip.dart';
 import '../../core/theme/app_numeric.dart';
@@ -67,7 +68,7 @@ class DailyScreen extends ConsumerWidget {
                     horizontal: 14,
                     vertical: 10,
                   ),
-                  avatar: Icon(_icon(kind), size: 20),
+                  avatar: _icon(kind, size: 20),
                   label: Text(
                     _dailyLabel(l10n, kind),
                     style: const TextStyle(fontWeight: FontWeight.w600),
@@ -103,7 +104,7 @@ class DailyScreen extends ConsumerWidget {
           const SizedBox(height: 12),
           OutlinedButton.icon(
             onPressed: pet == null ? null : () => _addWeight(context, ref, pet),
-            icon: const Icon(Icons.monitor_weight_outlined),
+            icon: const AppIcon('pet_scale', size: 18),
             label: Text(l10n.actionAddWeight),
           ),
           const SizedBox(height: 20),
@@ -122,7 +123,7 @@ class DailyScreen extends ConsumerWidget {
                   (e) => Card(
                     margin: const EdgeInsets.only(bottom: 8),
                     child: ListTile(
-                      leading: Icon(_icon(e.kind), color: AppColors.primary),
+                      leading: _icon(e.kind, color: AppColors.primary, size: 24),
                       title: Text(_dailyLabel(l10n, e.kind)),
                       subtitle: Text(
                         PetFormat.dateTime(e.date, loc, code),
@@ -256,11 +257,11 @@ class DailyScreen extends ConsumerWidget {
     );
   }
 
-  IconData _icon(DailyCareKind k) => switch (k) {
-        DailyCareKind.feed => Icons.restaurant,
-        DailyCareKind.walk => Icons.directions_walk,
-        DailyCareKind.litter => Icons.delete_outline,
-        DailyCareKind.other => Icons.pets,
+  Widget _icon(DailyCareKind k, {Color? color, double size = 20}) => switch (k) {
+        DailyCareKind.feed => AppIcon('meal_bowl', size: size, color: color),
+        DailyCareKind.walk => AppIcon('dog_leash', size: size, color: color),
+        DailyCareKind.litter => AppIcon('litter_box', size: size, color: color),
+        DailyCareKind.other => AppIcon('pet_paw', size: size, color: color),
       };
 
   String _dailyLabel(AppLocalizations l10n, DailyCareKind k) => switch (k) {

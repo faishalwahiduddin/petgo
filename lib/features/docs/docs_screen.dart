@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
+import '../../core/ui/app_icon.dart';
 import '../../core/ui/fleet_sheet.dart';
 import '../../core/ui/app_states.dart';
 import '../../core/ui/pet_selector_chip.dart';
@@ -78,8 +79,8 @@ class DocsScreen extends ConsumerWidget {
                     d.title.trim().toLowerCase() == kindLabel.toLowerCase();
                 return Card(
                   child: ListTile(
-                    leading: const Icon(Icons.description_outlined,
-                        color: AppColors.primary),
+                    leading: const AppIcon('nav_docs',
+                        color: AppColors.primary, size: 24),
                     title: Text(d.title),
                     subtitle: Text(
                       [

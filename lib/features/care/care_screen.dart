@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
+import '../../core/ui/app_icon.dart';
 import '../../core/ui/fleet_sheet.dart';
 import '../../core/ui/app_states.dart';
 import '../../core/ui/pet_selector_chip.dart';
@@ -88,7 +89,7 @@ class CareScreen extends ConsumerWidget {
               (s) => Card(
                 margin: const EdgeInsets.only(bottom: 8),
                 child: ListTile(
-                  leading: Icon(_kindIcon(s.kind), color: AppColors.primary),
+                  leading: _kindIcon(s.kind, color: AppColors.primary, size: 24),
                   title: Text(s.title),
                   subtitle: Text(
                     '${l10n.fieldLastDone}: ${PetFormat.date(s.lastDoneAt, loc, code)} · ${l10n.everyMonths(s.intervalMonths)}',
@@ -163,7 +164,7 @@ class CareScreen extends ConsumerWidget {
                 onPressed: pet == null
                     ? null
                     : () => _editVet(context, ref, pet),
-                icon: const Icon(Icons.local_hospital_outlined, size: 18),
+                icon: const AppIcon('vet_clinic', size: 18),
                 label: Text(l10n.actionAddVet),
               ),
             ],
@@ -183,6 +184,7 @@ class CareScreen extends ConsumerWidget {
               (v) => Card(
                 margin: const EdgeInsets.only(bottom: 8),
                 child: ListTile(
+                  leading: const AppIcon('vet_clinic', color: AppColors.primary, size: 24),
                   title: Text(v.title),
                   subtitle: Text(
                     [
@@ -223,12 +225,12 @@ class CareScreen extends ConsumerWidget {
     };
   }
 
-  IconData _kindIcon(CareKind k) => switch (k) {
-    CareKind.vaccine => Icons.vaccines_outlined,
-    CareKind.deworm => Icons.medication_outlined,
-    CareKind.flea => Icons.pest_control_outlined,
-    CareKind.grooming => Icons.content_cut_outlined,
-    CareKind.other => Icons.health_and_safety_outlined,
+  Widget _kindIcon(CareKind k, {Color? color, double size = 24}) => switch (k) {
+    CareKind.vaccine => AppIcon('pet_vaccine', size: size, color: color),
+    CareKind.deworm => AppIcon('pet_meds', size: size, color: color),
+    CareKind.flea => AppIcon('pet_meds', size: size, color: color),
+    CareKind.grooming => AppIcon('pet_paw', size: size, color: color),
+    CareKind.other => AppIcon('pet_paw', size: size, color: color),
   };
 
   String _kindLabel(AppLocalizations l10n, CareKind k) => switch (k) {

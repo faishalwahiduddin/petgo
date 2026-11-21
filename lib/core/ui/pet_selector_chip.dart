@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:petgo/core/constants/app_colors.dart';
 import 'package:petgo/core/models/pet.dart';
 import 'package:petgo/core/providers/app_providers.dart';
+import 'package:petgo/core/ui/app_icon.dart';
 import 'package:petgo/core/ui/fleet_sheet.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
@@ -150,7 +151,7 @@ class _MiniAvatar extends StatelessWidget {
     return CircleAvatar(
       radius: radius,
       backgroundColor: AppColors.primary.withValues(alpha: 0.15),
-      child: Icon(Icons.pets, color: AppColors.primary, size: radius * 1.1),
+      child: AppIcon('pet_paw', color: AppColors.primary, size: radius * 1.1),
     );
   }
 }

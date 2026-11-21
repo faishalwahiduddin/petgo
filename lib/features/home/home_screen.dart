@@ -9,6 +9,7 @@ import 'package:intl/intl.dart';
 import 'package:petgo/l10n/app_localizations.dart';
 
 import '../../core/constants/app_colors.dart';
+import '../../core/ui/app_icon.dart';
 import '../../core/ui/fleet_sheet.dart';
 import '../../core/ui/app_states.dart';
 import '../../core/theme/app_numeric.dart';
@@ -56,7 +57,7 @@ class HomeScreen extends ConsumerWidget {
           const SizedBox(height: 8),
           if (pets.isEmpty)
             AppEmpty(
-              icon: Icons.pets,
+              iconWidget: const AppIcon('pet_paw', color: AppColors.primary, size: 48),
               title: l10n.homeNoPets,
               actionLabel: l10n.actionAddPet,
               onAction: () => _showPetEditor(context, ref),
@@ -439,7 +440,7 @@ class _PetAvatar extends StatelessWidget {
     return CircleAvatar(
       radius: radius,
       backgroundColor: AppColors.primary.withValues(alpha: 0.15),
-      child: Icon(Icons.pets, color: AppColors.primary, size: radius),
+      child: AppIcon('pet_paw', color: AppColors.primary, size: radius),
     );
   }
 }
