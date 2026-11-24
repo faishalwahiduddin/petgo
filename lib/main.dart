@@ -14,9 +14,11 @@ import 'core/theme/app_theme.dart';
 import 'core/utils/app_timezone.dart';
 import 'l10n/app_localizations.dart';
 import 'l10n/fallback_framework_delegates.dart';
+import 'package:petgo/core/services/home_widget_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await HomeWidgetService.init();
   AppTimeZone.initAppTimeZones();
   AppTimeZone.cachedDeviceZone = await AppTimeZone.getDeviceZoneName();
   await CareReminderService.instance.init();
@@ -67,6 +69,17 @@ class _PetGoAppState extends ConsumerState<PetGoApp>
 
   @override
   Widget build(BuildContext context) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      HomeWidgetService.bindDeepLinks((route) => ref.read(appRouterProvider).go(route));
+      HomeWidgetService.update(
+        androidWidgetName: 'FleetHomeWidgetProvider',
+        data: const {
+          'widget_title': 'PetGo',
+          'widget_subtitle': 'Pet profiles & care schedules',
+          'widget_badge': 'PET',
+        },
+      );
+    });
     final locale = ref.watch(localeProvider);
     final themeMode = ref.watch(themeModeProvider);
     final router = ref.watch(appRouterProvider);

@@ -13,7 +13,10 @@ class CareReminderService {
   final _plugin = FlutterLocalNotificationsPlugin();
   bool _ready = false;
 
-  Future<void> init() async {
+  void Function(String? payload)? _onTap;
+
+  Future<void> init({void Function(String? payload)? onNotificationTap}) async {
+    if (onNotificationTap != null) _onTap = onNotificationTap;
     if (kIsWeb) return;
     try {
       tzdata.initializeTimeZones();
@@ -25,6 +28,8 @@ class CareReminderService {
       );
       await _plugin.initialize(
         settings: const InitializationSettings(android: android, iOS: ios),
+        onDidReceiveNotificationResponse: (details) =>
+            _onTap?.call(details.payload),
       );
       _ready = true;
     } catch (e) {

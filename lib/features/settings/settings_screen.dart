@@ -13,6 +13,7 @@ import '../../core/services/care_reminder_service.dart';
 import '../../core/utils/backup_file_io.dart';
 import 'commercial_contact_cards.dart';
 import '../../core/constants/contact_constants.dart';
+import 'package:petgo/core/services/quick_action_config.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
@@ -29,6 +30,7 @@ class SettingsScreen extends ConsumerWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 120),
         children: [
+          const QuickActionNotifSwitchTile(),
           ListTile(
             leading: const Icon(Icons.language, color: AppColors.primary),
             title: Text(l10n.settingsLanguage),

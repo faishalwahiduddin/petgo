@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fleet_widget_bg">#FFFFFF</color>
+    <color name="fleet_widget_border">#E5E7EB</color>
+    <color name="fleet_widget_title">#111827</color>
+    <color name="fleet_widget_subtitle">#374151</color>
+    <color name="fleet_widget_muted">#6B7280</color>
+    <color name="fleet_widget_btn_bg">#F3F4F6</color>
+    <color name="fleet_widget_accent">#D97706</color>
+    <color name="fleet_widget_pill_bg">#26D97706</color>
+</resources>
